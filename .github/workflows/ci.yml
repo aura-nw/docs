@@ -17,7 +17,7 @@ jobs:
     - name: Set environment variable
       run: |
         SHORT_SHA_COMMIT=$(git rev-parse --short HEAD)
-        echo CONTAINER_RELEASE_IMAGE=ghcr.io/aura-nw/landing-page:${GITHUB_REF_NAME}_${SHORT_SHA_COMMIT} >> $GITHUB_ENV
+        echo CONTAINER_RELEASE_IMAGE=ghcr.io/aura-nw/docs:${GITHUB_REF_NAME}_${SHORT_SHA_COMMIT} >> $GITHUB_ENV
         echo REPO_MANIFEST_NAME=gitops >> $GITHUB_ENV
         echo REPO_MANIFEST_URL=github.com/aura-nw/gitops.git >> $GITHUB_ENV
         echo REPO_MANIFEST_BRANCH=master >> $GITHUB_ENV

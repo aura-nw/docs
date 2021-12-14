@@ -23,7 +23,7 @@ jobs:
         echo REPO_MANIFEST_BRANCH=master >> $GITHUB_ENV
         echo REPO_MANIFEST_ENV_DEV=./docs/clusters/k8s-dev >> $GITHUB_ENV
         echo REPO_MANIFEST_ENV_MAIN=./docs/clusters/k8s-uat >> $GITHUB_ENV
-        echo REPO_MANIFEST_TAG_IMAGE=image_landing_page >> $GITHUB_ENV
+        echo REPO_MANIFEST_TAG_IMAGE=image_docs >> $GITHUB_ENV
     - name: Build the Docker image and push it to the registry
       env:
         GITHUB_USERNAME: ${{ secrets.REGISTRY_USERNAME }}

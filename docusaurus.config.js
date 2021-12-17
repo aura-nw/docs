@@ -74,7 +74,19 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: '//twitter.com/aura_nw',
+              },
+              {
+                label: 'Linkedin',
+                href: '//www.linkedin.com/company/auranetwork/about/',
+              },
+              {
+                label: 'Facebook',
+                href: '//www.facebook.com/nwaura',
+              },
+              {
+                label: 'Github',
+                href: '//github.com/aura-nw',
               },
             ],
           },

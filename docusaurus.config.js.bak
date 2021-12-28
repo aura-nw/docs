@@ -57,7 +57,7 @@ const config = {
           },
 		  {
             type: 'doc',
-            docId: 'protocol-specification/protocol',
+            docId: 'protocol',
             position: 'left',
             label: 'Protocol Specification',
           },

@@ -1,19 +1,16 @@
 ## Introduction
 
-Aura-docs based on Docusaurus, what is a project for building, deploying, and maintaining open source project websites easily. 
+This repository contains source code and content of [Aura Network Document](https://docs.aura.network) (or simply Aura-docs.)
 
-## Installation
+Aura-docs based on [Docusaurus](https://docusaurus.io/) v2, which is a project for building, deploying, and maintaining open source project websites easily. 
 
-Use the initialization cli to create your site:
+## Run locally
+To run the project locallt, please follow installation guide from [here](https://docusaurus.io/docs/next/installation)
 
-```bash
-npm init docusaurus@latest [name] [template]
-```
-
-Example:
+If you already setup things correctly, then just simply:
 
 ```bash
-npm init docusaurus@latest my-website classic
+npm run start
 ```
 
 ## Requirement

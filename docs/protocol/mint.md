@@ -1,9 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-
 # MINT
+
+## What is minting and why it is required in Aura Network
+
 ## The Minting Mechanism
 The minting mechanism was designed to:
 - allow for a flexible inflation rate determined by market demand targeting a particular bonded-stake ratio
@@ -16,10 +18,10 @@ It can be broken down in the following way:
 - If the goal % bonded is maintained, then the inflation rate will stay constant.
 - If the inflation rate is above the goal %-bonded, the inflation rate will decrease until a minimum value is reached.
 
-## Begin-Block
+### Begin-Block
 At the beginning of each block, minting parameters are recalculated and inflation paid.
 
-## NextInflationRate
+### NextInflationRate
 The target annual inflation rate is recalculated each block. The inflation is also subject to a rate change (positive or negative) depending on the distance from the desired ratio (67%). The maximum rate change possible is defined to be 8% per year, however the annual inflation is capped as between 4% and 12%.
 ```sh
 NextInflationRate(params Params, bondedRatio sdk.Dec) (inflation sdk.Dec) {
@@ -39,14 +41,14 @@ NextInflationRate(params Params, bondedRatio sdk.Dec) (inflation sdk.Dec) {
 }
 ```
 
-## NextAnnualProvisions
+### NextAnnualProvisions
 This parameter is calculated once per block, based on current total supply and inflation rate.
 ```sh
 NextAnnualProvisions(params Params, totalSupply sdk.Dec) (provisions sdk.Dec) {
 	return Inflation * totalSupply
 ```
 
-## BlockProvision
+### BlockProvision
 Calculate the provisions generated for each block based on current annual provisions.
 ```sh
 BlockProvision(params Params) sdk.Coin {

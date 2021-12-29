@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Docs',
   tagline: 'Aura Network',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.aura.network',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/Logo1.svg',
-  organizationName: 'aura', // Usually your GitHub org/user name.
+  organizationName: 'aura-nw', // Usually your GitHub org/user name.
   projectName: 'Documentations', // Usually your repo name.
 
   presets: [
@@ -22,6 +22,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath:'/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
@@ -29,8 +30,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,51 +53,46 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-		  {
-            type: 'doc',
-            docId: 'protocol-specification/protocol',
-            position: 'left',
-            label: 'Protocol Specification',
-          },
+          {
+            to: 'blog',
+            label: 'Blog',
+            position: 'left'
+          }
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: '//twitter.com/aura_nw',
-              },
-              {
-                label: 'Linkedin',
-                href: '//www.linkedin.com/company/auranetwork/about/',
-              },
-              {
-                label: 'Facebook',
-                href: '//www.facebook.com/nwaura',
-              },
-              {
-                label: 'Github',
-                href: '//github.com/aura-nw',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // links: [{
+        //     title: 'Docs',
+        //     items: [{
+        //       label: 'Tutorial',
+        //       to: '/docs/intro',
+        //     }, ],
+        //   },
+        //   {
+        //     title: 'Community',
+        //     items: [{
+        //         label: 'Twitter',
+        //         href: '//twitter.com/aura_nw',
+        //       },
+        //       {
+        //         label: 'Linkedin',
+        //         href: '//www.linkedin.com/company/auranetwork/about/',
+        //       },
+        //       {
+        //         label: 'Facebook',
+        //         href: '//www.facebook.com/nwaura',
+        //       },
+        //       {
+        //         label: 'Github',
+        //         href: '//github.com/aura-nw',
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `Copyright © ${new Date().getFullYear()} Aura Network Document, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

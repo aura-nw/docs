@@ -1,4 +1,4 @@
-## Introduction
+# Aura Network Documents
 
 This repository contains source code and content of [Aura Network Document](https://docs.aura.network) (or simply Aura-docs.)
 

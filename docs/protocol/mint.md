@@ -95,14 +95,15 @@ BlockProvision(params Params) sdk.Coin {
 ## Parameters
 The minting module contains the following parameters:
 
-| Key | Type | Value |
-| ------ | ------ | ------ |
-| InflationRateChange | string (dec) | "0.080000000000000000" |
-| InflationMax | string (dec) | "0.120000000000000000" |
-| InflationMin | string (dec) | "0.040000000000000000" |
-| GoalBonded | string (dec) | "0.670000000000000000" |
-| BlocksPerYear | string (dec) | "4429213" |
-| MaxSupply | string (dec) | "1000000000" |
+| Key | Type | Value | Explanation |
+| ------ | ------ | ------ | ------ |
+| InflationRateChange | string (dec) | "0.080000000000000000" | |
+| InflationMax | string (dec) | "0.120000000000000000" | The maximum value of the inflation rate |
+| InflationMin | string (dec) | "0.040000000000000000" | The minimum value of the inflation rate |
+| GoalBonded | string (dec) | "0.670000000000000000" | The desired bonded ratio for the inflation rate to stay constant|
+| BlocksPerYear | string (dec) | "4429213" | The number of blocks in a year|
+| MaxSupply | string (dec) | "1000000000" | The maximum amount of Auras that will exist in the lifetime of the Aura|
 
-For more detailed information, see [Module "mint" in Cosmos Network] (https://docs.cosmos.network/v0.44/modules/mint/).
+For more detailed information, see [Module "mint" in Cosmos Network](https://docs.cosmos.network/v0.44/modules/mint/)
+.
 

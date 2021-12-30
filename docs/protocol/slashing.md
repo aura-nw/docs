@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # slashing
@@ -7,9 +7,13 @@ sidebar_position: 2
 ## What is slashing and why it is required in Aura Network
 ### What is slashing?
 Slashing is a characterized mechanism in Proof-of-Stake (PoS) blockchain network. The majority of the PoS blockchains have a reward mechanism for honest and truthful behavior as well as a penalty mechanism for malicious behavior. The purpose of slashing is to penalize validators for their malicious activities that might harm the network and discouraging them to repeat those activities in the futures.
+
 With the nature of staking, the penalty may vary from being charged a fixed amount of tokens, a fixed percentage, complete slashing of the stake and banning the validator from the group for a specified amount of time (or even permanently).
+
 As any other PoS network, slashing is also implemented in Aura Network for similar purpose.
+
 ### Types of slashing in Aura Network
+
 The Aura Network implement 2 main types of slashing due to the severity of the malicious behavior that validators might act:
 - Liveness (Downtime) Slashing: Validator will be slashed due to not signing enough block in a specified window of time by any reasons.
 - Double-sign Slashing: Validator will be slashed due to the dishonest behavior of double-signing.
@@ -17,6 +21,7 @@ The Aura Network implement 2 main types of slashing due to the severity of the m
 ## The Slashing Mechanism
 ### Liveness Tracking
 At the beginning of each block, we update the `ValidatorSigningInfo` for each validator and check if they've crossed below the liveness threshold over a sliding window. This sliding window is defined by `SignedBlocksWindow` and the index in this window is determined by `IndexOffset` found in the validator's `ValidatorSigningInfo`. For each block processed, the `IndexOffset` is incremented regardless if the validator signed or not. Once the index is determined, the `MissedBlocksBitArray` and MissedBlocksCounter are updated accordingly.
+
 Finally, in order to determine if a validator crosses below the liveness threshold, we fetch the maximum number of blocks missed, `maxMissed`, which is `SignedBlocksWindow - (MinSignedPerWindow * SignedBlocksWindow)` and the minimum height at which we can determine liveness, `minHeight`. If the current block is greater than `minHeight` and the validator's `MissedBlocksCounter` is greater than `maxMissed`, they will be slashed by `SlashFractionDowntime`, will be jailed for `DowntimeJailDuration`, and have the following values reset: `MissedBlocksBitArray`, `MissedBlocksCounter`, and `IndexOffset`.
 
 __Note__: Liveness slashes do __NOT__ lead to a __tombstoning__.

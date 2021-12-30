@@ -97,7 +97,7 @@ The minting module contains the following parameters:
 
 | Key | Type | Value | Explanation |
 | ------ | ------ | ------ | ------ |
-| InflationRateChange | string (dec) | "0.080000000000000000" | |
+| InflationRateChange | string (dec) | "0.080000000000000000" | The moving change rate to determine the appropriate market rate for inflation rewards|
 | InflationMax | string (dec) | "0.120000000000000000" | The maximum value of the inflation rate |
 | InflationMin | string (dec) | "0.040000000000000000" | The minimum value of the inflation rate |
 | GoalBonded | string (dec) | "0.670000000000000000" | The desired bonded ratio for the inflation rate to stay constant|

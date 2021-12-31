@@ -1,10 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
-# slashing
+# Slashing
 
 ## What is slashing and why it is required in Aura Network
+
 ### What is slashing?
 Slashing is a characterized mechanism in Proof-of-Stake (PoS) blockchain network. The majority of the PoS blockchains have a reward mechanism for honest and truthful behavior as well as a penalty mechanism for malicious behavior. The purpose of slashing is to penalize validators for their malicious activities that might harm the network and discouraging them to repeat those activities in the futures.
 
@@ -13,13 +14,15 @@ With the nature of staking, the penalty may vary from being charged a fixed amou
 As any other PoS network, slashing is also implemented in Aura Network for similar purpose.
 
 ### Types of slashing in Aura Network
-
 The Aura Network implement 2 main types of slashing due to the severity of the malicious behavior that validators might act:
 - Liveness (Downtime) Slashing: Validator will be slashed due to not signing enough block in a specified window of time by any reasons.
-- Double-sign Slashing: Validator will be slashed due to the dishonest behavior of double-signing.
+- Double-sign Slashing: Validator will be slashed due to the dishonest behavior of double-signing. Double-sign slashing will include a concept of Tombstone Caps (explained below).
 
 ## The Slashing Mechanism
-### Liveness Tracking
+### Begin-Block
+At the beginning of each block, the Slashing module checks for evidence of infractions or downtime of validators, as well as double-signing and other low-level consensus penalties.
+
+### Liveness (Downtime) Tracking and Slashing
 At the beginning of each block, we update the `ValidatorSigningInfo` for each validator and check if they've crossed below the liveness threshold over a sliding window. This sliding window is defined by `SignedBlocksWindow` and the index in this window is determined by `IndexOffset` found in the validator's `ValidatorSigningInfo`. For each block processed, the `IndexOffset` is incremented regardless if the validator signed or not. Once the index is determined, the `MissedBlocksBitArray` and MissedBlocksCounter are updated accordingly.
 
 Finally, in order to determine if a validator crosses below the liveness threshold, we fetch the maximum number of blocks missed, `maxMissed`, which is `SignedBlocksWindow - (MinSignedPerWindow * SignedBlocksWindow)` and the minimum height at which we can determine liveness, `minHeight`. If the current block is greater than `minHeight` and the validator's `MissedBlocksCounter` is greater than `maxMissed`, they will be slashed by `SlashFractionDowntime`, will be jailed for `DowntimeJailDuration`, and have the following values reset: `MissedBlocksBitArray`, `MissedBlocksCounter`, and `IndexOffset`.
@@ -97,6 +100,50 @@ for vote in block.LastCommitInfo.Votes {
   SetValidatorSigningInfo(vote.Validator.Address, signInfo)
 }
 ```
+### Unjail after being slashed
+When a validator was automatically unbonded due to downtime, it must send a `MsgUnjail` to comeback online. 
+
+```sh
+// MsgUnjail is an sdk.Msg used for unjailing a jailed validator, thus returning
+// them into the bonded validator set, so they can begin receiving provisions
+// and rewards again.
+message MsgUnjail {
+  string validator_addr = 1;
+}
+```
+There are 2 requirement for the validator for a successful unjail:
+- The validator is not flagged by the Tombstone Caps.
+- The duration of the last downtime slashing was ended.
+
+__Note:__ Due to the nature of downtime slashing and unjailing, a validator cannot be under multiple infraction of downtime slashing.
+
+```sh
+unjail(tx MsgUnjail)
+    validator = getValidator(tx.ValidatorAddr)
+    if validator == nil
+      fail with "No validator found"
+
+    if getSelfDelegation(validator) == 0
+      fail with "validator must self delegate before unjailing"
+
+    if !validator.Jailed
+      fail with "Validator not jailed, cannot unjail"
+
+    info = GetValidatorSigningInfo(operator)
+    if info.Tombstoned
+      fail with "Tombstoned validator cannot be unjailed"
+    if block time < info.JailedUntil
+      fail with "Validator still jailed, cannot unjail until period has expired"
+
+    validator.Jailed = false
+    setValidator(validator)
+
+    return
+```
+If the validator has enough stake to be in the top `n = MaximumBondedValidators`, it will be automatically rebonded, and all delegators still delegated to the validator will be rebonded and begin to again collect provisions and rewards.
+
+### The Tombstone Caps and Double-sign Slashing
+In order to mitigate the impact of initially likely categories of non-malicious protocol faults, the Aura Network implements for each validator a tombstone cap, which only allows a validator to be slashed once for a double sign fault. For example, if some misconfigiration occurs and a validator double-signs a bunch of old blocks, it will only be punished for the first double-sign (and then immediately tombstoned). Tombstoned validator will not be able to rejoin the validator set.
 
 ## Parameters
 The slashing module contains the following parameters:

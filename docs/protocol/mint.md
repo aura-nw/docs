@@ -1,32 +1,38 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# MINT
+# Mint
 
 ## What is minting and why it is required in Aura Network
-### What is minting in blockchain?
-Minting is the process of creating or producing something. In blockchain, minting means, validating information, creating a new block and recording that information into the blockchain via the Proof-of-Stake method. 
-For example, someone can mint an NFT or mint a new cryptocurrency.
-### What is minting tokens?
-Tokens are minted through staking under the Proof-of-Stake process. Proof-of-Stake doesn't have miners; instead, it has validators, and it doesn't allow individuals to mine new blocks; instead, they can mint them.
+
+### What is minting?
+Minting is the process of creating or producing something. In Proof-of-Stake (PoS) blockchain, minting means validating information, creating a new block and recording that information into the blockchain via the PoS consensus mechanism. 
+For example, someone can mint NFTs , tokens, or new cryptocurrency coins.
+
 ### Why it is required in Aura Network?
-In Aura Network, minting is required to create more Aura tokens, increase the total supply of the token until maxSupply (1,000,000,000 Aura) is reached.
-Auras are minted through staking by locking Auras to contribute to the security and governance. 
-- Help secure the network
-- Validators and delegators can earn rewards from transaction fees and Aura inflation.
-- Vote for the future
+In Aura Network, the Mint module is required to mint new Aura coins, through which increases its total supply until `maxSupply` (1,000,000,000 Aura) is reached.
+
+Aura coins are minted as a part of the block reward earned by validators through the staking process, as the staking process provides particular benefits:
+- Strengthen the network security
+- Validators and delegators can gain profit through block rewards from transaction fees and Aura inflation.
+- Governance acts (proposal, voting) for the future of the network.
+
 ## The Minting Mechanism
 The minting mechanism was designed to allow for a flexible inflation rate determined by market demand targeting a particular bonded-stake ratio.
 
 In order to determine the appropriate market rate for inflation rewards, a moving change rate is used. The moving change rate mechanism ensures that if the % bonded is either over or under the goal %-bonded, the inflation rate will change too.
-
 - If the inflation rate is below the goal %-bonded (67% in Aura network), the inflation rate will increase until a maximum value (12%) is reached.
 - If the goal % bonded is maintained, then the inflation rate will stay constant.
 - If the inflation rate is above the goal %-bonded, the inflation rate will decrease until a minimum value (4%) is reached.
 
 ### Begin-Block
-At the beginning of each block, if currentSupply is less than maxSupply (1,000,000,000 Aura), calculate the number of tokens minted as BlockProvisions. The total number of tokens in the next block is calculated by currentSupply + BlockProvisions. If supplyNext is greater than maxSupply then the number of tokens minted equals maxSupply - currentSupply, otherwise equals BlockProvisions.
+At the begining of each block, the Mint module will handle those following process:
+- Circulation supply check: Aura Coin can only be minted more if the `currentSupply` is lower than the pre-defined `maxSupply`. the amount of minted coins after that block will also be verified to comply with the `maxSupply`, assuring that the circulation supply will never surpasses the maximum supply.
+- Inflation block reward calculation: the amount of new-minted coins as block reward of that block will be calculated through the calculation of `NextInflationRate`, `NextAnnualProvisions`, and `BlockProvision`.
+
+### Circulation supply checking
+At the beginning of each block, if `currentSupply` is less than `maxSupply`, calculate the number of newly minted coins as `BlockProvision`. The total number of coins in the next block is calculated by `currentSupply + BlockProvision`. If `supplyNext` is greater than `maxSupply` then the number of coins equals `maxSupply - currentSupply`, otherwise equals `BlockProvision`.
 
 ```sh
 BeginBlocker(ctx sdk.Context, k custommint.Keeper) {

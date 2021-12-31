@@ -101,7 +101,7 @@ BlockProvision(params Params) sdk.Coin {
 ## Parameters
 The minting module contains the following parameters:
 
-| Key | Type | Value | Explanation |
+| Key | Type | Value | Meaning |
 | ------ | ------ | ------ | ------ |
 | InflationRateChange | string (dec) | "0.080000000000000000" | The moving change rate to determine the appropriate market rate for inflation rewards|
 | InflationMax | string (dec) | "0.120000000000000000" | The maximum value of the inflation rate |

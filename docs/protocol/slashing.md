@@ -156,5 +156,5 @@ The slashing module contains the following parameters:
 | SlashFractionDoubleSign | string(dec)| "0.050000000000000000" | The percentage of stake that the validator will lose upon a Double-sign Slashing infraction.
 | SlashFractionDowntime | string(dec) | "0.010000000000000000" | The percentage of stake that the validator will lose upon a Liveness Slashing infraction.
 
-For more detailed information, see [Module "slashing" in Cosmos Network] (https://docs.cosmos.network/master/modules/slashing/).
+For more detailed information, see [Module "slashing" in Cosmos Network](https://docs.cosmos.network/master/modules/slashing/).
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Validator
+# Validator Overview
 
 ## What is a validator?
 Validators are Aura holders, responsible for commiting new blocks in the blockchain and receive revenue in exchange for their work. These validators participate in the consensus protocol by broadcasting votes that contain cryptographic signatures signed by each validator's private key.

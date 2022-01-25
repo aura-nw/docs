@@ -56,6 +56,7 @@ Start your full-node:
 ```
 :::note For optimized node performance, set `minimum-gas-prices` to enable the anti-spam mechanism and reject incoming transactions with less than the minimum gas prices.
 :::
+
 After starting your full-node, wait until it completely sync transactions to your local to start create your validator.
 
 ## Create your validator

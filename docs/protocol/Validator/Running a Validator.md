@@ -52,10 +52,12 @@ $ mv genesis.json ~/.aura/config/genesis.json
 
 Start your full-node:
 ```bash
-  $ aurad start --p2p.seeds <seed-id> --minimum-gas-prices <gas-price>
+  $ aurad start --p2p.seeds <seed-id>@<seed-ip>:<seed-p2p-port> --minimum-gas-prices <gas-price>
 ```
 :::note For optimized node performance, set `minimum-gas-prices` to enable the anti-spam mechanism and reject incoming transactions with less than the minimum gas prices.
 :::
+After starting your full-node, wait until it completely sync transactions to your local to start create your validator.
+
 ## Create your validator
 You need to add your `wallet key` using `mnemonic` or create a new key and tranfer `uaura` to its address
 ```bash

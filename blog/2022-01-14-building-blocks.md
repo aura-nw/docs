@@ -9,3 +9,13 @@ authors:
 tags: [business]
 draft: true
 ---
+
+This week we had a few discussion on whether
+
+## Wallet
+
+## Multisignature Safe
+
+## Developer Playground
+
+## 

@@ -12,10 +12,10 @@ Testnets are networks used by developers to test both protocol upgrades as well 
 
 | Node   | ID                                       | IP             | P2P port | API port | Tendermint RPC |
 |--------|------------------------------------------|----------------|----------|----------|----------------|
-| seed   | 5bbe961bb23c4958592f131cf59aa7958b7168dd | 18.138.28.51   |    26656 |     1317 |          26657 |
-| Hanoi  | 795fa7c4aed92f557b0071fe1cff51ed6077a8c5 | 13.251.46.52   |    26656 |     1317 |          26657 |
-| Danang | 2b97e1ca51a7a2a79716bacea61e6740d51e7e71 | 54.169.100.160 |    26656 |     1317 |          26657 |
-| Saigon | bbf8366039dcffc20ad50c90000823be176d5271 | 54.255.44.200  |    26656 |     1317 |          26657 |
+| seed   | 42f0c254710b2b22c67555ff4c2ad7e1390b5965 | 34.203.177.141 |    26656 |     1317 |          26657 |
+| Hanoi  | 19f186cf32141aa8b550a5ce8ffa279cfb53a2b3 | 18.232.220.91  |    26656 |     NULL |          NULL  |
+| Danang | 20ebfa67729e748f681546edce66af250c1fb728 | 3.226.69.146   |    26656 |     NULL |          NULL  |
+| Saigon | 00a9ad953ed9cc648a405e0d9334493977eded6c | 54.163.228.209 |    26656 |     NULL |          NULL  |
 
 ### Faucet
 
@@ -25,6 +25,6 @@ Please replace {{$wallet_address}} with the Aura Wallet Address that you have ge
 
 ### DAPP connection
 
-cosmos rest API:	http://18.138.28.51:1317/
+cosmos rest API:	http://34.203.177.141:1317/
 
-tendermint rpc: 	http://18.138.28.51:26657/
+tendermint rpc: 	http://34.203.177.141:26657/

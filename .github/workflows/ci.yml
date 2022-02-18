@@ -33,7 +33,6 @@ jobs:
         ./ci/build.sh
     - name: Update manifest
       env:
-        SSH_KEY_GITOPS: ${{ secrets.SSH_KEY_GITOPS }}
         PERSONAL_ACCESS_KEY: ${{ secrets.REGISTRY_PASSWORD }}
       run: |
         ./ci/updateManifest.sh

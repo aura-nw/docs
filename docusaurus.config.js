@@ -62,37 +62,22 @@ const config = {
           }
         ],
       },
-      footer: {
-        style: 'dark',
-        // links: [{
-        //     title: 'Docs',
-        //     items: [{
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     }, ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [{
-        //         label: 'Twitter',
-        //         href: '//twitter.com/aura_nw',
-        //       },
-        //       {
-        //         label: 'Linkedin',
-        //         href: '//www.linkedin.com/company/auranetwork/about/',
-        //       },
-        //       {
-        //         label: 'Facebook',
-        //         href: '//www.facebook.com/nwaura',
-        //       },
-        //       {
-        //         label: 'Github',
-        //         href: '//github.com/aura-nw',
-        //       },
-        //     ],
-        //   },
-        // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aura Network Document, Inc. Built with Docusaurus.`,
+      footer: {  
+        links: [
+          {
+            label: 'Github',
+            href: 'https://github.com/aura-nw',
+          },
+          {
+            label: 'Discord',
+            href: 'https://discord.gg/BAYUkN2hqp',
+          },
+          {
+            label: 'Twitter',
+            href: 'https://twitter.com/AuraNetworkHQ',
+          }
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Aura Network, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

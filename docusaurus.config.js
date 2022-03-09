@@ -25,12 +25,12 @@ const config = {
                     routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/aura-nw/docs/blob/main/',
+                    editUrl: 'https://github.com/aura-nw/docs/edit/main',
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/aura-nw/docs/edit/main/',
+                    editUrl: 'https://github.com/aura-nw/docs/edit/main/blog',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

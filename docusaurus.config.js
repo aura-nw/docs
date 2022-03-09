@@ -31,7 +31,7 @@ const config = {
                     path: 'blog',
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/aura-nw/docs/edit/main/blog',
+                    editUrl: 'https://github.com/aura-nw/docs/edit/main',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

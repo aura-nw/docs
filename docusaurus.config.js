@@ -28,6 +28,7 @@ const config = {
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
                 },
                 blog: {
+                    path: 'blog',
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main/blog',

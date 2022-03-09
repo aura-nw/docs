@@ -28,7 +28,8 @@ const config = {
                     editUrl: 'https://github.com/aura-nw/docs/blob/main/',
                 },
                 blog: {
-                    path: 'blog',
+                    path: 'blogs',
+                    routeBasePath: 'blogs',
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main/',
@@ -56,8 +57,8 @@ const config = {
                     label: 'Docs',
                 },
                 {
-                    to: 'blog',
-                    label: 'Blog',
+                    to: 'blogs',
+                    label: 'Blogs',
                     position: 'left'
                 }
             ],

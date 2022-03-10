@@ -4,10 +4,10 @@ sidebar_position: 2
 
 # Running a Validator
 
-This is a detailed documentation for setting up a **Validator** on Aura mainnet.
+This is a detailed documentation for setting up a **Validator** on Aura network.
 
 :::caution Remarks:
-The following is the minimal setup to join Aura mainnet.
+The following is the minimal setup to join Aura network.
 
 You should research validator security.
 :::
@@ -33,6 +33,9 @@ Additional ports:
 
 - *26657*: The default port for the `Tendermint RPC protocol`. Because this port is used for querying and sending transactions, it must be open for serving queries from `aurad`.
 
+## Networks information
+
+Genesis files and configurations are located in [Github repository](https://github.com/aura-nw/testnets)
 
 ## Setup a full-node
 
@@ -52,12 +55,25 @@ $ mv genesis.json ~/.aura/config/genesis.json
 
 Start your full-node:
 ```bash
-  $ aurad start --p2p.seeds <seed-id>@<seed-ip>:<seed-p2p-port> --minimum-gas-prices <gas-price>
+$ aurad start --p2p.seeds <seed-id>@<seed-ip>:<seed-p2p-port> --minimum-gas-prices <gas-price>
 ```
 :::note For optimized node performance, set `minimum-gas-prices` to enable the anti-spam mechanism and reject incoming transactions with less than the minimum gas prices.
 :::
 
 After starting your full-node, wait until it completely sync transactions to your local to start create your validator.
+
+### State Sync configuration options
+State sync rapidly bootstraps a new node by discovering, fetching, and restoring a state machine snapshot from peers instead of fetching and replaying historical blocks
+
+Visit a explorer to get a recent block height and corresponding hash. The recommended snapshot period is 1000 blocks, it is advised to choose something close to current height - 1000. Set these parameters in the code snippet below <BLOCK_HEIGHT>, <BLOCK_HASH>, <RPC_SERVER_1> and <RPC_SERVER_2>
+
+```
+$ cd $HOME/.aura/config
+$ sed -i 's/enable = false/enable = true/' config.toml
+$ sed -i 's/trust_height = 0/trust_height = <BLOCK_HEIGHT>/' config.toml
+$ sed -i 's/trust_hash = ""/trust_hash = "<BLOCK_HASH>"/' config.toml
+$ sed -i 's/rpc_servers = ""/rpc_servers = "<RPC_SERVER_1>,<RPC_SERVER_2>"/' config.toml
+```
 
 ## Create your validator
 You need to add your `wallet key` using `mnemonic` or create a new key and tranfer `uaura` to its address

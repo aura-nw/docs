@@ -12,7 +12,7 @@ const config = {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/Logo1.svg',
+    favicon: 'img/Aura-logo-6.png',
     organizationName: 'aura-nw', // Usually your GitHub org/user name.
     projectName: 'Documentations', // Usually your repo name.
 
@@ -47,7 +47,7 @@ const config = {
             title: 'Aura.network',
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/Logo1.svg',
+                src: 'img/Aura-logo-6.png',
             },
             items: [{
                     type: 'doc',

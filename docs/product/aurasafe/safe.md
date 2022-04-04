@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Aura Safe
+# Introduction
 
 Aura Safe is a multi-signature platform for Cosmos-based blockchain. We develop Safe as a part of the Aura Network project, but we will keep it general so that all other cosmos-based blockchain can use it as well.
 

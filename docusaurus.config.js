@@ -56,7 +56,8 @@ const config = {
                     label: 'Docs',
                 },
 				{
-                    to: 'aurasafe',
+                    type: 'doc',
+                    docId: 'product/aurasafe/safe',
                     position: 'left',
                     label: 'AuraSafe',
                 },

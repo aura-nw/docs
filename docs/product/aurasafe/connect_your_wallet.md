@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-#Connect your wallet
+# Connect your wallet
 
 All co-owners must have a personal wallet connected. For now, Aura Safe only supports Keplr wallet. Please click the drop-down section right next to the network selection, then click “Connect”.
 ![Connect your wallet](/img/aurasafe/connect_your_wallet_1.png)

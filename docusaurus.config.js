@@ -57,7 +57,7 @@ const config = {
                 },
 				{
                     type: 'docSidebar',
-                    sidebarId: 'aura-safe',
+                    sidebarId: 'aurasafe',
                     position: 'left',
                     label: 'Aura Safe',
                 },

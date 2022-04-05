@@ -9,7 +9,7 @@ const config = {
     title: 'Docs',
     tagline: 'Aura Network',
     url: 'https://docs.aura.network',
-    baseUrl: '/',
+    baseUrl: '/docs/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/Aura-logo-6.png',
@@ -22,7 +22,8 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    routeBasePath: '/',
+                    path: 'docs',
+					routeBasePath: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
@@ -39,6 +40,18 @@ const config = {
             }),
         ],
     ],
+	plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'aura-safe',
+        path: 'aura-safe',
+        routeBasePath: 'aura-safe',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
+    ],
+  ],
 
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -56,10 +69,9 @@ const config = {
                     label: 'Docs',
                 },
 				{
-                    type: 'doc',
-                    docId: 'product/aurasafe/safe',
+                    to: 'aura-safe/safe',
                     position: 'left',
-                    label: 'AuraSafe',
+                    label: 'Aura Safe',
                 },
                 {
                     to: 'blog',

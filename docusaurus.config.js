@@ -22,7 +22,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    path: 'docs',
+					path: 'docs',
 					routeBasePath: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
@@ -44,6 +44,7 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+		id: 'aura-safe',
 		path: 'aura-safe',
 		routeBasePath: 'aura-safe',
         sidebarPath: require.resolve('./sidebars.js'),

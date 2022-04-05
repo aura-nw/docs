@@ -56,10 +56,10 @@ const config = {
                     label: 'Docs',
                 },
 				{
-                    type: 'doc',
-                    docId: 'product/aurasafe/safe',
+                    type: 'docSidebar',
+                    sidebarId: 'aura-safe',
                     position: 'left',
-                    label: 'AuraSafe',
+                    label: 'Aura Safe',
                 },
                 {
                     to: 'blog',

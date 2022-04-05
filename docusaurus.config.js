@@ -47,7 +47,7 @@ const config = {
 		id: 'aura-safe',
 		path: 'aura-safe',
 		routeBasePath: 'aura-safe',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
         // Please change this to your repo.
         editUrl: 'https://github.com/aura-nw/docs/edit/main',
       },

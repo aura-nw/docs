@@ -8,9 +8,9 @@ git clone "https://${PERSONAL_ACCESS_KEY}@${REPO_MANIFEST_URL}"
 cd ./${REPO_MANIFEST_NAME}
 git checkout ${REPO_MANIFEST_BRANCH} && git pull
 
-if [ ${GITHUB_REF_NAME} = "main" ]
+if [ ${GITHUB_REF_NAME} = "dev" ]
 then
-  echo 'This is main branch'
+  echo 'This is dev branch'
   cd ${REPO_MANIFEST_ENV_MAIN}
 else
   exit

@@ -78,11 +78,6 @@ const config = {
                     sidebarId: 'improvement',
                     position: 'left',
                     label: 'Improvements',
-                },
-                {
-                    to: 'blog',
-                    label: 'Blog',
-                    position: 'left'
                 }
             ],
         },

@@ -22,8 +22,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-					path: 'docs',
-					routeBasePath: 'docs',
+                    routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
@@ -40,19 +39,6 @@ const config = {
             }),
         ],
     ],
-	plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-		id: 'aura-safe',
-		path: 'aura-safe',
-		routeBasePath: 'aura-safe',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-        // Please change this to your repo.
-        editUrl: 'https://github.com/aura-nw/docs/edit/main',
-      },
-    ],
-  ],
 
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -63,17 +49,17 @@ const config = {
                 alt: 'My Site Logo',
                 src: 'img/Aura-logo-6.png',
             },
-            items: [
-				{
+            items: [{
                     type: 'doc',
-					docId: 'intro',
+                    docId: 'intro',
                     position: 'left',
                     label: 'Docs',
                 },
 				{
-                    to: 'aura-safe/safe',
+                    type: 'doc',
+                    docId: 'product/aurasafe/safe',
                     position: 'left',
-                    label: 'Aura Safe',
+                    label: 'AuraSafe',
                 },
                 {
                     to: 'blog',

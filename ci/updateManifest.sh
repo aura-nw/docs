@@ -11,7 +11,7 @@ git checkout ${REPO_MANIFEST_BRANCH} && git pull
 if [ ${GITHUB_REF_NAME} = "dev" ]
 then
   echo 'This is dev branch'
-  cd ${REPO_MANIFEST_ENV_MAIN}
+  cd ${REPO_MANIFEST_ENV_DEV}
 else
   exit
 fi

@@ -9,8 +9,8 @@
 .cache-loader
 
 #ci
-/.github
-/ci
+.github/
+ci/
 
 # Misc
 .DS_Store

@@ -11,7 +11,7 @@ const config = {
     url: 'https://docs.aura.network',
     baseUrl: '/',
     onBrokenLinks: 'ignore',
-    onBrokenMarkdownLinks: 'warn',
+    onBrokenMarkdownLinks: 'ignore',
     favicon: 'img/Aura-logo-6.png',
     organizationName: 'aura-nw', // Usually your GitHub org/user name.
     projectName: 'Documentations', // Usually your repo name.

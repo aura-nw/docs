@@ -12,16 +12,14 @@ if [ ${GITHUB_REF_NAME} = "dev" ]
 then
   echo 'This is dev branch'
   cd ${REPO_MANIFEST_ENV_DEV}
-else
-  exit
-fi
-if [ ${GITHUB_REF_NAME} = "main" ]
+elif [ ${GITHUB_REF_NAME} = "main" ]
 then
   echo 'This is main branch'
   cd ${REPO_MANIFEST_ENV_MAIN}
 else
   exit
 fi
+  
 
 # kustomize
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash

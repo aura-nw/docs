@@ -21,7 +21,7 @@ Be aware that this name is only stored locally on your browser’s cache. You wi
 
 ## Step 3: Owners and Confirmation
 
-- Owners: In this part of the step, you are required to declare every other owners of the Safe, apart from yourself (which has been included by default). By clicking “+ Add another owner”, you will be able to declare an owner’s name (locally stored, again) and wallet address. You can remove the unwanted owner(s) by clicking the trash bin icon next to that owner. An owner’s wallet address can also be obtained by scanning a QR code. 
+- Owners: In this part of the step, you are required to declare every other owner of the Safe, apart from yourself (which has been included by default). By clicking “+ Add another owner”, you will be able to declare an owner’s name (locally stored, again) and wallet address. You can remove the unwanted owner(s) by clicking the trash bin icon next to that owner. An owner’s wallet address can also be obtained by scanning a QR code. 
 ![Create a new Safe](/img/aurasafe/create_a_new_safe_4.png)
 - Confirmation: In this part of the step, you are required to define how many confirmations from all the co-owners that a transaction is needed to acquire before it can be executed. You can select the number from the drop-down list and the value will range from 1 to the maximum amount of declared owner. When you are good to proceed, click “Continue”.
 ![Create a new Safe](/img/aurasafe/create_a_new_safe_5.png)

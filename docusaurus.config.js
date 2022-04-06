@@ -50,21 +50,34 @@ const config = {
                 src: 'img/Aura-logo-6.png',
             },
             items: [{
-                    type: 'doc',
-                    docId: 'intro',
+                    type: 'docSidebar',
+                    sidebarId: 'overview',
                     position: 'left',
-                    label: 'Docs',
+                    label: 'Overview',
                 },
 				{
-                    type: 'doc',
-                    docId: 'product/aurasafe/safe',
+                    type: 'docSidebar',
+                    sidebarId: 'developer',
                     position: 'left',
-                    label: 'AuraSafe',
+                    label: 'Developers',
                 },
-                {
-                    to: 'blog',
-                    label: 'Blog',
-                    position: 'left'
+				{
+                    type: 'docSidebar',
+                    sidebarId: 'validator',
+                    position: 'left',
+                    label: 'Validators',
+                },
+				{
+                    type: 'docSidebar',
+                    sidebarId: 'product',
+                    position: 'left',
+                    label: 'Products',
+                },
+				{
+                    type: 'docSidebar',
+                    sidebarId: 'improvement',
+                    position: 'left',
+                    label: 'Improvements',
                 }
             ],
         },

@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# Explorer
+# Aura Explorer
 
 TBD

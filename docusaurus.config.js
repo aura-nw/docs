@@ -71,14 +71,17 @@ const config = {
                     type: 'docSidebar',
                     sidebarId: 'product',
                     position: 'left',
-                    label: 'Products',
+                    label: 'Products'
                 },
-				{
-                    type: 'docSidebar',
-                    sidebarId: 'improvement',
-                    position: 'left',
-                    label: 'Improvements',
-                }
+                {
+                    to: 'blog', 
+                    label: 'Blog', 
+                    position: 'left'
+                },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
+                },
             ],
         },
         footer: {

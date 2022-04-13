@@ -9,7 +9,7 @@ const config = {
     title: 'Docs',
     tagline: 'Aura Network',
     url: 'https://docs.aura.network',
-    baseUrl: '/docs/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/Aura-logo-6.png',
@@ -22,7 +22,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    routeBasePath: '/',
+                    routeBasePath: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',

@@ -208,12 +208,12 @@ The Governance module contains the following parameters:
 
 | Key | Type | Value | Meaning |
 | ------ | ------ | ------ | ------ |
-| min_deposit | array (coins) | [{"denom":"uaura","amount":"10000000"}] | The minimum deposit that proposal's deposit is reached to enter the voting period|
+| min_deposit | array (coins) | [{"denom":"uaura","amount":"10000000"}] | The minimum deposit that proposal's deposit is reached to enter the voting period |
 | max_deposit_period | string (time ns) | "172800000000000" | The maximum deposit period that Aura holders can deposit on the proposal |
 | voting_period | string (time ns) | "172800000000000" | Voting period is the duration between the start and the end of the voting period that participants can vote on the proposal |
-| quorum | string (dec) | "0.334000000000000000" | Quorum is the minimum percentage of voting power on a proposal to be valid.|
-| threshold | string (dec) | "0.500000000000000000" | Threshold is the minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted.|
-| veto | string (dec) | "0.334000000000000000" | The maximum proportion of `NoWithVeto` votes (excluding `Abstain` votes) for the proposal to be accepted.|
+| quorum | string (dec) | "0.334000000000000000" | Quorum is the minimum percentage of voting power on a proposal to be valid|
+| threshold | string (dec) | "0.500000000000000000" | Threshold is the minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted|
+| veto | string (dec) | "0.334000000000000000" | The maximum proportion of `NoWithVeto` votes (excluding `Abstain` votes) for the proposal to be accepted|
 
 For more detailed information, see [Module "gov" in Cosmos Network](https://docs.cosmos.network/v0.45/modules/gov/)
 .

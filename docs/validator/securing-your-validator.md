@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Securing your validator
-:::caution caution
+:::danger warning
 The setup isn't yet ready for product use
 :::
 

@@ -10,9 +10,9 @@ The governance process is devided into some steps below:
 - Proposal submission: Users can submit proposals to the blockchain with a deposit.
 - Vote: Once the minimum deposit (`MinDeposit`) is reached, proposal enters voting period. Bonded Aura holders can send `TxGovVote` transactions to vote on the proposal.
 - Claim deposit: If the proposal is accepted or the proposal never enters voting period, users that deposited on proposals can refund their deposits.
-### Proposal submission
+## Proposal submission
 All Aura holders have the right to submit a proposal by sending a `TxGovProposal` transaction with an initial deposit.
-#### Proposal types
+### Proposal types
 There are four types of proposals:
 - `SoftwareUpgradeProposal`: submit a software upgrade proposal.
 - `CommunityPoolSpendProposal`: submit a community pool spend proposal.

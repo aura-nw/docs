@@ -108,11 +108,11 @@ Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/) to add the `theta-testnet-
 
 3. Juno Testnet (JUNO) <br>
 Access JunoTools website: https://test.juno.tools/
-![](public/img/guide/juno-tools.png) 
+![](/img/aurasafe/appendix_juno_1.png) 
 Click on Connect Wallet and approve request add chain. <br>
-![](public/img/guide/approve-chain-add-juno.png) <br>
+![](/img/aurasafe/appendix_juno_2.png)  <br>
 Approve request connect network. <br>
-![](public/img/guide/approve-request-connect.png) <br>
+![](/img/aurasafe/appendix_juno_3.png)  <br>
 
 4. Osmosis Testnet (OSMO) <br>
 Use this [jsfiddle](https://jsfiddle.net/andqk/3szkyte2/1/) to add the `osmo-test-4` chain to your Keplr browser extension.

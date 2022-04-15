@@ -99,11 +99,13 @@ Reference: https://docs.keplr.app/api/
 ## II. Connect Keplr Wallet to other testnet
 
 1. Vega Testnet (ATOM)
-Deprecated since March 2022 in favor of [v7-Theta Testnet](https://github.com/cosmos/testnets/tree/master/v7-theta)
+
+Deprecated since March 2022 in favor of [v7-Theta Testnet](https://github.com/cosmos/testnets/tree/master/v7-theta).
 
 Use [this jsfiddle](https://jsfiddle.net/qkmecjz2/) to add the `vega-testnet` chain to your Keplr browser extension.
 
 2. Theta Testnet (ATOM)
+
 Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/) to add the `theta-testnet-001` chain to your Keplr browser extension.
 
 3. Juno Testnet (JUNO)

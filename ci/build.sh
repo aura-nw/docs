@@ -9,7 +9,7 @@ then
 fi
 if [ ${GITHUB_REF_NAME} = "main" ]
 then
-    echo 'This is dev branch'
+    echo 'This is main branch'
 fi
 #Build and push image
 docker build -t ${CONTAINER_RELEASE_IMAGE} -f Dockerfile .

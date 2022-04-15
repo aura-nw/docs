@@ -14,8 +14,8 @@ then
   cd ${REPO_MANIFEST_ENV_DEV}
 elif [ ${GITHUB_REF_NAME} = "main" ]
 then
-  echo 'This is dev branch'
-  cd ${REPO_MANIFEST_ENV_DEV}
+  echo 'This is main branch'
+  cd ${REPO_MANIFEST_ENV_MAIN}
 else
   exit
 fi

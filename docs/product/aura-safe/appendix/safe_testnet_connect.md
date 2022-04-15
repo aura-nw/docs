@@ -110,12 +110,15 @@ Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/) to add the `theta-testnet-
 
 3. Juno Testnet (JUNO)
 Access JunoTools website: https://test.juno.tools/
+
 ![](/img/aurasafe/appendix_juno_1.png)
 
 Click on Connect Wallet and approve request add chain.
+
 ![](/img/aurasafe/appendix_juno_2.png)
 
 Approve request connect network.
+
 ![](/img/aurasafe/appendix_juno_3.png)
 
 4. Osmosis Testnet (OSMO)

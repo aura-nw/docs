@@ -98,21 +98,23 @@ Reference: https://docs.keplr.app/api/
 
 ## II. Connect Keplr Wallet to other testnet
 
-1. Vega Testnet (ATOM) <br>
-> Deprecated since March 2022 in favor of [v7-Theta Testnet](https://github.com/cosmos/testnets/tree/master/v7-theta)
+1. Vega Testnet (ATOM)
+Deprecated since March 2022 in favor of [v7-Theta Testnet](https://github.com/cosmos/testnets/tree/master/v7-theta)
 
 Use [this jsfiddle](https://jsfiddle.net/qkmecjz2/) to add the `vega-testnet` chain to your Keplr browser extension.
 
-2. Theta Testnet (ATOM) <br>
+2. Theta Testnet (ATOM)
 Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/) to add the `theta-testnet-001` chain to your Keplr browser extension.
 
-3. Juno Testnet (JUNO) <br>
+3. Juno Testnet (JUNO)
 Access JunoTools website: https://test.juno.tools/
-![](/img/aurasafe/appendix_juno_1.png) 
-Click on Connect Wallet and approve request add chain. <br>
-![](/img/aurasafe/appendix_juno_2.png)  <br>
-Approve request connect network. <br>
-![](/img/aurasafe/appendix_juno_3.png)  <br>
+![](/img/aurasafe/appendix_juno_1.png)
 
-4. Osmosis Testnet (OSMO) <br>
+Click on Connect Wallet and approve request add chain.
+![](/img/aurasafe/appendix_juno_2.png)
+
+Approve request connect network.
+![](/img/aurasafe/appendix_juno_3.png)
+
+4. Osmosis Testnet (OSMO)
 Use this [jsfiddle](https://jsfiddle.net/andqk/3szkyte2/1/) to add the `osmo-test-4` chain to your Keplr browser extension.

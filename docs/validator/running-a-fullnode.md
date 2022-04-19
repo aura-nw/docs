@@ -56,6 +56,10 @@ Start your full-node:
 ```bash
 $ aurad start --p2p.seeds <seed-id>@<seed-ip>:<seed-p2p-port> --minimum-gas-prices <gas-price>
 ```
+Example:
+```bash
+$ aurad start --p2p.seeds 42f0c254710b2b22c67555ff4c2ad7e1390b5965@34.203.177.141:26656 --minimum-gas-prices 0.0025uaura
+```
 :::note For optimized node performance, set `minimum-gas-prices` to enable the anti-spam mechanism and reject incoming transactions with less than the minimum gas prices.
 :::
 
@@ -64,12 +68,16 @@ After starting your full-node, wait until it completely sync transactions to you
 ###  Optional Configuration: State Sync
 State sync rapidly bootstraps a new node by discovering, fetching, and restoring a state machine snapshot from peers instead of fetching and replaying historical blocks
 
-Visit a explorer to get a recent block height and corresponding hash. The recommended snapshot period is 1000 blocks, it is advised to choose something close to current height - 1000. Set these parameters in the code snippet below <BLOCK_HEIGHT>, <BLOCK_HASH>, <RPC_SERVER_1> and <RPC_SERVER_2>
+Visit a explorer to get a recent block height and corresponding hash. The recommended snapshot period is 1000 blocks, it is advised to choose something close to current height - 1000. Set these parameters in the code snippet below <block_height>, <block_hash>, <rpc_server_1> and <rpc_server_2>
 
 ```
 $ cd $HOME/.aura/config
-$ sed -i 's/enable = false/enable = true/' config.toml
-$ sed -i 's/trust_height = 0/trust_height = <BLOCK_HEIGHT>/' config.toml
-$ sed -i 's/trust_hash = ""/trust_hash = "<BLOCK_HASH>"/' config.toml
-$ sed -i 's/rpc_servers = ""/rpc_servers = "<RPC_SERVER_1>,<RPC_SERVER_2>"/' config.toml
+$ BLOCK_HEIGHT=<block_height>
+$ BLOCK_HASH=<block_hash>
+$ RPC_SERVER_1=<rpc_server_1>
+$ RPC_SERVER_2=<rpc_server_2>
+$ sed -i "s/enable = false/enable = true/" config.toml
+$ sed -i "s/trust_height = 0/trust_height = \"$BLOCK_HEIGHT\"/" config.toml
+$ sed -i "s/trust_hash = \"\"/trust_hash = \"$BLOCK_HASH\"/" config.toml
+$ sed -i "s/rpc_servers = \"\"/rpc_servers = \"$RPC_SERVER_1,$RPC_SERVER_2\"/" config.toml
 ```

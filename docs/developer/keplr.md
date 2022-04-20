@@ -27,8 +27,8 @@ await window['keplr'].experimentalSuggestChain({
 	features: ['no-legacy-stdTx'],
 	chainId: "aura-testnet",
 	chainName: "aura testnet",
-	rpc: "http://18.138.28.51:26657",
-	rest: "http://18.138.28.51:1317",
+	rpc: "https://rpc.test.aura.network",
+	rest: "https://lcd.test.aura.network",
 	bip44: {
 		coinType: 118,
 	},

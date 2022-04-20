@@ -12,12 +12,12 @@ Public endpoints should only be used in development. For live dApps, [set up you
 
 | Endpoint                         | Network            |
 |----------------------------------|--------------------|
-| https://rpc-testnet.aura.network          | Aura testnet |
+| https://lcd.test.aura.network          | Aura testnet |
 
 ### Public RPC
 
 | Endpoint                         | Network            |
 |----------------------------------|--------------------|
-| https://tendermint-testnet.aura.network        | Aura testnet |
+| https://rpc.test.aura.network        | Aura testnet |
 
 

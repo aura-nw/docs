@@ -64,9 +64,9 @@ await window['keplr'].experimentalSuggestChain({
 	},
 	coinType: 118,
 	gasPriceStep: {
-		low: 1,
-		average: 2.5,
-		high: 4
+		low: 0.0001,
+		average: 0.0025,
+		high: 0.004
 	},
 	walletUrlForStaking: "https://aura.network"
 });

@@ -3,6 +3,9 @@ sidebar_position: 1
 ---
 
 # AURA Token FAQ
+<figure>
+  <img src="/img/graphic/faq.jpg"/>
+</figure>
 
 ## What Blockchain is Aura Token on?
 There are two types of Aura native currency:

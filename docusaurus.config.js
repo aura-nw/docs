@@ -91,7 +91,7 @@ const config = {
                 },
                 {
                     label: 'Discord',
-                    href: 'https://discord.gg/BAYUkN2hqp',
+                    href: 'https://discord.gg/4sVePuG4',
                 },
                 {
                     label: 'Twitter',
@@ -104,6 +104,11 @@ const config = {
             theme: lightCodeTheme,
             darkTheme: darkCodeTheme,
         },
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: false,
+            respectPrefersColorScheme: false,
+          },
     }),
 };
 

@@ -15,6 +15,7 @@ Aura holders that do not operate validators themselves also can participate in s
 Before Aura holders start staking process, they must setup their wallet, transfer Aura to the wallet and then select validators.
 
 ## II. Setup your wallet
+For more detailed information about Setup your wallet, see [here](https://docs.dev.aura.network/overview/start/wallet)
 
 ## III. Select your validators
 To select validators, Aura holders have access to a range of information available in Aura network explorers like Aurascan. Review the following information before selecting:
@@ -23,16 +24,21 @@ To select validators, Aura holders have access to a range of information availab
 - Validator website
 - Initial commission rate: the commission rate on rewards to a delegator.
 - Minimum self-bonded amount: minimum amount of Aura the validator must have bonded at all time. This parameter exists as a safeguard for delegators. When a validator misbehaves, part of their total stake gets slashed. This stake includes the validator's self-bonded stake and their delegator's stake.
+
 ![Validator information](/img/validator-infor.png)
+
 Delegators should research and learn more about validator's operation, history and security practices to choose a trusted validator to prevent slashing.
 
 ## IV. Delegate to a validator
 After selecting a trusted validator, Aura holders start delegating with an amount of Aura assets and paying a transaction fee for the delegation transaction.
+
 ![Delegate a validator](/img/delegate-validator.png)
+
 After delegating successully, staking rewards are generated and distributed to staked Aura holders in two ways:
 - Transaction fees
 - Block provisions: the total supply of Aura is inflated to reward stakers. Aura holders that do not stake do not receive rewards.
 Staked Aura holders can earn rewards by sending a claim reward transaction, rewards will send to Aura holder's wallet automatically.
+
 ![Claim reward](/img/claim-reward.png)
 
 ## V. Undelegate a validator
@@ -40,13 +46,17 @@ Staking will lock your funds for 21+ days, so you will need to undelegate in ord
 - not receive staking rewards
 - not be able to cancel the unbonding
 - need to wait 21 days for the amount to be liquid
+
 ![Undelegate a validator](/img/undelegate.png)
 
 ## VI. Redelegate to another validator
 After staking to a validator successully, you want to switch to validators, redelegate to instantly stake your assets to another validator.
 Step 1: Choose another trusted validator
+
 ![Redelegate to another validator](/img/redelegate-select-validator.png)
+
 Step 2: Input amount of asset want to redelegate. You can redelegate all your staked assets or less.
+
 ![Redelegate to another validator](/img/redelegate-amount.png)
 
 For more detailed information about staking, see [here](https://docs.aura.network/overview/protocol/staking)

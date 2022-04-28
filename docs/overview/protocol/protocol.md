@@ -1,5 +1,5 @@
 
-# Protocol Intro
+# Overview of Aura Protocol
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

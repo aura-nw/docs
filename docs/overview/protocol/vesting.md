@@ -8,7 +8,7 @@ sidebar_position: 8
 The module defines the vesting account implementation that is used on Aura Network. 
 The vesting account is initialized during genesis with a starting balance `X`, a vesting start time `ST`, a vesting end time `ET` and a number of vesting periods `P`. All vesting accounts can delegate, undelegate validators, but they can not transfer locked coins to another account. Aura Network has two types of vesting:
 - Delayed vesting: when vesting end time `ET` is reached, all coins are vested. In other words, it keeps them locked until a specified time.
-```
+```go
 // DelayedVestingAccount implements the VestingAccount interface. It vests all
 // coins after a specific time, but non prior. In other words, it keeps them
 // locked until a specified time.
@@ -20,7 +20,7 @@ message DelayedVestingAccount {
 }
 ```
 - Periodic vesting: coins begin to vest at vesting start time `ST` and vest periodically according to the number of periods and the vesting amount per period. The number of period, length per period and amount per period are configurable.
-```
+```go
 // PeriodicVestingAccount implements the VestingAccount interface. It
 // periodically vests by unlocking coins during each specified period.
 message PeriodicVestingAccount {
@@ -37,7 +37,7 @@ message PeriodicVestingAccount {
 
 ### Periodic Vesting Accounts
 Periodic vesting accounts require calculating the coins released during each period for a given block time T.
-```
+```go
 func (pva PeriodicVestingAccount) GetVestedCoins(t Time) Coins {
   if t < pva.StartTime {
     return ZeroCoins
@@ -63,7 +63,7 @@ func (pva PeriodicVestingAccount) GetVestingCoins(t Time) Coins {
 
 ### Delayed Vesting Accounts
 When vesting end time `ET` is reached, all coins are vested (unlocked).
-```
+```go
 func (dva DelayedVestingAccount) GetVestedCoins(t Time) Coins {
     if t >= dva.EndTime {
         return dva.OriginalVesting

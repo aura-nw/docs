@@ -22,7 +22,7 @@ There are four types of proposals:
 ### Deposit
 Proposals must be submited with an initial deposit. The voting period only starts when the proposal's deposit reaches `MinDeposit`. If the proposal's deposit does not reach `MinDeposit` before `MaxDepositPeriod`, proposal closes, nobody can deposit anymore and the deposit will be refunded to the depositors.
 The proposer does not need to pay for the entire deposit, other token holders can send `Deposit` transaction to increase the proposal's deposit. The deposit is kept in the governance `ModuleAccount` until the end of the voting period (the proposal is passed or rejected).
-```
+```go
 // MsgDeposit defines a message to submit a deposit to an existing proposal.
 message MsgDeposit {
   option (gogoproto.equal)            = false;
@@ -37,7 +37,7 @@ message MsgDeposit {
 }
 ```
 A `MsgDeposit` transaction has to go through a number of checks to be valid.
-```
+```go
 // PSEUDOCODE //
 // Check if MsgDeposit is valid. If it is, increase deposit and check if MinDeposit is reached
 
@@ -98,7 +98,7 @@ After the proposal enters voting period, Participants who bond Aura or become va
 ### Voting period
 When the proposal's deposit reaches `MinDeposit`, it automatically enters `Voting period` that is the duration between the start and the end of the voting period. The initial value of `Voting period` is two weeks.
 Bonded Aura holders can send `MsgVote` transactions to vote on the proposal.
-```
+```go
 // MsgVote defines a message to cast a vote.
 message MsgVote {
   option (gogoproto.equal)            = false;
@@ -126,7 +126,7 @@ Quorum is the minimum percentage of voting power on a proposal to be valid.
 ### Threshold
 Threshold is the minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted.
 Initially, the proposals are accepted if the threshold is 50% (the proportion of `Yes` votes excluding `Abstain` votes at the end of the voting period is superior to 50%) and if the proportion of `NoWithVeto` votes is inferior to 1/3 excluding `Abstain` votes.
-```
+```go
   in EndBlock do
 
     for finishedProposalID in GetAllFinishedProposalIDs(block.Time)

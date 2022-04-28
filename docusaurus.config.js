@@ -10,7 +10,7 @@ const config = {
     tagline: 'Aura Network',
     url: 'https://docs.aura.network',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/Aura-logo-6.png',
     organizationName: 'aura-nw', // Usually your GitHub org/user name.

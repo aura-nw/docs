@@ -34,7 +34,7 @@ At the begining of each block, the Mint module will handle those following proce
 ### Circulation supply checking
 At the beginning of each block, if `currentSupply` is less than `maxSupply`, calculate the number of newly minted coins as `BlockProvision`. The total number of coins in the next block is calculated by `currentSupply + BlockProvision`. If `supplyNext` is greater than `maxSupply` then the number of coins equals `maxSupply - currentSupply`, otherwise equals `BlockProvision`.
 
-```sh
+```go
 BeginBlocker(ctx sdk.Context, k custommint.Keeper) {
     minter := k.GetMinter(ctx)
     params := k.GetParams(ctx)
@@ -65,7 +65,8 @@ BeginBlocker(ctx sdk.Context, k custommint.Keeper) {
 ```
 ### NextInflationRate
 The target annual inflation rate is recalculated each block. The inflation is also subject to a rate change (positive or negative) depending on the distance from the desired bonded ratio (67%). The maximum rate change possible is defined to be 8% per year, however the annual inflation is capped as between 4% and 12%.
-```sh
+
+```go
 NextInflationRate(params Params, bondedRatio sdk.Dec) (inflation sdk.Dec) {
 	inflationRateChangePerYear = (1 - bondedRatio/params.GoalBonded) * params.InflationRateChange
 	inflationRateChange = inflationRateChangePerYear/blocksPerYr
@@ -85,14 +86,16 @@ NextInflationRate(params Params, bondedRatio sdk.Dec) (inflation sdk.Dec) {
 
 ### NextAnnualProvisions
 This parameter is calculated once per block, based on current total supply and inflation rate.
-```sh
+
+```go
 NextAnnualProvisions(params Params, totalSupply sdk.Dec) (provisions sdk.Dec) {
 	return Inflation * totalSupply
 ```
 
 ### BlockProvision
 Calculate the provisions generated for each block based on current annual provisions.
-```sh
+
+```go
 BlockProvision(params Params) sdk.Coin {
 	provisionAmt = AnnualProvisions/ params.BlocksPerYear
 	return sdk.NewCoin(params.MintDenom, provisionAmt.Truncate())

@@ -29,7 +29,7 @@ Finally, in order to determine if a validator crosses below the liveness thresho
 
 __Note__: Liveness slashes do __NOT__ lead to a __tombstoning__.
 
-```sh
+```go
 height := block.Height
 
 for vote in block.LastCommitInfo.Votes {
@@ -103,7 +103,7 @@ for vote in block.LastCommitInfo.Votes {
 ### Unjail after being slashed
 When a validator was automatically unbonded due to downtime, it must send a `MsgUnjail` to comeback online. 
 
-```sh
+```go
 // MsgUnjail is an sdk.Msg used for unjailing a jailed validator, thus returning
 // them into the bonded validator set, so they can begin receiving provisions
 // and rewards again.
@@ -117,7 +117,7 @@ There are 2 requirement for the validator for a successful unjail:
 
 __Note:__ Due to the nature of downtime slashing and unjailing, a validator cannot be under multiple infraction of downtime slashing.
 
-```sh
+```go
 unjail(tx MsgUnjail)
     validator = getValidator(tx.ValidatorAddr)
     if validator == nil

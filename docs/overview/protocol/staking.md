@@ -12,6 +12,7 @@ There are three statuses of validators
 ## Delegation 
 Aura holders who can not commit blocks may delegate Aura coins to validators and then receive rewards.
 `Share per Token = validator.TotalShares() / validator.Tokens()`
+
 `Tokens per Share = validator.Tokens() / validator.TotalShares()`
 
 ## Redelegation
@@ -88,10 +89,15 @@ Mature redelegations that have completed `pseudo-unbonding` are not slashed.
 
 #### How to calculate shares
 Each validator has a number of tokens `T` and a number of shares `S`.
+
 `T = sum of all tokens delegated to the validator + the rewards - the slashes`.
+
 Each delegator `i` has a number of shares `S_i` and delegator `i` delegated `T x S_i/ S` tokens to the validator.
+
 When delegator `j` delegates `T_j` tokens and has `S_j = S x T_j/ T` shares. 
+
 The total number of tokens is now `T+ T_j`, and the total number of shares is `S + S_j`.
+
 `(S + S_j) / S = (T + T_j) / T`
 
 ## Parameters

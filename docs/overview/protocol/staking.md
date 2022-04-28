@@ -11,6 +11,7 @@ There are three statuses of validators
 - `Unbonding`: The validator leaves the active set because of slashing or not having sufficient bonded tokens, all delegations must wait for the `UnbondingTime` before their tokens are moved to their accounts and `validator.status` is moved from `unbonding` to `unbonded`.
 ## Delegation 
 Aura holders who can not commit blocks may delegate Aura coins to validators and then receive rewards.
+
 `Share per Token = validator.TotalShares() / validator.Tokens()`
 
 `Tokens per Share = validator.Tokens() / validator.TotalShares()`
@@ -23,7 +24,7 @@ The delegator can redelegate from and to the same validator only up to 7 times a
 Aura coins delegated to validators can be unbonded, but they may not be sent immediately to the delegator’s account. They must wait for the `UnbondingTime`.
 Similar to the redelegation module, the delegator can undelegated from the same validator only up to 7 times.
 
-## Sate transitions
+## State transitions
 ### Validators
 The validators’ state can be `Bonded`, `Unbonding`, or `Unbonded`. They can move directly between all the states, except from `Bonded` to `Unbonded`. `Unbonded` and `Unbonding` are called `NotBonded`.
 

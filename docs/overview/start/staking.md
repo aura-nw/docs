@@ -27,7 +27,9 @@ To select validators, Aura holders have access to a range of information availab
 
 ![Validator information](/img/validator-infor.png)
 
+:::info
 Delegators should research and learn more about validator's operation, history and security practices to choose a trusted validator to prevent slashing.
+:::
 
 ## IV. Delegate to a validator
 After selecting a trusted validator, Aura holders start delegating with an amount of Aura assets and paying a transaction fee for the delegation transaction.

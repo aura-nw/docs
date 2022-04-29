@@ -12,12 +12,14 @@ Public endpoints should only be used in development. For live dApps, [set up you
 
 | Endpoint                         | Network            |
 |----------------------------------|--------------------|
-| https://lcd.test.aura.network          | Aura testnet |
+| https://lcd.serenity.aura.network          | Serenity testnet |
+| https://lcd.halo.aura.network          | Halo testnet |
 
 ### Public RPC
 
 | Endpoint                         | Network            |
 |----------------------------------|--------------------|
-| https://rpc.test.aura.network        | Aura testnet |
+| https://rpc.serenity.aura.network        | Serenity testnet |
+| https://rpc.halo.aura.network        | Halo testnet |
 
 

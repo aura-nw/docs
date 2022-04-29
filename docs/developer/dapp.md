@@ -19,9 +19,9 @@ This tutorial show how we can directly interact with the Aurad binary to deploy 
 You can either directly run Aurad on your local machine for testing or use the Aura testnet.
 
 ### Setting Up Environment
-Aura Testnet RPC: http://18.138.28.51:26657
+Aura Testnet RPC: [Public RPC](https://github.com/aura-nw/docs/blob/main/docs/developer/endpoints.md#public-rpc)
 ```sh
-export RPC="http://18.138.28.51:26657" 
+export RPC="<Public RPC>" 
 export CHAIN_ID=aura-testnet
 export NODE=(--node $RPC)
 export TXFLAG=(${NODE} --chain-id ${CHAIN_ID} --gas-prices 0.025uaura --gas auto --gas-adjustment 1.3)
@@ -67,7 +67,7 @@ RUSTFLAGS='-C link-arg=-s' cargo wasm
 #### Deploy contract
 ```sh
 # store contract
-RES=$(aurad tx wasm store  ../../target/wasm32-unknown-unknown/release/cw721_base.wasm --from wallet --node http://18.138.28.51:26657 --chain-id aura-testnet --gas-prices 0.025uaura --gas auto --gas-adjustment 1.3 -y --output json)
+RES=$(aurad tx wasm store  ../../target/wasm32-unknown-unknown/release/cw721_base.wasm --from wallet --node <Public RPC> --chain-id <CHAIN_ID> --gas-prices 0.025uaura --gas auto --gas-adjustment 1.3 -y --output json)
 # get the code id
 CODE_ID=$(echo $RES | jq -r '.logs[0].events[-1].attributes[0].value')
 # instantiate contract

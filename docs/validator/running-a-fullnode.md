@@ -39,16 +39,19 @@ Specify [the network](networks-info.md) you want to join by choosing the corresp
 ## Setup a full-node
 
 This guide completes the following actions:
+- Download the latest release corresponding to the chosen network
 - Compile `aurad`
 - Give your node a moniker and configure it
 - Configure genesis state 
 
+Example for Halo testnet:
 ```bash
-$ git clone https://github.com/aura-nw/aura
-$ cd aura
+$ wget https://github.com/aura-nw/aura/archive/refs/tags/halo_6ca81d8.tar.gz
+$ tar -xzvf halo_6ca81d8.tar.gz
+$ cd aura-halo_6ca81d8
 $ make
 $ aurad init <moniker> 
-$ wget <genesis-json-link>
+$ wget https://raw.githubusercontent.com/aura-nw/testnets/main/halo-testnet/genesis.json
 $ mv genesis.json ~/.aura/config/genesis.json
 ```
 

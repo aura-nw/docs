@@ -11,6 +11,12 @@ Howver, if you have not use a Cosmos wallet before, this is be the part you shou
 
 Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). We recommend to use Coin98 Wallet as we are working very closely together to roll out Aura specific features.
 
+:::caution
+We are working closely with Coin98 to support Aura Testnet. Please download the latest development version of Coin98 Wallet Extension at: https://download.coin98.com/ 
+
+Make sure your Coin98 Wallet extension version is equal or later than: 6.0.1
+:::
+
 :::info
 Please follow guides from these 2 providers to setup your wallet (**only the Web Browser Extension version at the moment**)
 - Coin98 guide: https://blog.coin98.com/c98-wallet-integrates-with-cosmos
@@ -28,7 +34,7 @@ Target users: `App Developer`, `First-Timer` and the majority of `Aura users`.
 ***Serenity*** testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. Serenity is publicly open to DAPP builders through public RPC endpoints. However, it is not open for external validators.
 
 :::info
-Use this [jsfiddle](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `aura-testnet` chain to your wallet browser extension.
+Use this [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `aura-testnet` chain to your wallet browser extension.
 :::
 
 ### 2. Experimental Testnet: Halo
@@ -38,7 +44,7 @@ Target users: `Validators`, `Security Researcher`, `Developer`
 ***Halo*** testnet is open for external validators. We also plan to do all client testing, security and performance benchmarking on Halo as well. Thus we do not recommend users to run application on this network as the network might be unstable and reset on a regular basis.
 
 :::info
-Use this to add the `aura-testnet` chain to your wallet browser extension.
+Halo is currently under private testing before releasing, please be patient.
 :::
 
 ## III. What do I do next ?

@@ -16,6 +16,19 @@ const config = {
     organizationName: 'aura-nw', // Usually your GitHub org/user name.
     projectName: 'Documentations', // Usually your repo name.
 
+    // plugins: [
+    //     [
+    //         "docusaurus-plugin-remote-content",
+    //         {
+    //             // options here
+    //             name: "content", // used by CLI, must be path safe
+    //             sourceBaseUrl: "https://raw.githubusercontent.com/aura-nw/aura-dapp-example/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+    //             outDir: "docs/remote", // the base directory to output to.
+    //             documents: ["README.md"], // the file names to download
+    //         },
+    //     ],
+    // ],
+
     presets: [
         [
             'classic',

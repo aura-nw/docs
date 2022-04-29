@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Staking
+# Staking your coin
 ## I. What is staking?
 Staking is the process of locking up a digital asset (Aura in the case of the Aura Network) to provide economic security for a public blockchain that everyone can participate in maintaining.
 
@@ -15,7 +15,7 @@ Aura holders that do not operate validators themselves also can participate in s
 Before Aura holders start staking process, they must setup their wallet, transfer Aura to the wallet and then select validators.
 
 ## II. Setup your wallet
-For more detailed information about Setup your wallet, see [here](https://docs.dev.aura.network/overview/start/wallet)
+For more detailed information about Setup your wallet, see [here](./wallet.md)
 
 ## III. Select your validators
 To select validators, Aura holders have access to a range of information available in Aura network explorers like Aurascan. Review the following information before selecting:
@@ -24,8 +24,6 @@ To select validators, Aura holders have access to a range of information availab
 - Validator website
 - Initial commission rate: the commission rate on rewards to a delegator.
 - Minimum self-bonded amount: minimum amount of Aura the validator must have bonded at all time. This parameter exists as a safeguard for delegators. When a validator misbehaves, part of their total stake gets slashed. This stake includes the validator's self-bonded stake and their delegator's stake.
-
-![Validator information](/img/validator-infor.png)
 
 :::info
 Delegators should research and learn more about validator's operation, history and security practices to choose a trusted validator to prevent slashing.

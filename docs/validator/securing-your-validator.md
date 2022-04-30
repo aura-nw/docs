@@ -71,4 +71,4 @@ $ tmkms-nitro-helper start -c /home/ec2-user/.tmkms/tmkms.toml --cid $(nitro-cli
 
 ### Runing validator node
 
-In `~/.chain-maind/config/config.toml`, `priv_validator_key_file` and `priv_validator_state_file` should be commented and uncomment `priv_validator_laddr` to value `unix://...` which match the address in `tmkms.toml`. e.g. `unix:///home/ec2-user/sockets/validator.socket`
+In `~/.aurad/config/config.toml`, `priv_validator_key_file` and `priv_validator_state_file` should be commented and uncomment `priv_validator_laddr` to value `unix://...` which match the address in `tmkms.toml`. e.g. `unix:///home/ec2-user/sockets/validator.socket`

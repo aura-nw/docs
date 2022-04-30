@@ -14,7 +14,7 @@ Genesis files and configurations are located in [Github repository](https://gith
 | `halo-testnet-001` | Testnet | [Genesis Link](https://github.com/aura-nw/testnets/blob/main/halo-testnet/genesis.json) | `10b5458c22c7dc6862ba9c2f4928a60af214c16c@3.210.178.93:26656` | [Explorer Link](https://halo.aurascan.io) |
 
 :::info
-The testnet has been upgraded few times. You should configure **state sync mode** to join the testnet using the lastest **aurad** version. If you want to sync data from *block zero*, you must use old versions of **aurad** to sync and perform the upgrades manually.
+The testnet has been upgraded few times. You should configure [**state sync mode**](https://github.com/aura-nw/docs/blob/main/docs/validator/running-a-fullnode.md#optional-configuration-state-sync) to join the testnet using the lastest **aurad** version. If you want to sync data from *block zero*, you must use old versions of **aurad** to sync and perform the upgrades manually.
 :::
 
 [LCD and RPC endpoints](../developer/endpoints.md)

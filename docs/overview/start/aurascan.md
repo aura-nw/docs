@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+import ReactPlayer from 'react-player'
 
 # Working with AuraScan
 
@@ -11,3 +12,14 @@ AuraScan is a tool that offer rich functionalities in managing your assets on Au
 :::info
 You can access AuraScan for Serenity testnet at: https://serenity.aurascan.io/
 :::
+
+<div className='player-wrapper'>
+    <ReactPlayer 
+        playing 
+        controls 
+        url='/video/Introduction_AuraScan.mp4' 
+        className='react-player'
+        width='100%'
+        height='100%'
+    />
+</div>

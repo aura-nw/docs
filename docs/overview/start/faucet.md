@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 ---
+import ReactPlayer from 'react-player'
 
 # Guide to Testnet Faucets
  
@@ -11,6 +12,15 @@ sidebar_position: 2
 
 ![Role](/img/graphic/role.png)
 
-### 3. Follow the guide in the channel aura-faucet
+### 3. Follow the guide pinned in the channel aura-faucet
 
-![Faucet](/img/graphic/faucet.png)
+<div className='player-wrapper'>
+    <ReactPlayer 
+        playing 
+        controls 
+        url='/video/Introduction_Faucet.mp4' 
+        className='react-player'
+        width='100%'
+        height='100%'
+    />
+</div>

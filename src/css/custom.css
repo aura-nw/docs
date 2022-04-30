@@ -38,3 +38,14 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   --ifm-font-color-base: #FCFCFD;
   --ifm-code-background: linear-gradient(108.46deg, #5EE6D0 12.51%, #BFC6FF 51.13%, #FFBA69 87.49%);
 }
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+import ReactPlayer from 'react-player'
 
 # Setup your wallet
 Wallet is the entrance to the crypto world, this is the first guide for you to get into Aura Network. 
@@ -14,7 +15,7 @@ Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98
 :::caution
 We are working closely with Coin98 to support Aura Testnet. Please download the latest development version of Coin98 Wallet Extension at: https://download.coin98.com/ 
 
-Make sure your Coin98 Wallet extension version is equal or later than: 6.0.1
+Make sure your Coin98 Wallet extension version is equal or greater than: 6.0.1
 :::
 
 :::info
@@ -34,8 +35,19 @@ Target users: `App Developer`, `First-Timer` and the majority of `Aura users`.
 ***Serenity*** testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. Serenity is publicly open to DAPP builders through public RPC endpoints. However, it is not open for external validators.
 
 :::info
-Use this [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `aura-testnet` chain to your wallet browser extension.
+Use this [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `Aura Serenity Testnet` chain to your wallet browser extension.
 :::
+
+<div className='player-wrapper'>
+    <ReactPlayer 
+        playing 
+        controls 
+        url='/video/Introduction_Wallet.mp4' 
+        className='react-player'
+        width='100%'
+        height='100%'
+    />
+</div>
 
 ### 2. Experimental Testnet: Halo
 

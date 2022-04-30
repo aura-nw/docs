@@ -20,7 +20,8 @@
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.2.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-player": "^2.10.0"
   },
   "browserslist": {
     "production": [

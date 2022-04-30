@@ -3,6 +3,7 @@ sidebar_position: 4
 ---
 
 # Staking your coin
+
 ## I. What is staking?
 Staking is the process of locking up a digital asset (Aura in the case of the Aura Network) to provide economic security for a public blockchain that everyone can participate in maintaining.
 
@@ -31,6 +32,13 @@ Delegators should research and learn more about validator's operation, history a
 
 ## IV. Delegate to a validator
 After selecting a trusted validator, Aura holders start delegating with an amount of Aura assets and paying a transaction fee for the delegation transaction.
+
+
+:::caution
+Currently we are having a bug that prevents people to delegate using the "MAX" button in the delegation pop-up. It is because different wallets have different ways of choosing optimal gas fee for transactions.
+
+**Work Around Solution**: Please type in the delegation amount yourself and **remember** to leave some Aura for paying the **transaction fee**.
+:::
 
 ![Delegate a validator](/img/delegate-validator.png)
 

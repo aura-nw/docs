@@ -76,9 +76,9 @@ Visit a explorer to get a recent block height and corresponding hash. The recomm
 ```bash
 # Retrieve trust height interval
 $ INTERVAL=1000
-$ LATEST_HEIGHT=$(curl -s https://lcd.halo.aura.network/block | jq -r .result.block.header.height)
+$ LATEST_HEIGHT=$(curl -s https://rpc.halo.aura.network/block | jq -r .result.block.header.height)
 $ BLOCK_HEIGHT=$(($LATEST_HEIGHT-$INTERVAL))
-$ TRUST_HASH=$(curl -s "https://lcd.halo.aura.network/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+$ TRUST_HASH=$(curl -s "https://rpc.halo.aura.network/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 ```
 
 Set these parameters in the code snippet below <block_height>, <block_hash>, <rpc_server_1> and <rpc_server_2>

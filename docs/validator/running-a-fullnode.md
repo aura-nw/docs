@@ -39,7 +39,7 @@ Specify [the network](networks-info.md) you want to join by choosing the corresp
 ## Setup a full-node
 
 This guide completes the following actions:
-- Download the latest release corresponding to the chosen network
+- Download the latest release corresponding to the chosen network from [Aurad repository](https://github.com/aura-nw/aura)
 - Compile `aurad`
 - Give your node a moniker and configure it
 - Configure genesis state 

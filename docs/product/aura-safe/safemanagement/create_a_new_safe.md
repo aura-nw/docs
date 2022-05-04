@@ -16,7 +16,7 @@ This is to confirm your previous network selection. You can switch to another ne
 
 ## Step 2: Name your safe
  
-Be aware that this name is only stored locally on your browser’s cache. You will have to name it again when you add the safe on other browsers/devices. Click “Continue” to proceed to next step.
+Be aware that this name is only stored locally on your browser’s cache. You will have to name it again when you add the safe on other browsers/devices. Click “Continue” to proceed to the next step.
 ![Create a new Safe](/img/aurasafe/create_a_new_safe_3.png)
 
 ## Step 3: Owners and Confirmation

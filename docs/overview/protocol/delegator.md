@@ -6,8 +6,8 @@ sidebar_position: 2
 ## What is a delegator?
 Delegators are Aura holders who cannot, or do not want to run a validator node, but can still participate in the staking process. Aura holders can delegate Aura to a validator and receive a part of their revenue in exchange.
 Delegators share the revenue of their validators, but they also share the risks. 
-- In terms of revenue, validators and delegators differ in that validators can apply a commission on the revenue that goes to their delegator before it is distributed. For more information about commission, see [here](https://docs.aura.network/protocol/commission).
-- In terms of risk, delegators' Atoms can be slashed if their validator misbehaves. For more information about slashing, see [here](https://docs.aura.network/protocol/slashing).
+- In terms of revenue, validators and delegators differ in that validators can apply a commission on the revenue that goes to their delegator before it is distributed. For more information about commission, see [here](https://docs.aura.network/overview/protocol/commission).
+- In terms of risk, delegators' Auras can be slashed if their validator misbehaves. For more information about slashing, see [here](https://docs.aura.network/overview/protocol/slashing).
 
 ## How to become a delegator?
 To become delegators, Aura holders need to send a `Delegate` transaction where they specify how many Auras they want to bond and to which validator. A list of validator candidates will be displayed in Aura Network explorers. See section below to know How to choose a validator? 

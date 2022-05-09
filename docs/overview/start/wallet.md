@@ -50,7 +50,7 @@ Target users: `Validators`, `Security Researcher`, `Developer`
 ***Halo*** testnet is open for external validators. We also plan to do all client testing, security and performance benchmarking on Halo as well. Thus we do not recommend users to run application on this network as the network might be unstable and reset on a regular basis.
 
 :::info
-Halo is currently under private testing before releasing, please be patient.
+Use this [Script](https://jsfiddle.net/eledra/g34qhdn6/) to add the `Aura Halo Testnet` chain to your wallet browser extension.
 :::
 
 ## III. What do I do next ?

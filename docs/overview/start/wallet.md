@@ -12,12 +12,6 @@ Howver, if you have not use a Cosmos wallet before, this is be the part you shou
 
 Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). We recommend to use Coin98 Wallet as we are working very closely together to roll out Aura specific features.
 
-:::caution
-We are working closely with Coin98 to support Aura Testnet. Please download the latest development version of Coin98 Wallet Extension at: https://download.coin98.com/ 
-
-Make sure your Coin98 Wallet extension version is equal or greater than: 6.0.1
-:::
-
 :::info
 Please follow guides from these 2 providers to setup your wallet (**only the Web Browser Extension version at the moment**)
 - Coin98 guide: https://blog.coin98.com/c98-wallet-integrates-with-cosmos

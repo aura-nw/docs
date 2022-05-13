@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Add your own Safe
-Before the safe is active, the safe creator can cancel the request of safe creation. On the safe list, choose the pending Safe that you have created, and click “Cancel”.
+If you switch to other devices, you have to add the safe again in order to manage it. Open the Safe list, choose a safe that you own but has not been added yet, and click “Add Safe”.
 ![Add your own Safe](/img/aurasafe/add_own_safe_1.png)
 
 You will basically go through the naming process again (since safe names and owner names is stored locally). After that, the safe is ready to use.

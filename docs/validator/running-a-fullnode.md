@@ -51,7 +51,7 @@ $ tar -xzvf halo_6ca81d8.tar.gz
 $ cd aura-halo_6ca81d8
 $ make
 $ aurad init <moniker> 
-$ wget https://raw.githubusercontent.com/aura-nw/testnets/main/halo-testnet/genesis.json
+$ wget https://raw.githubusercontent.com/aura-nw/testnets/main/halo-testnet-001/genesis.json
 $ mv genesis.json ~/.aura/config/genesis.json
 ```
 

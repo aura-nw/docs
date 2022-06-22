@@ -24,4 +24,4 @@ Any error raised by the extension will appear in the Error tab.
 
 ## 4. Bug report
 
-At the moment, you can send screen record and any relevant information you can find on 
+At the moment, you can send screen record and any relevant information you can find on the bug and post on our Discord.

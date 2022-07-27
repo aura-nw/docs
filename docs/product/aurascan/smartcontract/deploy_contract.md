@@ -9,7 +9,7 @@ See the guideline on [how to develop and deploy a smart contract](https://github
 After deploying a smart contract on aurad, see the contract and instantiate contract transaction on Aurascan Testnet.
 
 Here is the contracts list on Euphoria Testnet.
-![Contracts List](/img/aurascan/contracts_list.PNG)
+![Contracts List](/img/aurascan/contracts_list.png)
 
 See the instantiate contract transaction in contract details.
 ![Instantiate contract transaction](/img/aurascan/instantiate_contract_txn.PNG)

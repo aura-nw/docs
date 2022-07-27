@@ -12,6 +12,6 @@ If you are developers who want an environment to test all functionalities in man
 2. Serenity Testnet: https://serenity.aurascan.io/
 3. Halo Testnet: https://halo.aurascan.io/
 
-We have [an instruction] (https://docs.aura.network/overview/start/aurascan) that helps you to explore many basic functionalities on Aurascan Testnet.
+We have [an instruction](https://docs.aura.network/overview/start/aurascan) that helps you to explore many basic functionalities on Aurascan Testnet.
 
-If you have any questions or feedback, visit our community channels ([Discord] (https://discord.com/invite/sKsvpQTAzP) and [Telegram] (https://t.me/+zjYMBoLBslkwZjU1)). 
+If you have any questions or feedback, visit our community channels ([Discord](https://discord.com/invite/sKsvpQTAzP) and [Telegram](https://t.me/+zjYMBoLBslkwZjU1)). 

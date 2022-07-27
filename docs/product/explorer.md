@@ -10,3 +10,4 @@ Currently Testnet Aurascans are located at:
 
 1. Serenity Testnet: https://serenity.aurascan.io/
 2. Halo Testnet: https://halo.aurascan.io/
+3. Euphoria Testnet: https://euphoria.aurascan.io/

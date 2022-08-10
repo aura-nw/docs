@@ -94,4 +94,4 @@ Now you have your wallet setup. There are several things you could try with Aura
 2. [Learn](../protocol/) in detail various concept used in Aura Network.
 3. Start developing your application following our [Guides](../../developer/dapp.md).
 4. Hacking Aurad by running your own [Nodes](../../validator/running-a-fullnode.md).
-5. Try some [applications](../../product/aura-safe/safe_intro.md) that we are building for the Aura Network ecosystem.
+5. Try some [applications](../../product/product.md) that we are building for the Aura Network ecosystem.

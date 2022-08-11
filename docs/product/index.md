@@ -1,3 +1,7 @@
+---
+slug: /product
+---
+
 # Overview of Aura Products
 
 import DocCardList from '@theme/DocCardList';

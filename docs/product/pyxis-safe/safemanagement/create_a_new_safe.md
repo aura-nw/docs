@@ -30,7 +30,7 @@ Be aware that this name is only stored locally on your browser’s cache. You wi
 In this step, you will have the chance to review all the declared information of the Safe that you are about to create. Click “Back” if you need to go back to change any of them. Otherwise, click “Create” to create the Safe.
 ![Create a new Safe](/img/pyxis-safe/create_a_new_safe_6.png)
 
-A confirmation screen will show up as below, which indicates that your safe creation request has been created. All the other co-owners have to allow the safe creation in order to activate the safe and put it in to use. You can either click “Continue” or close the pop-up.
+A confirmation screen will show up as below, which indicates that your safe creation request has been created. All the other co-owneSrs have to allow the safe creation in order to activate the safe and put it in to use. You can either click “Continue” or close the pop-up.
 ![Create a new Safe](/img/pyxis-safe/create_a_new_safe_7.png)
 
-The newly created Safe request will be shown in the “Pending safes” section.
+The newly created Safe request will be shown in the “Pending Safes” section.

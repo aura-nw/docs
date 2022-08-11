@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Introduction to Pyxis Safe
 
 The Pyxis Safe is a web application that allows multiple people – co-owners – together to manage a “Safe” – an address where digital assets of the blockchain network can be contained and transferred, just like a personal wallet. However, moving assets out of the safe requires a consensus between co-owners.
 

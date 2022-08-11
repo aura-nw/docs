@@ -15,8 +15,8 @@ Only verified contracts have green check mark icons, unverified contracts do not
 Contract's owners have to verify and publish contract source code and register type contract for your smart contract.
 :::
 
-![Contracts List](/img/aurascan-blc-explorer/contracts_list.png)
+![Contracts List](/img/aurascan/contracts_list.png)
 
 See the instantiate contract transaction in contract details.
-![Instantiate contract transaction](/img/aurascan-blc-explorer/instantiate_contract_txn.PNG)
-![Instantiate contract transaction](/img/aurascan-blc-explorer/instantiate_contract_txn_details.PNG)
+![Instantiate contract transaction](/img/aurascan/instantiate_contract_txn.PNG)
+![Instantiate contract transaction](/img/aurascan/instantiate_contract_txn_details.PNG)

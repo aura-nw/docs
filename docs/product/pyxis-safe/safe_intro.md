@@ -1,7 +1,5 @@
----
-sidebar_position: 1
----
-
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 # Introduction
 
 The Pyxis Safe is a web application that allows multiple people – co-owners – together to manage a “Safe” – an address where digital assets of the blockchain network can be contained and transferred, just like a personal wallet. However, moving assets out of the safe requires a consensus between co-owners.
@@ -15,3 +13,5 @@ By default, the CosmosSDK allows users to perform multisign via the `tx multisig
 Pyxis Safe is still in development. You can find the public code repository here:
 
 https://github.com/aura-nw/Aura-Safe
+
+<DocCardList items={useCurrentSidebarCategory().items}/>

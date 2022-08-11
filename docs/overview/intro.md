@@ -34,7 +34,7 @@ The Aura ecosystem can be divided into 4 layers
     - *Bridge*: aura bridge for swapping assets between EVM-based blockchain and Aurachain.
     - *Marketplace*: NFT marketplace
     - *Launchpad*: Aura provides intensive supports both in terms of technology and funding, business promotion to NFT projects building on Aura chain
-    - *Aura Safe*: Gnosis-safe inspired multisignature wallet.
+    - *Pyxis Safe*: Gnosis-safe inspired multisignature wallet.
 
 - 📑 API: applications building on Aura are required to provide standard open APIs for public serve.
 

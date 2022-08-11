@@ -71,7 +71,7 @@ const config = {
                     type: 'dropdown',
                     position: 'left',
                     label: 'Products',
-					item:
+					items:
 					[
 						{
 						type: 'doc',

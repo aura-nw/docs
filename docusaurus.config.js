@@ -75,12 +75,12 @@ const config = {
 					[
 						{
 						type: 'doc',
-						id: 'product/pyxis-safe/index',
+						docId: 'product/pyxis-safe/index',
 						label: 'Pyxis Safe'
 						},
 						{
 						type: 'doc',
-						id: 'product/aurascan/index',
+						docId: 'product/aurascan/index',
 						label: 'Aurascan'
 						}
 					]

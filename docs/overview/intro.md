@@ -27,17 +27,16 @@ The Aura ecosystem can be divided into 4 layers
 - 💰 Currency: There are 2 native currencies of the Aura ecosystem: Aura Coin and Aura Token on BNB Smart Chain. Aura also supports creating CW20 tokens, similar to other blockchains that use CosmWasm module.
 - 🅰 dApps: applications that offer rich user experience in working with DeFi and NFT. The list is continuously growing, but we have several things in mind at the moment (The highlighted ones are what we are working on, gray ones are reserved for future development/collaboration):
     - *Wallet*: Crypto wallet for Aura Network. We are supporting Coin98 Wallet and Keplr.
-    - [*Aurascan*](../../product/aurascan): The blockchain explorer with extra features for governing, staking, NFT, notifications, etc. that are tailored towards Aura holders. 
+	- [*Aurascan*](../../product/aurascan): The blockchain explorer with extra features for governing, staking, NFT, notifications, etc. that are tailored towards Aura holders. 	
 	- [*Pyxis Safe*](../../product/pyxis-safe): Gnosis-safe inspired multi-signature wallet.
-    - *NFT Hub*: one-stop destination for Aura community to interact with NFT and metaverse.
-    - *Aura DEX*: decentralized exchange for CW-20 tokens building on Aura.
-    - *Playground*: web-based smart contract IDE for developers, inspired by Ethereum Remix IDE.
-    - *Bridge*: aura bridge for swapping assets between EVM-based blockchain and Aurachain.
-    - *Marketplace*: NFT marketplace
-    - *Launchpad*: Aura provides intensive supports both in terms of technology and funding, business promotion to NFT projects building on Aura chain.
+	- *NFT Hub*: one-stop destination for Aura community to interact with NFT and metaverse.
+	- *Aura DEX*: decentralized exchange for CW-20 tokens building on Aura.
+	- *Playground*: web-based smart contract IDE for developers, inspired by Ethereum Remix IDE.
+	- *Bridge*: aura bridge for swapping assets between EVM-based blockchain and Aurachain.
+	- *Marketplace*: NFT marketplace
+	- *Launchpad*: Aura provides intensive supports both in terms of technology and funding, business promotion to NFT projects building on Aura chain.
 
 - 📑 API: applications building on Aura are required to provide standard open APIs for public serve.
 
 ## Resources
 A list of all Aura Network resources is at: https://lnk.bio/auranetwork
-

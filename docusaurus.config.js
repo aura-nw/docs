@@ -68,10 +68,22 @@ const config = {
                     label: 'Validators',
                 },
 				{
-                    type: 'docSidebar',
-                    sidebarId: 'product',
+                    type: 'dropdown',
                     position: 'left',
-                    label: 'Products'
+                    label: 'Products',
+					item:
+					[
+						{
+						type: 'doc',
+						id: 'product/pyxis-safe/index',
+						label: 'Pyxis Safe'
+						},
+						{
+						type: 'doc',
+						id: 'product/aurascan/index',
+						label: 'Aurascan'
+						}
+					]
                 },
                 {
                     to: 'blog', 

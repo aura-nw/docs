@@ -13,8 +13,8 @@ Select the type of assets to send.
 Input recipient, the desired asset name and amount to send. Then click on “Review”.
 ![Safe transaction](/img/pyxis-safe/create_safe_transaction_3.png)
 
-Input the desired gas fee for the transaction, and then click “Submit” to submit the transaction. The transaction submission equal to 1 confirmation. Sign the transaction with the personal wallet.
+If desired, adjust the gas amount through by clicking "Edit gas", then change the gas amount and click Apply to update the transaction fee. Click “Submit” to submit the transaction. The transaction submission equal to the confirmation of the current owner. Sign the transaction with the personal wallet.
 ![Safe transaction](/img/pyxis-safe/create_safe_transaction_4.png)
 
-The transaction is now shown on the queue.
+The transaction is now shown on the queue, with the first confirmation from the owner creating the transaction.
 ![Safe transaction](/img/pyxis-safe/create_safe_transaction_5.png)

@@ -12,7 +12,7 @@ The co-owner has to define the name of the Safe, as well as the Name of other co
 ![Allow safe creation](/img/pyxis-safe/allow_safe_4.png)
 
 A pop-up will be shown indicating that you have finished the process.
-
+![Allow safe creation](/img/pyxis-safe/allow_safe_5.png)
 
 The safe is now marked as “Allowed”.
 ![Allow safe creation](/img/pyxis-safe/allow_safe_6.png)

@@ -11,8 +11,11 @@ The co-owner has to define the name of the Safe, as well as the Name of other co
 ![Allow safe creation](/img/pyxis-safe/allow_safe_3.png)
 ![Allow safe creation](/img/pyxis-safe/allow_safe_4.png)
 
+A pop-up will be shown indicating that you have finished the process.
+
+
 The safe is now marked as “Allowed”.
-![Allow safe creation](/img/pyxis-safe/allow_safe_5.png)
+![Allow safe creation](/img/pyxis-safe/allow_safe_6.png)
 
 After all co-owners have gone through the process of Safe allowance, the Safe will not be marked as “pending” anymore, but instead active and can be managed.
-![Allow safe creation](/img/pyxis-safe/allow_safe_6.png)
+![Allow safe creation](/img/pyxis-safe/allow_safe_7.png)

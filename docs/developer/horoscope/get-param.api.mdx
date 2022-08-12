@@ -1,0 +1,34 @@
+---
+id: get-param
+sidebar_label: Get param
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Param"],"description":"Get param","parameters":[{"in":"query","name":"chainid","required":true,"description":"Chain Id of network need to query","schema":{"type":"string","enum":["aura-testnet","serenity-testnet-001","halo-testnet-001","theta-testnet-001","osmo-test-4","evmos_9000-4","euphoria-1","cosmoshub-4"]}},{"in":"query","name":"module","required":false,"description":"module need to query","schema":{"type":"string","enum":["bank","gov","distribution","staking","slashing","ibc-transfer","mint"]}},{"in":"query","name":"pageLimit","required":false,"description":"number record return in a page","schema":{"type":"number","default":10}},{"in":"query","name":"pageOffset","required":false,"description":"Page number, start at 0","schema":{"type":"number","default":0}},{"in":"query","name":"nextKey","required":false,"description":"key for next page","schema":{"type":"string","default":null}}],"responses":{"200":{"description":"Register result"},"422":{"description":"Missing parameters"}},"method":"get","path":"/v1/param","servers":[{"url":"//indexer.dev.aurascan.io:/api"}],"info":{"title":"Horoscope API Documentation","version":"1.0.0","description":"Indexer for multiple Cosmos Network"},"postman":{"name":"Get param","description":{"content":"Get param","type":"text/plain"},"url":{"path":["v1","param"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) Chain Id of network need to query","type":"text/plain"},"key":"chainid","value":""},{"disabled":false,"description":{"content":"module need to query","type":"text/plain"},"key":"module","value":""},{"disabled":false,"description":{"content":"number record return in a page","type":"text/plain"},"key":"pageLimit","value":""},{"disabled":false,"description":{"content":"Page number, start at 0","type":"text/plain"},"key":"pageOffset","value":""},{"disabled":false,"description":{"content":"key for next page","type":"text/plain"},"key":"nextKey","value":""}],"variable":[]},"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: product/horoscope/horoscope-api-documentation
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Get param
+
+
+
+Get param
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"in":"query","name":"chainid","required":true,"description":"Chain Id of network need to query","schema":{"type":"string","enum":["aura-testnet","serenity-testnet-001","halo-testnet-001","theta-testnet-001","osmo-test-4","evmos_9000-4","euphoria-1","cosmoshub-4"]}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"in":"query","name":"module","required":false,"description":"module need to query","schema":{"type":"string","enum":["bank","gov","distribution","staking","slashing","ibc-transfer","mint"]}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"in":"query","name":"pageLimit","required":false,"description":"number record return in a page","schema":{"type":"number","default":10}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"in":"query","name":"pageOffset","required":false,"description":"Page number, start at 0","schema":{"type":"number","default":0}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"in":"query","name":"nextKey","required":false,"description":"key for next page","schema":{"type":"string","default":null}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Register result
+
+</div><div></div></TabItem><TabItem label={"422"} value={"422"}><div>
+
+Missing parameters
+
+</div><div></div></TabItem></ApiTabs></div>
+      

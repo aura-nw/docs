@@ -26,12 +26,8 @@ const config = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
-                },
-                blog: {
-                    path: 'blog',
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/aura-nw/docs/edit/main',
+                    docLayoutComponent: "@theme/DocPage",
+                    docItemComponent: "@theme/ApiItem" // Derived from docusaurus-theme-openapi-docs
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -39,7 +35,25 @@ const config = {
             }),
         ],
     ],
-
+    
+    plugins: [
+        ['docusaurus-plugin-openapi-docs',
+        {
+          id: "apiDocs",
+          docsPluginId: "classic",
+          config: {
+            horoscope: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
+              specPath: "openAPI/horoscope-swagger.json", // Path to designated spec file
+              outputDir: "docs/product/horoscope", // Output directory for generated .mdx docs
+              sidebarOptions: {
+                groupPathsBy: "tag",
+              },
+            }
+          }
+        },
+      ],
+    ],
+    themes: ["docusaurus-theme-openapi-docs"],
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
@@ -57,13 +71,19 @@ const config = {
                 },
 				{
                     type: 'docSidebar',
+                    sidebarId: 'product',
+                    position: 'left',
+                    label: 'Ecosystem'
+                },
+				{
+                    type: 'docSidebar',
                     sidebarId: 'developer',
                     position: 'left',
                     label: 'Developers',
                 },
 				{
-                    type: 'docSidebar',
-                    sidebarId: 'validator',
+<<<<<<< HEAD
+                    type: 'dropdown',
                     position: 'left',
                     label: 'Validators',
                 },
@@ -103,11 +123,15 @@ const config = {
                 },
                 {
                     label: 'Discord',
-                    href: 'https://discord.gg/4sVePuG4',
+                    href: 'https://discord.gg/4xBSz4rC',
                 },
                 {
                     label: 'Twitter',
                     href: 'https://twitter.com/AuraNetworkHQ',
+                },
+                {
+                    label: 'Blog',
+                    href: 'https://insight.aura.network/',
                 }
             ],
             copyright: `Copyright © ${new Date().getFullYear()} Aura Network, Inc. Built with Docusaurus.`,

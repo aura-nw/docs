@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /
 ---
 
-# About Aura Network
+# 📰 About Aura Network
 Aura Network is a layer-1, NFT-centric blockchain that focuses on expanding the use of NFTs across various industries. Our vision is to create a one-stop destination for minting, evaluating, querying, and transacting NFTs, to become a pioneer NFT infrastructure for the future.
 
 Aura Network provides 3 main features:

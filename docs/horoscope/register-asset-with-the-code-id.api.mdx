@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: true
 api: {"tags":["Asset"],"description":"Register asset with the code id","requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"codeId":{"type":"number","description":"Code id of stored contract"},"contractType":{"type":"string","enum":["CW721"],"description":"Type of contract want to register"},"chainId":{"type":"string","example":"aura-devnet","description":"Chain Id of network"}}}}}},"responses":{"200":{"description":"Register result"},"422":{"description":"Missing parameters"}},"method":"post","path":"/v1/asset/index","servers":[{"url":"//indexer.dev.aurascan.io:/api"}],"jsonRequestBodyExample":{"codeId":0,"contractType":"CW721","chainId":"aura-devnet"},"info":{"title":"Horoscope API Documentation","version":"1.0.0","description":"Indexer for multiple Cosmos Network"},"postman":{"name":"Register asset with the code id","description":{"content":"Register asset with the code id","type":"text/plain"},"url":{"path":["v1","asset","index"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
 sidebar_class_name: "post api-method"
-info_path: product/horoscope/horoscope-api-documentation
+info_path: horoscope/horoscope-api-documentation
 ---
 
 import ApiTabs from "@theme/ApiTabs";

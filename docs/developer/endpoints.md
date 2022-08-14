@@ -1,5 +1,6 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
+sidebar_label: 🏡 Public endpoints
 ---
 
 # RPC and LCD endpoints

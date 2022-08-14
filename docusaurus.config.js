@@ -44,7 +44,7 @@ const config = {
           config: {
             horoscope: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
               specPath: "openAPI/horoscope-swagger.json", // Path to designated spec file
-              outputDir: "docs/product/horoscope", // Output directory for generated .mdx docs
+              outputDir: "docs/horoscope", // Output directory for generated .mdx docs
               sidebarOptions: {
                 groupPathsBy: "tag",
               },
@@ -71,26 +71,21 @@ const config = {
                 },
 				{
                     type: 'docSidebar',
-                    sidebarId: 'product',
+                    sidebarId: 'developer',
                     position: 'left',
-                    label: 'Ecosystem'
+                    label: '🤓Developers',
                 },
 				{
                     type: 'docSidebar',
-                    sidebarId: 'developer',
+                    sidebarId: 'validator',
                     position: 'left',
-                    label: 'Developers',
-                },
-				{
-<<<<<<< HEAD
-                    type: 'dropdown',
-                    position: 'left',
-                    label: 'Validators',
+                    label: '🖥Validators',
                 },
 				{
                     type: 'dropdown',
+                    sidebarId: 'product',
                     position: 'left',
-                    label: 'Products',
+                    label: '🌐Ecosystem',
 					items:
 					[
 						{
@@ -104,16 +99,7 @@ const config = {
 						label: 'Aurascan'
 						}
 					]
-                },
-                {
-                    to: 'blog', 
-                    label: 'Blog', 
-                    position: 'left'
-                },
-                {
-                    type: 'localeDropdown',
-                    position: 'right',
-                },
+                }
             ],
         },
         footer: {

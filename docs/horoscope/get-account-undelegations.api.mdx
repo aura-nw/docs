@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: true
 api: {"tags":["Account Info"],"description":"Get account undelegations","parameters":[{"in":"query","name":"chainid","required":true,"description":"Chain Id of network need to query","schema":{"type":"string","enum":["aura-testnet","serenity-testnet-001","halo-testnet-001","theta-testnet-001","osmo-test-4","evmos_9000-4","euphoria-1","cosmoshub-4"]}},{"in":"query","name":"address","required":true,"description":"Address need to query","schema":{"type":"string"}}],"responses":{"200":{"description":"Register result"},"422":{"description":"Missing parameters"}},"method":"get","path":"/v1/account-unbonds","servers":[{"url":"//indexer.dev.aurascan.io:/api"}],"info":{"title":"Horoscope API Documentation","version":"1.0.0","description":"Indexer for multiple Cosmos Network"},"postman":{"name":"Get account undelegations","description":{"content":"Get account undelegations","type":"text/plain"},"url":{"path":["v1","account-unbonds"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) Chain Id of network need to query","type":"text/plain"},"key":"chainid","value":""},{"disabled":false,"description":{"content":"(Required) Address need to query","type":"text/plain"},"key":"address","value":""}],"variable":[]},"method":"GET"}}
 sidebar_class_name: "get api-method"
-info_path: product/horoscope/horoscope-api-documentation
+info_path: horoscope/horoscope-api-documentation
 ---
 
 import ApiTabs from "@theme/ApiTabs";

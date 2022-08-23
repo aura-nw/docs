@@ -10,7 +10,7 @@ Now you have some testnet Aura, you might want to take a look at one of the most
 AuraScan is a tool that offer rich functionalities in managing your assets on Aura Network.
 
 :::info
-You can access AuraScan for Serenity testnet at: https://serenity.aurascan.io/
+You can access AuraScan for Euphoria testnet at: https://euphoria.aurascan.io/
 :::
 
 <div className='player-wrapper'>

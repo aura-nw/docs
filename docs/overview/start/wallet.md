@@ -37,7 +37,7 @@ If you lose it, nobody can help you to recover your wallet.
 
 At the moment, there are 2 public testnet options to work with Aura Network. Depending on your interest, please choose the appropriate testnet before adding them to your wallet. As Aura Network is still in development, the aura client is subjected to change frequently. To ensure the best experience of testnet users, there are 2 independent testnets at the moment: Euphoria and Serenity.
 
-### 1. Stagging Testnet: Euphoria
+### 1. Staging Testnet: Euphoria
 
 Target users: `Validator`, `App Developer`, `First-Timer` and the majority of `Aura users`.
 

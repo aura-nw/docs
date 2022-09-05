@@ -29,12 +29,12 @@ aurad keys add <key_name> --keyring-backend test
 
 You can get account detail by querying to the auth module using account's address
 ```
-aurad query auth account <address>
+aurad query auth account <address> --node https://rpc.euphoria.aura.network:443
 ```
 
 ### Account balance
 
 Check the balance of the account
 ```
-aurad query bank balances <address>
+aurad query bank balances <address> --node https://rpc.euphoria.aura.network:443
 ```

@@ -1,5 +1,6 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
+sidebar_label: 🏡 Public endpoints
 ---
 
 # RPC and LCD endpoints
@@ -14,7 +15,6 @@ Public endpoints should only be used in development. For live dApps, [set up you
 |----------------------------------|--------------------|
 | https://lcd.euphoria.aura.network          | Euphoria staging net |
 | https://lcd.serenity.aura.network          | Serenity testnet |
-| https://lcd.halo.aura.network          | Halo testnet |
 
 ### Public RPC
 
@@ -22,6 +22,5 @@ Public endpoints should only be used in development. For live dApps, [set up you
 |----------------------------------|--------------------|
 | https://rpc.euphoria.aura.network          | Euphoria staging net |
 | https://rpc.serenity.aura.network        | Serenity testnet |
-| https://rpc.halo.aura.network        | Halo testnet |
 
 

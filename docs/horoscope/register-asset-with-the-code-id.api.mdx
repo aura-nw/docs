@@ -1,0 +1,34 @@
+---
+id: register-asset-with-the-code-id
+sidebar_label: Register asset with the code id
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Asset"],"description":"Register asset with the code id","requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"codeId":{"type":"number","description":"Code id of stored contract"},"contractType":{"type":"string","enum":["CW721"],"description":"Type of contract want to register"},"chainId":{"type":"string","example":"aura-devnet","description":"Chain Id of network"}}}}}},"responses":{"200":{"description":"Register result"},"422":{"description":"Missing parameters"}},"method":"post","path":"/v1/asset/index","servers":[{"url":"//indexer.dev.aurascan.io:/api"}],"jsonRequestBodyExample":{"codeId":0,"contractType":"CW721","chainId":"aura-devnet"},"info":{"title":"Horoscope API Documentation","version":"1.0.0","description":"Indexer for multiple Cosmos Network"},"postman":{"name":"Register asset with the code id","description":{"content":"Register asset with the code id","type":"text/plain"},"url":{"path":["v1","asset","index"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: horoscope/horoscope-api-documentation
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Register asset with the code id
+
+
+
+Register asset with the code id
+
+<details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"codeId"} required={false} schemaDescription={"Code id of stored contract"} schemaName={"number"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"contractType"} required={false} schemaDescription={"Type of contract want to register"} schemaName={"string"} qualifierMessage={"**Possible values:** [`CW721`]"} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"chainId"} required={false} schemaDescription={"Chain Id of network"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Register result
+
+</div><div></div></TabItem><TabItem label={"422"} value={"422"}><div>
+
+Missing parameters
+
+</div><div></div></TabItem></ApiTabs></div>
+      

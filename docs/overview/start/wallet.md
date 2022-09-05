@@ -35,16 +35,16 @@ If you lose it, nobody can help you to recover your wallet.
 
 ## II. Add Testnet Profile
 
-At the moment, there are 2 public testnet options to work with Aura Network. Depending on your interest, please choose the appropriate testnet before adding them to your wallet. As Aura Network is still in development, the aura client is subjected to change frequently. To ensure the best experience of testnet users, there are 2 independent testnets at the moment: Serenity and Halo.
+At the moment, there are 2 public testnet options to work with Aura Network. Depending on your interest, please choose the appropriate testnet before adding them to your wallet. As Aura Network is still in development, the aura client is subjected to change frequently. To ensure the best experience of testnet users, there are 2 independent testnets at the moment: Euphoria and Serenity.
 
-### 1. Stable Testnet: Serenity
+### 1. Staging Testnet: Euphoria
 
-Target users: `App Developer`, `First-Timer` and the majority of `Aura users`.
+Target users: `Validator`, `App Developer`, `First-Timer` and the majority of `Aura users`.
 
-***Serenity*** testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. Serenity is publicly open to DAPP builders through public RPC endpoints. However, it is not open for external validators.
+***Euphoria***: Similar to the staging environment concept in traditional software development, Euphoria is the near exact replica of Aura Mainnet. This means we will try our best to bootstrap external validators, set up vesting, voting and operate the Euphoria bootstrap community as closely as we will do on Aura Mainnet in the future.
 
 :::info
-Use this [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `Aura Serenity Testnet` chain to your wallet browser extension.
+Use this [Script](https://jsfiddle.net/eledra/rmh95s3x/) to add the `Aura Euphoria Testnet` chain to your wallet browser extension.
 :::
 
 After running the script, the Aura Testnet profile will appear in the Coin98 Wallet extension
@@ -53,17 +53,14 @@ After running the script, the Aura Testnet profile will appear in the Coin98 Wal
   <img src="/img/tutorial/profile.png" width="600px"/>
 </figure>
 
+### 1. Stable Testnet: Serenity
 
-### 2. Experimental Testnet: Halo
+Target users: `App Developer`.
 
-Target users: `Validators`, `Security Researcher`, `Developer`
-
-***Halo*** testnet is open for external validators. We also plan to do all client testing, security and performance benchmarking on Halo as well. Thus we do not recommend users to run application on this network as the network might be unstable and reset on a regular basis.
+***Serenity*** testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. Serenity is publicly open to DAPP builders through public RPC endpoints. However, it is not open for external validators.
 
 :::info
-Use this [Script](https://jsfiddle.net/eledra/g34qhdn6/) to add the `Aura Halo Testnet` chain to your wallet browser extension.
-
-If you are not intended to run an Aura Node, don't bother with Halo testnet.
+Use this [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `Aura Serenity Testnet` chain to your wallet browser extension.
 :::
 
 ## III. Create Aura Wallet
@@ -92,6 +89,6 @@ Now you have your wallet setup. There are several things you could try with Aura
 
 1. Asking for test token through testnet [Faucet](./faucet.md).
 2. [Learn](../protocol/) in detail various concept used in Aura Network.
-3. Start developing your application following our [Guides](../../developer/dapp.md).
+3. Start developing your application following our [Guides](../../developer/contract/smartcontract.md).
 4. Hacking Aurad by running your own [Nodes](../../validator/running-a-fullnode.md).
 5. Try some application that we are building for the Aura Network ecosystem.

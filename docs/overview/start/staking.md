@@ -45,7 +45,9 @@ Currently we are having a bug that prevents people to delegate using the "MAX" b
 After delegating successully, staking rewards are generated to staked Aura holders in both ways:
 - Transaction fees
 - Block provisions: the total supply of Aura is inflated to reward stakers. Aura holders that do not stake do not receive rewards.
-Staked Aura holders can earn rewards by sending a claim reward transaction, rewards will send to Aura holder's wallet automatically.
+
+### Claim rewards 
+Staked Aura holders can get their rewards by sending a claim reward transaction, then the rewards will be sent to Aura holder's wallet automatically.
 
 ![Claim reward](/img/claim-reward.png)
 

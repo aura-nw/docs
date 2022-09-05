@@ -1,0 +1,34 @@
+---
+id: get-status-network
+sidebar_label: Get status network
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Network"],"description":"Get status network","parameters":[{"in":"query","name":"chainid","required":true,"description":"Chain Id of network need to query","schema":{"type":"string","enum":["aura-testnet","serenity-testnet-001","halo-testnet-001","theta-testnet-001","osmo-test-4","evmos_9000-4","euphoria-1","cosmoshub-4"]}}],"responses":{"200":{"description":"Register result"},"422":{"description":"Missing parameters"}},"method":"get","path":"/v1/network/status","servers":[{"url":"//indexer.dev.aurascan.io:/api"}],"info":{"title":"Horoscope API Documentation","version":"1.0.0","description":"Indexer for multiple Cosmos Network"},"postman":{"name":"Get status network","description":{"content":"Get status network","type":"text/plain"},"url":{"path":["v1","network","status"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) Chain Id of network need to query","type":"text/plain"},"key":"chainid","value":""}],"variable":[]},"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: horoscope/horoscope-api-documentation
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Get status network
+
+
+
+Get status network
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"in":"query","name":"chainid","required":true,"description":"Chain Id of network need to query","schema":{"type":"string","enum":["aura-testnet","serenity-testnet-001","halo-testnet-001","theta-testnet-001","osmo-test-4","evmos_9000-4","euphoria-1","cosmoshub-4"]}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Register result
+
+</div><div></div></TabItem><TabItem label={"422"} value={"422"}><div>
+
+Missing parameters
+
+</div><div></div></TabItem></ApiTabs></div>
+      

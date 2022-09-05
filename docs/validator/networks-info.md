@@ -12,6 +12,5 @@ Genesis files and configurations are located in [Github repository](https://gith
 | :--- | :--- | :--- | :--- | :--- |
 | `euphoria-1` | Staging net | [Genesis Link](https://github.com/aura-nw/testnets/blob/main/euphoria-1/genesis.json) | [Explorer Link](https://euphoria.aurascan.io) |
 | `serenity-testnet-001` | Testnet | [Genesis Link](https://github.com/aura-nw/testnets/blob/main/serenity-testnet/genesis.json) | [Explorer Link](https://serenity.aurascan.io) |
-| `halo-testnet-001` | Testnet | [Genesis Link](https://github.com/aura-nw/testnets/blob/main/halo-testnet/genesis.json) | [Explorer Link](https://halo.aurascan.io) |
 
 [LCD and RPC endpoints](../developer/endpoints.md)

@@ -12,11 +12,29 @@ If you already setup things correctly, then just simply:
 ```bash
 npm run start
 ```
-
 ## Requirement
 
 Using Node.js version larger than 14.10
 
-## Using
-Create a Markdown file under folder docs. That all.
+## Adding new content
+New content should be written in `.md` file under `docs` directory.
 
+## Adding Swagger API
+
+Aura docs uses [OpenAPI plugin](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) for generate swagger API automatically. First, add your swagger file to a `openAPI` directory and update `docusaurus.config.js` in the `docusaurus-plugin-openapi-docs` section.
+
+To generate or remove mxd files from the swagger document, just do as follow:
+
+```bash
+# generate all api-docs 
+yarn docusaurus gen-api-docs all
+
+# generate docs for a specific api
+yarn docusaurus gen-api-docs <id>
+
+# clean up all api-docs
+yarn docusaurus clean-api-docs all
+
+# clean up a specific api
+yarn docusaurus clean-api-docs <id>
+```

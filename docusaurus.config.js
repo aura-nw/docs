@@ -99,6 +99,12 @@ const config = {
 						label: 'Aurascan'
 						}
 					]
+                },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'exchange',
+                    position: 'left',
+                    label: '🖥Exchanges',
                 }
             ],
         },

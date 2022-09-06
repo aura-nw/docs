@@ -1,5 +1,7 @@
 # Dependencies
 /node_modules
+/sample/node_modules
+/sample/sample.mnemonic.key
 
 # Production
 /build

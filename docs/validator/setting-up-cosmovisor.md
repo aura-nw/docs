@@ -18,21 +18,21 @@ sidebar_position: 4
 
 1. Install the latest version of `cosmovisor`
 ```bash
-$ go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
 ```
 
 2. Install from source 
 ```bash
-$ git clone git@github.com:cosmos/cosmos-sdk
-$ cd cosmos-sdk
-$ git checkout cosmovisor/vx.x.x
-$ make cosmovisor
+git clone git@github.com:cosmos/cosmos-sdk
+cd cosmos-sdk
+git checkout cosmovisor/vx.x.x
+make cosmovisor
 
 ```
 This will build `cosmovisor` in /cosmovisor directory. Afterwards you may want to put it into your machine's PATH like as follows:
 
 ```bash
-$ cp cosmovisor/cosmovisor ~/go/bin/cosmovisor
+cp cosmovisor/cosmovisor ~/go/bin/cosmovisor
 ```
 
 ### Add environment variables to your shell
@@ -44,7 +44,7 @@ export DAEMON_RESTART_AFTER_UPGRADE=true
 ```
 Then source your profile:
 ```bash
-$ source ~/.profile
+source ~/.profile
 ```
 
 ### Set up folder structure
@@ -67,8 +67,8 @@ $DAEMON_HOME
 `current` - a symlink used by Cosmovisor.
 The other folders will need setting up:
 ```bash
-$ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
-$ mkdir -p $DAEMON_HOME/cosmovisor/upgrades
+mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
+mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
 ### Set up genesis binary
@@ -79,7 +79,7 @@ which aurad
 ```
 Then use the path returned to copy it to the directory Cosmovisor expects. Let's assume the previous command returned ```/home/<your-user>/go/bin/aurad```
 ```bash
-$ cp /home/<your-user>/go/bin/aurad $DAEMON_HOME/cosmovisor/genesis/bin
+cp /home/<your-user>/go/bin/aurad $DAEMON_HOME/cosmovisor/genesis/bin
 ```
 
 ### Configure the host's init system
@@ -117,13 +117,13 @@ WantedBy=multi-user.target
 ### Start Cosmovisor
 Enable the service and start it:
 ```bash
-$ sudo -S systemctl daemon-reload
-$ sudo -S systemctl enable cosmovisor
-$ sudo systemctl start cosmovisor
+sudo -S systemctl daemon-reload
+sudo -S systemctl enable cosmovisor
+sudo systemctl start cosmovisor
 ```
 
 Check it is running using:
 ```bash
-$ sudo systemctl status cosmovisor
-$ journalctl -u cosmovisor -f
+sudo systemctl status cosmovisor
+journalctl -u cosmovisor -f
 ```

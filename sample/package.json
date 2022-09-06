@@ -1,0 +1,16 @@
+{
+  "name": "aura-sample",
+  "version": "1.0.0",
+  "description": "sample to interact with aura chain using cosmjs",
+  "main": "index.ts",
+  "scripts": {
+    "experiment": "ts-node experiment.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.28.13",
+    "@cosmjs/stargate": "^0.28.13",
+    "ts-node": "^10.9.1"
+  }
+}

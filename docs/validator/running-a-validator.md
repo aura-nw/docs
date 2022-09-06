@@ -14,7 +14,7 @@ $ aurad tendermint show-validator
 ```
 To create your validator, just use the following command:
 ```bash
-$ aurad tx staking create-validator \
+aurad tx staking create-validator \
   --amount=<staking-amount> \
   --pubkey=$(aurad tendermint show-validator) \
   --moniker="choose a moniker"  \

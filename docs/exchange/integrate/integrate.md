@@ -5,41 +5,51 @@ import TabItem from '@theme/TabItem';
 
 This section is dedicated for exchanges (CEX and DEX) to integrate with Aura Network.
 
-
-## 1. Native $AURA currency
+## Native $AURA currency
 
 Aura mainnet is developed using [Cosmos SDK](https://v1.cosmos.network/sdk). So if you have listed popular coins like [ATOM](https://www.coingecko.com/en/coins/cosmos-hub), the process is very similar.
 
 - Aura Network runs on Tendermint consensus, the block is finalized instantly. 
-- Currently, the expected block time is around 5 - 6 seconds. The latest block can be queried by:
+- Currently, the expected block time is around 5 - 6 seconds.
 
-<Tabs>
-<TabItem value="testnet" label="Euphoria Testnet">
+There are currently 4 ways to integrate with Aura Network:
 
-```
-curl https://lcd.euphoria.aura.network/blocks/latest
-```
-</TabItem>
-</Tabs>
+1. Use Aura Daemon command-line interface (aurad CLI)
+2. Directly invoke an Aura Node client endpoints using HTTP requests
+3. Use Javascript library [cosmosjs](https://github.com/cosmos/cosmjs)
+4. Use the centralized [Horoscope](../../horoscope/horoscope-api-documentation.info.mdx) Indexer API
 
-### 1.1. Integration Reference
+## Denom
+There are several denomination widely used in Aura Network.
 
-- [Accounts](./accounts.md)
-- [Transaction](./transaction.md)
+- `AURA` or `aura` : indicates the AURA native currency on mainnet.
+- `uAURA` or `uaura` : indicates the smallest unit of native currency on mainnet. 1 `aura` = 10^6 `uaura`
 
-### 1.2. Node Reference
+To avoid confusion with testnet currency, we have different denoms for tokens on testnet
+
+- `EAURA` or `eaura` : indicates the AURA native currency on Euphoria testnet.
+- `uEAURA` or `ueaura` : indicates the smallest unit of native currency on Euphoria testnet. 1 `eaura` = 10^6 `ueaura`
+
+## Node Reference
 
 You can either run your own full node following the guide here: [Running a full node](../../validator/running-a-fullnode.md).
 
 Or directly query public API endpoints [here](../../developer/endpoints.md).
 
-### 1.3. Staking and Delegation
+If you only need to interact with the `aurad` CLI, just compile it from source is enough.
+
+## Integration Reference
+
+- [Accounts](./accounts.md)
+- [Transaction](./transaction.md)
+
+## Staking and Delegation
 
 - [Staking](../../overview/start/staking.md)
 - [Become a validator](../../validator/running-a-validator.md) 
 
 
-## 2. BEP-20 Token (deprecate after October 1st 2022)
+## BEP-20 Token (deprecate after October 1st 2022)
 AURA is currently being published as BEP-20 tokens on BNB Smart Chain. 
 
 Offcial Contract Address is at: [`0x23c5D1164662758b3799103Effe19cC064d897D6`](https://bscscan.com/address/0x23c5D1164662758b3799103Effe19cC064d897D6)

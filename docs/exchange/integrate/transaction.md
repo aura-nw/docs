@@ -1,10 +1,14 @@
 ---
 sidebar_position: 2
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Create a transaction
 This document describes how to generate an (unsigned) transaction, signing it (with one or multiple keys), and broadcasting it to the network.
 
-## Using the CLI 
+## 1. Using the CLI 
 For example, running the following command to send 1 eAura from `A` to `B`:
 ```
 aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --node https://rpc.euphoria.aura.network:443
@@ -18,20 +22,74 @@ It will run the following steps:
 
 It's possible to run the steps individually
 
-### Generating a transaction
+### 1.1. Generating a transaction
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
 ```
 aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --generate-only > unsigned_tx.json  
 ```
 
-### Signing a transaction
+</TabItem>
+</Tabs>
+
+### 1.2. Signing a transaction
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
 ```
 aurad tx sign unsigned_tx.json --chain-id euphoria-1 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
 ```
+</TabItem>
+</Tabs>
 
-### Broadcasting a transaction
+### 1.3. Broadcasting a transaction
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
 ```
 aurad tx broadcast signed_tx.json --node https://rpc.euphoria.aura.network:443
 ```
 
-## Using CosmJS (JavaScript & TypeScript)
-CosmJS aims to build client libraries in JavaScript that can be embedded in web applications. Please see https://cosmos.github.io/cosmjs for more information
+</TabItem>
+</Tabs>
+
+## 2. Using CosmJS (JavaScript & TypeScript)
+You can construct, sign and broadcast a transaction using CosmJS as follow
+
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
+```javascript
+import { readFile } from "fs/promises"
+import { DirectSecp256k1HdWallet, OfflineDirectSigner } from "@cosmjs/proto-signing"
+import { SigningStargateClient, StargateClient } from "@cosmjs/stargate"
+
+const rpc = "https://rpc.euphoria.aura.network"
+const sampleAccount = "aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl"
+
+const getSampleSignerFromMnemonic = async (): Promise<OfflineDirectSigner> => {
+    return DirectSecp256k1HdWallet.fromMnemonic((await readFile("./sample.mnemonic.key")).toString(), {
+        prefix: "aura",
+    })
+}
+
+const runAll = async(): Promise<void> => {
+    // Construct a transaction
+    const sampleSigner: OfflineDirectSigner = await getSampleSignerFromMnemonic()
+    const eledra = (await sampleSigner.getAccounts())[0].address
+    console.log("sample's address from signer", eledra)
+    const signingClient = await SigningStargateClient.connectWithSigner(rpc, sampleSigner)
+
+    const result = await signingClient.sendTokens(eledra, sampleAccount, [{ denom: "ueaura", amount: "100000" }], {
+        amount: [{ denom: "ueaura", amount: "200" }],
+        gas: "200000",
+    })
+    console.log("Transfer result:", result)
+}
+
+runAll()
+```
+
+</TabItem>
+</Tabs>

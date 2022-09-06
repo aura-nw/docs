@@ -131,7 +131,7 @@ const config = {
         prism: {
             theme: lightCodeTheme,
             darkTheme: darkCodeTheme,
-            additionalLanguages: ['go', 'rust'],
+            additionalLanguages: ['go', 'rust', 'json','bash'],
         },
         colorMode: {
             defaultMode: 'dark',

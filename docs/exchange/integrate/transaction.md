@@ -6,9 +6,16 @@ This document describes how to generate an (unsigned) transaction, signing it (w
 
 ## Using the CLI 
 For example, running the following command to send 1 eAura from `A` to `B`:
-```
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
+```bash
 aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --node https://rpc.euphoria.aura.network:443
 ```
+
+</TabItem>
+</Tabs>
+
 It will run the following steps:
 - generate a transaction with one `Msg` (`x/bank`'s `MsgSend`), and print the generated transaction to the console
 - ask `A owner` for confirmation to send transaction from the `A account`
@@ -19,17 +26,17 @@ It will run the following steps:
 It's possible to run the steps individually
 
 ### Generating a transaction
-```
+```bash
 aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --generate-only > unsigned_tx.json  
 ```
 
 ### Signing a transaction
-```
+```bash
 aurad tx sign unsigned_tx.json --chain-id euphoria-1 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
 ```
 
 ### Broadcasting a transaction
-```
+```bash
 aurad tx broadcast signed_tx.json --node https://rpc.euphoria.aura.network:443
 ```
 

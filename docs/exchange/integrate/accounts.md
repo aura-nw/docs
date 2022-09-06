@@ -3,13 +3,20 @@ sidebar_position: 1
 ---
 # Accounts
 
-## Introduction
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivKey`. The `PubKey` can be derived to generate various `Addresses`, which are used to identify users (among other parties) in the application. `Addresses` are also associated with `messages` to identify the sender of the `message`. The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
 
-## Adding keys to the keyring
+## 1. Introduction
 
-The keyring holds the private/public keypairs used to interact with a node. The private key can be stored in different locations, called "backends". There are some available backends for the keyring:
+An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivKey`. 
+
+- The `PubKey` can be derived to generate various `Addresses`, which are used to identify users (among other parties) in the application. `Addresses` are also associated with `messages` to identify the sender of the `message`. 
+- The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
+
+## 2. Key management
+
+The term "keyring" refers to the object holding the private/public keypairs used to interact with a node. The private key can be stored in different locations, called "backends". There are some available backends for the keyring:
 
 - The `OS` backend: relies on operating system-specific defaults to handle key storage securely. Typically, an operating system's credential sub-system handles password prompts, private keys storage, and user sessions according to the user's password policies
 - The `file` backend: stores the keyring encrypted within the app's configuration directory. This keyring will request a password each time it is accessed, which may occur multiple times in a single command resulting in repeated password prompts
@@ -23,18 +30,32 @@ For example, to create a new key in the keyring, run the command:
 aurad keys add <key_name> --keyring-backend test
 ```
 
-## Querying account information
+## 3. Querying account information
 
 ### Account details
 
 You can get account detail by querying to the auth module using account's address
-```
+
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
+```bash
 aurad query auth account <address> --node https://rpc.euphoria.aura.network:443
 ```
+
+</TabItem>
+</Tabs>
 
 ### Account balance
 
 Check the balance of the account
+
+<Tabs>
+<TabItem value="testnet" label="Euphoria Testnet">
+
 ```
 aurad query bank balances <address> --node https://rpc.euphoria.aura.network:443
 ```
+
+</TabItem>
+</Tabs>

@@ -67,25 +67,31 @@ const config = {
                     type: 'docSidebar',
                     sidebarId: 'overview',
                     position: 'left',
-                    label: 'Overview',
+                    label: '🏡 Overview',
                 },
 				{
                     type: 'docSidebar',
                     sidebarId: 'developer',
                     position: 'left',
-                    label: '🤓Developers',
+                    label: '🤓 Developers',
                 },
 				{
                     type: 'docSidebar',
                     sidebarId: 'validator',
                     position: 'left',
-                    label: '🖥Validators',
+                    label: '🖥 Validators',
+                },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'exchange',
+                    position: 'left',
+                    label: '🛍 Exchanges',
                 },
 				{
                     type: 'dropdown',
                     sidebarId: 'product',
                     position: 'left',
-                    label: '🌐Ecosystem',
+                    label: '🌐 Ecosystem',
 					items:
 					[
 						{
@@ -99,12 +105,6 @@ const config = {
 						label: 'Aurascan'
 						}
 					]
-                },
-                {
-                    type: 'docSidebar',
-                    sidebarId: 'exchange',
-                    position: 'left',
-                    label: '🖥Exchanges',
                 }
             ],
         },

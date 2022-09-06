@@ -19,8 +19,8 @@ Fllow this [guide](https://crypto.org/docs/getting-started/advanced-tmkms-integr
 ## Setup  tmkms-nitro-enclave and tmkms-nitro-helper
 Clone the source
 ```bash
-$ git clone https://github.com/aura-nw/tmkms-light
-$ cd tmkms-light
+git clone https://github.com/aura-nw/tmkms-light
+cd tmkms-light
 ```
 
 ### Build tmkms docker image
@@ -36,17 +36,17 @@ docker build -t aws-ne-build \
 
 ### Install tmkms-nitro-helper
 ```bash
-$ sudo yum install -y openssl-devel
-$ cargo build --release -p tmkms-nitro-helper
-$ cp ./target/release/tmkms-nitro-helper /usr/local/bin/
+sudo yum install -y openssl-devel
+cargo build --release -p tmkms-nitro-helper
+cp ./target/release/tmkms-nitro-helper /usr/local/bin/
 ```
 
 ### Generate a new encrypted validator signing key
 ```bash
-$ tmkms-nitro-helper enclave run --cpu-count <nums-of-cpu-for-enclave> \
+tmkms-nitro-helper enclave run --cpu-count <nums-of-cpu-for-enclave> \
                                  --eif-path <tmkms-eif-path> &
-$ vsock-proxy 8000 kms.<region>.amazonaws.com 443 --config <vsock-proxy.yaml-path> &
-$ tmkms-nitro-helper init -a <region> -k <KMS-Arn> -p json  --cid $(nitro-cli describe-enclaves | jq -r .[0].EnclaveCID)
+vsock-proxy 8000 kms.<region>.amazonaws.com 443 --config <vsock-proxy.yaml-path> &
+tmkms-nitro-helper init -a <region> -k <KMS-Arn> -p json  --cid $(nitro-cli describe-enclaves | jq -r .[0].EnclaveCID)
 ```
 It shoud generate a `Cosmos protobuf public key` to stdout and an encrypted private key in relative path `secrets/secret.key`
 
@@ -66,7 +66,7 @@ aws_region = 'ap-southeast-1'
 
 Start tmkms helper
 ```bash
-$ tmkms-nitro-helper start -c /home/ec2-user/.tmkms/tmkms.toml --cid $(nitro-cli describe-enclaves | jq -r .[0].EnclaveCID)
+tmkms-nitro-helper start -c /home/ec2-user/.tmkms/tmkms.toml --cid $(nitro-cli describe-enclaves | jq -r .[0].EnclaveCID)
 ```
 
 ### Runing validator node

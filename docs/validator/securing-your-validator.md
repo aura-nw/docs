@@ -63,7 +63,9 @@ The validator node should have `pex=false` so it does not gossip to the entire n
 
 The sentry nodes should be able to talk to the entire network hence why `pex=true`. The persistent peers of a sentry node will be the validator, and optionally other sentry nodes. The sentry nodes should make sure that they do not gossip the validator's ip, to do this you must put the validators nodeID as a private peer. The unconditional peer IDs will be the validator ID and optionally other sentry nodes.
 
-> Note: Do not forget to secure your node's firewalls when setting them up.
+:::caution Note:
+Do not forget to secure your node's firewalls when setting them up.
+:::
 
 ## Validator keys
 

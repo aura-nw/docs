@@ -2,6 +2,26 @@
 sidebar_position: 3
 ---
 
+# Validator 
+
+Validators are responsible for committing new blocks in the blockchain.
+These validators participate in the consensus protocol by broadcasting
+_votes_ which contain cryptographic signatures signed by each
+validator's private key.
+
+Some Proof-of-Stake consensus algorithms aim to create a "completely"
+decentralized system where all stakeholders (even those who are not
+always available online) participate in the committing of blocks.
+Tendermint has a different approach to block creation. Validators are
+expected to be online, and the set of validators is permissioned/curated
+by some external process. Proof-of-stake is not required, but can be
+implemented on top of Tendermint consensus. That is, validators may be
+required to post collateral on-chain, off-chain, or may not be required
+to post any collateral at all.
+
+Validators have a cryptographic key-pair and an associated amount of
+"voting power". Voting power need not be the same.
+
 # Create your validator
 You need to add your `wallet key` using `mnemonic` or create a new key and tranfer `uaura` to its address
 ```bash

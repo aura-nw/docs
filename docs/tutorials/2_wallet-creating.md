@@ -1,0 +1,160 @@
+# Setup your wallet
+Wallet is the entrance to the crypto world then before getting into Aura Network, you should own a wallet. 
+
+## Wallet Setup
+Aura Network is built using [Cosmos SDK](https://v1.cosmos.network/sdk). If you are a *Cosmonaut*, you might directly skip to the next part. Howver, if you have not use a Cosmos wallet before, this is be the part you should follow closely.
+
+Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). We recommend to use [Coin98 Wallet](https://wallet.coin98.com/) as we are working very closely together to roll out Aura specific features.
+
+Please follow guides from these 2 providers to setup your wallet (**only the Web Browser Extension version at the moment**)
+- Coin98 guide: https://blog.coin98.com/c98-wallet-integrates-with-cosmos
+- Keplr guide: https://medium.com/chainapsis/how-to-use-keplr-wallet-40afc80907f6
+
+## Add Testnet Profile
+In order to show the Aura address on your wallet, you have to add the network information to [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/).
+
+At the moment, there are 2 public testnet options to work with Aura Network. Depending on your interest, please choose the appropriate testnet before adding them to your wallet. As Aura Network is still in development, the aura client is subjected to change frequently. To ensure the best experience of testnet users, there are 2 independent testnets at the moment: `Euphoria` and `Serenity`.
+
+### 1. `Euphoria`, the staging testnet:
+Target users: `Validator`, `App Developer`, `First-Timer` and the majority of `Aura users`.
+
+`Euphoria` similars to the staging environment concept in traditional software development, `Euphoria` is the near exact replica of `Aura Mainnet`. This means we will try our best to bootstrap external validators, set up vesting, voting and operate the `Euphoria` bootstrap community as closely as we will do on `Aura Mainnet` in the future.
+
+Use this following [Script](https://jsfiddle.net/eledra/rmh95s3x/) to add the `Aura Euphoria Testnet` chain to your wallet browser extension:
+```js
+var foo = async function() {
+  console.log('start request add euphoria testnet');
+
+  await window['keplr'].experimentalSuggestChain({
+    chainId: "euphoria-1",
+    chainName: "Aura euphoria TestNet",
+    rpc: "https://rpc.euphoria.aura.network",
+    rest: "https://lcd.euphoria.aura.network",
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: {
+      bech32PrefixAccAddr: "aura",
+      bech32PrefixAccPub: "aura" + "pub",
+      bech32PrefixValAddr: "aura" + "valoper",
+      bech32PrefixValPub: "aura" + "valoperpub",
+      bech32PrefixConsAddr: "aura" + "valcons",
+      bech32PrefixConsPub: "aura" + "valconspub",
+    },
+    currencies: [{
+      coinDenom: "EAURA",
+      coinMinimalDenom: "ueaura",
+      coinDecimals: 6,
+      // coinGeckoId: "eaura",
+    }, ],
+    feeCurrencies: [{
+      coinDenom: "EAURA",
+      coinMinimalDenom: "ueaura",
+      coinDecimals: 6,
+      // coinGeckoId: "ueaura",
+    }, ],
+    stakeCurrency: {
+      coinDenom: "EAURA",
+      coinMinimalDenom: "ueaura",
+      coinDecimals: 6,
+      // coinGeckoId: "ueaura",
+    },
+    coinType: 118,
+    gasPriceStep: {
+      low: 0.001,
+      average: 0.0025,
+      high: 0.004
+    },
+    features: ['no-legacy-stdTx'],
+    walletUrlForStaking: "https://euphoria.aurascan.io/validators",
+    logo: "https://i.imgur.com/zi0mTYb.png",
+    explorer: "https://euphoria.aurascan.io/"
+  });
+  console.log('finish request add euphoria testnet');
+};
+
+setTimeout(() => {
+  foo()
+  console.log(window.keplr)
+}, 1001);
+
+console.log('Welcome to euphoria');
+```
+After running the script, the Aura Testnet profile will appear in the Coin98 Wallet extension
+
+### 2. `Serenity`, the stable testnet:
+Target users: `App Developer`.
+
+`Serenity` testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. `Serenity` is publicly open to dApp builders through public RPC endpoints. However, it is not open for external validators.
+
+Use this following [Script](https://jsfiddle.net/eledra/kc6yhLpz/) to add the `Aura Serenity Testnet` chain to your wallet browser extension:
+```js
+var foo = async function() {
+  console.log('start request add Serenity testnet');
+
+  await window['keplr'].experimentalSuggestChain({
+    chainId: "serenity-testnet-001",
+    chainName: "Aura Serenity TestNet",
+    rpc: "https://rpc.serenity.aura.network",
+    rest: "https://lcd.serenity.aura.network",
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: {
+      bech32PrefixAccAddr: "aura",
+      bech32PrefixAccPub: "aura" + "pub",
+      bech32PrefixValAddr: "aura" + "valoper",
+      bech32PrefixValPub: "aura" + "valoperpub",
+      bech32PrefixConsAddr: "aura" + "valcons",
+      bech32PrefixConsPub: "aura" + "valconspub",
+    },
+    currencies: [{
+      coinDenom: "AURA",
+      coinMinimalDenom: "uaura",
+      coinDecimals: 6,
+      // coinGeckoId: "aura",
+    }, ],
+    feeCurrencies: [{
+      coinDenom: "AURA",
+      coinMinimalDenom: "uaura",
+      coinDecimals: 6,
+      // coinGeckoId: "uaura",
+    }, ],
+    stakeCurrency: {
+      coinDenom: "AURA",
+      coinMinimalDenom: "uaura",
+      coinDecimals: 6,
+      // coinGeckoId: "uaura",
+    },
+    coinType: 118,
+    gasPriceStep: {
+      low: 0.001,
+      average: 0.0025,
+      high: 0.004
+    },
+    features: ['no-legacy-stdTx'],
+    walletUrlForStaking: "https://serenity.aurascan.io/validators",
+    logo: "https://i.imgur.com/zi0mTYb.png",
+    explorer: "https://serenity.aurascan.io/"
+  });
+  console.log('finish request add Serenity testnet');
+};
+
+setTimeout(() => {
+  foo()
+  console.log(window.keplr)
+}, 1001);
+
+console.log('Welcome to Serenity');
+```
+## Create Aura Wallet
+The final step is to create a new Aura Wallet. Just click the `Add Wallet` button on the top right corner of the browser extension. After creating your Aura Wallet, you will be ready to try the testnet.
+
+<!-- Insert video -->
+
+With the Aura wallet, you can:
+- Asking for test token through testnet `Faucet`.
+- `Learn` in detail various concept used in Aura Network.
+- Start developing your application following our `Guides`.
+- Hacking Aurad by running your own `Nodes`.
+- Try some application that we are building for the `Aura Network ecosystem`.

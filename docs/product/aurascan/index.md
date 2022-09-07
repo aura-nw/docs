@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction to AuraScan
 ---
 
 ![AuraScan](/img/aurascan/logo.png)
-
-# Introduction to AuraScan
 
 AuraScan is a Blockchain Explorer, Search and Analytical Platform for Aura Network, a decentralized smart contracts platform.
 Similar to Etherscan or Mintscan, you can check pretty much all on-chain information, such as: blocks, transactions, validators, proposals, smart contracts.

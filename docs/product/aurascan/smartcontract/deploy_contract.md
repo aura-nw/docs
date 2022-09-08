@@ -10,7 +10,7 @@ After deploying a smart contract on aurad, see the contract and instantiate cont
 
 Here is the contracts list on Euphoria Testnet.
 
-![Contracts List](/img/aurascan-blc-explorer/contracts_list.png)
+![Contracts List](/img/aurascan/contracts_list.png)
 ![Contracts List](/img/aurascan-blc-explorer/contract_list.png)
 
 :::caution Note:

@@ -36,7 +36,7 @@ Tab `Transactions` show 20 lastest transactions of this contract. Choose `View a
 
 ### Contract
 
-![Contracts](/img/aurascan-blc-explorer/contract_details_contract.png)
+![Contracts](/img/aurascan-blc-explorer/contract_details_contract_read.png)
 
 There are 3 tabs in Contract section, they are:
 - Code: show all information of contract source code, e.g `Contract Name`, `Compiler Version`, `Link and file contract source code`, all `contract schema` files and `Contract creation code`.

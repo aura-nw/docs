@@ -7,7 +7,7 @@ sidebar_position: 3
 Here is the contracts list on Euphoria Testnet.
 
 ![Contracts List](/img/aurascan-blc-explorer/contract_list.png)
-![Contracts List](/img/aurascan/contracts_list.png)
+![Contracts List](/img/aurascan-blc-explorer/contracts_list.png)
 
 :::caution Note:
 Only verified contracts have green check mark icons, version and time verified. 

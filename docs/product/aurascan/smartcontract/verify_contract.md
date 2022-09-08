@@ -14,7 +14,7 @@ An unverified contract tab show the contract creation code.
 
 As the contract creator, you may choose Verify and Publish to verify your contract source code, if verifying successfully, contract will be updated to Exact Match.
 
-![Contract Tab](/img/aurascan/contract_tab.PNG)
+![Contract Tab](/img/aurascan-blc-explorer/contract_tab.PNG)
 
 ### Similar Match
 A similar match verification is happened automatically when your contract creation code matches an existing contract that has been deployed and verified on Aurascan.

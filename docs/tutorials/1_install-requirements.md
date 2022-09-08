@@ -9,7 +9,7 @@ Aura uses [CosmWasm](https://cosmwasm.com/), a WebAssembly smart contract platfo
 You can learn more about CosmWasm in the official Cosmwasm [document](https://docs.cosmwasm.com/docs/1.0/) and before developing dApp on AURA, you must install some requirements.
 
 ### Golang
-You can set up golang following the [official documentation](https://github.com/golang/go/wiki#working-with-go). The latest versions of aurad require go version v1.18+.
+You can set up golang following the [official documentation](https://go.dev/doc/install). The latest versions of aurad require go version v1.18+.
 
 ### Rust
 Make sure you have all required binaries for programming with Rust and Wasm. The standard approach is to use `rustup` to maintain dependencies and handle updating multiple versions of `cargo` (v1.55.0+) and `rustc`, which you will be using.  

@@ -1,6 +1,14 @@
 ---
 sidebar_position: 2
+title: Creating a new Safe
 ---
+After connecting your wallet, You will be able to create a new Safe with your other co-owners.
+
+# Safe list
+
+To access your safe list, click on the arrow button on the left side of the UI. A sidebar will appear, showing all of your current and previously and in-progress created Safes. This will be explained further in specific features later on. You can manage multiple Safes that you own at a time. Every Safe must be added locally in order to be managed. The green tick marks the safe which is being managed at the moment.
+![Safe list](/img/pyxis-safe/safe_list_1.png)
+![Safe list](/img/pyxis-safe/safe_list_2.png)
 
 # Create a new Safe
 
@@ -34,3 +42,21 @@ A confirmation screen will show up as below, which indicates that your safe crea
 ![Create a new Safe](/img/pyxis-safe/create_a_new_safe_7.png)
 
 The newly created Safe request will be shown in the “Pending Safes” section.
+
+# Allow Safe creation
+The safe must be allowed by all other co-owners before it can be put into use. In the safe list of a co-owner, the safes that need confirmation will look like below. Clicking “Allow” will start the process of adding the Safe into the Safe list of that owner.
+![Allow safe creation](/img/pyxis-safe/allow_safe_1.png)
+
+The co-owner has to define the name of the Safe, as well as the Name of other co-owners of the safe to proceed. The process is basically the same as creating a new safe, but without any owner or confirmation declaration.
+![Allow safe creation](/img/pyxis-safe/allow_safe_2.png)
+![Allow safe creation](/img/pyxis-safe/allow_safe_3.png)
+![Allow safe creation](/img/pyxis-safe/allow_safe_4.png)
+
+A pop-up will be shown indicating that you have finished the process.
+![Allow safe creation](/img/pyxis-safe/allow_safe_5.png)
+
+The safe is now marked as “Allowed”.
+![Allow safe creation](/img/pyxis-safe/allow_safe_6.png)
+
+After all co-owners have gone through the process of Safe allowance, the Safe will not be marked as “pending” anymore, but instead active and can be managed.
+![Allow safe creation](/img/pyxis-safe/allow_safe_7.png)

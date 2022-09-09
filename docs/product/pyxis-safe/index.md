@@ -15,7 +15,7 @@ Pyxis Safe was originally created only for our blockchain, the [Aura Network](ht
 
 By default, the CosmosSDK allows users to perform multisign via the `tx multisign` command when interacting with `Aurad` ([example](https://docs.cosmos.network/master/run-node/txs.html#signing-with-multiple-signers)). However, we have not seen any mainstream consumer dapp that supports multisign at the application level yet. That's why we created Pyxis Safe.
 
-#Cost of creating a Safe?
+# Cost of creating a Safe?
 
 As we implement the CosmosSDK native multisign, creating a safe is free of cost.
 

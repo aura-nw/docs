@@ -13,13 +13,13 @@ Contract's creator have to register a type contract for a Code ID.
 ## 2. How to register type contract
 **Step 1:** Connect wallet successfully and choose Register contract.
 
-![Connect wallet](/img/aurascan-blc-explorer/connect_wallet.png)
-![Choose register contract](/img/aurascan-blc-explorer/choose_register_contract.png)
+![Connect wallet](/img/aurascan/connect_wallet.png)
+![Choose register contract](/img/aurascan/choose_register_contract.png)
 
 **Step 2:** See the list of Code ID that have been registered. 
 
-![List of Code ID](/img/aurascan-blc-explorer/register_type_contract.png)
-![List of Code ID](/img/aurascan-blc-explorer/register_type_contract_success.png)
+![List of Code ID](/img/aurascan/register_type_contract.png)
+![List of Code ID](/img/aurascan/register_type_contract_success.png)
 
 :::caution Note:
 Code IDs that were registed successfully but waiting until network notify the result have result registration is TBD (to be defined).
@@ -29,14 +29,14 @@ Code IDs that were registered wrong type have result registration is Incorrect.
 
 **Step 3:** Choose Register Contract and input Code ID and type contract of Code ID.
 
-![Choose register contract](/img/aurascan-blc-explorer/choose_btn_register_contract.png)
-![Input data](/img/aurascan-blc-explorer/register_type_contract_input_data.png)
-![Input data](/img/aurascan-blc-explorer/register_type_contract_input.png)
+![Choose register contract](/img/aurascan/choose_btn_register_contract.png)
+![Input data](/img/aurascan/register_type_contract_input_data.png)
+![Input data](/img/aurascan/register_type_contract_input.png)
 
 **Step 4:** After choosing register, the result registration is TBD (to be defined). Aura Network will notify the result after registration.
 
-![TBD](/img/aurascan-blc-explorer/register_type_contract_tbd.png)
-![Correct](/img/aurascan-blc-explorer/register_type_contract_success.png)
+![TBD](/img/aurascan/register_type_contract_tbd.png)
+![Correct](/img/aurascan/register_type_contract_success.png)
 
 If Code IDs have CW20 type contract, there are CW20 tokens linked to their contracts.
 If Code IDs have CW721 type contract, there are CW721 tokens linked to their contracts.

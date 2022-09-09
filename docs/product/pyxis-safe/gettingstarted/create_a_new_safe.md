@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Creating a new Safe
+title: Create a new Safe
 ---
 After connecting your wallet, You will be able to create a new Safe with your other co-owners.
 

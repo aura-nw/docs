@@ -97,12 +97,12 @@ const config = {
 						{
 						type: 'doc',
 						docId: 'product/pyxis-safe/index',
-						label: 'Pyxis Safe'
+						label: '🔐 Pyxis Safe'
 						},
 						{
 						type: 'doc',
 						docId: 'product/aurascan/index',
-						label: 'Aurascan'
+						label: '🔎 Aurascan'
 						}
 					]
                 }

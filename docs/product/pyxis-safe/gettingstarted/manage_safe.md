@@ -3,7 +3,6 @@ sidebar_position: 3
 title: Manage your Safe
 ---
 
-
 # Safe assets
 
 Inside a safe, owners can see its asset. Select the “Assets” section will show the current asset balance of all assets inside the Safe.

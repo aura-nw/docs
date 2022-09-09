@@ -12,7 +12,8 @@ You can learn more about CosmWasm in the official Cosmwasm [document](https://do
 
 ### Rust
 
-Make sure you have all required binaries for programming with Rust and Wasm. The standard approach is to use `rustup` to maintain dependencies and handle updating multiple versions of `cargo` (v1.55.0+) and `rustc`, which you will be using.  
+Make sure you have all required binaries for programming with Rust and Wasm.
+The standard approach is to use rustup to maintain dependencies and handle updating multiple versions of cargo(v1.55.0+) and rustc, which you will be using.  
 
 After [install rustup tool](https://rustup.rs/), make sure you have the wasm32 target:
 ```sh

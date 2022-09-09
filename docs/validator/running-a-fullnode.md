@@ -13,12 +13,12 @@ If running a validator node, you should research validator security.
 
 ## Prerequisites
 
-- Go 1.17+
+- Go 1.18+
 - GCC/G++ compiler
 
 ### Supported OS
 
-We officially support Linux only. Other platforms may work, but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
+We officially _support Linux only_. Other platforms may work, but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Commonly used ports
 

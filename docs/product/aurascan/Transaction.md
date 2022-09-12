@@ -21,6 +21,7 @@ The *Summary* content of Transaction details include Transaction Information and
 
 2. Message details of Transaction: include particular content in corresponding with each type of Transactions
 + Delegate
+
 |Fields|Description|
 |------|------------|
 |Delegator Address|delegator's wallet address|
@@ -29,6 +30,7 @@ The *Summary* content of Transaction details include Transaction Information and
 |Auto Claim Reward|Total amount of accumulated reward of this delegator still pending on this validator at the time of Delegate transaction success|
 
 + Redelegate
+
 |Fields|Description|
 |------|------------|
 |Delegate Address|delegator's wallet address|
@@ -38,6 +40,7 @@ The *Summary* content of Transaction details include Transaction Information and
 |Auto Claim Reward|Total amount of accumulated reward of this delegator still pending on Source validator at the time of Redelegate transaction success|
 
 + Undelegate
+
 |Fields|Description|
 |------|------------|
 |Delegator Address|delegator's wallet address|
@@ -46,6 +49,7 @@ The *Summary* content of Transaction details include Transaction Information and
 |Auto Claim Reward|Total amount of accumulated reward of this delegator still pending on this validator at the time of Undedelegate transaction success|
 
 + Get Reward
+
 |Fields|Description|
 |------|------------|
 |Delegator Address|delegator's wallet address|
@@ -53,6 +57,7 @@ The *Summary* content of Transaction details include Transaction Information and
 |Amount|Amount of reward that delegator claimed to validator|
 
 + Send
+
 |Fields|Description|
 |------|------------|
 |From Address|Sender's wallet address|
@@ -60,6 +65,7 @@ The *Summary* content of Transaction details include Transaction Information and
 |Amount|Sent amount|
 
 + Vote
+
 |Fields|Description|
 |------|------------|
 |Proposal Id|ID of proposal|

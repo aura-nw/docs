@@ -103,3 +103,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   content: "head";
   background-color: var(--ifm-color-secondary-darkest);
 }
+
+.sidebar_category {
+	color: var(--ifm-navbar-link-color);

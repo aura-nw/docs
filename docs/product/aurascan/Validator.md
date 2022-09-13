@@ -19,7 +19,7 @@ Can directly delegate to favor validator by clicking 'Delegate' button besides v
 ### Validator details
 When click on each specific transaction line, can view the Validator information include Validator profile, Proposed Blocks, Uptime, Delegators and Power Events
 
-1. Validator profile
+#### Validator profile
 Profile of validator that contains the information of validator inside and outside Aura Network
 
 |Fields|Description|
@@ -34,7 +34,7 @@ Profile of validator that contains the information of validator inside and outsi
 |Self Bonded|Number and proportion of AURA a validator self-delegated to themselves|
 |Details|Information of validator in details|
 
-2. Proposed Blocks
+#### Proposed Blocks
 Statistics of blocks validated by validator
 
 |Fields|Description|
@@ -44,10 +44,10 @@ Statistics of blocks validated by validator
 |Txs|Number of transactions inside the validated block|
 |Time|Timestamp of validated block|
 
-3. Uptime
+#### Uptime
 Visual statistic of Validator's presence (online/offline) during the last 100 blocks of Aura Network uptime
 
-4. Delegators
+#### Delegators
 List of deligators that delegated to the validator
 
 |Fields|Description|
@@ -55,7 +55,7 @@ List of deligators that delegated to the validator
 |Delegator Address|Wallet address of delegator|
 |Amount|Amount of AURA that delegator delegated to validator|
 
-5. Power Events
+#### Power Events
 Ledger of transactions related to Operator Address (when delegator delegate/undelegate/redelegate from/to validator)
 
 |Height|Height of block that contains the transaction|
@@ -75,7 +75,9 @@ You can **__Claim Reward__** by clicking 'Claim Reward" button at top right of t
 
 ### Claim Reward
 When click on 'Claim Reward' button, Aura Network will connect to your wallet and conduct to claim __all__ your pending staking reward still remaining on My validators box list.
-![Validators](/img/aurascan/Claim_Reward_Aurascan.png)
+
+![Validators](/img/aurascan/Claim_Reward_C98.png)
+
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your reward amount will be added up to your wallet straightforward.
 
 :::tip
@@ -87,7 +89,6 @@ When click on 'Manage' button, a pop up will show up, click on "Delegate" to del
 
 :::tip
 You can also delegate to this validator directly from Validator list by clicking "Delegate" button on the line end in corresponding with the Validator.
-![Validators](/img/aurascan/Delegate_from_validators_list.png)
 :::
 
 A pop up will show up with information about your current delegation amount to this validator and available balance amount to delegate more.
@@ -95,7 +96,6 @@ A pop up will show up with information about your current delegation amount to t
 ![Validators](/img/aurascan/Delegate_more.png)
 
 After typing the delegate amount and click "Delegate", Aura Network will open your wallet to confirm the delegate transaction.
-![Validators](/img/aurascan/Delegate_Keplr.png)
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your delegate amount will be locked for staking. In case you need your staked assets to be liquid again, you will need to undelegate from the validator you has already delegated.
 
 ### Undelegate
@@ -113,13 +113,12 @@ A popup will show up with information about validator, unbonding period.
 
 After typing the undelegate amount and click "Undelegate" button, Aura Network will open your wallet to confirm the undelegate transaction. 
 
-![Validators](/img/aurascan/Undelegate_Keplr.png)
-
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your undelegated amount will begin the unbonding period straightforward.
 
 ### Redelegate
 When click on 'Manage' button, a pop up will show up, click on "Select Action" and choose "Redelegate" from the dropdown list. 
 A popup will show up with information about validator, you can click on "Select validator" button to view the dropdown list of other validators you can redelegate to.
+
 ![Validators](/img/aurascan/Redelegate.png)
 
 After choosing other trusted validator to switch your asset to from dropdown list.
@@ -127,8 +126,6 @@ After choosing other trusted validator to switch your asset to from dropdown lis
 ![Validators](/img/aurascan/switch_validator.png)
 
 After typing the delegate amount and click "Delegate", Aura Network will open your wallet to confirm the delegate transaction.
-
-![Validators](/img/aurascan/Redelegate_Keplr.png)
 
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your redelegated amount will be switched from initial validator to changed validator just been selected.
 

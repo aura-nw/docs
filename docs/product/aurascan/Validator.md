@@ -76,8 +76,6 @@ You can **__Claim Reward__** by clicking 'Claim Reward" button at top right of t
 ### Claim Reward
 When click on 'Claim Reward' button, Aura Network will connect to your wallet and conduct to claim __all__ your pending staking reward still remaining on My validators box list.
 
-![Validators](/img/aurascan/Claim_Reward_C98.png)
-
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your reward amount will be added up to your wallet straightforward.
 
 :::tip

@@ -7,18 +7,35 @@ Before doing anything with Pyxis Safe, you will have to connect your personal wa
 
 # Network selection
 
-First of all, please select the network that you will be working on from our list of supported networks, which is located in the top-right corner. A drop-down list will be shown for you to choose. In this case, “Senerity Testnet” was chosen.
-![Network selection](/img/pyxis-safe/network_selection_1.png)
+First of all, please select the network that you will be working on from our list of supported networks, which is located in the top-right corner. A drop-down list will be shown for you to choose.
+
+<div className='player-wrapper'>
+    <ReactPlayer 
+        playing 
+        controls 
+        url='/video/pyxis-safe/network_selection_1.webm' 
+        className='react-player'
+        width='100%'
+        height='100%'
+    />
+</div>
 
 # Connect your wallet
 
-All co-owners must have a personal wallet connected. For now, Pyxis Safe only supports Keplr wallet. Please click the drop-down section right next to the network selection, then click “Connect”.
+All co-owners must have a personal wallet connected. As of now, Pyxis Safe support wallets as in the below table:
+|<div align="center">Wallet</div>|<div align="center">![C98 Wallet](/img/pyxis-safe/c98.png)</div>|<div align="center">![Keplr Wallet](/img/pyxis-safe/keplr.png)</div>|
+|------|------|------|
+|Aura Testnet			|<div align="center">✅</div>|<div align="center">✅</div>|
+|Cosmos (Gaia Testnet)	|<div align="center">✅</div>|<div align="center">✅</div>|
+|Evmos Testnet			|<div align="center">❌</div>|<div align="center">✅</div>|
+
+Please click the drop-down section right next to the network selection, then click “Connect”.
 ![Connect your wallet](/img/pyxis-safe/connect_your_wallet_1.png)
 
-Proceed with the wallet connection on the Keplr wallet browser extension itself. There might be a confirmation prompt from the Keplr wallet if you have not added the network to your wallet in advance. 
+Choose your desired wallet and Proceed with the wallet connection on the wallet browser extension itself. There might be a confirmation prompt from the wallet if you have not added the network to your wallet in advance.
 
 After successfully connect to the network, you will have to sign a message to generate an access token. Proceed to continue.
-![Proceed within Keplr wallet](/img/pyxis-safe/connect_your_wallet_2.png)
+![Proceed within wallet](/img/pyxis-safe/connect_your_wallet_2.png)
 
 When you are successful connecting your wallet, your information will be shown as below.
 ![The wallet is now connnected](/img/pyxis-safe/connect_your_wallet_3.png)

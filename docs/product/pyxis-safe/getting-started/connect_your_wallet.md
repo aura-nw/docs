@@ -13,7 +13,7 @@ First of all, please select the network that you will be working on from our lis
     <ReactPlayer 
         playing 
         controls 
-        url='/video/pyxis-safe/network_selection_1.mp4' 
+        src='/video/pyxis-safe/network_selection_1.mp4' 
         className='react-player'
         width='100%'
         height='100%'
@@ -23,7 +23,7 @@ First of all, please select the network that you will be working on from our lis
 # Connect your wallet
 
 All co-owners must have a personal wallet connected. As of now, Pyxis Safe support wallets as in the below table:
-|Wallet|![C98 Wallet](/img/pyxis-safe/c98.png)|![Keplr Wallet](/img/pyxis-safe/keplr.png)|
+|Wallet|C98 Wallet|Keplr Wallet|
 |------|------|------|
 |Aura Testnet			|✅|✅|
 |Cosmos (Gaia Testnet)	|✅|✅|

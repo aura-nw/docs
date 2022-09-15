@@ -8,21 +8,12 @@ Before doing anything with Pyxis Safe, you will have to connect your personal wa
 # Network selection
 
 First of all, please select the network that you will be working on from our list of supported networks, which is located in the top-right corner. A drop-down list will be shown for you to choose.
-
-<div className='player-wrapper'>
-    <ReactPlayer 
-        playing 
-        controls 
-        src='/video/pyxis-safe/network_selection_1.mp4' 
-        className='react-player'
-        width='100%'
-        height='100%'
-    />
-</div>
+![Connect your wallet](/img/pyxis-safe/network_selection_1.gif)
 
 # Connect your wallet
 
 All co-owners must have a personal wallet connected. As of now, Pyxis Safe support wallets as in the below table:
+
 |Wallet|C98 Wallet|Keplr Wallet|
 |------|------|------|
 |Aura Testnet			|✅|✅|

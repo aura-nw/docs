@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+sidebar_label: 🏡 Welcome tutorials
+---
 Explore our collection of Examples and Tutorials
 
 1. Basic examples

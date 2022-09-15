@@ -75,6 +75,12 @@ const config = {
                     position: 'left',
                     label: '🤓 Developers',
                 },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'tutorials',
+                    position: 'left',
+                    label: '🤓 Tutorials',
+                },
 				{
                     type: 'docSidebar',
                     sidebarId: 'validator',

@@ -4,7 +4,7 @@ sidebar_label: 🏡 Welcome tutorials
 ---
 Explore our collection of Examples and Tutorials
 
-0. [Aura - Zero to hero](cw-nft-tutorial/0.Overview.md)
+0. [Aura - Zero to hero](./cw-nft-tutorial/0.Overview.md)
 1. Basic examples
    - [Simple template](./examples/0.simple-template.md)
    - [Hello Aura](./examples/1.first-app.md)

@@ -15,6 +15,7 @@ const config = {
     favicon: 'img/Aura-logo-6.png',
     organizationName: 'aura-nw', // Usually your GitHub org/user name.
     projectName: 'Documentations', // Usually your repo name.
+    staticDirectories: ['public', 'static'],
 
     presets: [
         [
@@ -27,7 +28,8 @@ const config = {
                     // Please change this to your repo.
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
                     docLayoutComponent: "@theme/DocPage",
-                    docItemComponent: "@theme/ApiItem" // Derived from docusaurus-theme-openapi-docs
+                    docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi-docs
+                    sidebarCollapsed: false,  
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -79,7 +81,7 @@ const config = {
                     type: 'docSidebar',
                     sidebarId: 'tutorials',
                     position: 'left',
-                    label: '🤓 Tutorials',
+                    label: '📓 Tutorials',
                 },
 				{
                     type: 'docSidebar',
@@ -144,6 +146,12 @@ const config = {
             disableSwitch: false,
             respectPrefersColorScheme: false,
           },
+        docs: {
+            sidebar: {
+                autoCollapseCategories: false,
+                hideable: true,
+            },
+        },
     }),
 };
 

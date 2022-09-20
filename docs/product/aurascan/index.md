@@ -15,3 +15,6 @@ If you are developers who want an environment to test all functionalities in man
 We have [an instruction](https://docs.aura.network/overview/start/aurascan) that helps you to explore many basic functionalities on AuraScan Testnet.
 
 If you have any questions or feedback, visit our community channels ([Discord](https://discord.com/invite/sKsvpQTAzP) and [Telegram](https://t.me/+zjYMBoLBslkwZjU1)). 
+
+You can find the public code repository here:
+https://github.com/aura-nw/aurascan

@@ -17,7 +17,7 @@ There are currently 4 ways to integrate with Aura Network:
 1. Use Aura Daemon command-line interface (aurad CLI)
 2. Directly invoke an Aura Node client endpoints using HTTP requests
 3. Use Javascript library [cosmosjs](https://github.com/cosmos/cosmjs)
-4. Use the centralized [Horoscope](../../horoscope/horoscope-api-documentation.info.mdx) Indexer API
+4. Use the centralized [Horoscope](../../product/horoscope/index.md) Indexer API
 
 ## Denom
 There are several denomination widely used in Aura Network.

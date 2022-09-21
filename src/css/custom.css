@@ -107,3 +107,30 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .sidebar_category {
 	color: var(--ifm-navbar-link-color);
 }
+
+.card:hover {
+  -webkit-transform: translateY(-0.5em);
+  -moz-transform: translateY(-0.5em);
+  -o-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+}
+
+.card__image {
+  overflow: hidden;
+  border: 0;
+  max-height: 215px;
+}
+
+.card__image img {
+  min-width: 100%;
+}
+
+.card__body h3 {
+  margin: 0em 0 0.3em 0 !important;
+  color: var(--ifm-font-color-base);
+}
+
+.card__body {
+  color: var(--ifm-font-color-base);
+}

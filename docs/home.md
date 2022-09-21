@@ -9,6 +9,8 @@ import {FeatureList, Column, Feature} from "@site/src/components/featurelist"
 
 This is the starting points when you want to learn about Aura ecosystem. If you are interested in more advanced topics, explore different sections for developers, validators, exchanges and others on the top bar.
 
+## Browse the most basic topics
+
 <FeatureList>
   <Column title="Aura Network overview" size="3">
     <Feature url="./intro" title="What is Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
@@ -27,33 +29,40 @@ This is the starting points when you want to learn about Aura ecosystem. If you 
   </Column>
 </FeatureList>
 
-<!-- <div class="container">
+<br/>
+---
+
+## Explore Aura-built products
+
+Here are some of the products built by the Aura Network core team.
+
+<div class="container">
   <div class="row">
     <div class="col col--6">
-      <a href="/concepts/welcome">
+      <a href="/product/aurascan/">
         <div class="card">
           <div class="card__image">
-            <img src={require("@site/static/img/feature/start.png").default} alt="Learn" />
+            <img src={require("@site/static/img/feature/aurascan.jpg").default} alt="Learn" />
           </div>
           <div class="card__body">
-            <h3>Understanding NEAR</h3>
-            Learn what NEAR is, how it works, and why you should build on it.
+            <h3>Aurascan</h3>
+            Aurascan is a beautiful, lightning fast blockchain explorer for the Cosmos ecosystem that offer both Mintscan and Etherscan features with a touch of personal customization.
           </div>
         </div>
       </a>
     </div>
     <div class="col col--6">
-      <a href="/develop/welcome">
+      <a href="product/pyxis-safe/">
         <div class="card">
           <div class="card__image">
-            <img src={require("@site/static/img/feature/start.png").default} alt="Develop" />
+            <img src={require("@site/static/img/feature/pyxis.png").default} alt="Develop" />
           </div>
           <div class="card__body">
-            <h3>Developer Documentation</h3>
-              Learn how to build contracts and unleash the power of web 3.
+            <h3>Pyxis - the Multisig solution for the Interchain</h3>
+            Pyxis is a multisignature tool that is compatible with all Cosmos based chains. Inspired by Gnosis Safe but much safer.
           </div>
         </div>
       </a>
     </div>
   </div>
-</div> -->
+</div>

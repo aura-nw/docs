@@ -111,7 +111,12 @@ const config = {
 						type: 'doc',
 						docId: 'product/aurascan/index',
 						label: '🔎 Aurascan'
-						}
+						},
+                        {
+                        type: 'doc',
+                        docId: 'product/horoscope/index',
+                        label: '🔯 Horoscope'
+                        }
 					]
                 }
             ],

@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+sidebar_label: Home
+title: Home
+---
+
 Welcome! Here you will find documentation on how to develop decentralized apps using AURA.
 
 Do not worry if you are new to smart contract technology, we will get you up to speed in no time.
@@ -11,7 +17,7 @@ Do not worry if you are new to smart contract technology, we will get you up to 
      - [Anatomy of a Contract](./contract/4.anatomy.md)
      - [Deploy a Contract](./contract/5.deploy.md)
      - [Interact with Contract](./contract/6.interaction.md)
-3. [RPC API](./contract/8.RPC_API.md)
+3. [RPC API](./contract/7.rpc.md)
 ---
 
 ## Contact us

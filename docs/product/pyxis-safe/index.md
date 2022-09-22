@@ -11,7 +11,7 @@ The Pyxis Safe is a web application that allows multiple people – "co-owners" 
 
 A fixed consensus policy of "M out of N" must be defined upon safe creation, in which M is the number of required owner signatures and N is the total number of owners. After that, all transactions that move assets out of the Safe must have at least M signatures before execution.
 
-Pyxis Safe was originally created only for our blockchain, the [Aura Network](https://aura.network/). But we decided to turn it to be compatible with other Cosmos projects as well.
+Pyxis Safe was originally created only for our [blockchain](https://aura.network/). But we decided to turn it to be compatible with other Cosmos projects as well.
 
 By default, the CosmosSDK allows users to perform multisign via the `tx multisign` command when interacting with `Aurad` ([example](https://docs.cosmos.network/master/run-node/txs.html#signing-with-multiple-signers)). However, we have not seen any mainstream consumer dapp that supports multisign at the application level yet. That's why we created Pyxis Safe.
 

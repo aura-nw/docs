@@ -18,7 +18,7 @@ All co-owners must have a personal wallet connected. As of now, Pyxis Safe suppo
 |Wallet|C98 Wallet|Keplr Wallet|
 |------|------|------|
 |Aura Testnet			|✅|✅|
-|Cosmos (Gaia Testnet)	|✅|✅|
+|Cosmos (Theta Testnet)	|✅|✅|
 |Evmos Testnet			|❌|✅|
 
 Please click the drop-down section right next to the network selection, then click “Connect”. Choose your desired wallet and Proceed with the wallet connection on the wallet browser extension itself. There might be a confirmation prompt from the wallet if you have not added the network to your wallet in advance. After successfully connect to the network, you will have to sign a message to generate an access token. Proceed to continue.

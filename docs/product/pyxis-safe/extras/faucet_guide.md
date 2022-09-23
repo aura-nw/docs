@@ -15,12 +15,12 @@ This section contains all the guidance to access to the testnet token you will n
 Special shoutout to EVMOS as they have sponsored us to setup an EVMOS testnet faucet in our Discord server.
 
 In order to get the token, please follow those below steps:
-- Join Aura Network's Discord server [here](https://discord.gg/3hjZVd2X)
+- Join [Aura Network's Discord server](https://discord.gg/3hjZVd2X).
 - In the `#👋 | pick-a-role` channel, make sure that you have the role of "Testnet Contributor" activated.
 
 ![Pick a role!](/img/pyxis-safe/extras/faucet_guide_1.gif)
 
-- You will see the `[🧪] FAUCET` section that contain various channels named following testnets. Access your desired channel - `euphoria-faucet` or `evmos-faucet`
+- You will see the `[🧪] FAUCET` section that contains various channels named following testnets. Access your desired channel - `euphoria-faucet` or `evmos-faucet`
 - Send a message with proper syntax: `I love aura <your wallet address>`.
 - If the message is correct, the channel bot will send the token to you, along with the transaction hash.
 
@@ -29,8 +29,8 @@ In order to get the token, please follow those below steps:
 ## Cosmos Hub - Theta testnet
 
 In order to get the token, please follow those below steps:
-- Join Cosmos Network's Discord server [here](https://discord.gg/cosmosnetwork)
-- You will see the `COSMOS HUB` section that contain the `# 🚰 · testnet-faucet` channel. Access the channel.
+- Join [Cosmos Network's Discord server](https://discord.gg/cosmosnetwork).
+- You will see the `COSMOS HUB` section that contains the `# 🚰 · testnet-faucet` channel. Access the channel.
 - Send a message with proper syntax: `$request <your wallet address> theta`.
 - If the message is correct, the channel bot will send the token to you, along with the transaction hash.
 

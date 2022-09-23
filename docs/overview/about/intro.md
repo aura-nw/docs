@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Welcome to Aura Network
+title: About Aura Network
 hide_table_of_contents: false
 slug: /intro
 ---

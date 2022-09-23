@@ -12,10 +12,10 @@ This is the starting points when you want to learn about Aura ecosystem. If you 
 ## Browse the most basic topics
 
 <FeatureList>
-  <Column title="Aura Network overview" size="3">
-    <Feature url="./intro" title="What is Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
+  <Column title="Overview" size="3">
+    <Feature url="./intro" title="About Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
     <Feature url="./overview/start/wallet" title="Getting started" subtitle="Go through most basic steps to interact with Aura network" image="start.png"/>
-    <Feature url="./overview/protocol/" title="Concept" subtitle="Overview of different components in the Aura chain" image="concept.png"/>
+    <Feature url="./overview/protocol/validator" title="Concept" subtitle="Overview of different components in the Aura chain" image="concept.png"/>
   </Column>
   <Column title="Developer Materials" size="3">
     <Feature url="./developer/welcome" title="Smart Contract" subtitle="Get an overview on how to write and deploy a smart contract in Aura Network" image="contract.png"/>

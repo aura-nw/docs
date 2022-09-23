@@ -15,7 +15,7 @@ This section contains all the guidance to access to the testnet token you will n
 Special shoutout to EVMOS as they have sponsored us to setup an EVMOS testnet faucet in our Discord server.
 
 In order to get the token, please follow those below steps:
-- Join [Aura Network's Discord server](https://discord.gg/3hjZVd2X).
+- Join [Aura Network's Discord server](https://discord.gg/CUDB28YJf3).
 - In the `#👋 | pick-a-role` channel, make sure that you have the role of "Testnet Contributor" activated.
 
 ![Pick a role!](/img/pyxis-safe/extras/faucet_guide_1.gif)

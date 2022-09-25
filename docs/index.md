@@ -12,10 +12,10 @@ This is the starting points when you want to learn about Aura ecosystem. If you 
 ## Browse the most basic topics
 
 <FeatureList>
-  <Column title="Aura Network overview" size="3">
-    <Feature url="./intro" title="What is Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
+  <Column title="Overview" size="3">
+    <Feature url="./intro" title="About Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
     <Feature url="./overview/start/wallet" title="Getting started" subtitle="Go through most basic steps to interact with Aura network" image="start.png"/>
-    <Feature url="./overview/protocol/" title="Concept" subtitle="Overview of different components in the Aura chain" image="concept.png"/>
+    <Feature url="./overview/protocol/validator" title="Concept" subtitle="Overview of different components in the Aura chain" image="concept.png"/>
   </Column>
   <Column title="Developer Materials" size="3">
     <Feature url="./developer/welcome" title="Smart Contract" subtitle="Get an overview on how to write and deploy a smart contract in Aura Network" image="contract.png"/>
@@ -46,7 +46,7 @@ Here are some of the products built by the Aura Network core team.
           </div>
           <div class="card__body">
             <h3>Aurascan</h3>
-            Aurascan is a beautiful, lightning fast blockchain explorer for the Cosmos ecosystem that offer both Mintscan and Etherscan features with a touch of personal customization.
+            Beautiful, blazing fast blockchain explorer for the Cosmos ecosystem offering features from both Mintscan and Etherscan, and also a touch of customization.
           </div>
         </div>
       </a>
@@ -58,8 +58,8 @@ Here are some of the products built by the Aura Network core team.
             <img src={require("@site/static/img/feature/pyxis.png").default} alt="Develop" />
           </div>
           <div class="card__body">
-            <h3>Pyxis - the Multisig solution for the Interchain</h3>
-            Pyxis is a multisignature tool that is compatible with all Cosmos based chains. Inspired by Gnosis Safe but much safer.
+            <h3>Pyxis - The multi-signature solution for the Interchain</h3>
+            A multi-signature tool that is compatible with all Cosmos-based chains. Inspired by the famous Gnosis Safe, but much safer.
           </div>
         </div>
       </a>

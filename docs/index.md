@@ -18,7 +18,7 @@ This is the starting points when you want to learn about Aura ecosystem. If you 
     <Feature url="./overview/protocol/validator" title="Concept" subtitle="Overview of different components in the Aura chain" image="concept.png"/>
   </Column>
   <Column title="Developer Materials" size="3">
-    <Feature url="./developer/welcome" title="Smart Contract" subtitle="Get an overview on how to write and deploy a smart contract in Aura Network" image="contract.png"/>
+    <Feature url="./developer" title="Smart Contract" subtitle="Get an overview on how to write and deploy a smart contract in Aura Network" image="contract.png"/>
     <Feature url="./developer/contract/rpc" title="Public Endpoints" subtitle="Check out a list of public hosted APIs" image="api.png"/>
     <Feature url="./tutorials/welcome" title="Tutorials" subtitle="Learn to build on Aura through a list of practical examples" image="tutorial.png"/>
   </Column>

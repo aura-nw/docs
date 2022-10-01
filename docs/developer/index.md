@@ -11,7 +11,7 @@ Do not worry if you are new to smart contract technology, we will get you up to 
 # Develop
 1. [Preparing development wallet](./contract/2.wallet-creating.md)
 2. Develop a contract
-   - [What is a Smart Contract?](./contract/0.whatiscontract.md)
+   - [What is a Smart Contract?](./contract/0.what-is-contract.md)
    - Build a contract
      - [Install requirements](./contract/1.introduction.md)
      - [Anatomy of a Contract](./contract/4.anatomy.md)

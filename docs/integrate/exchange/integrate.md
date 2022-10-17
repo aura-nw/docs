@@ -1,7 +1,12 @@
+---
+sidebar_position: 1
+sidebar_label: 🌟 Getting started
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 🌟 Exchange Integration
+# Exchange Integration
 
 This section is dedicated for exchanges (CEX and DEX) to integrate with Aura Network.
 
@@ -49,7 +54,7 @@ If you only need to interact with the `aurad` CLI, just compile it from source i
 - [Become a validator](../../validator/running-a-validator.md) 
 
 
-## BEP-20 Token (deprecate after October 1st 2022)
+## BEP-20 Token (deprecate after mainnet launch)
 AURA is currently being published as BEP-20 tokens on BNB Smart Chain. 
 
 Offcial Contract Address is at: [`0x23c5D1164662758b3799103Effe19cC064d897D6`](https://bscscan.com/address/0x23c5D1164662758b3799103Effe19cC064d897D6)

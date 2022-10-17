@@ -91,9 +91,9 @@ const config = {
                 },
                 {
                     type: 'docSidebar',
-                    sidebarId: 'exchange',
+                    sidebarId: 'integrate',
                     position: 'left',
-                    label: '🛍 Exchanges',
+                    label: '🔗 Integrate',
                 },
 				{
                     type: 'dropdown',

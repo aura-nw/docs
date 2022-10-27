@@ -106,6 +106,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .sidebar_category {
 	color: var(--ifm-navbar-link-color);
+  padding: 6px 12px;
 }
 
 .card:hover {

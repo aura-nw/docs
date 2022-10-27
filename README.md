@@ -38,3 +38,6 @@ yarn docusaurus clean-api-docs all
 # clean up a specific api
 yarn docusaurus clean-api-docs <id>
 ```
+
+NOTE: the plugin is having problems in parsing openAPI v3, so we can convert these docs back to swagger v2.0 using: https://www.npmjs.com/package/api-spec-converter
+

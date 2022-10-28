@@ -14,5 +14,11 @@ For this reason, a query engine that synchronizes with the blockchain that serve
 
 - Better scaling: Using a powerful database engine (MongoDB), there are different ways for maintainers to optimize scaling for the indexer engine in both horizontal and vertical direction.
 - Simplify software development pattern: as everything can be indexes and cached, software development and operation become much simpler than directly interact with nodes.
-- Advance queries: clients can perform complex queries, data aggregation, etc. which are impossible with default LCD and RPC APIs
+- Advance queries: clients can perform complex queries, data aggregation, etc. which are impossible with legacy node provided LCD and RPC APIs
+- Easy to extend: Horoscope is carefully designed to be extendable easily to crawl and index data from any Cosmos based chains. Through integration with powerful tools like [Telescope](https://github.com/osmosis-labs/telescope), it is possible to setup a chain indexer with just a few command.
 
+## 3. Development Status
+
+The first release of Horoscope focuses on building a straightforward data processing pipeline of crawling, indexing and providing Restful / GraphQL API. However, there are still quite a bit of work to write custom modules for crawling and parsing data from different chains. The next upgrade will focus on code refactoring and improving 
+
+## 4. Contribution

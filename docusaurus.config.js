@@ -29,7 +29,7 @@ const config = {
                     editUrl: 'https://github.com/aura-nw/docs/edit/main',
                     docLayoutComponent: "@theme/DocPage",
                     docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi-docs
-                    sidebarCollapsed: false,  
+                    sidebarCollapsed: true, 
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -45,7 +45,7 @@ const config = {
           docsPluginId: "classic",
           config: {
             horoscope: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-              specPath: "openAPI/horoscope-swagger.json", // Path to designated spec file
+              specPath: "openAPI/horoscope-swagger.yaml", // Path to designated spec file
               outputDir: "docs/horoscope", // Output directory for generated .mdx docs
               sidebarOptions: {
                 groupPathsBy: "tag",
@@ -112,11 +112,11 @@ const config = {
 						docId: 'product/aurascan/index',
 						label: '🔎 Aurascan'
 						},
-                        // {
-                        // type: 'doc',
-                        // docId: 'product/horoscope/index',
-                        // label: '🔯 Horoscope'
-                        // }
+                        {
+                        type: 'doc',
+                        docId: 'product/horoscope/index',
+                        label: '🔯 Horoscope'
+                        }
 					]
                 }
             ],
@@ -157,6 +157,32 @@ const config = {
                 hideable: true,
             },
         },
+        sidebar:{
+            autoCollapseCategories: true,
+        },
+        algolia: {
+            // The application ID provided by Algolia
+            appId: 'HOCNVW2214',
+      
+            // Public API key: it is safe to commit it
+            apiKey: '20b61b3938252c99491f51f430f7d75b',
+      
+            indexName: 'aura',
+      
+            // Optional: see doc section below
+            contextualSearch: true,
+      
+            // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+            // externalUrlRegex: 'external\\.com|domain\\.com',
+      
+            // Optional: Algolia search parameters
+            searchParameters: {},
+      
+            // Optional: path for search page that enabled by default (`false` to disable it)
+            searchPagePath: 'search',
+      
+            //... other Algolia params
+          },
     }),
 };
 

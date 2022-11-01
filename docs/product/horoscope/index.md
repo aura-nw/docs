@@ -11,15 +11,19 @@ Currently, it supports network builded by Cosmos SDK v0.45.1 or later. Supportin
 - Aura Network
 - Osmosis
 - Cosmos Hub
-- Evmos
 
 Why Horoscope is necessary for Aura and the Cosmos ecosystem in general:
 
 - Modular architecture that is compatible with every Cosmos-based chain.
-- Horizontal Scaling.
+- Horizontal Scaling with MongoDB
 - Blazing fast & efficient
 - Index everything (wallet, block, transaction, NFT, Tokens, etc.)
 - Restful / GraphQL APIs
 - Fully [Open source](https://github.com/aura-nw/horoscope) under MIT license
 
-Horoscope development is funded by Aura Network foundation, it is currently deployed at: https://indexer.dev.aurascan.io/openapi/
+Horoscope development is funded by Aura Network foundation, it is currently deployed at several environment:
+
+| Environment | URL                                          | Support Chain                                                                     |
+|-------------|----------------------------------------------|-----------------------------------------------------------------------------------|
+| Production  | https://horoscope.aura.network/openapi       | Aura (Euphoria), CosmosHub, Osmosis                                               |
+| Staging     | https://indexer.staging.aurascan.io/openapi/ | Aura (Serenity, Euphoria), Cosmos-hub (Theta), Osmosis (Testnet), Evmos (Testnet) |

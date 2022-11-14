@@ -50,7 +50,9 @@ Example:
 
 https://indexer.dev.aurascan.io/api/v1/asset/getByOwner?chainid=serenity-testnet-001&contractType=CW721&tokenId=MP4-haveSound-03Oct2022-CW721%20Contract%2093-2ug4&contractAddress=aura15ydv0hjccrazv65cgdxu8dt7hcftmnk35s8f3erktrhflsu5lh9q2datge&countTotal=false&pageLimit=10&pageOffset=0
 
-Output:
+### Parse output
+
+This is an output from getByOwner api:
 
 ```js
 {
@@ -97,24 +99,11 @@ Output:
                         }
                      }
                   },
-                  "custom_info":{
-                     "chain_id":"serenity-testnet-001",
-                     "chain_name":"Aura Serenity"
-                  },
-                  "image":{
-                     "link_s3":"https://nft-ipfs-indexer.s3.ap-southeast-1.amazonaws.com/5NIE6iitLuUfEWMKnDPDOJtE4qjNbJWI.gif",
-                     "content_type":"image/gif"
-                  },
-                  "history":[
-
-                  ],
-                  "_id":"636ca4483b0d64001163c0f8",
-                  "asset_id":"aura1rxqvh92fuyap0ahkr0jnupyt8q5pp58vjghr6zuxcsqww34jwdds49r54l_1667960067515",
+                  "history":[],
                   "code_id":"621",
                   "contract_address":"aura1rxqvh92fuyap0ahkr0jnupyt8q5pp58vjghr6zuxcsqww34jwdds49r54l",
                   "token_id":"1667960067515",
                   "owner":"aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e",
-                  "media_link":"",
                   "is_burned":false,
                   "metadata":{
                      "image":"ipfs://cid-image",
@@ -141,9 +130,27 @@ Output:
                   },
                   "createdAt":"2022-11-10T07:12:08.631Z",
                   "updatedAt":"2022-11-14T04:36:17.518Z",
-                  "__v":0
+                  "custom_info":{
+                     "chain_id":"serenity-testnet-001",
+                     "chain_name":"Aura Serenity"
+                  },
+                  "image":{
+                     "link_s3":"https://nft-ipfs-indexer.s3.ap-southeast-1.amazonaws.com/5NIE6iitLuUfEWMKnDPDOJtE4qjNbJWI.gif",
+                     "content_type":"image/gif"
+                  },
+                  "animation":{
+                     "link_s3":"https://nft-ipfs-indexer.s3.ap-southeast-1.amazonaws.com/bafybeicjilgl52q3iwo4b6r5sgsr4sjudb3zf5vxygcitvwf7ncfewyiei",
+                     "content_type":"video/webm"
+                  }
                },
 ```
+
+NFT onchain information is nested in asset_info field. With each NFT, Horoscope handle to have more information offchain:
+
+- code_id, contract_address, token_id: crawl from LCD
+- is_burned: is true if token was burned
+- metadata: NFT metadata (crawl from token uri or onchain)
+- image, animation: with AWS S3 link and content_type to display on frontend
 
 ## 2. Transfering NFT
 

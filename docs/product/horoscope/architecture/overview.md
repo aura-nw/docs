@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Overview of Horoscope
 ---
 
-## 1. What is blockchain indexer
+## 1. What is a blockchain indexer
 When it comes to query blockchain data, developers often try to directly query from a blockchain node. Each node often contains a local database to store transactions and state data with certain pre-defined indexes and APIs. Basic elements such as wallets, blocks and transactions are often indexed. However, when blockchain applications become more complicated and be used by more people, the need for more advanced indexes such as time, types, event, etc. arise.
 
 For this reason, a query engine that synchronizes with the blockchain that serve complex inquiries from clients are needed. This is often called a *Blockchain Indexer*.
@@ -19,6 +19,10 @@ For this reason, a query engine that synchronizes with the blockchain that serve
 
 ## 3. Development Status
 
-The first release of Horoscope focuses on building a straightforward data processing pipeline of crawling, indexing and providing Restful / GraphQL API. However, there are still quite a bit of work to write custom modules for crawling and parsing data from different chains. The next upgrade will focus on code refactoring and improving 
+The first release of Horoscope focuses on building a straightforward data processing pipeline of crawling, indexing and providing Restful / GraphQL API. However, there are still quite a bit of work to write custom modules for crawling and parsing data from different chains. The next upgrade will focus on code refactoring to improve developer experience in extending horoscope to other networks.
 
 ## 4. Contribution
+
+Horoscope is release under the [MIT License](https://github.com/aura-nw/horoscope/blob/develop/LICENSE), it is free to use and redistributed without any limitation.
+
+Horoscope is currently being developed by [Aura Network](https://aura.network) team. If you are interested in contribution to the project or want to integrate the indexer to your favorite Cosmos chain, please contact us via [Discord](https://discord.gg/bzm3dyxJxR).

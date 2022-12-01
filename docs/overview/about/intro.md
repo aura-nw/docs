@@ -10,7 +10,7 @@ slug: /intro
 Aura Network is an ecosystem built to accelerate global NFTs adoption for mainstream users. Our vision is to create a one-stop destination for building NFT projects that has real utility and gradually help transforming existing web2 businesses to web3.
 
 - Aura Network Foundation works directly with brands & IP owners to bring their web2 portfolios to web3.
-- Focus on better user experience through  
+- Focus on better user experience  
 - Pushing forward NFT adoption on real life use cases.
 - Providing web3 developers open-source, scalable tools to accelerate software development.
 - Aura Network is built using [Cosmos SDK](https://v1.cosmos.network/sdk), the world's most used framework for building blockchains. 

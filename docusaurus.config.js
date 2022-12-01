@@ -45,7 +45,7 @@ const config = {
           docsPluginId: "classic",
           config: {
             horoscope: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-              specPath: "openAPI/horoscope-swagger.yaml", // Path to designated spec file
+              specPath: "openAPI/horoscope-swagger-trimed.json", // Path to designated spec file
               outputDir: "docs/horoscope", // Output directory for generated .mdx docs
               sidebarOptions: {
                 groupPathsBy: "tag",

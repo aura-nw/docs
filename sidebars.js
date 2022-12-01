@@ -146,7 +146,7 @@ const sidebars = {
     },
     {
       "type": "html",
-	    "value": "<b> 🏗 Architecture</b>",
+	    "value": "👷‍♂️ Architecture",
 	    "className": 'sidebar_category'
     },
     { 

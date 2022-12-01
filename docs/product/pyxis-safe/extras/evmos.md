@@ -5,7 +5,7 @@ title: About EVMOS integration
 
 We are very glad that our Pyxis Safe is actively supported by EVMOS. This dedicated section will give you a brief introduction to EVMOS and some specific information about using Pyxis to multi-sig on EVMOS.
 
-# About EVMOS
+## About EVMOS
 
 [EVMOS](https://evmos.org/) is a scalable, high-throughput PoS blockchain that is fully compatible and interoperable with Ethereum. It's built using the Cosmos SDK, which runs on top of the Tendermint consensus engine.
 
@@ -13,17 +13,17 @@ EVMOS allows for running vanilla Ethereum as a Cosmos application-specific block
 
 For further documentation, please visit [EVMOS Documentation](https://docs.evmos.org/).
 
-# Using Pyxis on EVMOS
+## Using Pyxis on EVMOS
 
 :::info Note
 An EVMOS wallet private key will generate two different addresses (Hex and Bech32), but multi-sig operations will only work using the Bech32 address (evmos1sw6dxh8dgqw5txz...).
 :::
 
-## Wallet support
+### Wallet support
 
 Pyxis currently supports multi-sig on EVMOS using Keplr wallet. There should be more wallets that support EVMOS in the future.
 
-## A Safe on EVMOS
+### A Safe on EVMOS
 
 An EVMOS safe is like a safe on any other network that consists of a pre-defined combination of owner and signature threshold. The below safe has two owners, and each outgoing transaction requires a signature from any of the two.
 

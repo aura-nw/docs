@@ -3,15 +3,15 @@ sidebar_position: 2
 title: Guide to Testnet Faucets
 ---
 
-# Network Support
+## Network Support
 This section contains all the guidance to access to the testnet token you will need to test out our Pyxis Safe. Currently we support three testnets as below:
 - Aura Network (Euphoria testnet), $EAURA
 - EVMOS testnet, $TEVMOS
 - Cosmos Hub (Theta testnet), $ATOM
 
-# Faucet Guide
+## Faucet Guide
 
-## Aura Network (Euphoria testnet) and EVMOS tesnet
+### Aura Network (Euphoria testnet) and EVMOS tesnet
 Special shoutout to EVMOS as they have sponsored us to setup an EVMOS testnet faucet in our Discord server.
 
 In order to get the token, please follow those below steps:
@@ -26,7 +26,7 @@ In order to get the token, please follow those below steps:
 
 ![Get token!](/img/pyxis-safe/extras/faucet_guide_2.gif)
 
-## Cosmos Hub - Theta testnet
+### Cosmos Hub - Theta testnet
 
 In order to get the token, please follow those below steps:
 - Join [Cosmos Network's Discord server](https://discord.gg/cosmosnetwork).

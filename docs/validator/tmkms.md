@@ -1,3 +1,9 @@
+---
+sidebar_position: 7
+sidebar_label: Key Management
+title: Tendermint Key Management System
+---
+
 TMKMS is for making the priv validator key secure and prevent from double signing when having a backup node ready. 
 For the backup node to be ready it must be synced upfront and the priv_validator_laddr should be specified allready.  
 Also the TMKMS should be on a separate system. 

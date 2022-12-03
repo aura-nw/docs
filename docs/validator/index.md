@@ -48,7 +48,9 @@ Please refer to the [Governing section](https://github.com/aura-nw/mainnet-artif
 # 5. Can I receive foundation delegation ?
 We have compiled a comprehensive plan on our [Foundation Delegation Program](https://github.com/aura-nw/mainnet-artifacts/tree/main/Foundation-delegation-program). Please read it very carefully!
 
-In short, we will have to keep the foundation delegated slot small in the beginning (maximum 25 slots) and will reevaluate every validator after the first 3 months. All information about selection criteria and decision will be transparent. However, the final decision belongs to the Aura Network Foundation.
+In short, we will have to keep the foundation delegated slot small in the beginning (maximum 25 slots) and will reevaluate every validator after the first 3 months. There are a lot of good validators with similar technical capability of running nodes, relayers, monitoring, writing automation toolings, etc. Thus, through delegation incentivization, we want to encourage **only** validators who dedicate their time for Aura Network by contributing **extra** value to the project !
+
+All information about selection criteria and decision will be transparent. However, the final decision belongs to the Aura Network Foundation.
 
 # 6. I am in, what now ?
 

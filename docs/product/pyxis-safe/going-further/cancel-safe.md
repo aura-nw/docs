@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
+title: Cancel a Safe creation request
 ---
 
-# Cancel a Safe creation request
 Before the safe is active, the safe creator can cancel the request for safe creation. On the safe list, choose the pending Safe that you have created, and click “Cancel”.
 
 ![Cancel a Safe creation request](/img/pyxis-safe/cancel_safe_1.png)

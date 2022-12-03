@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
+title: Add your own Safe
 ---
 
-# Add your own Safe
 If you switch to other devices, you have to add the safe again in order to manage it. Open the Safe list, choose a safe that you own but has not been added yet, and click “Add Safe”.
 
 ![Add your own Safe](/img/pyxis-safe/add_own_safe_1.png)

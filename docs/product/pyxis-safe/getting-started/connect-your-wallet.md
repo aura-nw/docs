@@ -5,13 +5,13 @@ title: Connect your wallet
 
 Before doing anything with Pyxis Safe, you will have to connect your personal wallet. The personal wallet will act as the safe owner who will be able to create, sign, execute transaction, and more. 
 
-# Network selection
+## Network selection
 
 First of all, please select the network that you will be working on from our list of supported networks, which is located in the top-right corner. A drop-down list will be shown for you to choose.
 
 ![Network selection](/img/pyxis-safe/network_selection_1.gif)
 
-# Connect your wallet
+## Connect your wallet
 
 All co-owners must have a personal wallet connected. As of now, Pyxis Safe support wallets as in the below table:
 

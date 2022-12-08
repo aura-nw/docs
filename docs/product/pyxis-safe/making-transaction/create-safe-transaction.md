@@ -1,9 +1,9 @@
 ---
-sidebar_position: 4
-title: Making Transactions
+sidebar_position: 1
+title: Multi-sig Tx - Example of sending funds
 ---
 
-Every transaction moving assets out of the Safe requires enough confirmations before it can be executed.
+Every transaction moving assets out of the Safe requires enough confirmations before it can be executed. The below steps were performed on a "Send" transaction that sends tokens to a recipient. Other transactions, such as staking, voting, etc. will follow the same process. 
 
 ## Create a new transaction from the Safe
  On the main screen, click “New transaction”. 

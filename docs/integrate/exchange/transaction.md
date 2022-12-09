@@ -14,7 +14,7 @@ For example, running the following command to send 1 eAura from `A` to `B`:
 <TabItem value="testnet" label="Euphoria Testnet">
 
 ```bash
-aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --node https://rpc.euphoria.aura.network:443
+aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-2 --keyring-backend os --node https://rpc.euphoria.aura.network:443
 ```
 
 </TabItem>
@@ -34,7 +34,7 @@ It's possible to run the steps individually
 <TabItem value="testnet" label="Euphoria Testnet">
 
 ```
-aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --keyring-backend os --generate-only > unsigned_tx.json  
+aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-2 --keyring-backend os --generate-only > unsigned_tx.json  
 ```
 
 </TabItem>
@@ -45,7 +45,7 @@ aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000ueaura --chain-id euphoria-1 --k
 <TabItem value="testnet" label="Euphoria Testnet">
 
 ```
-aurad tx sign unsigned_tx.json --chain-id euphoria-1 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
+aurad tx sign unsigned_tx.json --chain-id euphoria-2 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
 ```
 </TabItem>
 </Tabs>

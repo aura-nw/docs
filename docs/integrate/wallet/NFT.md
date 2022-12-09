@@ -30,7 +30,7 @@ $Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
 Input:
 
 - Owner address
-- Chainid: aura-testnet, serenity-testnet-001, euphoria-1
+- Chainid: aura-testnet, serenity-testnet-001, euphoria-2
 - contractType = CW721
 
 Example:
@@ -41,7 +41,7 @@ https://indexer.dev.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe74
 
 Input:
 
-- Chainid: aura-testnet, serenity-testnet-001, euphoria-1
+- Chainid: aura-testnet, serenity-testnet-001, euphoria-2
 - contractType = CW721
 - contractAddress (return from list all)
 - tokenID (return from list all)

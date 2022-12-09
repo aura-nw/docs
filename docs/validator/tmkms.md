@@ -52,7 +52,7 @@ nano $HOME/tmkms/config/tmkms.toml
 ### Cosmos Hub Network
 
 [[chain]]
-id = "euphoria-1"
+id = "euphoria-2"
 key_format = { type = "bech32", account_key_prefix = "aurapub", consensus_key_prefix = "auravalconspub" }
 state_file = "/root/tmkms/config/state/priv_validator_state.json"
 
@@ -61,14 +61,14 @@ state_file = "/root/tmkms/config/state/priv_validator_state.json"
 ### Software-based Signer Configuration
 
 [[providers.softsign]]
-chain_ids = ["euphoria-1"]
+chain_ids = ["euphoria-2"]
 key_type = "consensus"
 path = "/root/tmkms/config/secrets/priv_validator_key"
 
 ## Validator Configuration
 
 [[validator]]
-chain_id = "euphoria-1"
+chain_id = "euphoria-2"
 addr = "tcp://"ipaddresnode":26680" # your validator node ip and port
 secret_key = "/root/tmkms/config/secrets/secret_connection_key"
 protocol_version = "v0.34"

@@ -8,6 +8,7 @@ slug: /
 import {FeatureList, Column, Feature} from "@site/src/components/featurelist"
 
 This is the starting points when you want to learn about Aura ecosystem. If you are interested in more advanced topics, explore different sections for developers, validators, exchanges and others on the top bar.
+Test my first commit
 
 ## Browse the most basic topics
 

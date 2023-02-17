@@ -60,62 +60,62 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
         navbar: {
-            title: 'Aura.network',
             logo: {
-                alt: 'My Site Logo',
-                src: 'img/Aura-logo-6.png',
+              alt: 'My Site Logo',
+              src: 'img/aura-logo-2.png',
+              srcDark: 'img/aura-logo.png',
             },
             items: [{
                     type: 'docSidebar',
                     sidebarId: 'overview',
                     position: 'left',
-                    label: '🏡 Overview',
+                    label: 'Overview',
                 },
 				{
                     type: 'docSidebar',
                     sidebarId: 'developer',
                     position: 'left',
-                    label: '🤓 Developers',
+                    label: 'Developers',
                 },
                 {
                     type: 'docSidebar',
                     sidebarId: 'tutorials',
                     position: 'left',
-                    label: '📓 Tutorials',
+                    label: 'Tutorials',
                 },
 				{
                     type: 'docSidebar',
                     sidebarId: 'validator',
                     position: 'left',
-                    label: '🖥 Validators',
+                    label: 'Validators',
                 },
                 {
                     type: 'docSidebar',
                     sidebarId: 'integrate',
                     position: 'left',
-                    label: '🔗 Integrate',
+                    label: 'Integrate',
                 },
 				{
                     type: 'dropdown',
                     sidebarId: 'product',
                     position: 'left',
-                    label: '🌐 Ecosystem',
+                    label: 'Ecosystem',
 					items:
 					[
 						{
 						type: 'doc',
 						docId: 'product/pyxis-safe/index',
-						label: '🔐 Pyxis Safe'
+						label: 'Pyxis Safe'
 						},
 						{
 						type: 'doc',
 						docId: 'product/aurascan/index',
-						label: '🔎 Aurascan'
+						label: 'Aurascan'
 						},
                         {
                         type: 'doc',
                         docId: 'product/horoscope/index',
-                        label: '🔯 Horoscope'
+                        label: 'Horoscope'
                         }
 					]
                 }

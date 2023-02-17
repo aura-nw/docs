@@ -2,7 +2,6 @@
 sidebar_position: 1
 title: About Aura Network
 hide_table_of_contents: false
-slug: /intro
 ---
 
 # 📰 About Aura Network

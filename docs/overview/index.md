@@ -3,7 +3,6 @@ sidebar_position: 0
 sidebar_label: Home
 title: Welcome to the Aura Network 
 hide_table_of_contents: true
-slug: /
 ---
 import {FeatureList, Column, Feature} from "@site/src/components/featurelist"
 

@@ -2,7 +2,6 @@
 sidebar_position: 2
 title: Tokenomics
 hide_table_of_contents: false
-slug: /tokenomics
 ---
 
 # Aura Network Tokenomics

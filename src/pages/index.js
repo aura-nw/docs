@@ -18,10 +18,10 @@ export default function Home() {
                         in more advanced topics, explore different sections for developers, validators, exchanges and
                         others on the top bar.
                     </p>
-                    <button onClick={() => window.location.href='/overview/about/intro'}>Explore now</button>
+                    <button onClick={() => window.location.href='https://docs.aura.network/overview/about/intro'}>Explore now</button>
                 </div>
                 <div className='spotlight'>
-                    <div className='aura-card'>
+                    <div className='aura-card' onClick={() => window.location.href='https://docs.aura.network/overview/about/intro'}>
                         <div>
                             <div className='img'>
                                 <img src={AuraImg} alt='' />
@@ -31,13 +31,13 @@ export default function Home() {
                                 <p className='description'>
                                     Learn the Basics about Aura Network, features and tokenomics
                                 </p>
-                                <a href='/overview/about/intro'>
+                                <a href='https://docs.aura.network/overview/about/intro'>
                                     Know more <span>🡪</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className='aura-card'>
+                    <div className='aura-card' onClick={() => window.location.href='https://docs.aura.network/overview/start/wallet'}>
                         <div>
                             <div className='img'>
                                 <img src={RocketImg} alt='' />
@@ -45,13 +45,13 @@ export default function Home() {
                             <div>
                                 <p className='title'>Getting started</p>
                                 <p className='description'>Go through most basic steps to interact with Aura network</p>
-                                <a href='/overview/start/wallet'>
+                                <a href='https://docs.aura.network/overview/start/wallet'>
                                     Know more <span>🡪</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className='aura-card'>
+                    <div className='aura-card' onClick={() => window.location.href='https://docs.aura.network/validator/'}>
                         <div>
                             <div className='img'>
                                 <img src={CheckImg} alt='' />
@@ -61,7 +61,7 @@ export default function Home() {
                                 <p className='description'>
                                     Validators are responsible for committing new blocks in the blockchain.
                                 </p>
-                                <a href='/validator/'>
+                                <a href='https://docs.aura.network/validator/'>
                                     Know more <span>🡪</span>
                                 </a>
                             </div>
@@ -79,14 +79,14 @@ export default function Home() {
                                     Don’t worry if you are new to smart contract technology, we will get you up to speed
                                     in no time.
                                 </p>
-                                <a href='/developer/'>
+                                <a href='https://docs.aura.network/developer/'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
                             <div className='aura-card'>
                                 <p className='title'>View Tutorials</p>
                                 <p className='description'>Explore our collection of Examples and Tutorials</p>
-                                <a href='/tutorials/Welcome'>
+                                <a href='https://docs.aura.network/tutorials/Welcome'>
                                     View Tutorials <span>🡪</span>
                                 </a>
                             </div>
@@ -95,7 +95,7 @@ export default function Home() {
                                 <p className='description'>
                                     This section is dedicated for validators who want to validate on Aura Network.
                                 </p>
-                                <a href='/validator/'>
+                                <a href='https://docs.aura.network/validator/'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
@@ -105,7 +105,7 @@ export default function Home() {
                                     This section is dedicated for exchanges (CEX and DEX) to integrate with Aura
                                     Network.
                                 </p>
-                                <a href='/integrate/exchange/integrate'>
+                                <a href='https://docs.aura.network/integrate/exchange/integrate'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
@@ -129,7 +129,7 @@ export default function Home() {
                                         Beautiful, blazing fast blockchain explorer for the Cosmos ecosystem offering
                                         features from both Mintscan and Etherscan, and also a touch of customization.
                                     </p>
-                                    <button onClick={() => (window.location.href = '/product/aurascan/')}>
+                                    <button onClick={() => (window.location.href = 'https://docs.aura.network/product/aurascan/')}>
                                         Explore now
                                     </button>
                                 </div>
@@ -144,7 +144,7 @@ export default function Home() {
                                         A multi-signature tool that is compatible with all Cosmos-based chains. Inspired
                                         by the famous Gnosis Safe, but much safer.
                                     </p>
-                                    <button onClick={() => (window.location.href = '/product/pyxis-safe/')}>
+                                    <button onClick={() => (window.location.href = 'https://docs.aura.network/product/pyxis-safe/')}>
                                         Explore now
                                     </button>
                                 </div>

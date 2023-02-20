@@ -157,52 +157,32 @@ const config = {
                         ],
                     },
                     {
-                        title: 'Documentation',
+                        title: 'Community',
                         items: [
                             {
-                                label: 'Learn',
-                                to: '/',
+                                label: 'Discord',
+                                to: 'https://discord.gg/CUDB28YJf3',
                             },
                             {
-                                label: 'Developers',
-                                to: '/',
+                                label: 'Twitter',
+                                to: 'https://twitter.com/AuraNetworkHQ',
                             },
                             {
-                                label: 'Validators',
-                                to: '/',
-                            },
-                            {
-                                label: 'Command Line',
-                                to: '/',
-                            },
-                            {
-                                label: 'Archiecture',
+                                label: 'Telegram',
                                 to: '/',
                             },
                         ],
                     },
                     {
-                        title: 'Documentation',
+                        title: 'More',
                         items: [
                             {
-                                label: 'Learn',
-                                to: '/',
+                                label: 'Github',
+                                to: 'https://github.com/aura-nw',
                             },
                             {
-                                label: 'Developers',
-                                to: '/',
-                            },
-                            {
-                                label: 'Validators',
-                                to: '/',
-                            },
-                            {
-                                label: 'Command Line',
-                                to: '/',
-                            },
-                            {
-                                label: 'Archiecture',
-                                to: '/',
+                                label: 'Blog',
+                                to: 'https://insight.aura.network/',
                             },
                         ],
                     },

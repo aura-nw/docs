@@ -29,10 +29,10 @@
         flex: 1;
     }
     .category {
-      padding: 0px!important;
+        padding: 0px !important;
     }
     .epl-card {
-      max-width: unset!important;
+        max-width: unset !important;
     }
 }
 
@@ -88,9 +88,9 @@
 }
 .spotlight {
     display: flex;
-    max-width: 1100px;
-    margin: auto;
+    width: 100%;
     padding-bottom: 24px;
+    justify-content: center;
 }
 .spotlight > .aura-card {
     flex: 1;
@@ -102,12 +102,23 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
 }
 .aura-card > div {
     padding: 22px;
     cursor: pointer;
     border-radius: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.aura-card > div > div:not(.img) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .aura-card > div:hover:before {
@@ -218,6 +229,7 @@
 .epl-cards {
     display: flex;
     margin-bottom: 86px;
+    margin-top: 16px;
     justify-content: center;
 }
 .epl-card {
@@ -258,8 +270,9 @@
     margin-bottom: 22px;
     flex: 1;
 }
-.aura-card, .epl-card {
-  cursor: pointer;
+.aura-card,
+.epl-card {
+    cursor: pointer;
 }
 
 [data-theme='light'] .aura-intro {

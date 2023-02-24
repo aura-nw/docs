@@ -6,49 +6,49 @@
 
 /* You can override the default Infima variables here. */
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Thin.ttf');
-  font-weight: 100;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Thin.ttf');
+    font-weight: 100;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-ExtraLight.ttf');
-  font-weight: 200;
+    font-family: Inter;
+    src: url('../../static/font/Inter-ExtraLight.ttf');
+    font-weight: 200;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Light.ttf');
-  font-weight: 300;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Light.ttf');
+    font-weight: 300;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Regular.ttf');
-  font-weight: 400;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Regular.ttf');
+    font-weight: 400;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Medium.ttf');
-  font-weight: 500;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Medium.ttf');
+    font-weight: 500;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-SemiBold.ttf');
-  font-weight: 600;
+    font-family: Inter;
+    src: url('../../static/font/Inter-SemiBold.ttf');
+    font-weight: 600;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Bold.ttf');
-  font-weight: 700;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Bold.ttf');
+    font-weight: 700;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-ExtraBold.ttf');
-  font-weight: 800;
+    font-family: Inter;
+    src: url('../../static/font/Inter-ExtraBold.ttf');
+    font-weight: 800;
 }
 @font-face {
-  font-family: Inter;
-  src: url('../../static/font/Inter-Black.ttf');
-  font-weight: 900;
+    font-family: Inter;
+    src: url('../../static/font/Inter-Black.ttf');
+    font-weight: 900;
 }
 
 :root {
@@ -65,9 +65,8 @@
     --ifm-heading-font-family: 'Inter';
 }
 
-
 html {
-    font-family: var(--ifm-font-family-base), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--ifm-font-family-base);
 }
 
 .navbar__link {
@@ -77,8 +76,8 @@ html {
 }
 
 .api-method > .menu__link {
-  justify-content: space-between!important;
-  flex-direction: row-reverse;
+    justify-content: space-between !important;
+    flex-direction: row-reverse;
 }
 
 .docusaurus-highlight-code-line {

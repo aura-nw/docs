@@ -15,7 +15,7 @@ You can choose from these following indexer server to integrate with the wallet.
 
 | Environment | Description                             | URL                                 |
 | ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aurascan.io       |
+| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
 | Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
 | Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
 

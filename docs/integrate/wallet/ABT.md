@@ -22,7 +22,7 @@ You can choose from these following indexer server to integrate with the wallet.
 ABT can be retrieved over the following API:
 
 ```
-$Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
+$Indexer_URL$/api/v1/asset/getByOwner
 ```
 
 ### List all CW4973 (ABT) asset of one address

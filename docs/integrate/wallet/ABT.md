@@ -15,14 +15,14 @@ You can choose from these following indexer server to integrate with the wallet.
 
 | Environment | Description                             | URL                                 |
 | ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aurascan.io       |
+| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
 | Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
 | Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
 
 ABT can be retrieved over the following API:
 
 ```
-$Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
+$Indexer_URL$/api/v1/asset/getByOwner
 ```
 
 ### List all CW4973 (ABT) asset of one address
@@ -35,7 +35,7 @@ Input:
 
 Example:
 
-https://horoscope.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0
+https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Detail of one CW4973 (ABT)
 
@@ -48,7 +48,7 @@ Input:
 
 Example:
 
-https://horoscope.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=fb65ea0dba1b7c2e6f259d5a8d576e639235085bf42394cbd1ba677f65aca901&countTotal=false&pageLimit=10&pageOffset=0
+https://horoscope.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Parse output
 

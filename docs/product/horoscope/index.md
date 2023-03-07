@@ -3,6 +3,7 @@ sidebar_position: 1
 sidebar_label: Home
 title: Horoscope - indexers of the interchain
 ---
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 Horoscope is an indexing service for Cosmos-based blockchain. It crawl data from the blockchain and index it into mongoDB. Based on the data, it can provide search functionality instead of querying data from LCD or RPC directly.
 
@@ -27,3 +28,5 @@ Horoscope development is funded by Aura Network foundation, it is currently depl
 |-------------|----------------------------------------------|-----------------------------------------------------------------------------------|
 | Production  | https://horoscope.aura.network/openapi       | Aura (Euphoria), CosmosHub, Osmosis                                               |
 | Staging     | https://indexer.staging.aurascan.io/openapi/ | Aura (Serenity, Euphoria), Cosmos-hub (Theta), Osmosis (Testnet), Evmos (Testnet) |
+
+<ContactUs />

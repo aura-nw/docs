@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '@theme/Layout'
 import './index.css'
+import CustomFooter from '../components/CustomFooter'
 import AuraImg from '../../static/img/aura.png'
 import RocketImg from '../../static/img/rocket.png'
 import CheckImg from '../../static/img/check.png'
@@ -152,6 +153,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <CustomFooter/>
             </div>
         </Layout>
     )

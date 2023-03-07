@@ -4,9 +4,11 @@
         flex-wrap: wrap;
     }
     .aura-card,
+    .aura-doc-card,
     .epl-card {
         flex: 100% !important;
     }
+    .spotlight > .aura-doc-card,
     .spotlight > .aura-card {
         margin: 16px !important;
     }
@@ -21,13 +23,16 @@
         font-size: 40px !important;
         line-height: 48px !important;
     }
+    .spotlight .aura-doc-card > div,
     .spotlight .aura-card > div {
         display: flex;
         align-items: flex-start;
     }
+    .spotlight .aura-doc-card > div > .img,
     .spotlight .aura-card > div > .img {
         margin-right: 16px;
     }
+    .spotlight .aura-doc-card > div > :not(.img),
     .spotlight .aura-card > div > :not(.img) {
         flex: 1;
     }
@@ -107,6 +112,7 @@ button:hover {
     position: relative;
     z-index: 1;
 }
+.spotlight > .aura-doc-card,
 .spotlight > .aura-card {
     flex: 1;
     margin: -52px 16px 16px;
@@ -121,6 +127,7 @@ button:hover {
     flex-direction: column;
     max-width: 360px;
 }
+.aura-doc-card > div,
 .aura-card > div {
     padding: 22px;
     cursor: pointer;
@@ -130,13 +137,14 @@ button:hover {
     flex-direction: column;
     flex: 1;
 }
+.aura-doc-card > div > div:not(.img),
 .aura-card > div > div:not(.img) {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
-.aura-card > div:after {
+.aura-doc-card > div:hover:after,
+.aura-card  > div:after {
     content: '';
     z-index: -1;
     position: absolute;
@@ -155,10 +163,11 @@ button:hover {
     opacity: 0;
     transition: all 0.2s ease;
 }
+.aura-doc-card > div:hover:after,
 .aura-card > div:hover:after {
     opacity: 0.35;
 }
-
+.aura-doc-card .img,
 .aura-card .img {
     background: #24262e;
     border-radius: 8px;
@@ -167,10 +176,12 @@ button:hover {
     display: flex;
     margin-bottom: 16px;
 }
+.aura-doc-card .img img,
 .aura-card .img img {
     height: 32px;
     width: 32px;
 }
+.aura-doc-card .title,
 .aura-card .title {
     font-weight: 600;
     font-size: 22px;
@@ -178,6 +189,7 @@ button:hover {
     color: #f2f3f5;
     margin: 0px 0px 8px;
 }
+.aura-doc-card .description,
 .aura-card .description {
     font-weight: 400;
     font-size: 16px;
@@ -186,9 +198,11 @@ button:hover {
     margin: 0px 0px 14px;
     flex: 1;
 }
+.aura-doc-card a,
 .aura-card a {
     cursor: pointer;
 }
+.aura-doc-card a span,
 .aura-card a span {
     font-size: 12px;
 }
@@ -310,6 +324,13 @@ button:hover {
         linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
     border: 2px solid transparent;
 }
+[data-theme='light'] .spotlight > .aura-doc-card {
+    background-image: linear-gradient(#f2f3f5, #f2f3f5),
+        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
 [data-theme='light'] .spotlight {
     background: #ccd0d5;
 }
@@ -320,6 +341,12 @@ button:hover {
     color: rgba(54, 56, 67, 1);
 }
 [data-theme='light'] .aura-card .description {
+    color: #717582;
+}
+[data-theme='light'] .aura-doc-card .title {
+    color: rgba(54, 56, 67, 1);
+}
+[data-theme='light'] .aura-doc-card .description {
     color: #717582;
 }
 [data-theme='light'] .aura-card {

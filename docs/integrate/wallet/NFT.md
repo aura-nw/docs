@@ -5,7 +5,8 @@ sidebar_label: Non-fungible Token
 
 # Aura NFT integration for wallet
 
-It is recommend to use Horoscope, the interchain indexer for querying NFT data on Aura Network. Other interaction with the NFT contract can be executed by sending corresponding CosmWasm transaction to the network.
+It is recommend to use Horoscope, the interchain indexer for querying NFT data on Aura Network. Other interaction with the NFT contract can be executed by sending corresponding CosmWasm transaction to the network.  
+Currently, Horoscope supports 2 types NFT: CW721 and CW4973. You can read documentation about [CW721](https://github.com/CosmWasm/cw-nfts/blob/main/packages/cw721/README.md) and [CW4973](https://github.com/aura-nw/cw-nfts/tree/cw4973/contracts/cw4973) to understand their specification.
 
 ## 1. Querying NFT
 
@@ -15,34 +16,34 @@ You can choose from these following indexer server to integrate with the wallet.
 
 | Environment | Description                             | URL                                 |
 | ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
+| Production  | Only support Mainnet                    | https://horoscope.aurascan.io       |
 | Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
 | Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
 
 NFT can be retrieved over the following API:
 
 ```
-$Indexer_URL$/api/v1/asset/getByOwner
+$Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
 ```
 
-### List all CW721 (NFT) asset of one address
+### List all CW721/CW4973 (NFT) asset of one address
 
 Input:
 
 - Owner address
 - Chainid: aura-testnet, serenity-testnet-001, euphoria-2
-- contractType = CW721
+- contractType = CW721, CW4973
 
 Example:
 
 https://indexer.dev.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=serenity-testnet-001&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0
 
-### Detail of one CW721 (NFT)
+### Detail of one CW721, CW4973 (NFT)
 
 Input:
 
 - Chainid: aura-testnet, serenity-testnet-001, euphoria-2
-- contractType = CW721
+- contractType = CW721, CW4973
 - contractAddress (return from list all)
 - tokenID (return from list all)
 
@@ -154,7 +155,8 @@ NFT onchain information is nested in asset_info field. With each NFT, Horoscope 
 
 ## 2. Transfering NFT
 
-Tranfering NFT can be performed by executing CosmWasm transactions with the following format:
+Only CW721 can be tranfered between 2 addresses (CW4973 is not created for transfering NFT).  
+Tranfering CW721 NFT can be performed by executing CosmWasm transactions with the following format:
 
 ```js
 "tx": {

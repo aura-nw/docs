@@ -63,7 +63,7 @@
     --ifm-hr-margin-vertical: 0.5rem;
     --ifm-font-family-base: 'Inter';
     --ifm-heading-font-family: 'Inter';
-    --ifm-footer-background-color: #fff
+    --ifm-footer-background-color: #fff;
 }
 
 html {
@@ -90,6 +90,9 @@ html {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgba(0, 0, 0, 0.3);
+}
+html[data-theme='dark'] {
+    --ifm-footer-background-color: #24262e;
 }
 
 .hero--primary {

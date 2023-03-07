@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.scss';
 import '@site/src/pages/index.css';
-import AuraImg from '../../../static/img/aura-logo-6.png';
+import AuraImg from '../../../static/img/Aura-logo-6.png';
 import { TelegramIcon, TwitterIcon, DiscordIcon, GithubIcon, BlogIcon } from '../icons';
 
 

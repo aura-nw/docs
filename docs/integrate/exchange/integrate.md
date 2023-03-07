@@ -40,7 +40,7 @@ To avoid confusion with testnet currency, we have different denoms for tokens on
 
 You can either run your own full node following the guide here: [Running a full node](../../validator/running-a-fullnode.md).
 
-Or directly query public API endpoints [here](../../developer/contract/7.rpc.md).
+Or directly query public API endpoints [here](../../developer/getting-started/rpc).
 
 If you only need to interact with the `aurad` CLI, just compile it from source is enough.
 

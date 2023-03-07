@@ -3,7 +3,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
     padding-bottom: 0;
 
     @mixin custom-footer-wrapper__vertical() {
@@ -39,10 +39,10 @@
           opacity: 1;
         }
         &:first-child {
-          margin-left: 15px;
+          margin-left: 0;
         }
         &:last-child {
-          margin-right: 15;
+          margin-right: 15px;
         }
       }
     }

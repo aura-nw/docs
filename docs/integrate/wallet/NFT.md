@@ -15,14 +15,14 @@ You can choose from these following indexer server to integrate with the wallet.
 
 | Environment | Description                             | URL                                 |
 | ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aurascan.io       |
+| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
 | Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
 | Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
 
 NFT can be retrieved over the following API:
 
 ```
-$Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
+$Indexer_URL$/api/v1/asset/getByOwner
 ```
 
 ### List all CW721 (NFT) asset of one address

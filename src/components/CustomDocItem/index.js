@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ActualDocItem from '@theme/DocItem';
+import ApiItem from '@theme/ApiItem';
 import styles from './styles.module.scss';
 import CustomFooter from '../CustomFooter';
 
@@ -29,7 +29,7 @@ const CustomDocItem = props => {
         : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
     }
     >
-    <ActualDocItem {...props} />
+    <ApiItem {...props} />
       <div className={styles['custom_doc_item_footer']}>
         <CustomFooter/>
       </div>

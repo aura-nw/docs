@@ -10,6 +10,9 @@
     .spotlight > .aura-card {
         margin: 16px !important;
     }
+    .aura-intro {
+        padding: 0px 12px;
+    }
     .aura-intro > h1 {
         font-size: 24px !important;
         line-height: 29px !important;
@@ -36,7 +39,13 @@
     }
 }
 a {
-  font-weight: 600;
+    font-weight: 600;
+}
+button:hover {
+    filter: brightness(1.08);
+}
+.aura-intro button {
+    min-width: 177px;
 }
 .aura-intro {
     display: flex;
@@ -131,17 +140,17 @@ a {
     content: '';
     z-index: -1;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
     background: linear-gradient(
         108.46deg,
         rgb(94, 230, 208) 12.51%,
         rgb(191, 198, 255) 51.13%,
         rgb(255, 186, 105) 87.49%
     );
-    filter: blur(24px);
+    filter: blur(30px);
     border-radius: 32px;
     opacity: 0;
     transition: all 0.2s ease;
@@ -290,7 +299,7 @@ a {
     background-image: url('../../static/img/home-bg-1-light.png');
 }
 [data-theme='light'] .category {
-    background-image:url('../../static/img/home-bg-2-light.png');
+    background-image: url('../../static/img/home-bg-2-light.png');
 }
 [data-theme='light'] .home-root {
     background-color: #f2f3f5;
@@ -300,7 +309,6 @@ a {
     background-image: linear-gradient(#f2f3f5, #f2f3f5),
         linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
     border: 2px solid transparent;
-
 }
 [data-theme='light'] .spotlight {
     background: #ccd0d5;
@@ -318,12 +326,12 @@ a {
     background-color: #fff !important;
 }
 [data-theme='light'] .category .aura-card {
-  border: 1px solid #E5E7EA;
+    border: 1px solid #e5e7ea;
 }
 [data-theme='light'] .section-title {
     color: #363843;
 }
 [data-theme='light'] .epl-card {
     background: #fff;
-    border: 1px solid #E5E7EA;
+    border: 1px solid #e5e7ea;
 }

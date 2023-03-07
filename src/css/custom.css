@@ -51,6 +51,21 @@
     font-weight: 900;
 }
 
+.navbar__logo img {
+    display: block !important;
+}
+.navbar__logo {
+    height: auto;
+}
+.navbar__logo img {
+    height: 36px;
+}
+
+@media only screen and (min-width: 920px) {
+    .navbar__logo img {
+        height: 43px !important;
+    }
+}
 :root {
     --ifm-color-primary: #6610f2;
     --ifm-color-primary-dark: rgb(33, 175, 144);

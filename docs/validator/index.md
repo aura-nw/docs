@@ -3,6 +3,7 @@ sidebar_position: 1
 sidebar_label: Home
 title: Validating on Aura Network
 ---
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 This section is dedicated for validators who want to validate on Aura Network. 
 
@@ -57,3 +58,6 @@ All information about selection criteria and decision will be transparent. Howev
 If you have any questions, or simply would want to chat with us, please do through one of our official channels. Also, jump into our [Discord](https://discord.gg/bzm3dyxJxR) server and join our community anytime.
 
 Also check out our [home page](https://aura.network/) and other guides for validators in this document.
+
+
+<ContactUs />

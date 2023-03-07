@@ -5,6 +5,7 @@ sidebar_label: Getting started
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 # Exchange Integration
 
@@ -66,3 +67,5 @@ Tracking at:
 :::caution
 The BEP-20 tokens will be eventually deprecated after October 1st 2022 when Aura Network mainnet is online. Exchanges that have listed this token should work with Aura Network team to migrate listed tokens into native $AURA on mainnet.
 :::
+
+<ContactUs />

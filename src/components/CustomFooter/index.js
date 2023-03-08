@@ -12,6 +12,7 @@ import GithubIconLight from '../../../static/img/github-logo-dark.png'
 import DiscordIconLight from '../../../static/img/discord-logo-dark.png'
 import TwitterIconLight from '../../../static/img/twitter-logo-dark.png'
 import BlogIconLight from '../../../static/img/blog-icon-dark.png'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 const CustomFooter = () => (
     <div className={styles['custom-footer-wrapper']}>
@@ -58,27 +59,16 @@ const CustomFooter = () => (
             <div className={styles['footer-navbar']}>
                 <div className={styles['footer-navbar__col']}>
                     <p>Documentation</p>
-                    <a>Learn</a>
-                    <a>Developers</a>
-                    <a>Validators</a>
-                    <a>Command Line</a>
-                    <a>Archiecture</a>
+                    <a href={useBaseUrl('overview')}>Learn</a>
+                    <a href={useBaseUrl('developer')}>Developers</a>
+                    <a href={useBaseUrl('validator')}>Validators</a>
+                    <a href={useBaseUrl('integrate/exchange/integrate')}>Integrate</a>
                 </div>
                 <div className={styles['footer-navbar__col']}>
-                    <p>Documentation</p>
-                    <a>Learn</a>
-                    <a>Developers</a>
-                    <a>Validators</a>
-                    <a>Command Line</a>
-                    <a>Archiecture</a>
-                </div>
-                <div className={styles['footer-navbar__col']}>
-                    <p>Documentation</p>
-                    <a>Learn</a>
-                    <a>Developers</a>
-                    <a>Validators</a>
-                    <a>Command Line</a>
-                    <a>Archiecture</a>
+                    <p>Ecosystem</p>
+                    <a href={useBaseUrl('product/pyxis-safe')}>Pyxis Safe</a>
+                    <a href={useBaseUrl('product/aurascan')}>Aurascan</a>
+                    <a href={useBaseUrl('product/horoscope')}>Horoscope</a>
                 </div>
             </div>
         </div>

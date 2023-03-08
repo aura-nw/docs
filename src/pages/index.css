@@ -317,7 +317,6 @@ button:hover {
 }
 [data-theme='light'] .home-root {
     background-color: #f2f3f5;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 [data-theme='light'] .spotlight > .aura-card {
     background-image: linear-gradient(#f2f3f5, #f2f3f5),

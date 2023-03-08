@@ -84,6 +84,12 @@
 html {
     font-family: var(--ifm-font-family-base);
 }
+footer {
+    padding: 0px !important;
+}
+[data-theme='light'] footer {
+    border-top: 1px solid #ccd0d5;
+}
 
 .navbar__link {
     font-weight: 400;

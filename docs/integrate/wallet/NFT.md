@@ -5,8 +5,7 @@ sidebar_label: Non-fungible Token
 
 # Aura NFT integration for wallet
 
-It is recommend to use Horoscope, the interchain indexer for querying NFT data on Aura Network. Other interaction with the NFT contract can be executed by sending corresponding CosmWasm transaction to the network.  
-Currently, Horoscope supports 2 types NFT: CW721 and CW4973. You can read documentation about [CW721](https://github.com/CosmWasm/cw-nfts/blob/main/packages/cw721/README.md) and [CW4973](https://github.com/aura-nw/cw-nfts/tree/cw4973/contracts/cw4973) to understand their specification.
+It is recommend to use Horoscope, the interchain indexer for querying NFT data on Aura Network. Other interaction with the NFT contract can be executed by sending corresponding CosmWasm transaction to the network.
 
 ## 1. Querying NFT
 

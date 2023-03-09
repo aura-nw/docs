@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import Layout from '@theme/Layout'
 import './index.css'
+import CustomFooter from '../components/CustomFooter'
 import AuraImg from '../../static/img/aura.png'
 import RocketImg from '../../static/img/rocket.png'
 import CheckImg from '../../static/img/check.png'
 import AuraScan from '../../static/img/aurascan-logo.png'
 import PyxisSafe from '../../static/img/pyxissafe-logo.png'
 export default function Home() {
+    useEffect(() => {
+      ReactDOM.render(<CustomFooter />, document.getElementsByClassName('footer')[0])
+    }, [])
     return (
         <Layout title='Aura Network'>
             <div className='home-root'>

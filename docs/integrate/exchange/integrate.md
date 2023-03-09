@@ -5,6 +5,7 @@ sidebar_label: Getting started
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 # Exchange Integration
 
@@ -39,7 +40,7 @@ To avoid confusion with testnet currency, we have different denoms for tokens on
 
 You can either run your own full node following the guide here: [Running a full node](../../validator/running-a-fullnode.md).
 
-Or directly query public API endpoints [here](../../developer/contract/7.rpc.md).
+Or directly query public API endpoints [here](../../developer/getting-started/rpc).
 
 If you only need to interact with the `aurad` CLI, just compile it from source is enough.
 
@@ -66,3 +67,5 @@ Tracking at:
 :::caution
 The BEP-20 tokens will be eventually deprecated after October 1st 2022 when Aura Network mainnet is online. Exchanges that have listed this token should work with Aura Network team to migrate listed tokens into native $AURA on mainnet.
 :::
+
+<ContactUs />

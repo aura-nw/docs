@@ -13,11 +13,10 @@ It is recommend to use Horoscope, the interchain indexer for querying NFT data o
 
 You can choose from these following indexer server to integrate with the wallet.
 
-| Environment | Description                             | URL                                 |
-| ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
-| Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
-| Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
+| Environment | Description                                       | URL                                 |
+| ----------- | ------------------------------------------------- | ----------------------------------- |
+| Production  | Only support Mainnet                              | https://horoscope.aura.network      |
+| Staging     | Public stable version, support Euphoria, Serenity | https://indexer.staging.aurascan.io |
 
 NFT can be retrieved over the following API:
 
@@ -30,25 +29,25 @@ $Indexer_URL$/api/v1/asset/getByOwner
 Input:
 
 - Owner address
-- Chainid: aura-testnet, serenity-testnet-001, euphoria-2
+- Chainid: serenity-testnet-001, euphoria-2
 - contractType = CW721
 
 Example:
 
-https://indexer.dev.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=serenity-testnet-001&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0
+https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=serenity-testnet-001&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Detail of one CW721 (NFT)
 
 Input:
 
-- Chainid: aura-testnet, serenity-testnet-001, euphoria-2
+- Chainid: serenity-testnet-001, euphoria-2
 - contractType = CW721
 - contractAddress (return from list all)
 - tokenID (return from list all)
 
 Example:
 
-https://indexer.dev.aurascan.io/api/v1/asset/getByOwner?chainid=serenity-testnet-001&contractType=CW721&tokenId=MP4-haveSound-03Oct2022-CW721%20Contract%2093-2ug4&contractAddress=aura15ydv0hjccrazv65cgdxu8dt7hcftmnk35s8f3erktrhflsu5lh9q2datge&countTotal=false&pageLimit=10&pageOffset=0
+https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?chainid=serenity-testnet-001&contractType=CW721&tokenId=1678035397906&contractAddress=aura15lzpt0vuf67kttzee0nq54qzn9peafqmds5lycevxzv6q5fg2fys7xm6kg&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Parse output
 

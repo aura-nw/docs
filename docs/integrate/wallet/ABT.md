@@ -13,11 +13,10 @@ It is recommend to use Horoscope, the interchain indexer for querying ABT data o
 
 You can choose from these following indexer server to integrate with the wallet.
 
-| Environment | Description                             | URL                                 |
-| ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
-| Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
-| Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
+| Environment | Description                                       | URL                                 |
+| ----------- | ------------------------------------------------- | ----------------------------------- |
+| Production  | Only support Mainnet                              | https://horoscope.aura.network      |
+| Staging     | Public stable version, support Euphoria, Serenity | https://indexer.staging.aurascan.io |
 
 ABT can be retrieved over the following API:
 
@@ -30,7 +29,7 @@ $Indexer_URL$/api/v1/asset/getByOwner
 Input:
 
 - Owner address
-- Chainid: euphoria-2
+- Chainid: serenity-testnet-001, euphoria-2
 - contractType = CW4973
 
 Example:
@@ -41,7 +40,7 @@ https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7
 
 Input:
 
-- Chainid: euphoria-2
+- Chainid: serenity-testnet-001, euphoria-2
 - contractType = CW4973
 - contractAddress (return from list all)
 - tokenID (return from list all)

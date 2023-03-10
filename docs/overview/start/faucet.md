@@ -12,13 +12,4 @@ import ReactPlayer from 'react-player'
 
 ### 3. Follow the guide pinned in the channel #FAUCET
 
-<div className='player-wrapper'>
-    <ReactPlayer 
-        playing 
-        controls 
-        url='/video/Introduction_Faucet.mp4' 
-        className='react-player'
-        width='100%'
-        height='100%'
-    />
-</div>
+![Euphoria faucet](/img/aurascan/euphoria_faucet.gif)

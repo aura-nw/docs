@@ -13,13 +13,4 @@ AuraScan is a tool that offer rich functionalities in managing your assets on Au
 You can access AuraScan for Euphoria testnet at: https://euphoria.aurascan.io/
 :::
 
-<div className='player-wrapper'>
-    <ReactPlayer 
-        playing 
-        controls 
-        url='/video/Introduction_AuraScan.mp4' 
-        className='react-player'
-        width='100%'
-        height='100%'
-    />
-</div>
+![Serenity demo](/img/aurascan/serenity_demo.gif)

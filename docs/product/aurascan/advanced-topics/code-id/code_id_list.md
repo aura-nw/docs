@@ -6,7 +6,7 @@ sidebar_position: 1
 
 You can view the Code ID list view from navigation bar >> Resources >> Code IDs
 
-![Code ID list](/img/aurascan/contract_list.png)
+![Code ID list](/img/aurascan/Advanced_topic_code_id_list_view.png)
 
 :::caution Note:
 Only verified Code IDs have green check mark icon besides and corresponding verified time. 

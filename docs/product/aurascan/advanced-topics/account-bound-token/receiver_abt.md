@@ -10,51 +10,51 @@ Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT
 
 **Step 1:** Open Account Details page
 
-![ABT receiver Account Details](/img/aurascan/Advanced topic_ABT receiver 1.PNG)
+![ABT receiver Account Details](/img/aurascan/Advanced_topic_ABT_receiver_1.PNG)
 
 **Step 2:** See the Unclaimed ABT that was attested for you by the attestor from Account Details page or Account Bound Token page.
 You can open the Account Bound Token page of an account by pressing button "See more" from Account Details page.
 
-![ABT receiver See more](/img/aurascan/Advanced topic_ABT receiver 2.1.PNG)
+![ABT receiver See more](/img/aurascan/Advanced_topic_ABT_receiver_2_1.PNG)
 
-![ABT receiver Unclaim token list](/img/aurascan/Advanced topic_ABT receiver 2.2.PNG)
+![ABT receiver Unclaim token list](/img/aurascan/Advanced_topic_ABT_receiver_2_2.PNG)
 
 **Step 3:** Preview Account Bound Token
 You can click 'Equip' button from neither preview ABT image in Account Details page or list view image in Account Bound Token page.
 
-![ABT unclaimed preview from Account Details](/img/aurascan/Advanced topic_ABT receiver 3.1.PNG)
+![ABT unclaimed preview from Account Details](/img/aurascan/Advanced_topic_ABT_receiver_3_1.PNG)
 
-![ABT unclaimed preview from ABT page](/img/aurascan/Advanced topic_ABT receiver 3.2.PNG)
+![ABT unclaimed preview from ABT page](/img/aurascan/Advanced_topic_ABT_receiver_3_2.PNG)
 
 **Step 4:** Equip Account Bound Token
 
-![Receiver Equips ABT](/img/aurascan/Advanced topic_ABT receiver 4.PNG)
+![Receiver Equips ABT](/img/aurascan/Advanced_topic_ABT_receiver_4.PNG)
 
 **Step 5:** Sign message to 'Equip' Account Bound Token
 
-![Receiver signs message to equip ABT](/img/aurascan/Advanced topic_ABT receiver 5.PNG)
+![Receiver signs message to equip ABT](/img/aurascan/Advanced_topic_ABT_receiver_5.PNG)
 
 ### Equipped Account Bound Token in Aurascan
 
-![Equipped ABT in Aurascan](/img/aurascan/Advanced topic_ABT receiver 6.1.PNG)
+![Equipped ABT in Aurascan](/img/aurascan/Advanced_topic_ABT_receiver_6_1.PNG)
 
-![ABT receiver 6.2](/img/aurascan/Advanced topic_ABT receiver 6.2.PNG)
+![ABT receiver 6.2](/img/aurascan/Advanced_topic_ABT_receiver_6_2.PNG)
 
 ## Un-equip Account Bound Token
 
 **Step 1:** Click 'Un-equip' from Account Bound Token detail page
 
-![Receiver un-equip ABT](/img/aurascan/Advanced topic_ABT receiver 7.PNG)
+![Receiver un-equip ABT](/img/aurascan/Advanced_topic_ABT_receiver_7.PNG)
 
 **Step 2:** Sign message to Un-equip Account Bound Token
 
-![Receiver signs message to un-equip ABT 1](/img/aurascan/Advanced topic_ABT receiver 8.PNG)
+![Receiver signs message to un-equip ABT 1](/img/aurascan/Advanced_topic_ABT_receiver_8.PNG)
 
-![Receiver signs message to un-equip ABT 2](/img/aurascan/Advanced topic_ABT receiver 9.PNG)
+![Receiver signs message to un-equip ABT 2](/img/aurascan/Advanced_topic_ABT_receiver_9.PNG)
 
 ### Un-equipped Account Bound Token in Aurascan
 
-![Un-equipped ABT in Aurascan](/img/aurascan/Advanced topic_ABT receiver 10.PNG)
+![Un-equipped ABT in Aurascan](/img/aurascan/Advanced_topic_ABT_receiver_10.PNG)
 
 
 

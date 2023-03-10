@@ -15,12 +15,12 @@ Code ID's owner have to register a type for the Code ID.
 ## 2. How to register type contract
 **Step 1:** Connect wallet successfully and choose Register contract.
 
-![Register type Code ID](/img/aurascan/Advanced topic_register type Code ID step 1.png)
+![Register type Code ID](/img/aurascan/Advanced_topic_register_type_Code_ID_step_1.png)
 
 **Step 2:** Choose Register Contract and input Code ID and type contract of Code ID.
 
-![Click register](/img/aurascan/Advanced topic_register type Code ID step 2.1.png)
-![Input data](/img/aurascan/Advanced topic_register type Code ID step 2.2.png)
+![Click register](/img/aurascan/Advanced_topic_register_type_Code_ID_step_2_1.png)
+![Input data](/img/aurascan/Advanced_topic_register_type_Code_ID_step_2_2.png)
 
 :::caution Note:
 - After you register type for the Code ID, the status of Result Registration is TBD (to be defined). Need to wait until network verify the Result Registration is 'Correct' or 'Incorrect'
@@ -30,5 +30,5 @@ Code ID's owner have to register a type for the Code ID.
 
 **Step 3:** View your list of registered Code ID 
 
-![List of Register type Code ID](/img/aurascan/Advanced topic_register type Code ID step 3.png)
+![List of Register type Code ID](/img/aurascan/Advanced_topic_register_type_Code_ID_step_3.png)
 

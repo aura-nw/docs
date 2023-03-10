@@ -18,19 +18,19 @@ Account Bound Token in Aura Network must follow the [Metadata Standards](https:/
 
 **Step 1:** Open Account Bound Token page for attestor in Aurasan
 
-![ABT smart contract list](/img/aurascan/Advanced topic_ABT attestor 1.PNG)
+![ABT smart contract list](/img/aurascan/Advanced_topic_ABT_attestor_1.PNG)
 
 **Step 2:** Select the smart contract you want to interact with to attest the ABT for the receiver. Then click 'Create new' button to input the information.
 You can click 'Create new' button from ABT smart contract list or from ABT smart contract detail page.
 
-![Create ABT from smart contract list](/img/aurascan/Advanced topic_ABT attestor 2.1.PNG)
+![Create ABT from smart contract list](/img/aurascan/Advanced_topic_ABT_attestor_2_1.PNG)
 
-![Create ABT from smart contract details](/img/aurascan/Advance topic_ABT attestor 2.2.PNG)
+![Create ABT from smart contract details](/img/aurascan/Advance_topic_ABT_attestor_2_2.PNG)
 
 **Step 3:** Input information in the 'Create New' pop up and then click "Create"
 
-![Popup ABT Create data](/img/aurascan/Advanced topic_ABT attestor 3.PNG)
+![Popup ABT Create data](/img/aurascan/Advanced_topic_ABT_attestor_3.PNG)
 
 **Step 4:** Sign the attesting message
 
-![Sign attesting message](/img/aurascan/Advanced topic_ABT attestor 4.PNG)
+![Sign attesting message](/img/aurascan/Advanced_topic_ABT_attestor_4.PNG)

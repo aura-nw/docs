@@ -19,5 +19,5 @@ Contract's owners have to verify and publish contract source code and register t
 :::
 
 See the instantiate contract transaction in contract details.
-![Instantiate contract transaction](/img/aurascan/Advanced_topics_instantiate_contract_tx.PNG)
+![Instantiate contract transaction](/img/aurascan/Advanced_topics_instantiate_contract_tx.png)
 

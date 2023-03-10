@@ -7,13 +7,13 @@ sidebar_position: 5
 ## Transactions list
 
 Visit **_Transactions_** menu to view the Transactions list of Euphoria Testnet
-![Transactions](/img/aurascan/Getting Started_Transactions.png)
+![Transactions](/img/aurascan/Getting_Started_Transactions.png)
 
 ## Transaction details
 
 When click on each specific transaction line, can view the Transaction details in both summary and json type of content
 
-![Transactions](/img/aurascan/Getting Started_Transaction Details.png)
+![Transactions](/img/aurascan/Getting_Started_Transaction_Details.png)
 
 The *Summary* content of Transaction details include Transaction Information and Message details of Transaction:
 

@@ -7,7 +7,7 @@ sidebar_position: 3
 ## All validators in Aura Network
 Visit **_Validators_** menu to view the Transactions list of Euphoria Testnet
 
-![Validators](/img/aurascan/Getting Started_Choose a trusted Validator_list view.png)
+![Validators](/img/aurascan/Getting_Started_Choose_a_trusted_Validator_list_view.png)
 
 From Validators list overview, can see list of validators with corresponding Voting Power, Commission, Participation, Uptime information of each validator the list is descending  ordered based on Voting Power of Validator. 
 Can directly delegate to favor validator by clicking 'Delegate' button besides validator's information on each line.
@@ -68,7 +68,7 @@ Ledger of transactions related to Operator Address (when delegator delegate/unde
 :::info
 This box only show up when you conducted connect wallet and has already delegated to validator previously
 :::
-![Validators](/img/aurascan/My_validators.png)
+![Validators](/img/aurascan/Getting_Started_my_validators_list.png)
 
 This box shows information of validators that you have already delegated with validator name, Amount Staked and accumulated pending reward updated of each validator. 
 You can **__Claim Reward__** by clicking 'Claim Reward" button at top right of the box or rearrange your staking portfolio by click on 'Manage' button shows up on each line of My Validator box list to **__"Delegate"__** more to this validator, **__"Undelegate"__** to start the unbonding period or **__Redelegate__** to switch your assets to another validator.

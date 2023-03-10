@@ -14,7 +14,7 @@ There are 3 periods of a proposal:
 - `Voting period`: when a proposal reaches `MinDeposit`, it immediately enters `Voting period`
 - `Voting ended`
 
-![Proposal list](/img/aurascan/Getting Started_Voting_Proposal list.png)
+![Proposal list](/img/aurascan/Getting_Started_Voting_Proposal_list.png)
 
 ## Step 2: Vote
 Participants can only vote on proposals that are in `Voting period`.
@@ -25,13 +25,13 @@ There are four options a participant can choose:
 - `NoWithVeto`: is a `No` and a `Veto` vote
 - `Abstain`: means the participants do not intend to vote in favor or against the proposal but accept the result of the vote.
 
-![Voting options] (/img/aurascan/Getting Started_Votings_Vote.png)
+![Voting options] (/img/aurascan/Getting_Started_Votings_Vote.png)
 
 To approve voting, it will take a small amount of fee (AURA)
 
-![Voting approval] (/img/aurascan/Gettings Started_Votings_C98.png)
+![Voting approval] (/img/aurascan/Gettings_Started_Votings_C98.png)
 
 ## Step 3: Result
 Threshold is the minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted. Initially, the proposals are accepted if the threshold is 50% (the proportion of `Yes` votes excluding `Abstain` votes at the end of the voting period is superior to 50%) and if the proportion of `NoWithVeto` votes is inferior to 1/3 excluding `Abstain` votes.
 
-![Voting approval] (/img/aurascan/Getting Started_Votings_Result.png)
+![Voting approval] (/img/aurascan/Getting_Started_Votings_Result.png)

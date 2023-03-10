@@ -10,8 +10,7 @@ After deploying a smart contract on aurad, see the contract and instantiate cont
 
 Here is the contracts list on Euphoria Testnet.
 
-![Contracts List](/img/aurascan/contracts_list.png)
-![Contracts List](/img/aurascan/contract_list.png)
+![Contracts List](/img/aurascan/Advanced_topic_euphoria_contracts_list.png)
 
 :::caution Note:
 Only verified contracts have green check mark icons, version and time verified. 
@@ -20,5 +19,5 @@ Contract's owners have to verify and publish contract source code and register t
 :::
 
 See the instantiate contract transaction in contract details.
-![Instantiate contract transaction](/img/aurascan/instantiate_contract_txn.PNG)
-![Instantiate contract transaction](/img/aurascan/instantiate_contract_txn_details.PNG)
+![Instantiate contract transaction](/img/aurascan/Advanced_topics_instantiate_contract_tx.PNG)
+

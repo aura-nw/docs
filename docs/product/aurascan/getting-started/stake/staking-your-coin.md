@@ -26,9 +26,9 @@ You have to sign transaction and pay the transaction fee on the wallet provider 
 
 After the transaction have been executed successfully, delegation will be shown at the top of Validators page and `Stake` section in `My account` details.
 
-![Delegate successfully](/img/aurascan/Getting Started_Staking your coin_delegate successfully.png)
+![Delegate successfully](/img/aurascan/Getting_Started_Staking_your_coin_delegate_successfully.png)
 
-![Delegations](/img/aurascan/Getting Started_Manage your Account_Stake.png)
+![Delegations](/img/aurascan/Getting_Started_Manage_your_Account_Stake.png)
 
 
 ## II. Claim staking rewards
@@ -39,7 +39,7 @@ Each member of staked Aura holders earn different types of revenue:
 
 Delegators can get their rewards by sending a claim reward transaction, then the rewards will be sent to Aura holder's wallet automatically.
 
-![Claim reward](/img/aurascan/Getting Started_Staking your coin_Claim Reward.png)
+![Claim reward](/img/aurascan/Getting_Started_Staking_your_coin_Claim_Reward.png)
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
@@ -57,7 +57,7 @@ Staking will lock your funds for 2 days, so you will need to undelegate in order
 Please click `Manage` button, a pop up will show up, click on `Select Action` and choose `Undelegate` from the dropdown list.
 A popup will show up with information about validator, unbonding period.
 
-![Undelegate a validator](/img/aurascan/Getting Started_Staking your coin_Undelegate.png)
+![Undelegate a validator](/img/aurascan/Getting_Started_Staking_your_coin_Undelegate.png)
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
@@ -65,16 +65,16 @@ You have to sign transaction and pay the transaction fee on the wallet provider 
 
 After the transaction have been executed successfully, unbondings list will be shown in both Validators list view page sectiion `Unbondings` and `Stake` section in `My account` details.
 
-![Unbondings](/img/aurascan/Getting Started_Staking your coin_unbonding 1.png)
+![Unbondings](/img/aurascan/Getting_Started_Staking_your_coin_unbonding_1.png)
 
-![Unbondings](/img/aurascan/Getting Started_Staking your coin_unbonding 2.png)
+![Unbondings](/img/aurascan/Getting_Started_Staking_your_coin_unbonding_2.png)
 
 
 ## IV. Redelegate to another validator
 
 After staking to a validator successully, you want to switch to other validators, please choose `Redelegate` to instantly stake your assets to another validator.
 
-![Redelegate to another validator](/img/aurascan/Getting Started_Staking your coin_Redelegate.png)
+![Redelegate to another validator](/img/aurascan/Getting_Started_Staking_your_coin_Redelegate.png)
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
@@ -82,6 +82,6 @@ You have to sign transaction and pay the transaction fee on the wallet provider 
 
 After the transaction have been executed successfully, redelegation will be shown at the top of Validators page and `Redelegations` of `Stake` section in `My account` details.
 
-![Redelegations](/img/aurascan/Getting Started_Staking your coin_Redelegate 1.png)
+![Redelegations](/img/aurascan/Getting_Started_Staking_your_coin_Redelegate_1.png)
 
 

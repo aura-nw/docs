@@ -6,8 +6,7 @@ sidebar_position: 3
 
 Here is the contracts list on Euphoria Testnet.
 
-![Contracts List](/img/aurascan/contract_list.png)
-![Contracts List](/img/aurascan/contracts_list.png)
+![Contracts List](/img/aurascan/Advanced_topic_contracts_list.png)
 
 :::caution Note:
 Only verified contracts have green check mark icons, version and time verified. 

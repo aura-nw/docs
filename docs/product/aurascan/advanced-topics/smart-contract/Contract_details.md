@@ -51,4 +51,4 @@ Only verified contracts have `Contract source code` details.
 Unverified contracts only show `Contract creation code`. Contract creator chooses `Verify and Publish` to [verify contract source code](https://docs.aura.network/product/aurascan/smartcontract/verify_contract) of this smart contract.
 :::
 
-![Unverified Contract](/img/aurascan/Advanced_topic_verified_contract_write.png)
+![Unverified Contract](/img/aurascan/Advanced_topic_verified_contract_write.PNG)

@@ -10,7 +10,7 @@ Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT
 
 **Step 1:** Open Account Details page
 
-![ABT receiver Account Details](/img/aurascan/Advanced_topic_ABT_receiver_1.PNG)
+![ABT receiver Account Details](/img/aurascan/Advanced_topic_ABT_receiver_0.PNG)
 
 **Step 2:** See the Unclaimed ABT that was attested for you by the attestor from Account Details page or Account Bound Token page.
 You can open the Account Bound Token page of an account by pressing button "See more" from Account Details page.

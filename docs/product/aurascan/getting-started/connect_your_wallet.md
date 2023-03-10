@@ -12,7 +12,7 @@ All users must have a personal wallet connected. For now, Aurascan supports Coin
 
 You can choose `Coin98` or `Keplr` wallet provider to connect with Aurascan. If you don't have a wallet yet, you can select a provider and create a new one.
 
-![Connect Wallet](/img/aurascan/connect_wallet_choose_wallet.png)
+![Connect Wallet](/img/aurascan/Getting Started_Connect your wallet_Choose wallet.png)
 
 You can see [How to use Coin98 wallet](https://coin98insights.com/how-to-use-coin98-wallet) here to install and create a new wallet.
 
@@ -28,7 +28,7 @@ If you choose Keplr wallet, proceed with the wallet connection on the Keplr wall
 
 After successfully connect to the network, you will see your address information by clicking `My account` button.
 
-![Connect successfully](/img/aurascan/connect_wallet_success.png)
+![Connect successfully](/img/aurascan/Getting Started_Connect your wallet_Account Details.png)
 
 # On Mobile device
 ---
@@ -48,7 +48,7 @@ You can see How to install and create a wallet on Coin98 Super App [here](https:
 
 After you have a Coin98 wallet, please access Aurascan on mobile browser, click `Connect` at the top right of the screen. There might be a confirmation prompt from the Coin98 wallet if you have not added the network to your wallet in advance.
 
-![Connect mobile browser](/img/aurascan/connect_wallet_mobile.png)
+![Connect mobile browser](/img/aurascan/Getting Started_Connect your wallet_connect c98 mobile.png)
 
 :::caution Note:
 But the wallet connection feature on mobile browser is on progress, so please visit the Aurascan website on browser of Coin98 mobile app to use this feature.
@@ -62,9 +62,8 @@ But the wallet connection feature on mobile browser is on progress, so please vi
 
 **Step 3**: Select the Aurascan blockchain and wallet address to connect
 
-![Connect C98 browser](/img/aurascan/connect_wallet_c98_browser.png)
+![Connect C98 browser](/img/aurascan/Getting Started_Connect your wallet_connect c98 app.png)
 
 When you are successful connecting your wallet, you can see your account details information, stake and vote on proposals of the network.
 
-![Connect mobile browser](/img/aurascan/connect_wallet_c98_browser_success.png)
 

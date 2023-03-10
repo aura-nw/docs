@@ -19,7 +19,7 @@ export default function Home() {
                     <h1>WELLCOME TO THE</h1>
                     <p className='aura'>AURA NETWORK</p>
                     <p>
-                    This is the starting points where you will learn about Aura ecosystem. Advanced topics and sections for developers, validators, exchanges and others could be navigated through the above menu bar.
+                    This is the starting points where you will learn about the Aura ecosystem. Advanced topics and sections for developers, validators, exchanges, and others could be found through the navigation bar.
                     </p>
                     <button onClick={() => window.location.href='https://docs.aura.network/overview/about/intro'}>Explore now</button>
                 </div>

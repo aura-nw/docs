@@ -28,7 +28,7 @@ You can click 'Create new' button from ABT smart contract list or from ABT smart
 <<<<<<< HEAD
 ![Create ABT from smart contract details](/img/aurascan/Advanced_topic_ABT_attestor_2_2.png)
 =======
-![Create ABT from smart contract details](/img/aurascan/Advance_topic_ABT_attestor_2_2.png)
+![Create ABT from smart contract details](/img/aurascan/Advanced_topic_ABT_attestor_2_2.png)
 >>>>>>> parent of f64fc98 (update img name 5)
 
 **Step 3:** Input information in the 'Create New' pop up and then click "Create"

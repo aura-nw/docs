@@ -22,7 +22,7 @@ Please type in the delegation amount yourself and **remember** to leave some Aur
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
-![Sign transaction](/img/aurascan/sign_txn.PNG)
+![Sign transaction](/img/aurascan/sign_txn.png)
 
 After the transaction have been executed successfully, delegation will be shown at the top of Validators page and `Stake` section in `My account` details.
 
@@ -61,7 +61,7 @@ A popup will show up with information about validator, unbonding period.
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
-![Sign transaction](/img/aurascan/sign_txn.PNG)
+![Sign transaction](/img/aurascan/sign_txn.png)
 
 After the transaction have been executed successfully, unbondings list will be shown in both Validators list view page sectiion `Unbondings` and `Stake` section in `My account` details.
 
@@ -78,7 +78,7 @@ After staking to a validator successully, you want to switch to other validators
 
 You have to sign transaction and pay the transaction fee on the wallet provider you have connected before.
 
-![Sign transaction](/img/aurascan/sign_txn_redelegate.PNG)
+![Sign transaction](/img/aurascan/sign_txn_redelegate.png)
 
 After the transaction have been executed successfully, redelegation will be shown at the top of Validators page and `Redelegations` of `Stake` section in `My account` details.
 

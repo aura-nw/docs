@@ -20,7 +20,7 @@ Aura Network is an ecosystem built to accelerate global NFTs adoption for mainst
 
 Aura is a [*permissioned*](https://github.com/orgs/aura-nw/discussions/1) smart contract chain. Contract deploying on Aura must go through an *off-chain* progress of registering social accounts, description, submitting a security audit report and pre-testing on Euphoria canary testnet first. This process is similar to uploading an application to Apple Store or Google Play.
 
-All smart contract deploying Aura mainnet **MUST** be *open-source*. Please refering to the [*verify contract*](../product/aurascan/advanced-topics/smart-contract/verify_contract.md) step on Aurascan for more details. 
+All smart contract deploying Aura mainnet **MUST** be *open-source*. Please refering to the [*verify Code ID*](../product/aurascan/advanced-topics/code-id/verify_code_id.md) step on Aurascan for more details. 
 
 Aura focuses on NFT utilities by directly supporting games, artists and brands who want to bring web3 experiences to their customers. The Aura core team has a long history of delivering [enterprise software](https://akachain.io/) so they are familliar with business development process, customer onboarding and software integration with local services.
 

@@ -24,7 +24,7 @@ $Indexer_URL$/api/v1/transaction
 
 Input:
 
-- chainid: serenity-testnet-001, euphoria-2
+- chainid: euphoria-2
 - address: aura_xxx (address need to query)
 
 Example:

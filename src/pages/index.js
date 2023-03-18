@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import Layout from '@theme/Layout'
 import './index.css'
+import CustomFooter from '../components/CustomFooter'
 import AuraImg from '../../static/img/aura.png'
 import RocketImg from '../../static/img/rocket.png'
 import CheckImg from '../../static/img/check.png'
 import AuraScan from '../../static/img/aurascan-logo.png'
 import PyxisSafe from '../../static/img/pyxissafe-logo.png'
 export default function Home() {
+    useEffect(() => {
+      ReactDOM.render(<CustomFooter />, document.getElementsByClassName('footer')[0])
+    }, [])
     return (
         <Layout title='Aura Network'>
             <div className='home-root'>
@@ -14,9 +19,7 @@ export default function Home() {
                     <h1>WELLCOME TO THE</h1>
                     <p className='aura'>AURA NETWORK</p>
                     <p>
-                        This is the starting points when you want to learn about Aura ecosystem. If you are interested
-                        in more advanced topics, explore different sections for developers, validators, exchanges and
-                        others on the top bar.
+                    This is the starting points where you will learn about the Aura ecosystem. Advanced topics and sections for developers, validators, exchanges, and others could be found through the navigation bar.
                     </p>
                     <button onClick={() => window.location.href='https://docs.aura.network/overview/about/intro'}>Explore now</button>
                 </div>
@@ -29,10 +32,10 @@ export default function Home() {
                             <div>
                                 <p className='title'>About Aura Network</p>
                                 <p className='description'>
-                                    Learn the Basics about Aura Network, features and tokenomics
+                                    Learn the basics about Aura Network, such as its features and tokenomics.
                                 </p>
                                 <a href='https://docs.aura.network/overview/about/intro'>
-                                    Know more <span>🡪</span>
+                                    Learn more <span>🡪</span>
                                 </a>
                             </div>
                         </div>
@@ -44,9 +47,11 @@ export default function Home() {
                             </div>
                             <div>
                                 <p className='title'>Getting started</p>
-                                <p className='description'>Go through most basic steps to interact with Aura network</p>
+                                <p className='description'>
+								Go through most basic steps to interact with Aura network.
+								</p>
                                 <a href='https://docs.aura.network/overview/start/wallet'>
-                                    Know more <span>🡪</span>
+                                    Learn more <span>🡪</span>
                                 </a>
                             </div>
                         </div>
@@ -59,10 +64,10 @@ export default function Home() {
                             <div>
                                 <p className='title'>Validator Handbook</p>
                                 <p className='description'>
-                                    Validators are responsible for committing new blocks in the blockchain.
+								Validators are responsible for committing new blocks in the blockchain.
                                 </p>
                                 <a href='https://docs.aura.network/validator/'>
-                                    Know more <span>🡪</span>
+                                    Learn more <span>🡪</span>
                                 </a>
                             </div>
                         </div>
@@ -124,9 +129,9 @@ export default function Home() {
                                     <img src={AuraScan} alt='' />
                                 </div>
                                 <div className='product-info'>
-                                    <p className='product-name'>AURA SCAN</p>
+                                    <p className='product-name'>AURASCAN</p>
                                     <p className='product-description'>
-                                        Beautiful, blazing fast blockchain explorer for the Cosmos ecosystem offering
+                                        Beautiful, blazing-fast blockchain explorer for the Cosmos ecosystem offering
                                         features from both Mintscan and Etherscan, and also a touch of customization.
                                     </p>
                                     <button onClick={() => (window.location.href = 'https://docs.aura.network/product/aurascan/')}>
@@ -139,7 +144,7 @@ export default function Home() {
                                     <img src={PyxisSafe} alt='' />
                                 </div>
                                 <div className='product-info'>
-                                    <p className='product-name'>PIXIS SAFE</p>
+                                    <p className='product-name'>PYXIS SAFE</p>
                                     <p className='product-description'>
                                         A multi-signature tool that is compatible with all Cosmos-based chains. Inspired
                                         by the famous Gnosis Safe, but much safer.

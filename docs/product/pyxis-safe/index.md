@@ -13,7 +13,7 @@ A fixed consensus policy of "M out of N" must be defined upon safe creation, in 
 
 Pyxis Safe was originally created only for our [blockchain](https://aura.network/). But we decided to turn it to be compatible with other Cosmos projects as well.
 
-By default, the CosmosSDK allows users to perform multisign via the `tx multisign` command when interacting with `Aurad` ([example](https://docs.cosmos.network/master/run-node/txs.html#signing-with-multiple-signers)). However, we have not seen any mainstream consumer dapp that supports multisign at the application level yet. That's why we created Pyxis Safe.
+By default, the CosmosSDK allows users to perform multisign via the `tx multisign` command when interacting with `Aurad` ([example](https://docs.cosmos.network/v0.45/run-node/txs.html#signing-with-multiple-signers)). However, we have not seen any mainstream consumer dapp that supports multisign at the application level yet. That's why we created Pyxis Safe.
 
 # Cost of creating a Safe?
 

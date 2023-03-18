@@ -51,6 +51,21 @@
     font-weight: 900;
 }
 
+.navbar__logo img {
+    display: block !important;
+}
+.navbar__logo {
+    height: auto;
+}
+.navbar__logo img {
+    height: 36px;
+}
+
+@media only screen and (min-width: 920px) {
+    .navbar__logo img {
+        height: 43px !important;
+    }
+}
 :root {
     --ifm-color-primary: #6610f2;
     --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -63,10 +78,17 @@
     --ifm-hr-margin-vertical: 0.5rem;
     --ifm-font-family-base: 'Inter';
     --ifm-heading-font-family: 'Inter';
+    --ifm-footer-background-color: #fff;
 }
 
 html {
     font-family: var(--ifm-font-family-base);
+}
+footer {
+    padding: 0px !important;
+}
+[data-theme='light'] footer {
+    border-top: 1px solid #ccd0d5;
 }
 
 .navbar__link {
@@ -89,6 +111,9 @@ html {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgba(0, 0, 0, 0.3);
+}
+html[data-theme='dark'] {
+    --ifm-footer-background-color: #24262e;
 }
 
 .hero--primary {

@@ -3,6 +3,7 @@ sidebar_position: 1
 sidebar_label: Home
 title: Validating on Aura Network
 ---
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 This section is dedicated for validators who want to validate on Aura Network. 
 
@@ -19,7 +20,7 @@ Aura Network is an ecosystem built to accelerate global NFTs adoption for mainst
 
 Aura is a [*permissioned*](https://github.com/orgs/aura-nw/discussions/1) smart contract chain. Contract deploying on Aura must go through an *off-chain* progress of registering social accounts, description, submitting a security audit report and pre-testing on Euphoria canary testnet first. This process is similar to uploading an application to Apple Store or Google Play.
 
-All smart contract deploying Aura mainnet **MUST** be *open-source*. Please refering to the [*verify contract*](../product/aurascan/advanced-topics/smart-contract/verify_contract.md) step on Aurascan for more details. 
+All smart contract deploying Aura mainnet **MUST** be *open-source*. Please refering to the [*verify Code ID*](../product/aurascan/advanced-topics/code-id/verify_code_id.md) step on Aurascan for more details. 
 
 Aura focuses on NFT utilities by directly supporting games, artists and brands who want to bring web3 experiences to their customers. The Aura core team has a long history of delivering [enterprise software](https://akachain.io/) so they are familliar with business development process, customer onboarding and software integration with local services.
 
@@ -57,3 +58,6 @@ All information about selection criteria and decision will be transparent. Howev
 If you have any questions, or simply would want to chat with us, please do through one of our official channels. Also, jump into our [Discord](https://discord.gg/bzm3dyxJxR) server and join our community anytime.
 
 Also check out our [home page](https://aura.network/) and other guides for validators in this document.
+
+
+<ContactUs />

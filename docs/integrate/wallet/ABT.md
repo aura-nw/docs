@@ -13,16 +13,16 @@ It is recommend to use Horoscope, the interchain indexer for querying ABT data o
 
 You can choose from these following indexer server to integrate with the wallet.
 
-| Environment | Description                             | URL                                 |
-| ----------- | --------------------------------------- | ----------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network      |
-| Staging     | Public stable version, support Euphoria | https://indexer.staging.aurascan.io |
-| Test        | Internal test version, support Serenity | https://indexer.dev.aurascan.io     |
+| Environment | Description                             | URL                                |
+| ----------- | --------------------------------------- | ---------------------------------- |
+| Production  | Only support Mainnet                    | https://horoscope.aura.network     |
+| Staging     | Public stable version, support Euphoria | https://horoscope.dev.aura.network |
 
 ABT can be retrieved over the following API:
 
 ```
 $Indexer_URL$/api/v1/asset/getByOwner
+```
 
 ### List all CW4973 (ABT) asset of one address
 
@@ -34,7 +34,7 @@ Input:
 
 Example:
 
-https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0
+https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Detail of one CW4973 (ABT)
 
@@ -47,7 +47,7 @@ Input:
 
 Example:
 
-https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0
+https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0
 
 ### Parse output
 

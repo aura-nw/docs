@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Choose one contract in [Contracts list](https://docs.aura.network/product/aurascan/smartcontract/contracts_list) to view contract's details information.
 
-![Contracts Details](/img/aurascan/contract_details.png)
+![Contracts Details](/img/aurascan/Advanced_topic_contract_detail.png)
 
 ## Contract Overview and More Info
 
@@ -36,13 +36,13 @@ Tab `Transactions` show 20 lastest transactions of this contract. Choose `View a
 
 ### Contract
 
-![Contracts](/img/aurascan/contract_details_contract.png)
+![Contracts](/img/aurascan/Advanced_topic_verified_contract_code.png)
 
 There are 3 tabs in Contract section, they are:
 - Code: show all information of contract source code, e.g `Contract Name`, `Compiler Version`, `Link and file contract source code`, all `contract schema` files and `Contract creation code`.
 - Read Contract: show all read functions of this contract.
 
-![Read Contract](/img/aurascan/contract_details_contract_read.png)
+![Read Contract](/img/aurascan/Advanced_topic_verified_contract_read.png)
 
 - Write Contract: show all write functions of this contract.
 
@@ -51,4 +51,4 @@ Only verified contracts have `Contract source code` details.
 Unverified contracts only show `Contract creation code`. Contract creator chooses `Verify and Publish` to [verify contract source code](https://docs.aura.network/product/aurascan/smartcontract/verify_contract) of this smart contract.
 :::
 
-![Unverified Contract](/img/aurascan/contract_tab.PNG)
+![Unverified Contract](/img/aurascan/Advanced_topic_verified_contract_write.png)

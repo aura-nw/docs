@@ -26,9 +26,10 @@ const config = {
                     routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/aura-nw/docs/edit/main',
-                    docLayoutComponent: '@theme/DocPage',
-                    docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi-docs
+                    editUrl: ({ docPath }) => `https://github.com/aura-nw/docs/edit/main/docs/${docPath}`,
+                    //docLayoutComponent: '@theme/DocPage',
+                    //docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi-docs
+                    docItemComponent: require.resolve('./src/components/CustomDocItem/index.js'),
                     sidebarCollapsed: true,
                 },
                 theme: {
@@ -39,6 +40,7 @@ const config = {
     ],
 
     plugins: [
+        'docusaurus-plugin-sass',
         [
             'docusaurus-plugin-openapi-docs',
             {
@@ -82,12 +84,6 @@ const config = {
                     },
                     {
                         type: 'docSidebar',
-                        sidebarId: 'tutorials',
-                        position: 'left',
-                        label: 'Tutorials',
-                    },
-                    {
-                        type: 'docSidebar',
                         sidebarId: 'validator',
                         position: 'left',
                         label: 'Validators',
@@ -123,77 +119,7 @@ const config = {
                     },
                 ],
             },
-            footer: {
-                logo: {
-                    alt: '',
-                    src: 'img/aura-logo-2.png',
-                    srcDark: 'img/aura-logo.png',
-                    href: 'https://docs.aura.network.com',
-                },
-                links: [
-                    {
-                        title: 'Documentation',
-                        items: [
-                            {
-                                label: 'Learn',
-                                to: '/',
-                            },
-                            {
-                                label: 'Developers',
-                                to: '/',
-                            },
-                            {
-                                label: 'Validators',
-                                to: '/',
-                            },
-                            {
-                                label: 'Command Line',
-                                to: '/',
-                            },
-                            {
-                                label: 'Archiecture',
-                                to: '/',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Discord',
-                                to: 'https://discord.gg/CUDB28YJf3',
-                            },
-                            {
-                                label: 'Twitter',
-                                to: 'https://twitter.com/AuraNetworkHQ',
-                            },
-                            {
-                                label: 'Telegram',
-                                to: '/',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'More',
-                        items: [
-                            {
-                                label: 'Github',
-                                to: 'https://github.com/aura-nw',
-                            },
-                            {
-                                label: 'Blog',
-                                to: 'https://insight.aura.network/',
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} Aura Network, Inc. Built with Docusaurus.`,
-            },
-            prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
-                additionalLanguages: ['go', 'rust', 'json', 'bash'],
-            },
+            footer: {},
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: false,

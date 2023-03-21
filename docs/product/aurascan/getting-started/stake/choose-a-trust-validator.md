@@ -17,7 +17,7 @@ Aura holders that do not operate validators themselves also can participate in s
 
 Please click **_Validators_** on the menu to view Validators list of the network.
 
-![Validators](/img/aurascan/Getting_Started_Choose_a_trusted_Validator_list_view.png)
+![Validators](/img/main/validator_list.png)
 
 Aura holders have access to a range of Validator's information available in Aura network explorers like Aurascan. Please review the following information before staking:
 

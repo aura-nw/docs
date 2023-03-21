@@ -12,23 +12,23 @@ All users must have a personal wallet connected. For now, Aurascan supports Coin
 
 You can choose `Coin98` or `Keplr` wallet provider to connect with Aurascan. If you don't have a wallet yet, you can select a provider and create a new one.
 
-![Connect Wallet](/img/aurascan/Getting_Started_Connect_your_wallet_Choose_wallet.png)
+![Connect Wallet](/img/main/connect_wallet.png)
 
-You can see [How to use Coin98 wallet](https://coin98insights.com/how-to-use-coin98-wallet) here to install and create a new wallet.
+You can see [How to use Coin98 wallet](https://coin98.net/what-is-coin98-wallet) here to install and create a new wallet.
 
 ## Coin98 wallet extension
 If you choose Coin98 wallet, proceed with the wallet connection on the Coin98 wallet browser extension itself. There might be a confirmation prompt from the Coin98 wallet if you have not added the network to your wallet in advance.
 
-![Choose Coin98](/img/aurascan/connect_wallet_coin98.png)
+![Choose Coin98](/img/main/C98_wallet_extension.png)
 
 ## Keplr wallet extension
 If you choose Keplr wallet, proceed with the wallet connection on the Keplr wallet browser extension itself.
 
-![Choose Keplr](/img/aurascan/connect_wallet_keplr.png)
+![Choose Keplr](/img/main/Keplr_wallet_extension.png)
 
 After successfully connect to the network, you will see your address information by clicking `My account` button.
 
-![Connect successfully](/img/aurascan/Getting_Started_Connect_your_wallet_Account_Details.png)
+![Connect successfully](/img/main/account_details.png)
 
 # On Mobile device
 ---
@@ -54,7 +54,7 @@ After you have a Coin98 wallet, please access Aurascan on mobile browser, click 
 But the wallet connection feature on mobile browser is on progress, so please visit the Aurascan website on browser of Coin98 mobile app to use this feature.
 :::
 
-## On Coin98 mobile app
+## On Coin98 in-app browser
 
 **Step 1**: Open Coin98 Super App & create a wallet 
 
@@ -62,7 +62,7 @@ But the wallet connection feature on mobile browser is on progress, so please vi
 
 **Step 3**: Select the Aurascan blockchain and wallet address to connect
 
-![Connect C98 browser](/img/aurascan/Getting_Started_Connect_your_wallet_connect_c98_app.png)
+![Connect C98 browser](/img/main/C98_in_app_browser.png)
 
 When you are successful connecting your wallet, you can see your account details information, stake and vote on proposals of the network.
 

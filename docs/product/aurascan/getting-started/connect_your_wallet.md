@@ -58,9 +58,11 @@ But the wallet connection feature on mobile browser is on progress, so please vi
 
 **Step 1**: Open Coin98 Super App & create a wallet 
 
-**Step 2**: Click Browser tab on the home screen & access Aurascan website
+**Step 1**: Activate Aura Xstaxy main net 
 
-**Step 3**: Select the Aurascan blockchain and wallet address to connect
+**Step 3**: Click Browser tab on the home screen & access Aurascan website
+
+**Step 4**: Select the Aurascan blockchain and wallet address to connect
 
 ![Connect C98 browser](/img/main/C98_in_app_browser.png)
 

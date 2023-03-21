@@ -13,7 +13,7 @@ Pyxis Safe currently has 2 public stable environments with the same functionalit
 |Production|https://app.pyxis.aura.network/ |Aura Mainnet|
 |Public Test|https://test.pyxis.aura.network/ |Aura Testnet, Cosmos Hub Testnet, Evmos Testnet, Canto Mainnet|
 
-#What you will need
+## What you will need
 
 - Stable internet connection (of course);
 - Personal wallets properly set up using Keplr or C98 wallets: All co-owners must have a personal wallet connected. As of now, Pyxis Safe supports wallets as in the below table:
@@ -26,7 +26,7 @@ Pyxis Safe currently has 2 public stable environments with the same functionalit
 |Evmos Testnet	(evmos_9000-4)						|❌|✅|
 |Canto Mainnet	(canto_7700-1)						|❌|✅|
 
-##Usage practices
+## Usage practices
 
 There are many ways to set up a multi-sig wallet for various purposes. Those below notices might be helpful for you in the practice of creating one:
 - The sign threshold should not be the value of 1. Setting the signing threshold to 1 is against the purpose of multi-signing. It exposes the wallet to higher risk than a personal wallet, as the wallet will be compromised if any of the owner's private keys are leaked.

@@ -25,9 +25,7 @@ const CustomFooter = () => (
                 <div className={styles['footerSocialIconsWrapper']}>
                     <div className={styles['socialBrands']}>
                         <Link
-                            href={'https://twitter.com/AuraNetworkHQ'}
-                            rel='noopener noreferrer'
-                            aria-label={'Twitter'}>
+                            href={'https://twitter.com/AuraNetworkHQ'} rel='noopener noreferrer' aria-label={'Twitter'}>
                             <img src={TwitterIcon} alt='twitter' className={styles['dark-icon']} />
                             <img src={TwitterIconLight} alt='twitter' className={styles['light-icon']} />
                         </Link>

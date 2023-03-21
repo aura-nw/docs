@@ -15,7 +15,7 @@ To sign with a multisig account, the transaction must be signed individually by 
 
 # Here are all the steps:
 
-- [Generate a multisig key](0.generate-key.md)
+- [Generate a multisig key](0.generate-multisig-key.md)
 - [Create transaction](1.create-transaction.md)
 - [Sign transaction](2.sign-tx.md)
 - [Broadcast](3.broadcast-tx.md)

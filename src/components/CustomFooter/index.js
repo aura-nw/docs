@@ -33,7 +33,7 @@ const CustomFooter = () => (
                         </Link>
                     </div>
                     <div className={styles['socialBrands']}>
-                        <Link href={'https://discord.gg/CUDB28YJf3'} rel='noopener noreferrer' aria-label={'Discord'}>
+                        <Link href={'https://discord.com/invite/bzm3dyxJxR'} rel='noopener noreferrer' aria-label={'Discord'}>
                             <img src={DiscordIcon} alt='discord' className={styles['dark-icon']} />
                             <img src={DiscordIconLight} alt='discord' className={styles['light-icon']} />
                         </Link>

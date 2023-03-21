@@ -6,6 +6,7 @@ This section should help you be well-prepared before you start multi-signing.
 
 ## Environments
 Pyxis Safe currently has 2 public stable environments with the same functionality:
+
 |Environment|URL|Supported networks|
 |----------|----------|----------|
 |Production|https://app.pyxis.aura.network/ |Aura Mainnet|

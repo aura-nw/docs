@@ -40,7 +40,7 @@ Currently we are having a bug that prevents people to delegate using the "MAX" b
 **Work Around Solution**: Please type in the delegation amount yourself and **remember** to leave some Aura for paying the **transaction fee**.
 :::
 
-![Delegate a validator](/img/delegate-validator.png)
+![Delegate a validator](/img/aurascan/delegate-validator.png)
 
 After delegating successully, staking rewards are generated to staked Aura holders in both ways:
 - Transaction fees
@@ -49,7 +49,7 @@ After delegating successully, staking rewards are generated to staked Aura holde
 ### Claim rewards 
 Staked Aura holders can get their rewards by sending a claim reward transaction, then the rewards will be sent to Aura holder's wallet automatically.
 
-![Claim reward](/img/claim-reward.png)
+![Claim reward](/img/aurascan/claim-reward.png)
 
 ## V. Undelegate a validator
 Staking will lock your funds for 21+ days, so you will need to undelegate in order for your staked assets to be liquid again. This process will take 21 days to complete. Once the unbonding period begins you will:
@@ -57,17 +57,17 @@ Staking will lock your funds for 21+ days, so you will need to undelegate in ord
 - not be able to cancel the unbonding
 - need to wait 21 days for the amount to be liquid
 
-![Undelegate a validator](/img/undelegate.png)
+![Undelegate a validator](/img/aurascan/new_undelegate.png)
 
 ## VI. Redelegate to another validator
 After staking to a validator successully, you want to switch to validators, redelegate to instantly stake your assets to another validator.
 Step 1: Choose another trusted validator
 
-![Redelegate to another validator](/img/redelegate-select-validator.png)
+![Redelegate to another validator](/img/aurascan/redelegate-select-validator.png)
 
 Step 2: Input amount of asset want to redelegate. You can redelegate all your staked assets or less.
 
-![Redelegate to another validator](/img/redelegate-amount.png)
+![Redelegate to another validator](/img/aurascan/redelegate-amount.png)
 
 For more detailed information about staking, see [here](https://docs.aura.network/overview/protocol/staking)
 

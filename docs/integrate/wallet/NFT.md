@@ -187,22 +187,16 @@ These following media types should be supported for displaying in the wallet:
 
 | Type  | File Extension | Example                                                                                                                         |
 | ----- | -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Image | JPG            | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/JPG-98001) |
-
-<<<<<<< HEAD
-| | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/png-98002) |
-=======
-| | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/PNG-98002) |
-
-> > > > > > > parent of f64fc98 (update img name 5)
-> > > > > > > | | GIF | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GIF-98003) |
-> > > > > > > | | SVG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/SVG-98004) |
-> > > > > > > | Video | MP4 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP4-98007) |
-> > > > > > > | | WEBM | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WEBM-98009) |
-> > > > > > > | Audio | MP3 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP3-98008) |
-> > > > > > > | | WAV | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WAV-98010) |
-> > > > > > > | | OGG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/OGG-98006) |
-> > > > > > > | 3D | GLB | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GLB-98005) |
+| Image | JPG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/JPG-98001) |
+| Image | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/PNG-98002) |
+| Image | GIF  | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GIF-98003) |
+| Vector | SVG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/SVG-98004) |
+| Video | MP4 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP4-98007) |
+| Video | WEBM | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WEBM-98009) |
+| Audio | MP3 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP3-98008) |
+| Audio | WAV | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WAV-98010) |
+| Audio | OGG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/OGG-98006) |
+| 3D | GLB | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GLB-98005) |
 
 ## 4. NFT Metadata
 

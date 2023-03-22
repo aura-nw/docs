@@ -12,7 +12,7 @@ After selecting a trusted validator, Aura holders start delegating with an amoun
 
 Please click `Delegate` your trusted validator.
 
-![Validators](/img/aurascan/Getting Started_Staking your coin_delegate.png)
+![Validators](/img/aurascan/Getting_Started_Staking_your_coin_delegate.png)
 
 :::info Note
 Please type in the delegation amount yourself and **remember** to leave some Aura for paying the **transaction fee**.

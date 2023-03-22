@@ -7,7 +7,7 @@ sidebar_position: 3
 ## All validators in Aura Network
 Visit **_Validators_** menu to view the Transactions list of Euphoria Testnet
 
-![Validators](/img/main/validator_list.png)
+![Validators](/img/aurascan/validator_list.png)
 
 From Validators list overview, can see list of validators with corresponding Voting Power, Commission, Participation, Uptime information of each validator the list is descending  ordered based on Voting Power of Validator. 
 Can directly delegate to favor validator by clicking 'Delegate' button besides validator's information on each line.

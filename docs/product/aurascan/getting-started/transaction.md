@@ -7,13 +7,13 @@ sidebar_position: 5
 ## Transactions list
 
 Visit **_Transactions_** menu to view the Transactions list of Aurascan
-![Transactions](/img/main/transaction_list.png)
+![Transactions](/img/aurascan/transaction_list.png)
 
 ## Transaction details
 
 When click on each specific transaction line, can view the Transaction details in both summary and json type of content
 
-![Transactions](/img/main/transaction_detail.png)
+![Transactions](/img/aurascan/transaction_detail.png)
 
 The *Summary* content of Transaction details include Transaction Information and Message details of Transaction:
 

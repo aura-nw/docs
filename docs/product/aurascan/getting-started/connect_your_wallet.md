@@ -26,39 +26,42 @@ If you choose Keplr wallet, proceed with the wallet connection on the Keplr wall
 
 ![Choose Keplr](/img/aurascan/Keplr_wallet_extension.png)
 
-After successfully connect to the network, you will see your address information by clicking `My account` button.
+After successfully connecting your wallet, you will see your address information by clicking `My account` button.
 
 ![Connect successfully](/img/aurascan/account_details.png)
+
+<br/>
 
 # On Mobile device
 ---
 
-Users who uses Aurascan on mobile device can access this site on browser of mobile or Coin98 application.
+Users who use Aurascan on mobile devices can access this site your mobile device browser or in the Coin98 application.
+<br/>
 
 ## On Mobile browser
 
-Similar to the step-by-step connect wallet on desktop browser, users can also do the same things to connect wallet on mobile browser.
+The method for connecting your wallet to Aurascan on your mobile device using your browser is very similar to the desktop tutorial shown above.
 
 :::caution Note:
-Keplr provider does not support on mobile device, so please choose Coin98 wallet provider instead.
+Keplr does not support mobile devices at the moment, so please use Coin98 Super App instead.
 :::
 
 First of all, download Coin98 Super application on your device, then create a new wallet.
 You can see How to install and create a wallet on Coin98 Super App [here](https://coin98.net/what-is-coin98-wallet).
 
-After you have a Coin98 wallet, please access Aurascan on mobile browser, click `Connect` at the top right of the screen. There might be a confirmation prompt from the Coin98 wallet if you have not added the network to your wallet in advance.
+After you have a Coin98 wallet, please access Aurascan on your mobile browser, click `Connect` at the top right of the screen. There might be a confirmation prompt from the Coin98 wallet if you have not added the network to your wallet in advance.
 
 ![Connect mobile browser](/img/aurascan/Getting_Started_Connect_your_wallet_connect_c98_mobile.png)
 
 :::caution Note:
-But the wallet connection feature on mobile browser is on progress, so please visit the Aurascan website on browser of Coin98 mobile app to use this feature.
+Wallet connect feature on mobile browsers is still in development, so please use the Coin98 in-app browser instead.
 :::
 
 ## On Coin98 in-app browser
 
 **Step 1**: Open Coin98 Super App & create a wallet 
 
-**Step 1**: Activate Aura Xstaxy main net 
+**Step 1**: Activate Aura Xstaxy mainnet 
 
 **Step 3**: Click Browser tab on the home screen & access Aurascan website
 
@@ -66,6 +69,6 @@ But the wallet connection feature on mobile browser is on progress, so please vi
 
 ![Connect C98 browser](/img/aurascan/C98_in_app_browser.png)
 
-When you are successful connecting your wallet, you can see your account details information, stake and vote on proposals of the network.
+When you successfully connect your wallet, you will see your account details on Aurascan, you can then stake and vote on proposals of the network.
 
 

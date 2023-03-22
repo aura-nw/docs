@@ -6,12 +6,12 @@ sidebar_position: 1
 
 ## The purposes of Staking?
 
-Before staking your coin, you should know the purposes of staking are:
-- Secure the chain: with Aura, everyone has the superpower to contribute to the security and governance of the Aura Network.
-- Earn rewards: select one or more validators of the Aura Network and start earning assets.
-- Vote for the future: staking Aura have the right to vote on proposals and make decisions on the future of the network.
+Before staking your AURA, you should know that the purposes of staking are:
+- Secure the chain: with Aura, everyone has the superpower to contribute to the security and participate in the governance of the Aura Network.
+- Earn rewards: select one or more validators of the Aura Network and start earning AURA.
+- Vote for the future: participants have the right to vote on proposals and make decisions on the future of the network.
 
-Aura holders that do not operate validators themselves also can participate in securing the network by a mechanism called `Delegation`. When Aura holders stake their Aura, they must choose one or more trust validators to delegate to. Validators are then able to receive rewards but are also be at risk of slashing if the validators they chose misbehave. Before Aura holders start staking process, they must setup their wallet, transfer Aura to the wallet and then select trust validators.
+Aura holders that do not operate validators themselves also can participate in securing the network by a mechanism called `Delegation`. When Aura holders stake their Aura, they must choose one or more trusted validators to delegate to. Validators are then able to receive rewards but are also be at risk of slashing if the validators they chose misbehave. Before Aura holders start the staking process, they must setup their wallet, transfer Aura to the wallet and then select trusted validators.
 
 ## Select trusted Validators
 
@@ -19,7 +19,7 @@ Please click **_Validators_** on the menu to view Validators list of the network
 
 ![Validators](/img/aurascan/validator_list.png)
 
-Aura holders have access to a range of Validator's information available in Aura network explorers like Aurascan. Please review the following information before staking:
+Aura holders have access to a range of Validators' information available in Aura network explorers like Aurascan. Please review the following information before staking:
 
 - Validator name: also known as the moniker
 - Voting power: the sum of self-bonded and delegated tokens
@@ -28,18 +28,18 @@ Aura holders have access to a range of Validator's information available in Aura
 - Uptime: proportion of the period of time that validator's server was used without any problems
 
 :::info Note
-Aura holders should research and learn more about validator's operation, history and security practices to choose a trusted validator to prevent slashing.
+Aura holders should research and learn more about a validator's operation, history and security practices to choose a trusted validator to prevent slashing.
 :::
 
 ### Validator details
-When choosing a validator, you can view the Validator information details include Validator profile, Proposed Blocks, Uptime, Delegators and Power Events.
+When choosing a validator, you can view the Validator information details included in the Validator profile, Proposed Blocks, Uptime, Delegators and Power Events.
 
 1. Validator profile
 The basic information of validator:
 
 |Fields|Description|
 |------|------------|
-|Operator Address|Validator operator address at which Aura holders delegate their voting power to.|
+|Operator Address|Validator operator address at which Aura holders delegate their voting power to|
 |Address|Personal wallet address of a validator|
 |Website|Website of the validator's organization|
 |Commission|Validator service fee charged to delegators|

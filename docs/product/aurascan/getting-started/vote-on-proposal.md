@@ -7,7 +7,7 @@ sidebar_position: 4
 You will be guided through the process of voting, which consists of 3 steps:
 
 ## Step 1: Click on Votings on navigation bar
-Participants that are bonded Aura holders, have the right to participate in governance. Unbonded Aura holders and other users do not have the right to vote on proposals. After the proposal enters voting period, Participants who bond Aura or become validators can be forbidden to vote on proposal.
+Participants that are bonded Aura holders, have the right to participate in governance. Unbonded Aura holders and other users do not have the right to vote on proposals. After the proposal enters voting period, participants who bond AURA or become validators can be forbidden to vote on proposal.
 
 There are 3 periods of a proposal:
 - `Deposit period`
@@ -27,7 +27,9 @@ There are four options a participant can choose:
 
 ![Voting options](/img/aurascan/select.png)
 
-To approve voting, it will take a small amount of fee (AURA)
+:::info
+To vote, a small AURA fee is required.
+:::
 
 ![Voting approval](/img/aurascan/vote_C98.png)
 

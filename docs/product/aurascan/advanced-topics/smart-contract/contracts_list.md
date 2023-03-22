@@ -4,14 +4,14 @@ sidebar_position: 3
 
 # Contracts list
 
-Here is the contracts list on Euphoria Testnet.
+Here is the contracts list on Aurascan.
 
 ![Contracts List](/img/aurascan/Advanced_topic_contracts_list.png)
 
 :::caution Note:
-Only verified contracts have green check mark icons, version and time verified. 
-Unverified contracts do not have green check mark icons. 
-Contract's owners have to verify and publish contract source code and register type contract (CW20 or CW721) for your smart contract.
++ Only contracts instantiated from **verified** Code ID have green check mark icon beside in smart contract list and corresponding Code ID verified time info. 
++ Unverified contracts do not have green check mark icon. 
++ Each Code ID has to be verified and published source code as well as register code ID type (CW20/CW721/CW4973) beforehand so that others user can be able to interact with the smart contracts that instantiated from this Code ID.
 :::
 
 | Column | Description

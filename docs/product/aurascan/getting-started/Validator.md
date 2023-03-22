@@ -7,20 +7,21 @@ sidebar_position: 3
 ## All validators in Aura Network
 Visit **_Validators_** menu to view the Transactions list of Euphoria Testnet
 
-![Validators](/img/aurascan/Getting_Started_Choose_a_trusted_Validator_list_view.png)
+![Validators](/img/aurascan/validator_list.png)
 
-From Validators list overview, can see list of validators with corresponding Voting Power, Commission, Participation, Uptime information of each validator the list is descending  ordered based on Voting Power of Validator. 
-Can directly delegate to favor validator by clicking 'Delegate' button besides validator's information on each line.
+From Validators list overview, you can see the list of validators with corresponding Voting Power, Commission, Participation, and Uptime information for each. The list is in descending order by default based on Voting Power. 
+
+Users can directly delegate to favor any validator by clicking 'Delegate' button beside the validator's information on each line.
 
 :::info Note
-  You need to collect this wallet to conduct delegate action
+  You need to connect your wallet to be able to delegate.
 :::
 
 ### Validator details
-When click on each specific transaction line, can view the Validator information include Validator profile, Proposed Blocks, Uptime, Delegators and Power Events
+When clicking on each specific transaction line, you can view the Validator information which includes Validator profile, Proposed Blocks, Uptime, Delegators, and Power Events.
 
 #### Validator profile
-Profile of validator that contains the information of validator inside and outside Aura Network
+The Validator profile includes the following fields about the selected validator, including any external details such as their website.
 
 |Fields|Description|
 |------|------------|
@@ -35,7 +36,7 @@ Profile of validator that contains the information of validator inside and outsi
 |Details|Information of validator in details|
 
 #### Proposed Blocks
-Statistics of blocks validated by validator
+Statistics of blocks validated by validator.
 
 |Fields|Description|
 |------|------------|
@@ -45,10 +46,10 @@ Statistics of blocks validated by validator
 |Time|Timestamp of validated block|
 
 #### Uptime
-Visual statistic of Validator's presence (online/offline) during the last 100 blocks of Aura Network uptime
+Visual statistic of Validator's presence (online/offline) during the last 100 blocks of Aura Network uptime.
 
 #### Delegators
-List of deligators that delegated to the validator
+List of delegators that delegated to the validator.
 
 |Fields|Description|
 |------|------------|
@@ -56,7 +57,7 @@ List of deligators that delegated to the validator
 |Amount|Amount of AURA that delegator delegated to validator|
 
 #### Power Events
-Ledger of transactions related to Operator Address (when delegator delegate/undelegate/redelegate from/to validator)
+Ledger of transactions related to Operator Address (when delegator delegates/undelegates/redelegates from/to validator).
 
 |Height|Height of block that contains the transaction|
 |------|------------|
@@ -66,72 +67,73 @@ Ledger of transactions related to Operator Address (when delegator delegate/unde
 
 ## My Validators box
 :::info
-This box only show up when you conducted connect wallet and has already delegated to validator previously
+Only shows up when you have connected your wallet and have already delegated to a validator previously.
 :::
 ![Validators](/img/aurascan/Getting_Started_my_validators_list.png)
 
-This box shows information of validators that you have already delegated with validator name, Amount Staked and accumulated pending reward updated of each validator. 
+This box shows information of validators that you have already delegated to, with validator name, Amount Staked, and accumulated pending reward updated of each validator. 
 You can **__Claim Reward__** by clicking 'Claim Reward" button at top right of the box or rearrange your staking portfolio by click on 'Manage' button shows up on each line of My Validator box list to **__"Delegate"__** more to this validator, **__"Undelegate"__** to start the unbonding period or **__Redelegate__** to switch your assets to another validator.
 
 ### Claim Reward
-When click on 'Claim Reward' button, Aura Network will connect to your wallet and conduct to claim __all__ your pending staking reward still remaining on My validators box list.
+When clicking on the 'Claim Reward' button, Aura Network will connect to your wallet and conduct to claim __all__ your pending staking reward still remaining on My validators box list.
 
-You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your reward amount will be added up to your wallet straightforward.
+You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, the entirety of your available reward amount will be added to your wallet.
 
 :::tip
-You can also claim reward directly from your wallet by select the environment is "Aura euphoria TestNet" and click on 'Claim" button beside label 'Pending Staking Reward' on the wallet interface.
+You can also claim rewards directly from your wallet by selecting the environment to "Aura euphoria TestNet" and click on 'Claim" button next to 'Pending Staking Reward' on the wallet interface.
 :::
 
 ### Delegate
-When click on 'Manage' button, a pop up will show up, click on "Delegate" to delegate more to this validator. 
+When clicking on 'Manage' button, a popup will show up. Click on "Delegate" to delegate more to this validator. 
 
 :::tip
 You can also delegate to this validator directly from Validator list by clicking "Delegate" button on the line end in corresponding with the Validator.
 :::
 
-A pop up will show up with information about your current delegation amount to this validator and available balance amount to delegate more.
+A popup will show up with information about your current delegation amount to this validator and available balance amount to delegate more.
 
 ![Validators](/img/aurascan/Delegate_more.png)
 
-After typing the delegate amount and click "Delegate", Aura Network will open your wallet to confirm the delegate transaction.
-You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your delegate amount will be locked for staking. In case you need your staked assets to be liquid again, you will need to undelegate from the validator you has already delegated.
+After typing the desired delegate amount and clicking on "Delegate", Aurascan will make a request to your wallet  to confirm the delegate transaction.
+You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. Afterwards you may click on the 'Approve' button, the entirety of your delegate amount will be locked for staking. In case you need your staked assets to be liquid again, you will need to undelegate from the validator you have already delegated.
 
 ### Undelegate
-When click on 'Manage' button, a pop up will show up, click on "Select Action" and choose "Undelegate" from the dropdown list.
+When clicking on 'Manage' button, a popup will show up, click on "Select Action" and select "Undelegate" from the dropdown list.
 
 :::caution
-  Please be noted that when you undelegate the validator, your staked amount to this validator will be locked for 2 days for unbonding period. Once the unbonding period begins, you will:
+  Please note that when you undelegate the validator, your staked amount to this validator will be locked for 2 days for unbonding period. Once the unbonding period begins, you will:
   + not receive staking rewards
   + not be able to cancel the unbonding
   + need to wait 2 days for the amount to be liquid again
 :::
 
-A popup will show up with information about validator, unbonding period.
+A popup will show up with information about the unbonding period.
+
 ![Validators](/img/aurascan/Undelegate.png)
 
-After typing the undelegate amount and click "Undelegate" button, Aura Network will open your wallet to confirm the undelegate transaction. 
+After typing the undelegate amount and click "Undelegate" button, Aurascan will make a request to your wallet  to confirm the undelegate transaction. 
 
-You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your undelegated amount will begin the unbonding period straightforward.
+You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all of your undelegated amount will begin the unbonding period.
 
 ### Redelegate
-When click on 'Manage' button, a pop up will show up, click on "Select Action" and choose "Redelegate" from the dropdown list. 
+When clicking on the 'Manage' button, a popup will show up. Click on "Select Action" and choose "Redelegate" from the dropdown list. 
 A popup will show up with information about validator, you can click on "Select validator" button to view the dropdown list of other validators you can redelegate to.
 
 ![Validators](/img/aurascan/Redelegate.png)
 
-After choosing other trusted validator to switch your asset to from dropdown list.
+After choosing other trusted validator to switch your asset to from dropdown list you will see the following screen.
 
 ![Validators](/img/aurascan/switch_validator.png)
 
-After typing the delegate amount and click "Delegate", Aura Network will open your wallet to confirm the delegate transaction.
+After typing the delegate amount and clicking "Delegate", Aurascan will make a request to your wallet  to confirm the delegate transaction.
 
 You can select the Fee level you accept (Low/Average/High) as well as Set Gas Limit. After click on 'Approve' button, all your redelegated amount will be switched from initial validator to changed validator just been selected.
 
 ## Undelegating box
 :::info
-This box only show up when you conducted collect wallet and has already own the undelegated amount that still on unbonding period (2 days from the time you undelegated from validator).
+Only shows up when you have connected your wallet and have an ongoing unbonding period from an undelegation request (2 days from the time you undelegated from validator).
 :::
 
 ![Validators](/img/aurascan/Undelegating.png)
 
-This is report about your undelegated amount that is still remaining on unbonding period. This box show up the validator that you undelegated from, undelegated amount and time remaining untill unbonding period will end.
+This is report shows information about your undelegated amount that is still on an unbonding period. This box shows the validator that you undelegated from, undelegated amount and time remaining until unbonding period will end.

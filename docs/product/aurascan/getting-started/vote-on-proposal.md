@@ -25,7 +25,7 @@ There are four options a participant can choose:
 - `NoWithVeto`: is a `No` and a `Veto` vote
 - `Abstain`: means the participants do not intend to vote in favor or against the proposal but accept the result of the vote.
 
-![Voting options](/img/aurascan/Vote.png)
+![Voting options](/img/aurascan/main_vote.png)
 
 To approve voting, it will take a small amount of fee (AURA)
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Home
+sidebar_label: Introduction to Horoscope
 title: Horoscope - indexers of the interchain
 ---
 

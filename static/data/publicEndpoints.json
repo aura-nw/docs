@@ -1,0 +1,54 @@
+{
+    "xstaxy": {
+        "Chain ID": ["xstaxy-1"],
+        "Type": ["Mainnet"],
+        "Genesis": ["https://raw.githubusercontent.com/aura-nw/mainnet-artifacts/main/xstaxy-1/genesis.json"],
+        "Explorer": ["https://aurascan.io"],
+        "RPC": [
+            "https://rpc.aura.network"
+        ], 
+        "LCD": [
+            "https://lcd.aura.network"
+        ], 
+        "gRPC": [
+            "https://grpc.aura.network"
+        ]
+    },
+    "euphoria": {
+        "Chain ID": ["euphoria-2"],
+        "Type": ["Staging Network"],
+        "Genesis": ["https://github.com/aura-nw/testnets/raw/main/euphoria-2/euphoria-2-genesis.tar.gz"],
+        "Explorer": ["https://euphoria.aurascan.io"],
+        "RPC": [
+            "https://rpc.euphoria.aura.network",
+            "https://aura-testnet.rpc.kjnodes.com",
+            "https://rpc-aura-testnet.mms.team",
+            "https://rpc-euphoria.aura.palamar.io"
+        ], 
+        "LCD": [
+            "https://lcd.euphoria.aura.network",
+            "https://aura-testnet.api.kjnodes.com",
+            "https://api-aura-testnet.mms.team",
+            "https://api-euphoria.aura.palamar.io"
+        ], 
+        "gRPC": [
+            "http://grpc.euphoria.aura.network:9090",
+            "https://aura-testnet.grpc.kjnodes.com"
+        ]
+    },
+    "serenity": {
+        "Chain ID": ["serenity-testnet-001"],
+        "Type": ["Testnet"],
+        "Genesis": ["https://github.com/aura-nw/testnets/blob/main/serenity-testnet/genesis.json"],
+        "Explorer": ["https://serenity.aurascan.io"],
+        "RPC": [
+            "https://rpc.serenity.aura.network"
+        ], 
+        "LCD": [
+            "https://lcd.serenity.aura.network"
+        ], 
+        "gRPC": [
+            "http://grpc.serenity.aura.network:9092"
+        ]
+    }
+}

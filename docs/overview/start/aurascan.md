@@ -5,12 +5,8 @@ import ReactPlayer from 'react-player'
 
 # Working with AuraScan
 
-Now you have some testnet Aura, you might want to take a look at one of the most important tool of the Aura ecosystem, the blockchain explorer **AuraScan**.
+Now you might want to take a look at the blazing-fast blockchain explorer from Aura Network! 🎉
 
-AuraScan is a tool that offer rich functionalities in managing your assets on Aura Network.
-
-:::info
-You can access AuraScan for Euphoria testnet at: https://euphoria.aurascan.io/
-:::
+AuraScan is designed to enable users to explore all the activities taking place on the blockchain.
 
 ![Serenity demo](/img/aurascan/serenity_demo.gif)

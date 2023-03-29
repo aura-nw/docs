@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Receiver of Account Bound Token
 
-Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT that was attested for him. Account Bound Token is non-transferable co it cannot be transferred from one address to another. Instead, the owner of ABT can 'Un-equip' or 'Equip' the ABT anytime to keep it off-chaim or on-chain according to your will. 
+Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT that was nominated for him. Account Bound Token is non-transferable so it cannot be transferred from one address to another. Instead, the owner of ABT can 'Un-equip' or 'Equip' the ABT anytime to keep it off-chaim or on-chain according to your will. 
 
 ## Equip Account Bound Token
 
@@ -12,7 +12,7 @@ Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT
 
 ![ABT receiver Account Details](/img/aurascan/Advanced_topic_ABT_receiver_0.png)
 
-**Step 2:** See the Unclaimed ABT that was attested for you by the attestor from Account Details page or Account Bound Token page.
+**Step 2:** See the Unclaimed ABT that was nominated for you by the creator from Account Details page or Account Bound Token page.
 You can open the Account Bound Token page of an account by pressing button "See more" from Account Details page.
 
 ![ABT receiver See more](/img/aurascan/Advanced_topic_ABT_receiver_2_1.png)

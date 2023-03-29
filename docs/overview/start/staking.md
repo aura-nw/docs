@@ -31,16 +31,18 @@ Delegators should research and learn more about validator's operation, history a
 :::
 
 ## IV. Delegate to a validator
-After selecting a trusted validator, Aura holders start delegating with an amount of Aura assets and paying a transaction fee for the delegation transaction.
+Once AURA holders have identified a validator they trust, they can begin delegating their AURA through delegation transactions (with transaction fees as any other transactions). 
+In order to maintain the security and decentralization of the network, it is recommended to delegate AURA to multiple validators instead of just one or a few. 
+- Multiple delegations prevent any one validator from having too much voting power, which could pose a risk to the network's integrity. 
+- Additionally, delegators should be mindful of the commission rates charged by validators, as higher rates mean fewer rewards for the delegators. 
+By spreading their delegation across multiple validators with reasonable commission rates, delegators can maximize their staking rewards while contributing to a more secure and decentralized network.
 
+![Delegate a validator](/img/aurascan/delegate-validator.png)
 
 :::caution
-Currently we are having a bug that prevents people to delegate using the "MAX" button in the delegation pop-up. It is because different wallets have different ways of choosing optimal gas fee for transactions.
-
-**Work Around Solution**: Please type in the delegation amount yourself and **remember** to leave some Aura for paying the **transaction fee**.
+Staking all of your available AURA by clicking the 'Max' button might lead to transaction failure, as different wallets have different ways of choosing the optimal gas fee for transactions. 
+Thus, you can use that button if convenient, but always **remember** to leave some AURA for paying the **transaction fee**.
 :::
-
-![Delegate a validator](/img/delegate-validator.png)
 
 After delegating successully, staking rewards are generated to staked Aura holders in both ways:
 - Transaction fees
@@ -49,25 +51,25 @@ After delegating successully, staking rewards are generated to staked Aura holde
 ### Claim rewards 
 Staked Aura holders can get their rewards by sending a claim reward transaction, then the rewards will be sent to Aura holder's wallet automatically.
 
-![Claim reward](/img/claim-reward.png)
+![Claim reward](/img/aurascan/claim-reward.png)
 
 ## V. Undelegate a validator
-Staking will lock your funds for 21+ days, so you will need to undelegate in order for your staked assets to be liquid again. This process will take 21 days to complete. Once the unbonding period begins you will:
-- not receive staking rewards
+As staking will lock your funds, you will need to undelegate in order for your staked assets to be liquid again. This process will take several days (depending on the network configuration) to complete. Once the unbonding period begins you will:
+- not further receive staking rewards
 - not be able to cancel the unbonding
-- need to wait 21 days for the amount to be liquid
+- need to wait until the end of unbonding period for the amount to be liquid
 
-![Undelegate a validator](/img/undelegate.png)
+![Undelegate a validator](/img/aurascan/new_undelegate.png)
 
 ## VI. Redelegate to another validator
 After staking to a validator successully, you want to switch to validators, redelegate to instantly stake your assets to another validator.
 Step 1: Choose another trusted validator
 
-![Redelegate to another validator](/img/redelegate-select-validator.png)
+![Redelegate to another validator](/img/aurascan/redelegate-select-validator.png)
 
-Step 2: Input amount of asset want to redelegate. You can redelegate all your staked assets or less.
+Step 2: Input amount of asset you want to redelegate. You can redelegate all your staked assets or your desired amount.
 
-![Redelegate to another validator](/img/redelegate-amount.png)
+![Redelegate to another validator](/img/aurascan/redelegate-amount.png)
 
 For more detailed information about staking, see [here](https://docs.aura.network/overview/protocol/staking)
 

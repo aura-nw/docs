@@ -55,9 +55,7 @@ All information about selection criteria and decision will be transparent. Howev
 
 # 6. I am in, what now ?
 
-If you have any questions, or simply would want to chat with us, please do through one of our official channels. Also, jump into our [Discord](https://discord.gg/bzm3dyxJxR) server and join our community anytime.
-
-Also check out our [home page](https://aura.network/) and other guides for validators in this document.
+Stay in contact with us on the channels below. Also check out our [home page](https://aura.network/) and other guides for validators in this document.
 
 
 <ContactUs />

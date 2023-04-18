@@ -23,14 +23,14 @@ export default function Home() {
                         topics and sections for developers, validators, exchanges, and others through the navigation
                         bar.
                     </p>
-                    <button onClick={() => (window.location.href = 'https://docs.aura.network/overview/about/intro')}>
+                    <button onClick={() => (window.location.href = '../../overview')}>
                         Explore now
                     </button>
                 </div>
                 <div className='spotlight'>
                     <div
                         className='aura-card'
-                        onClick={() => (window.location.href = 'https://docs.aura.network/overview/about/intro')}>
+                        onClick={() => (window.location.href = '../../overview/intro')}>
                         <div>
                             <div className='img'>
                                 <img src={AuraImg} alt='' />
@@ -40,7 +40,7 @@ export default function Home() {
                                 <p className='description'>
                                     Learn the basics about Aura Network, such as its features and tokenomics.
                                 </p>
-                                <a href='https://docs.aura.network/overview/about/intro'>
+                                <a href='../../overview/intro'>
                                     Learn more <span>🡪</span>
                                 </a>
                             </div>
@@ -48,7 +48,7 @@ export default function Home() {
                     </div>
                     <div
                         className='aura-card'
-                        onClick={() => (window.location.href = 'https://docs.aura.network/overview/start/wallet')}>
+                        onClick={() => (window.location.href = '../../overview/start/wallet')}>
                         <div>
                             <div className='img'>
                                 <img src={RocketImg} alt='' />
@@ -58,7 +58,7 @@ export default function Home() {
                                 <p className='description'>
                                     Go through most basic steps to interact with Aura Network.
                                 </p>
-                                <a href='https://docs.aura.network/overview/start/wallet'>
+                                <a href='../../overview/start/wallet'>
                                     Learn more <span>🡪</span>
                                 </a>
                             </div>
@@ -66,7 +66,7 @@ export default function Home() {
                     </div>
                     <div
                         className='aura-card'
-                        onClick={() => (window.location.href = 'https://docs.aura.network/validator/')}>
+                        onClick={() => (window.location.href = '../../validator/')}>
                         <div>
                             <div className='img'>
                                 <img src={CheckImg} alt='' />
@@ -76,7 +76,7 @@ export default function Home() {
                                 <p className='description'>
                                     Validators are responsible for committing new blocks in the blockchain.
                                 </p>
-                                <a href='https://docs.aura.network/validator/'>
+                                <a href='../../validator/'>
                                     Learn more <span>🡪</span>
                                 </a>
                             </div>
@@ -89,47 +89,47 @@ export default function Home() {
                         <div className='aura-cards'>
                             <div
                                 className='aura-card'
-                                onClick={() => (window.location.href = 'https://docs.aura.network/developer/')}>
+                                onClick={() => (window.location.href = '../../developer/')}>
                                 <p className='title'>Developer Materials</p>
                                 <p className='description'>
                                     Here you will find documentation on how to develop decentralized apps using AURA.
                                     Don’t worry if you are new to smart contract technology, we will get you up to speed
                                     in no time.
                                 </p>
-                                <a href='https://docs.aura.network/developer/'>
+                                <a href='../../developer/'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
                             <div
                                 className='aura-card'
-                                onClick={() => (window.location.href = 'https://docs.aura.network/tutorials/Welcome')}>
+                                onClick={() => (window.location.href = '../../developer/tutorials/')}>
                                 <p className='title'>View Tutorials</p>
                                 <p className='description'>Explore our collection of Examples and Tutorials</p>
-                                <a href='https://docs.aura.network/tutorials/Welcome'>
+                                <a href='../../developer/tutorials/'>
                                     View Tutorials <span>🡪</span>
                                 </a>
                             </div>
                             <div
                                 className='aura-card'
-                                onClick={() => (window.location.href = 'https://docs.aura.network/validator/')}>
+                                onClick={() => (window.location.href = '../../validator/')}>
                                 <p className='title'>Validator Handbook</p>
                                 <p className='description'>
                                     This section is dedicated to validators who want to validate on Aura Network.
                                 </p>
-                                <a href='https://docs.aura.network/validator/'>
+                                <a href='../../validator/'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
                             <div
                                 className='aura-card'
                                 onClick={() =>
-                                    (window.location.href = 'https://docs.aura.network/integrate/exchange/integrate')
+                                    (window.location.href = '../../integrate/exchange/integrate')
                                 }>
                                 <p className='title'>Exchange Integration</p>
                                 <p className='description'>
                                     This section is dedicated to exchanges (CEX and DEX) to integrate with Aura Network.
                                 </p>
-                                <a href='https://docs.aura.network/integrate/exchange/integrate'>
+                                <a href='../../integrate/exchange/integrate'>
                                     Open documents <span>🡪</span>
                                 </a>
                             </div>
@@ -145,7 +145,7 @@ export default function Home() {
                         <div className='epl-cards'>
                             <div
                                 className='epl-card'
-                                onClick={() => (window.location.href = 'https://docs.aura.network/product/aurascan/')}>
+                                onClick={() => (window.location.href = '../../product/aurascan/')}>
                                 <div className='product-logo'>
                                     <img src={AuraScan} alt='' />
                                 </div>
@@ -157,7 +157,7 @@ export default function Home() {
                                     </p>
                                     <button
                                         onClick={() =>
-                                            (window.location.href = 'https://docs.aura.network/product/aurascan/')
+                                            (window.location.href = '../../product/aurascan/')
                                         }>
                                         Explore now
                                     </button>
@@ -166,7 +166,7 @@ export default function Home() {
                             <div
                                 className='epl-card'
                                 onClick={() =>
-                                    (window.location.href = 'https://docs.aura.network/product/pyxis-safe/')
+                                    (window.location.href = '../../product/pyxis-safe/')
                                 }>
                                 <div className='product-logo'>
                                     <img src={PyxisSafe} alt='' />
@@ -179,7 +179,7 @@ export default function Home() {
                                     </p>
                                     <button
                                         onClick={() =>
-                                            (window.location.href = 'https://docs.aura.network/product/pyxis-safe/')
+                                            (window.location.href = '../../product/pyxis-safe/')
                                         }>
                                         Explore now
                                     </button>

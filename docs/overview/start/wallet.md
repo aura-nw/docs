@@ -6,65 +6,42 @@ import ReactPlayer from 'react-player'
 # Setup your wallet
 Wallet is the entrance to the crypto world, this is the first guide for you to get into Aura Network. 
 
-## I. Wallet Setup
+## I. Choose your wallet provider
 Aura Network is built using [Cosmos SDK](https://v1.cosmos.network/sdk). If you are a *Cosmonaut*, you might directly skip to the next part.
 Howver, if you have not use a Cosmos wallet before, this is be the part you should follow closely.
 
-Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). We recommend to use Coin98 Wallet as we are working very closely together to roll out Aura specific features.
-
-Please follow guides from these 2 providers to setup your wallet (**only the Web Browser Extension version at the moment**)
+Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). 
+Please follow guides from these 2 providers to setup your wallet
 - Coin98 guide: https://blog.coin98.com/c98-wallet-integrates-with-cosmos
 - Keplr guide: https://medium.com/chainapsis/how-to-use-keplr-wallet-40afc80907f6
+- If you use a hardware wallet, you can use the [Cosmos](https://support.ledger.com/hc/en-us/articles/360013713840-Cosmos-ATOM-?support=true) app through Keplr.
 
 :::caution
-Make sure you write down or backup your Coin98 wallet **Passphrase**. 
+Make sure you write down or backup your wallet **Passphrase**. 
 
 If you lose it, nobody can help you to recover your wallet.
 :::
 
-<div className='player-wrapper'>
-    <ReactPlayer 
-        playing 
-        controls 
-        url='/video/Introduction_Wallet.mp4' 
-        className='react-player'
-        width='100%'c
-        height='100%'
-    />
-</div>
+If you don't know which one to choose, you can follow this comparison:
 
-## II. Add Chain Network
-
-On March 2023, Aura Network has already launched the Xstaxy Mainnet. Along with 2 existed public testnet options to work with in parallel. Depending on your purpose, please choose the appropriate chain before adding them to your wallet.
-
-### 1. Xstaxy mainnet
-
-Target users: `Validator`, `App Developer` and all kinds of `Aura users`.
-
-***Xstaxy mainnet***: stands out as the official launching version with the latest technologies integrated into the first-ever smart contract layer-1 chain driving toward massive NFT adoption in the Cosmos ecosystem.
-
-With C98 wallet extension, after active Aura Xstaxy mainnet in Multichain config, You can add the network in browser when click 'Connect Wallet' button for the first time access to Aura mainnet. 
-
-![Add mainnet C98](/img/aurascan/c98_add_mainnet.png)
-
-### 2. Staging Testnet: Euphoria
-
-Target users: `Validator`, `App Developer`, `First-Timer` and the majority of `Aura users`.
-
-***Euphoria***: Similar to the staging environment concept in traditional software development, Euphoria is the near exact replica of Aura Mainnet. This means we will try our best to bootstrap external validators, set up vesting, voting and operate the Euphoria bootstrap community as closely as we will do on Aura Mainnet in the future.
-
-![Add Euphoria C98](/img/aurascan/c98_add_euphoria.png)
+| Wallet | Mobile | NFT | Multi-chain | Tx History | Ledger | Network          |
+|--------|--------|-----|-------------|---------------------|--------|------------------|
+| Coin98 | ✅     | ✅   | ✅           | ✅                   |        | Mainnet, Testnet |
+| Keplr  |        |     |             |                     | ✅      | Mainnet, Testnet |
 
 
-### 3. Stable Testnet: Serenity
+## II. Create Aura Network Wallet
 
-Target users: `App Developer`.
+On March 2023, Aura Network has already launched the ***Xstaxy mainnet***. Here we will walk you through the process of creating an Aura mainnet wallet using one of the 2 wallet providers
 
-***Serenity*** testnet is determined to be fairly stable with a minimum validator set. Users who want to get the first hand experience in Aura should try with this network. Serenity is publicly open to DAPP builders through public RPC endpoints. However, it is not open for external validators.
+### 1. Using Coin98 Browser extension
 
-![Add Serenity C98](/img/aurascan/c98_add_serenity.png)
+If you are creating a brand new Coin98 wallet, you can easily find Aura Network when creating a new account.
 
-## III. Create Aura Wallet
+However, if you already have Coin98 wallet before, please make sure you have Aura Xstaxy-1 mainnet on the Active blockchain list.
+
+![Add mainnet C98](/img/aurascan/c98_active_chain.png)
+
 The final step is to create a new Aura Wallet. Just clock the Add Wallet button on the top right corner of the extension. After creating your Aura Wallet, you are ready to try the testnet.
 
 :::caution
@@ -75,12 +52,28 @@ If you lose it, nobody can help you to recover your wallet.
 
 ![C98 create wallet](/img/aurascan/c98_create_wallet.gif)
 
-## IV. What do I do next ?
+### 2. Using Coin98 Mobile Wallet
 
-Now you have your wallet setup. There are several things you could try with Aura Network
+Smartphone users can use Coin98 Super App as an efficient tool to aid in the utilization of the Aura Network wallet. If you haven’t installed Coin98 Super App yet, download it on [Google Play](https://play.google.com/store/apps/details?id=coin98.crypto.finance.media&hl=vi&gl=US&ref=insight.aura.network) or [AppStore](https://apps.apple.com/us/app/coin98-super-app/id1561969966?ref=insight.aura.network). 
 
-1. Asking for test token through testnet [Faucet](./faucet.md).
-2. Learn in detail various concept used in Aura Network in the `👩‍🎓 Concepts` section.
-3. Start developing your application following our [Guides](../../developer).
-4. Hacking Aurad by running your own [Nodes](../../validator/running-a-fullnode).
-5. Try some application that we are building for the Aura Network ecosystem.
+Open Coin98 Super App, choose the Add wallet symbol on the top-right corner. Enter “Aura'' in the search bar and choose Aura Xstaxy Mainnet. Fill in all necessary information and it is done
+
+![C98 Mobile wallet](/img/aurascan/c98_mobile_add_mainnet.png)
+
+### 3. Using Keplr
+
+If you choose to use Keplr, you can easily add Aura Network by connecting your Keplr wallet to [Aurascan](https://aurascan.io)
+
+![Keplr Extension](/img/aurascan/Keplr_wallet_extension.png)
+
+### 4. Using Ledger
+
+Currently only Keplr supports Ledger connection to Aura. Make sure you have the [Cosmos](https://support.ledger.com/hc/en-us/articles/360013713840-Cosmos-ATOM-?support=true) Application on your ledger. Then, just connect your ledger with Keplr and you are good to go.
+
+![Keplr Ledger](/img/aurascan/keplr_ledger.jpg)
+
+## III. Multisignature solution
+
+If you are familliar with Gnosis-Safe or any multisig assets management tool, pay a visit to our multisignature asset management tool: [Pyxis](https://pyxis.aura.network/).
+
+If you don't know where to start, visit our comprehensive guide for managing your tokens using Pyxis [here](../../product/pyxis-safe/index.md)

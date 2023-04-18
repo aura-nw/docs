@@ -16,7 +16,9 @@ Aura holders that do not operate validators themselves also can participate in s
 Before Aura holders start staking process, they must setup their wallet, transfer Aura to the wallet and then select validators.
 
 ## II. Setup your wallet
-For more detailed information about Setup your wallet, see [here](./wallet.md)
+For more detailed information about Setup your wallet, see [here](./wallet.md).
+
+Now, head over to [Aurascan](https://aurascan.io) and connect your wallet to begin your coin staking procedure.
 
 ## III. Select your validators
 To select validators, Aura holders have access to a range of information available in Aura network explorers like Aurascan. Review the following information before selecting:

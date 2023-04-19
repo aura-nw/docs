@@ -6,19 +6,18 @@ hide_table_of_contents: false
 import {DocsCards} from '@site/src/components/Cards/Cards.js';
 import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
-Hello there! Welcome to our documentation. Here you will learn everything about developing decentralized applications (dApp) in AURA. 
-
-If you are new to smart contracts, do not worry. We will get you up to speed and you will be developing your own dApp in no time.
+Hello there! Welcome to our documentation. Here you will learn everything about developing decentralized applications (dApp) in AURA. If you are new to smart contracts, do not worry. We will get you up to speed and you will be developing your own dApp in no time.
 
 ## Overview
 AURA network is a smart contract chain that uses proof-of-stake (PoS) to achieve distributed consensus
 among validators and confirm all transactions executed within. Like most blockchains, AURA is completely
 transparent. Additionally, aura is a [permissioned](https://github.com/orgs/aura-nw/discussions/1) smart
-contract chain which ensures no malicious contracts can be deployed on mainnet where real value is 
+contract blockchain which ensures no malicious contracts can be deployed on mainnet where real value is 
 at stake.
 
-AURA uses smart contracts to create decentralized applications. Deploying a smart contract requires 
-paying a gas fee in AURA for the compiled code to be stored in the blockchain forever. **Once instantiated, the contract is immutable, so make sure your code is safe!**
+AURA uses smart contracts to create decentralized applications. Deploying a one requires paying a gas fee
+in AURA for the compiled code to be stored in the blockchain forever as well as for instantiation. 
+**Once instantiated, the contract is immutable, so make sure your code is safe!**
 
 ## Smart Contracts
 Smart contracts are simple programs that runs on the AURA Network. As any modern application, smart contracts store data and expose methods to interact with them.
@@ -48,7 +47,7 @@ Otherwise, check out these topics and happy hacking!
   [
     {
       title: "Intro to Contracts", 
-      description: "Get an overview on a smart contract is in Aura Network", 
+      description: "Get an overview on a smart contract is in AURA Network", 
       link:"smart-contracts/intro", 
     },
     {

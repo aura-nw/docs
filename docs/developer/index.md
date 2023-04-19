@@ -48,13 +48,25 @@ Otherwise, check out these topics and happy hacking!
   [
     {
       title: "Intro to Contracts", 
-      description: "Get an overview on how to write and deploy a smart contract in AURA Network", 
+      description: "Get an overview on a smart contract is in Aura Network", 
       link:"smart-contracts/intro", 
     },
     {
-      title: "First Contract", 
+      title: "Contract Example", 
       description: "Develop your first smart contract in minutes", 
       link:"smart-contracts/anatomy", 
+    }
+  ],
+  [
+    {
+      title: "From Solidity to CosmWasm", 
+      description: "Understand the differences and jump-start your CosmWasm knowledge.", 
+      link:"smart-contracts/solidity-to-cosmwasm", 
+    },
+    {
+      title: "Deploying", 
+      description: "Learn to store your contract bytecode in the blockchain and initialize it.", 
+      link:"smart-contracts/deploy", 
     }
   ]]
 } />
@@ -65,14 +77,27 @@ Otherwise, check out these topics and happy hacking!
     - [Preparing Development Wallet](getting-started/wallet-creation)
     - [Environment Setup](getting-started/env-setup)
 
-2. Smart Contracts 
+2. Concepts
+    - [Validator](concepts/validator)
+    - [Delegator](concepts/delegator)
+    - [Mint](concepts/mint)
+    - [Commission](concepts/commission)
+    - [Staking](concepts/staking)
+    - [Slashing](concepts/slashing)
+    - [Governance](concepts/Governance)
+    - [Vesting](concepts/vesting)
+
+3. Smart Contracts 
     - [Intro to smart contracts](smart-contracts/intro)
-    - [Smart contract structure](smart-contracts/anatomy)
-    - [Create your first smart contract](smart-contracts/first-contract)
+    - [Smart contract anatomy](smart-contracts/anatomy)
+    - [From Solidity to CosmWasm](smart-contracts/solidity-to-cosmwasm)
+    - [Deploy a contract](smart-contracts/deploy)
+    - [Interact with a contract](smart-contracts/interact)
     - Examples:
       - [Simple template](smart-contracts/examples/simple-template)
       - [Counter](smart-contracts/examples/counter)
-3. Tutorials
+
+4. Tutorials
     - [Overview](tutorials/overview)
 
     3.1 Fungible Tokens

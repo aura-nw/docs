@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 sidebar_title: Tx Sequence & Queue
-title: Transaction sequence and managing the transaction queue 
+title: Transaction sequence
 
 ---
 ## Transaction sequence

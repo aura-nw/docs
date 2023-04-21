@@ -157,6 +157,9 @@ const config = {
 
                 //... other Algolia params
             },
+            prism: {
+                additionalLanguages: ['rust'],
+            }
         }),
 }
 

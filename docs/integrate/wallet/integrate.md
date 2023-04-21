@@ -5,20 +5,13 @@ sidebar_label: Getting started
 
 # Wallet Integration
 
-## 1. BEP-20 token integration
-:::caution
-The BEP-20 tokens will be eventually deprecated after October 1st 2022 when Aura Network mainnet is online. Exchanges that have listed this token should work with Aura Network team to migrate listed tokens into native $AURA on mainnet.
-:::
+Aura Network currently supports 2 wallets: [Coin98 Wallet](https://wallet.coin98.com/) and [Keplr Wallet](https://www.keplr.app/). We recommend to use [Coin98 Wallet](https://wallet.coin98.com/) as we are working very closely together to roll out Aura specific features.
 
-AURA is currently being published as BEP-20 tokens on BNB Smart Chain. 
+Please follow guides from these 2 providers to setup your wallet (**only the Web Browser Extension version at the moment**)
+- Coin98 guide: https://blog.coin98.com/c98-wallet-integrates-with-cosmos
+- Keplr guide: https://medium.com/chainapsis/how-to-use-keplr-wallet-40afc80907f6
 
-Offcial Contract Address is at: [`0x23c5D1164662758b3799103Effe19cC064d897D6`](https://bscscan.com/address/0x23c5D1164662758b3799103Effe19cC064d897D6)
-
-Tracking at:
-- [Coingecko](https://www.coingecko.com/en/coins/aura-network)
-- [CoinMarketCap](https://coinmarketcap.com/currencies/aura-network/)
-
-## 2. Native $Aura integration
+# Native $Aura integration
 
 Aura mainnet is developed using [Cosmos SDK](https://v1.cosmos.network/sdk). So if you support popular coins like [ATOM](https://www.coingecko.com/en/coins/cosmos-hub), the process is very similar.
 
@@ -29,6 +22,5 @@ Depending on the network (dev, testnet or mainnet), wallet integration needs to 
 | Xstaxy   | Mainnet                 | https://github.com/aura-nw/mainnet-artifacts/tree/main/wallet-integration |
 | Euphoria | Public stable Testnet   | https://jsfiddle.net/eledra/rmh95s3x/ |
 | Serenity | Public unstable Testnet | https://jsfiddle.net/eledra/kc6yhLpz/ |
-| Dev      | internal dev network    | https://jsfiddle.net/eledra/8oe2qbct/ |
+| Dev      | Internal dev network    | https://jsfiddle.net/eledra/8oe2qbct/ |
 
-## 3. 

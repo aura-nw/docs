@@ -1,12 +1,33 @@
 ---
 sidebar_position: 3
+sidebar_label: Transactions Information
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# Transactions Information
+Transactions in Aura Network are easily created. There are several types of different transactions that can be executed. For general usage, 
+you can check out the `aurad` CLI API reference.
+
+Aura transactions also support **memo** features. Once a transaction is broadcasted, it will be stuck in the mempool until the node decides
+to broadcast it. 
+
+:::caution
+The transaction behavior in the mempool (time-to-live) depends on the node it was broadcasted to, since it is a configurable value.
+:::
+
+## Transaction details
+
+You can access any transaction detailed information with the LCD. Here is an example:
+
+```
+curl -X GET "https://lcd.euphoria.aura.network/cosmos/tx/v1beta1/txs/220F3F52637AD5609743BE7EF4FBD8A262B971CB8C4E2548BAA1EBCE967A4C07" -H "accept: application/json"
+```
+This will include spending and logs in case a smart contract was invoked.
+
 # Create a transaction
-This document describes how to generate an (unsigned) transaction, signing it (with one or multiple keys), and broadcasting it to the network.
+This part describes how to generate an (unsigned) transaction, signing it (with one or multiple keys), and broadcasting it to the network.
 
 ## 1. Using the CLI 
 For example, running the following command to send 1 eAura from `A` to `B`:

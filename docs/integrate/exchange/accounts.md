@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: Account Management
+sidebar_label: Accounts Information
 ---
 # Aura accounts integration
 
@@ -14,6 +14,38 @@ An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivK
 
 - The `PubKey` can be derived to generate various `Addresses`, which are used to identify users (among other parties) in the application. `Addresses` are also associated with `messages` to identify the sender of the `message`. 
 - The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
+
+### Account validation
+Aura accounts have the following format: `aura<bech32encoding>`. So an address should look like this: `aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj`.
+
+Validation can be performed locally with CosmJS like shown below:
+```js
+e = require('@cosmjs/encoding'); 
+e.fromBech32('aura15f6wn3nymdnhnh5ddlq');
+> e.fromBech32('aura15f6wn3nymdnhnh5ddlqletuptjag09tryrtpq5')
+{
+  prefix: 'aura',
+  data: Uint8Array(20) [
+    162, 116, 233, 198, 100,
+    219, 103, 121, 222, 141,
+    111, 193, 252, 175, 129,
+     92, 186, 135, 149,  99
+  ]
+}
+> e.fromBech32('aura15f6wn3nymdnhnh5ddlqletuptjag09tryrtpq5123')
+Uncaught Error: Data too short
+```
+
+### Account transaction history
+Account history can be accessed with the LCD. To do so, you must specify the event condition you wish to query. It's based on Tendermint 
+events. For example, to search transactions by event, you can do the following:
+
+```bash
+curl -X GET "https://lcd.aura.network/cosmos/tx/v1beta1/txs?events=msg.sender='aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzck'" -H "accept: application/json"
+```
+
+However, account history is a dangerous operation and may DOS the node. If it is not critical, you can refer to our guide here to use Aura centralized indexing service:
+https://docs.aura.network/integrate/wallet/transaction-history
 
 ## 2. Key management
 
@@ -33,6 +65,8 @@ aurad keys add <key_name> --keyring-backend os
 
 ## 3. Querying account information from aurad CLI
 
+Account and contracts information can be queried with the aurad CLI. For a full reference, check the CLI documentation.
+
 ### Account details
 
 You can get account detail by querying to the auth module using account's address
@@ -47,7 +81,7 @@ aurad query auth account <address> --node https://rpc.euphoria.aura.network:443
 </TabItem>
 </Tabs>
 
-Sample return:
+Sample response:
 
 ```json
 '@type': /cosmos.auth.v1beta1.BaseAccount
@@ -70,7 +104,7 @@ Check the balance of the account
 aurad query bank balances <address> --node https://rpc.euphoria.aura.network:443
 ```
 
-Sample return:
+Sample response:
 
 ```json
 balances:
@@ -94,14 +128,10 @@ You can directly use [LCD endpoints](http://localhost:3000/developer/endpoints) 
 curl -X GET "https://lcd.euphoria.aura.network/cosmos/auth/v1beta1/accounts/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
 ```
 
-```bash
-curl -X GET "https://lcd.euphoria.aura.network/cosmos/bank/v1beta1/balances/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
-```
-
 </TabItem>
 </Tabs>
 
-Detail references of each API is specified in the LCD [Swagger](https://lcd.euphoria.aura.network/) document.
+Detailed references of each API is specified in the LCD [Swagger](https://lcd.euphoria.aura.network/) document.
 
 ## 5. Using Cosmjs
 

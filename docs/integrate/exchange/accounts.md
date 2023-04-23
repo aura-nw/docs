@@ -58,7 +58,7 @@ The term "keyring" refers to the object holding the private/public keypairs used
 You can interact will keyring via `keys` subcommand
 
 For example, to create a new key in the keyring, run the command:
-```
+```bash
 # Add key with the name <key_name> to the `os` backend
 aurad keys add <key_name> --keyring-backend os
 ```
@@ -71,15 +71,9 @@ Account and contracts information can be queried with the aurad CLI. For a full 
 
 You can get account detail by querying to the auth module using account's address
 
-<Tabs>
-<TabItem value="testnet" label="Euphoria Testnet">
-
 ```bash
-aurad query auth account <address> --node https://rpc.euphoria.aura.network:443
+aurad query auth account <address> --node https://rpc.aura.network:443
 ```
-
-</TabItem>
-</Tabs>
 
 Sample response:
 
@@ -97,11 +91,8 @@ sequence: "19"
 
 Check the balance of the account
 
-<Tabs>
-<TabItem value="testnet" label="Euphoria Testnet">
-
 ```bash
-aurad query bank balances <address> --node https://rpc.euphoria.aura.network:443
+aurad query bank balances <address> --node https://rpc.aura.network:443
 ```
 
 Sample response:
@@ -109,41 +100,30 @@ Sample response:
 ```json
 balances:
 - amount: "304744"
-  denom: ueaura
+  denom: uaura
 pagination:
   next_key: null
   total: "0"
 ```
 
-</TabItem>
-</Tabs>
-
 ## 4. Using HTTP endpoints:
 You can directly use [LCD endpoints](http://localhost:3000/developer/endpoints) (light client daemon) provided by Aura nodes (public or your own full node) to integrate:
 
-<Tabs>
-<TabItem value="testnet" label="Euphoria Testnet">
 
 ```bash
-curl -X GET "https://lcd.euphoria.aura.network/cosmos/auth/v1beta1/accounts/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
+curl -X GET "https://lcd.aura.network/cosmos/auth/v1beta1/accounts/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
 ```
 
-</TabItem>
-</Tabs>
-
-Detailed references of each API is specified in the LCD [Swagger](https://lcd.euphoria.aura.network/) document.
+Detailed references of each API is specified in the LCD [Swagger](https://lcd.aura.network/) document.
 
 ## 5. Using Cosmjs
 
 You can also do same procedures using [CosmJS](https://github.com/cosmos/cosmjs)
 
-<Tabs>
-<TabItem value="testnet" label="Euphoria Testnet">
-
 ```javascript
 import { StargateClient } from "@cosmjs/stargate"
 
-const rpc = "https://rpc.euphoria.aura.network"
+const rpc = "https://rpc.aura.network"
 const sampleAccount = "aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl"
 
 const runAll = async(): Promise<void> => {
@@ -163,6 +143,3 @@ const runAll = async(): Promise<void> => {
 
 runAll()
 ```
-
-</TabItem>
-</Tabs>

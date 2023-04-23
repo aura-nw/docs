@@ -10,7 +10,7 @@ After a proposal gets a sufficient deposit, it enters the voting period that las
 
 ## II. Connect a wallet
 To vote on an active proposal, you must connect a wallet successfully first.
-See [here](https://docs.aura.network/overview/start/wallet) to know how to setup your wallet.
+See [here](../start/wallet) to know how to setup your wallet.
 
 ## III. Stake Aura
 Only Aura stakers have the right to vote on proposals, so if you have not staked Aura before, see [here](./staking.md) to know how to stake Aura.
@@ -25,5 +25,3 @@ You can choose one of four option: Yes, No, NoWithVeto or Abstain. You can also 
 ![Vote a proposal](/img/vote-option.png)
 
 If the Aura stakers do not vote, they inherit the vote from the validators they delegated to.
-
-For more detailed information about voting, see [here](../protocol/gov.md)

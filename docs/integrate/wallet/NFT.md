@@ -13,10 +13,10 @@ It is recommend to use Horoscope, the interchain indexer for querying NFT data o
 
 You can choose from these following indexer server to integrate with the wallet.
 
-| Environment | Description                             | URL                                |
-| ----------- | --------------------------------------- | ---------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network     |
-| Staging     | Public stable version, support Euphoria | https://horoscope.dev.aura.network |
+| Environment | Description                              | URL                                |
+| ----------- | ---------------------------------------- | ---------------------------------- |
+| Production  | Only supports Mainnet                    | https://horoscope.aura.network     |
+| Staging     | Public stable version, supports Euphoria | https://horoscope.dev.aura.network |
 
 NFT can be retrieved over the following API:
 
@@ -29,12 +29,15 @@ $Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
 Input:
 
 - Owner address
-- Chainid: euphoria-2
+- ChainId: euphoria-2
 - contractType = CW721
 
-Example:
+It can be retrieved from the Horoscope like shown below:
 
-https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0
+```bash
+curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+```
+*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
 
 ### Detail of one CW721, CW4973 (NFT)
 
@@ -47,8 +50,10 @@ Input:
 
 Example:
 
-https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0
-
+```bash
+curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+```
+*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
 ### Parse output
 
 This is an output from getByOwner api:

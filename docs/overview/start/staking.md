@@ -34,15 +34,19 @@ Delegators should research and learn more about validator's operation, history a
 
 ## IV. Delegate to a validator
 Once AURA holders have identified a validator they trust, they can begin delegating their AURA through delegation transactions (with transaction fees as any other transactions). 
+
 In order to maintain the security and decentralization of the network, it is recommended to delegate AURA to multiple validators instead of just one or a few. 
+
 - Multiple delegations prevent any one validator from having too much voting power, which could pose a risk to the network's integrity. 
 - Additionally, delegators should be mindful of the commission rates charged by validators, as higher rates mean fewer rewards for the delegators. 
+
 By spreading their delegation across multiple validators with reasonable commission rates, delegators can maximize their staking rewards while contributing to a more secure and decentralized network.
 
 ![Delegate a validator](/img/aurascan/delegate-validator.png)
 
 :::caution
 Staking all of your available AURA by clicking the 'Max' button might lead to transaction failure, as different wallets have different ways of choosing the optimal gas fee for transactions. 
+
 Thus, you can use that button if convenient, but always **remember** to leave some AURA for paying the **transaction fee**.
 :::
 

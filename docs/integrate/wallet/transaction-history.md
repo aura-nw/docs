@@ -5,16 +5,16 @@ sidebar_label: Transaction History
 
 # Integration transaction history for wallet
 
-There are 2 way to query history tx: onchain (by LCD/RPC) or offchain (by Horoscope). It is recommend to use Horoscope to query all tx which involved by address (tx sended, received, smart contract,...)
+There are 2 way to query history tx: onchain (by LCD/RPC) or offchain (by Horoscope). It is recommend to use Horoscope to query all tx which involved by address (tx sended, received, smart contract, etc).
 
-## 1. Using Horoscope (recommend)
+## 1. Using Horoscope (recommended)
 
 You can choose from these following indexer server to integrate with the wallet.
 
-| Environment | Description                             | URL                                |
-| ----------- | --------------------------------------- | ---------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network     |
-| Staging     | Public stable version, support Euphoria | https://horoscope.dev.aura.network |
+| Environment | Description                              | URL                                |
+| ----------- | ---------------------------------------- | ---------------------------------- |
+| Production  | Only supports Mainnet                    | https://horoscope.aura.network     |
+| Staging     | Public stable version, supports Euphoria | https://horoscope.dev.aura.network |
 
 Transaction history can be retrieved over the following API:
 

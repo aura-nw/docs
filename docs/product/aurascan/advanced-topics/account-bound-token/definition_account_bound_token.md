@@ -1,8 +1,9 @@
 ---
+"label": "What is ABT?",
 sidebar_position: 1
 ---
 
-# What is Account Bound Token?
+# What is Account Bound Token (ABT)?
 
 ## Definition
 

@@ -1,5 +1,4 @@
 ---
-"label": "Receiver",
 sidebar_position: 3
 ---
 

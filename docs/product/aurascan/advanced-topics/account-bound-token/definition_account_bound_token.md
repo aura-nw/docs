@@ -1,5 +1,4 @@
 ---
-"label": "What is ABT?",
 sidebar_position: 1
 ---
 

@@ -1,5 +1,4 @@
 ---
-"label": "Creator",
 sidebar_position: 2
 ---
 

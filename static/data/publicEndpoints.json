@@ -9,20 +9,23 @@
             "https://aura-rpc.ramuchi.tech",
             "https://aura-rpc.palamar.io",
             "https://rpc.xstaxy-1.aura.aviaone.com",
-            "https://rpc.aura.nodestake.top"
+            "https://rpc.aura.nodestake.top",
+            "https://aura-rpc.tienthuattoan.ventures"
         ], 
         "LCD": [
             "https://lcd.aura.network",
             "https://aura-api.ramuchi.tech",
             "https://aura-api.palamar.io",
             "https://api.xstaxy-1.aura.aviaone.com",
-            "https://api.aura.nodestake.top"
+            "https://api.aura.nodestake.top",
+            "https://aura-api.tienthuattoan.ventures"
         ], 
         "gRPC": [
             "https://grpc.aura.network",
             "https://aura-grpc.ramuchi.tech",
             "https://aura-grpc.palamar.io",
-            "https://grpc.aura.nodestake.top"
+            "https://grpc.aura.nodestake.top",
+            "aura-grpc.tienthuattoan.ventures:9090"
         ]
     },
     "euphoria": {

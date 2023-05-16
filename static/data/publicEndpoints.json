@@ -25,7 +25,7 @@
             "https://aura-grpc.ramuchi.tech",
             "https://aura-grpc.palamar.io",
             "https://grpc.aura.nodestake.top",
-            "aura-grpc.tienthuattoan.ventures:9090"
+            "https://aura-grpc.tienthuattoan.ventures:9090"
         ]
     },
     "euphoria": {

@@ -1,7 +1,22 @@
 import React, { Fragment } from 'react';
 import '../../pages/index.css'
+import AuraIcon from '../../../static/img/aura.png'
 
-const Card = ({item}) => {
+export const DocCard = ({children}) => {
+    return (
+        <div className='aura-info-card'>
+            <div>
+                <p className='title'>
+                    <img className='info-card-icon' src={AuraIcon}></img>
+                    In this section
+                </p>
+                <p className='content'>{children}</p>             
+            </div>
+        </div>
+    )
+};
+
+export const Card = ({item}) => {
     return (
         <div className='aura-doc-card' onClick={() => window.location.href=item.link}>
             <div>

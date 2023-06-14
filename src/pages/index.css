@@ -43,6 +43,15 @@
         max-width: unset !important;
     }
 }
+.aura-info-card {
+    max-width: 100% !important;
+    display: flex;
+    flex: 100%;
+    margin: 16px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    align-items: flex-start;
+}
 a {
     font-weight: 600;
 }
@@ -112,6 +121,7 @@ button:hover {
     position: relative;
     z-index: 1;
 }
+.aura-info-card,
 .spotlight > .aura-doc-card,
 .spotlight > .aura-card {
     flex: 1;
@@ -128,6 +138,7 @@ button:hover {
     max-width: 360px;
 }
 .aura-doc-card > div,
+.aura-info-card > div,
 .aura-card > div {
     padding: 22px;
     cursor: pointer;
@@ -136,6 +147,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+.aura-info-card > div {
+    cursor: default;
 }
 .aura-doc-card > div > div:not(.img),
 .aura-card > div > div:not(.img) {
@@ -181,6 +195,17 @@ button:hover {
     height: 32px;
     width: 32px;
 }
+.aura-info-card .info-card-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transform: translateY(-2px); 
+}
+.aura-info-card ul li {
+    margin-top: 18px;
+}
+.aura-info-card .title,
 .aura-doc-card .title,
 .aura-card .title {
     font-weight: 600;
@@ -189,6 +214,11 @@ button:hover {
     color: #f2f3f5;
     margin: 0px 0px 8px;
 }
+.aura-info-card .title {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.aura-info-card .content,
 .aura-doc-card .description,
 .aura-card .description {
     font-weight: 400;
@@ -198,10 +228,19 @@ button:hover {
     margin: 0px 0px 14px;
     flex: 1;
 }
+.aura-info-card .content {
+    font-weight: 500;
+    font-size: 16px;
+    color: #cfd3db;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.aura-info-card a,
 .aura-doc-card a,
 .aura-card a {
     cursor: pointer;
 }
+.aura-info-card a,
 .aura-doc-card a span,
 .aura-card a span {
     font-size: 12px;
@@ -330,6 +369,13 @@ button:hover {
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
+[data-theme='light'] .aura-info-card {
+    background-image: linear-gradient(#f2f3f5, #f2f3f5),
+        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
 [data-theme='light'] .spotlight {
     background: #ccd0d5;
 }
@@ -346,6 +392,12 @@ button:hover {
     color: rgba(54, 56, 67, 1);
 }
 [data-theme='light'] .aura-doc-card .description {
+    color: #717582;
+}
+[data-theme='light'] .aura-info-card .title {
+    color: rgba(54, 56, 67, 1);
+}
+[data-theme='light'] .aura-info-card .content {
     color: #717582;
 }
 [data-theme='light'] .aura-card {

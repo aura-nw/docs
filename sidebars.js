@@ -110,6 +110,12 @@ const sidebars = {
       collapsible: false,
       items: require('./docs/horoscope/sidebar'),
     },
+    {
+      type: 'category',
+      label: 'GraphQL in Horoscope V2',
+      collapsible: false,
+      items: require('./docs/horoscope-v2/sidebar'),
+    },
   ],
   integrate: [
     {

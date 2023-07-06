@@ -1,0 +1,45 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+  - url: https://indexer-v2.staging.aurascan.io
+tags:
+  - name: proposal
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - proposal
+      summary: Query proposal
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/proposal'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    proposal:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: queryProposal
+          description: query name
+        query:
+          type: string
+          example: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { serenity { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            order: desc
+            limit: 4
+            
+          
+            

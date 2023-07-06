@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+  - url: https://indexer-v2.staging.aurascan.io
+tags:
+  - name: vote
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - vote
+      summary: Query vote
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/vote'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    vote:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: queryVote
+          description: query name
+        query:
+          type: string
+          example: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { serenity { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 5
+            order: desc
+            proposalId: 245
+            voteOption: null
+            offset: 0
+                  
+            
+          
+            

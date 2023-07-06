@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.staging.aurascan.io
+  - url: https://indexer-v2.dev.aurascan.io
+tags:
+  - name: cw721
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - cw721
+      summary: Query cw721 activity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/cw721activity'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    cw721activity:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: cw721activity
+          description: query name
+        query:
+          type: string
+          example: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 10
+            contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
+            
+            
+                  
+            
+          
+            

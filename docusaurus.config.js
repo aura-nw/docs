@@ -55,6 +55,54 @@ const config = {
                             groupPathsBy: 'tag',
                         },
                     },
+                    horoscopeV2_block: {
+                        specPath: 'openAPI/horoscope-v2/block.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_transaction: {
+                        specPath: 'openAPI/horoscope-v2/transaction.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_proposal: {
+                        specPath: 'openAPI/horoscope-v2/proposal.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_validator: {
+                        specPath: 'openAPI/horoscope-v2/validator.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_vote: {
+                        specPath: 'openAPI/horoscope-v2/vote.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_cw721_token: {
+                        specPath: 'openAPI/horoscope-v2/cw721-token.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_cw721_activity: {
+                        specPath: 'openAPI/horoscope-v2/cw721-activity.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_cw20_holder: {
+                        specPath: 'openAPI/horoscope-v2/cw20-holder.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_cw20_activity: {
+                        specPath: 'openAPI/horoscope-v2/cw20-activity.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_account: {
+                        specPath: 'openAPI/horoscope-v2/account.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_contract: {
+                        specPath: 'openAPI/horoscope-v2/smart-contract.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_codeid: {
+                        specPath: 'openAPI/horoscope-v2/codeid.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    }
                 },
             },
         ],

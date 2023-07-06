@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.staging.aurascan.io
+  - url: https://indexer-v2.dev.aurascan.io
+tags:
+  - name: contract
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - contract
+      summary: Query code id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/codeid'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    codeid:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: codeid
+          description: query name
+        query:
+          type: string
+          example: "query codeid($limit: Int = 10, $codeId: Int = null) { euphoria { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 10
+            codeId: null
+            
+            
+            
+                  
+            
+          
+            

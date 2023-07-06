@@ -1,0 +1,45 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+  - url: https://indexer-v2.staging.aurascan.io
+tags:
+  - name: validator
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - validator
+      summary: Query validator
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/validator'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    validator:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: queryValidator
+          description: query name
+        query:
+          type: string
+          example: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { serenity { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 5
+            offset: 0
+            operatorAddress: null
+          
+            

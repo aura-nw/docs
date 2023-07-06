@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.staging.aurascan.io
+  - url: https://indexer-v2.dev.aurascan.io
+tags:
+  - name: contract
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - contract
+      summary: Query contract
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/contract'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    contract:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: contract
+          description: query name
+        query:
+          type: string
+          example: "query contract($limit: Int = 10, $contractAddress: String = null) { euphoria { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 10
+            contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
+            
+            
+            
+                  
+            
+          
+            

@@ -21,10 +21,72 @@ import TabItem from "@theme/TabItem";
 
 ## Query validator
 
+Query:
+```graphql
+query queryValidator(
+  $offset: Int = 0
+  $limit: Int = 10
+  $operatorAddress: String = null
+) {
+  serenity {
+    validator(
+      limit: $limit
+      offset: $offset
+      order_by: { tokens: desc }
+      where: { operator_address: { _eq: $operatorAddress } }
+    ) {
+      account_address
+      commission
+      consensus_address
+      consensus_hex_address
+      created_at
+      consensus_pubkey
+      delegator_shares
+      delegators_count
+      delegators_last_height
+      description
+      index_offset
+      jailed
+      jailed_until
+      min_self_delegation
+      missed_blocks_counter
+      operator_address
+      percent_voting_power
+      self_delegation_balance
+      start_height
+      status
+      tokens
+      tombstoned
+      unbonding_height
+      unbonding_time
+      uptime
+      missed_blocks_counter
+      image_url
+      vote_aggregate {
+        aggregate {
+          count
+        }
+      }
+    }
+    validator_aggregate {
+      aggregate {
+        count
+      }
+    }
+  }
+}
 
-
-Query validator
-
+```
+Variable:
+```json
+{
+    "limit": 5,
+    "order": "desc",
+    "hash": null,
+    "height": null,
+    "operatorAddress": null
+}
+```
 <MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaDescription={"query name"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaDescription={"Graphql query"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaDescription={"Variable in query"} schemaName={"object"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
 
 Successful operation

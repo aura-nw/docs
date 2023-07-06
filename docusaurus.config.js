@@ -55,6 +55,26 @@ const config = {
                             groupPathsBy: 'tag',
                         },
                     },
+                    horoscopeV2_block: {
+                        specPath: 'openAPI/horoscope-v2/block.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_transaction: {
+                        specPath: 'openAPI/horoscope-v2/transaction.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_proposal: {
+                        specPath: 'openAPI/horoscope-v2/proposal.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_validator: {
+                        specPath: 'openAPI/horoscope-v2/validator.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
+                    horoscopeV2_vote: {
+                        specPath: 'openAPI/horoscope-v2/vote.yaml', // Path to designated spec file
+                        outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+                    },
                 },
             },
         ],

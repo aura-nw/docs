@@ -104,18 +104,21 @@ const sidebars = {
   horoscope: [
     'product/horoscope/index',
     'product/horoscope/architecture/overview',
+    
     {
       type: 'category',
-      label: 'API',
-      collapsible: false,
+      label: 'API in Horoscope V1',
+      collapsible: true,
       items: require('./docs/horoscope/sidebar'),
     },
     {
       type: 'category',
       label: 'GraphQL in Horoscope V2',
-      collapsible: false,
+      collapsible: true,
+      collapsed: false,
       items: require('./docs/horoscope-v2/sidebar'),
     },
+    'product/horoscope/architecture/asset',
   ],
   integrate: [
     {

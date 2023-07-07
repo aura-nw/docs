@@ -30,7 +30,8 @@ Horoscope v1:
 | Environment | URL                                        | Support Chain                       |
 | ----------- | ------------------------------------------ | ----------------------------------- |
 | Production  | https://horoscope.aura.network/openapi     | Aura (Xstaxy)                       |
-| Staging     | https://horoscope.dev.aura.network/openapi | Aura (Euphoria), CosmosHub, Osmosis |
+| Staging     | http://indexer.staging.aurascan.io/openapi | Aura (Euphoria, Serenity)           |
+| Develop     | http://indexer.dev.aurascan.io/openapi     | Aura (Testnet)                      |
   
 Horoscope v2:  
 

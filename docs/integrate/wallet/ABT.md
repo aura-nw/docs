@@ -11,20 +11,17 @@ It is recommend to use Horoscope, the interchain indexer for querying ABT data o
 
 ### Chose your API
 
-You can choose from these following indexer server to integrate with the wallet.
+You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)  
+> **Horoscope V1 will be deprecated soon, please use Horoscope v2**  
 
-| Environment | Description                             | URL                                |
-| ----------- | --------------------------------------- | ---------------------------------- |
-| Production  | Only support Mainnet                    | https://horoscope.aura.network     |
-| Staging     | Public stable version, support Euphoria | https://horoscope.dev.aura.network |
-
+### Horoscope v1 (deprecated)
 ABT can be retrieved over the following API:
 
 ```
 $Indexer_URL$/api/v1/asset/getByOwner
 ```
 
-### List all CW4973 (ABT) asset of one address
+#### List all CW4973 (ABT) asset of one address
 
 Input:
 
@@ -39,7 +36,7 @@ curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=au
 ```
 *[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0)*
 
-### Detail of one CW4973 (ABT)
+#### Detail of one CW4973 (ABT)
 
 Input:
 
@@ -55,7 +52,7 @@ curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=au
 ```
 *[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0)*
 
-### Parse output
+#### Parse output
 
 This is an output from getByOwner api:
 
@@ -183,35 +180,3 @@ These following media types should be supported for displaying in the wallet:
 |       | WAV            | [link](https://euphoria.aurascan.io/tokens/token-abt/aura1kffl2dmyzv9pq9rflnaqs5e8qnnggl9delv395q0wtfph4cu663swyny3z/42e4ea8bc605340941596ff24929ecf53acb6488d08f4e305bfc148ed85b1450) |
 |       | OGG            | [link](https://euphoria.aurascan.io/tokens/token-abt/aura1kffl2dmyzv9pq9rflnaqs5e8qnnggl9delv395q0wtfph4cu663swyny3z/347f72c9e0049790c6e80a85d988888fcde17f9ad9469076c1953ddd5f16a96b) |
 | 3D    | GLB            | [link](https://euphoria.aurascan.io/tokens/token-abt/aura1kffl2dmyzv9pq9rflnaqs5e8qnnggl9delv395q0wtfph4cu663swyny3z/7862e93c0038148948ea5f8b48031005761616186ce77a2a440b2e6c73ebb854) |
-
-## 3. ABT Metadata
-
-Horoscope used Metadata Standard from
-[OpenSea](https://docs.opensea.io/docs/metadata-standards). It crawl image and animation_url attribute from IPFS, and save to AWS S3 bucket for faster view.  
-There are 2 way to provide metadata for ABT:
-
-- Use extension (image or animation when mint), example schema:
-
-```
-   {
-      "image": "ipfs://bafkreifc7sh35rlrqyhjwmjudy4kh5u5y7n56bhxmyvanc6kugijnnx3py",
-      "image_data": "",
-      "external_url": "",
-      "description": "Hot",
-      "name": "token Mars",
-      "attributes": [],
-      "background_color": "",
-      "animation_url": "ipfs://bafkreifc7sh35rlrqyhjwmjudy4kh5u5y7n56bhxmyvanc6kugijnnx3py",
-      "youtube_url": "",
-      "royalty_percentage": 100,
-      "royalty_payment_address": "aura1xr2v9fwc9647fnkwky7p7zkkm8rylc2g8x6uly"
-   }
-```
-
-- Use token uri (point to a json file with schema above in IPFS), example:
-
-```
-   ipfs://bafkreibt4zzazlxfddjh5juopqeoe24kb43jok7xdd5v3wrcqt73cqpnki
-```
-
-We recommend use image, animation_url and token uri is an IPFS link (ipfs://cid). Some HTTP request may be blocked when Horoscope crawl them.

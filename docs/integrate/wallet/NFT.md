@@ -11,20 +11,19 @@ It is recommend to use Horoscope, the interchain indexer for querying NFT data o
 
 ### Chose your API
 
-You can choose from these following indexer server to integrate with the wallet.
+You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)
 
-| Environment | Description                              | URL                                |
-| ----------- | ---------------------------------------- | ---------------------------------- |
-| Production  | Only supports Mainnet                    | https://horoscope.aura.network     |
-| Staging     | Public stable version, supports Euphoria | https://horoscope.dev.aura.network |
+> **Horoscope V1 will be deprecated soon, please use Horoscope v2**  
 
+### Horoscope v1 (deprecated)
 NFT can be retrieved over the following API:
 
 ```
 $Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
 ```
 
-### List all CW721/CW4973 (NFT) asset of one address
+
+#### List all CW721 (NFT) asset of one address
 
 Input:
 
@@ -39,7 +38,7 @@ curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=au
 ```
 *[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
 
-### Detail of one CW721, CW4973 (NFT)
+#### Detail of one CW721 (NFT)
 
 Input:
 
@@ -54,7 +53,7 @@ Example:
 curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
 *[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
-### Parse output
+#### Parse output
 
 This is an output from getByOwner api:
 
@@ -156,6 +155,122 @@ NFT onchain information is nested in asset_info field. With each NFT, Horoscope 
 - metadata: NFT metadata (crawl from token uri or onchain)
 - image, animation: with AWS S3 link and content_type to display on frontend
 
+### Horoscope v2
+
+#### List all CW721 asset of one address
+Input:
+
+- Owner address
+
+It can be retrieved from the Horoscope like shown below:
+
+```bash
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+    "tokenId": null,
+    "owner": "aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr"
+  }
+}'
+```
+
+#### Detail of one CW721 (NFT)
+Input:
+
+- contractAddress (return from list all)
+- tokenID (return from list all)
+
+```bash
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "65a1435d2e2d092f9722813cb12d3b5aecc2487fab62a4b5398db7826bc19c93"
+  }
+}'
+```
+
+#### Parse output
+This is an output of get detail CW721: 
+```json
+{
+  "code": 200,
+  "message": "Successful",
+  "data": {
+    "euphoria": {
+      "cw721_token": [
+        {
+          "id": 13436,
+          "media_info": {
+            "onchain": {
+              "metadata": {
+                "name": "ABT IMA SVG 22062023",
+                "image": "ipfs://QmV3A9XGRErR5DwX58C9SBsK4dbhZihJUmeXkPA94zEXBu",
+                "attributes": [
+                  {
+                    "value": "Red Hong Yi GIF 01",
+                    "trait_type": "Artist GIF 01"
+                  },
+                  {
+                    "value": "Single GIF 02",
+                    "trait_type": "Edition GIF 02"
+                  },
+                  {
+                    "value": "White GIF 03",
+                    "trait_type": "Border GIF 03"
+                  },
+                  {
+                    "value": "Build a Better Future. GIF 04",
+                    "trait_type": "Drop GIF 04"
+                  },
+                  {
+                    "value": "Red Hong Yi GIF 05",
+                    "trait_type": "Artist GIF 05"
+                  },
+                  {
+                    "value": "Single GIF 06",
+                    "trait_type": "Edition GIF 06"
+                  },
+                  {
+                    "value": "White GIF 07",
+                    "trait_type": "Border GIF 07"
+                  }
+                ],
+                "description": null,
+                "animation_url": null
+              },
+              "token_uri": "ipfs://QmeELQC6VCrs5V2d96YhReDv8B7FZizK3ELFQRxduFQmVE"
+            },
+            "offchain": {
+              "image": {
+                "url": "https://nft.aurascan.io/QmV3A9XGRErR5DwX58C9SBsK4dbhZihJUmeXkPA94zEXBu",
+                "file_path": "QmV3A9XGRErR5DwX58C9SBsK4dbhZihJUmeXkPA94zEXBu",
+                "content_type": "image/svg+xml"
+              },
+              "animation": {}
+            }
+          },
+          "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6",
+          "token_id": "65a1435d2e2d092f9722813cb12d3b5aecc2487fab62a4b5398db7826bc19c93",
+          "cw721_contract": {
+            "smart_contract": {
+              "address": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
 ## 2. Transfering NFT
 
 Only CW721 can be tranfered between 2 addresses (CW4973 is not created for transfering NFT).  
@@ -192,45 +307,13 @@ These following media types should be supported for displaying in the wallet:
 
 | Type  | File Extension | Example                                                                                                                         |
 | ----- | -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Image | JPG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/JPG-98001) |
-| Image | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/PNG-98002) |
-| Image | GIF  | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GIF-98003) |
-| Vector | SVG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/SVG-98004) |
-| Video | MP4 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP4-98007) |
-| Video | WEBM | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WEBM-98009) |
-| Audio | MP3 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/MP3-98008) |
-| Audio | WAV | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/WAV-98010) |
-| Audio | OGG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/OGG-98006) |
-| 3D | GLB | [link](https://euphoria.aurascan.io/tokens/token-nft/aura1vuyynwewauj6usl0lpx5t6ps67mqfzsmtrepxphg4a0w3clzzxnquyul3q/GLB-98005) |
-
-## 4. NFT Metadata
-
-Horoscope used Metadata Standard from
-[OpenSea](https://docs.opensea.io/docs/metadata-standards). It crawl image and animation_url attribute from IPFS, and save to AWS S3 bucket for faster view.  
-There are 2 way to provide metadata for NFT:
-
-- Use extension (image or animation when mint), example schema:
-
-```
-   {
-      "image": "ipfs://bafkreifc7sh35rlrqyhjwmjudy4kh5u5y7n56bhxmyvanc6kugijnnx3py",
-      "image_data": "",
-      "external_url": "",
-      "description": "Hot",
-      "name": "token Mars",
-      "attributes": [],
-      "background_color": "",
-      "animation_url": "ipfs://bafkreifc7sh35rlrqyhjwmjudy4kh5u5y7n56bhxmyvanc6kugijnnx3py",
-      "youtube_url": "",
-      "royalty_percentage": 100,
-      "royalty_payment_address": "aura1xr2v9fwc9647fnkwky7p7zkkm8rylc2g8x6uly"
-   }
-```
-
-- Use token uri (point to a json file with schema above in IPFS), example:
-
-```
-   ipfs://bafkreibt4zzazlxfddjh5juopqeoe24kb43jok7xdd5v3wrcqt73cqpnki
-```
-
-We recommend use image, animation_url and token uri is an IPFS link (ipfs://cid). Some HTTP request may be blocked when Horoscope crawl them.
+| Image | JPG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717723533) |
+| Image | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717871604) |
+| Image | GIF  | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717466231) |
+| Vector | SVG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718039726) |
+| Video | MP4 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717970078) |
+| Video | WEBM | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718267079) |
+| Audio | MP3 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717821986) |
+| Audio | WAV | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718131735) |
+| Audio | OGG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718217586) |
+| 3D | GLB | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717643214) |

@@ -107,7 +107,7 @@ const sidebars = {
     
     {
       type: 'category',
-      label: 'API in Horoscope V1',
+      label: 'API in Horoscope V1 (Deprecated)',
       collapsible: true,
       items: require('./docs/horoscope/sidebar'),
     },

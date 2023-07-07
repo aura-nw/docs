@@ -23,9 +23,10 @@ Why Horoscope is necessary for Aura and the Cosmos ecosystem in general:
 - Restful / GraphQL APIs
 - Core components are fully [Open source](https://github.com/aura-nw/horoscope) under MIT license
 
+## Environment
 Horoscope development is funded by Aura Network foundation, it is currently deployed at several environment:  
 
-Horoscope v1:    
+### Horoscope v1
 
 | Environment | URL                                        | Support Chain                       |
 | ----------- | ------------------------------------------ | ----------------------------------- |
@@ -33,7 +34,7 @@ Horoscope v1:
 | Staging     | http://indexer.staging.aurascan.io/openapi | Aura (Euphoria, Serenity)           |
 | Develop     | http://indexer.dev.aurascan.io/openapi     | Aura (Testnet)                      |
   
-Horoscope v2:  
+### Horoscope v2
 
 | Environment | URL                                              | Support Chain            |
 | ----------- | ------------------------------------------------ | ------------------------ |

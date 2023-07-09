@@ -1,16 +1,17 @@
 ---
 sidebar_position: 1
+title: Code ID List View
 ---
 
-# Code ID list view
+You can view the Code ID list view from navigation bar under the **Resources** menu and selecting Code IDs. This will display the stored contracts Code IDs.
 
-You can view the Code ID list view from navigation bar >> Resources >> Code IDs
-
-![Code ID list](/img/aurascan/Advanced_topic_code_id_list_view.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_code_id_list_view.png" alt="code-id-list"/>
+</div>
 
 :::caution Note:
-Only verified Code IDs have green check mark icon besides and corresponding verified time. 
-Unverified Code ID does not have green check mark icon besides. 
+Only verified Code IDs have green check mark icon and its corresponding verified time. 
+Unverified Code ID does not have green check mark icon. 
 Code ID owners have to Verify and Publish contract source code to get the Code ID verified. 
 :::
 

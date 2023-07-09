@@ -1,16 +1,17 @@
 ---
 sidebar_position: 2
+title: Code ID Details
 ---
 
-# Code ID details
+Choose one Code ID in [Code ID list](https://docs.aura.network/product/aurascan/advanced-topics/code-id/code_id_list) to view any Code ID's detailed information.
 
-Choose one Code ID in [Code ID list](https://docs.aura.network/product/aurascan/advanced-topics/code-id/code_id_list) to view code ID's details information.
-
-![Code ID Details](/img/aurascan/Advanced_topic_verified_Code_ID_details.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_verified_Code_ID_details.png" alt="code-id-details"/>
+</div>
 
 ## Information
 
-Specific information of the Code ID
+Specific information of the Code ID.
 
 | Row | Description |
 | ------ | ------ |
@@ -21,9 +22,9 @@ Specific information of the Code ID
 | Instantiate times | Address sent execute contract transaction, choose address to see account details  |
 | Created At | Time stamp of the time the Code ID was stored |
 
-## Tab 'Contracts'
+## Contracts tab
 
-List contracts that were instantiated from the Code ID
+The **Contracts** tab contains the list of contracts that have been instantiated from the stored code corresponding to that Code ID.
 
 | Row | Description |
 | ------ | ------ |
@@ -34,27 +35,30 @@ List contracts that were instantiated from the Code ID
 | Instantiate at | Time stamp of the time the smart contract was instantiated  |
 | Verified at | Time stamp of the time the Code ID that the smart contract was instantiated from be verified |
 
-## Tab 'Verify Code ID'
-The information shown on this tab is various cause by the status of the Code ID already been verified or not. 
+## Verify Code ID tab
+The **Verify Code ID** tab contains information regarding the status of verification for that Code ID.
 
 ### Code ID that has not yet been verified
 
-![Tab Verify Code ID not yet verified](/img/aurascan/Advanced_topic_tab_verify_Code_ID_not_yet_verified.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_tab_verify_Code_ID_not_yet_verified.png" alt="code-id-unverified"/>
+</div>
 
-### Code ID that is currently pending at 'Verify & Publish' process
+### Code ID on verification process
 
-![Tab Verify Code ID pending verified](/img/aurascan/Advanced_topic_tab_verify_Code_ID_pending_verified.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_tab_verify_Code_ID_pending_verified.png" alt="code-id-in-process"/>
+</div>
 
-### Code ID that has already been verified successfully
+### Verified Code ID
 
-![Tab Verify Code ID success verified](/img/aurascan/Advanced_topic_tab_verify_Code_ID_success_verified.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_tab_verify_Code_ID_success_verified.png" alt="code-id-verified"/>
+</div>
 
-### Code ID that has already been verified fail
+### Failed Verification Code ID
 Aurascan will show up the information of the last time this Code ID was verified fail with updated status and error message.
 
-![Tab Verify Code ID fail verified](/img/aurascan/Advanced_topic_tab_verify_Code_ID_fail_verified.png)
-
- 
-
-
-
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_tab_verify_Code_ID_fail_verified.png" alt="code-id-fail"/>
+</div>

@@ -1,10 +1,9 @@
 ---
 sidebar_position: 5
+title: FAQs
 ---
 
-# FAQs
-
-## I. Voting
+## Voting
 ### Who can vote on proposals?
 Anyone who has staked an amount of $Aura can vote on proposals. This means delegators and validators can vote on a proposals. 
 
@@ -21,7 +20,7 @@ Yes.
 ### Can I change my vote option on a proposal?
 Yes, you can change it until the end of the voting period.
 
-## II. Staking
+## Staking
 ### What is Staking?
 The Aura Network is a public Proof-Of-Stake (PoS) blockchain, meaning that the weight of validators is determined by the amount of staking tokens (Aura) bonded.
 
@@ -60,6 +59,3 @@ No. As long as you have undelegated any amount, you will not getting reward base
 
 ### I see my pending reward changed upon redelegation, but not all of them is transferred to my wallet. Why?
 Because the amount transferred to your wallet is only related to the two validators of the redelegation transaction. any other reward from other validators will not be auto-claimed.
-
-
-

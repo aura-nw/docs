@@ -4,9 +4,11 @@ sidebar_position: 3
 
 # Contracts list
 
-Here is the contracts list on Aurascan.
+Below is the contracts list on Aurascan. You can access this by clicking on the "**_Contracts_**" item in the **Resources** menu in Aurascan.
 
-![Contracts List](/img/aurascan/Advanced_topic_contracts_list.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_contracts_list.png" alt="contracts-list"/>
+</div>
 
 :::caution Note:
 + Only contracts instantiated from **verified** Code ID have green check mark icon beside in smart contract list and corresponding Code ID verified time info. 

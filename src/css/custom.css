@@ -222,3 +222,20 @@ html[data-theme='dark'] {
 .card__body {
     color: var(--ifm-font-color-base);
 }
+
+#img-wrapper {
+    position: relative;
+    overflow: auto;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+  }
+
+  #img-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  

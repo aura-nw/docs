@@ -71,7 +71,7 @@ Here are some of the products built by the Aura Network core team. Get to know t
       <a href="/product/horoscope/">
         <div className="card">
           <div className="card__image">
-            <img src={require("@site/static/img/feature/pyxis.png").default} alt="Develop" />
+            <img src={require("@site/static/img/feature/horoscope.png").default} alt="Develop" />
           </div>
           <div className="card__body">
             <h3>Horoscope - Indexers of the Interchain</h3>

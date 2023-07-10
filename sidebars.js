@@ -94,6 +94,7 @@ const sidebars = {
       collapsed: false,
       items: require('./docs/horoscope-v2/sidebar'),
     },
+    'product/horoscope/architecture/asset',
   ],
   integrate: [
     {

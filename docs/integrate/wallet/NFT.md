@@ -269,7 +269,12 @@ This is an output of get detail CW721:
     }
   }
 }
-```
+```  
+
+NFT metadata are saved on onchain field. Another offchain field are:  
+- url: link AWS S3 for image/animation
+- file_path: file path in S3 storage
+- content_type: content type for that image/animation 
 
 ## 2. Transfering NFT
 

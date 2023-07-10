@@ -164,6 +164,144 @@ ABT onchain information is nested in asset_info field. With each NFT, Horoscope 
 - metadata: ABT metadata (crawl from token uri or onchain)
 - image, animation: with AWS S3 link and content_type to display on frontend
 
+### Horoscope V2
+Because ABT is one child of NFT, so in Horoscope V2, you can use query CW721 to query CW4973, just input contract address: 
+
+#### List all CW4973 asset of one address
+Input:
+
+- Owner address
+
+It can be retrieved from the Horoscope like shown below:
+
+```bash
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+    "tokenId": null,
+    "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6"
+  }
+}'
+```
+
+#### Detail of one CW4973 (NFT)
+Input:
+
+- contractAddress (return from list all)
+- tokenID (return from list all)
+
+```bash
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "c4f6b737e1188aebd983f270e63837b76b69b9e9a1c35668c21e6219da379dce"
+  }
+}'
+```
+
+#### Parse output
+This is an output of get detail CW4973: 
+```json
+{
+  "code": 200,
+  "message": "Successful",
+  "data": {
+    "euphoria": {
+      "cw721_token": [
+        {
+          "id": 13432,
+          "media_info": {
+            "onchain": {
+              "metadata": {
+                "name": "ABT IMA JPG 21062023",
+                "image": "ipfs://QmfAz8QN6XPpvxjc5EWC8yA8NxXV1bWcaAPfLLikPrEUYd",
+                "attributes": [
+                  {
+                    "value": "Red Hong Yi GIF 01",
+                    "trait_type": "Artist GIF 01"
+                  },
+                  {
+                    "value": "Single GIF 02",
+                    "trait_type": "Edition GIF 02"
+                  },
+                  {
+                    "value": "White GIF 03",
+                    "trait_type": "Border GIF 03"
+                  },
+                  {
+                    "value": "Build a Better Future. GIF 04",
+                    "trait_type": "Drop GIF 04"
+                  },
+                  {
+                    "value": "Red Hong Yi GIF 05",
+                    "trait_type": "Artist GIF 05"
+                  },
+                  {
+                    "value": "Single GIF 06",
+                    "trait_type": "Edition GIF 06"
+                  },
+                  {
+                    "value": "White GIF 07",
+                    "trait_type": "Border GIF 07"
+                  },
+                  {
+                    "value": "Build a Better Future. GIF 08",
+                    "trait_type": "Drop GIF 08"
+                  },
+                  {
+                    "value": "Single GIF 09",
+                    "trait_type": "Edition GIF 09"
+                  },
+                  {
+                    "value": "White GIF 10",
+                    "trait_type": "Border GIF 10"
+                  },
+                  {
+                    "value": "Build a Better Future. GIF 11",
+                    "trait_type": "Drop GIF 11"
+                  }
+                ],
+                "description": "Red Hong Yi. A little pixelated girl with a pixelated mountain in the background looks excitedly into the future as she is given the option to begin her adventure with either FIAT MONEY or CRYPTO. This little girl is from Borneo, and the mountain in the background is Mount Kinabalu, the highest mountain in Borneo. Lush forests surround the mountain, and the land is rich and healthy. Red Hong Yi. I hope we will build a better future so that little girls will be empowered to choose their own adventures in a world that celebrates nature, technology, and the human race.",
+                "animation_url": null
+              },
+              "token_uri": "ipfs://QmQKoDKoCCDkSfzPhQcQpvnreRkYWmv8UCnn6rKJLZhqBH"
+            },
+            "offchain": {
+              "image": {
+                "url": "https://nft.aurascan.io/QmfAz8QN6XPpvxjc5EWC8yA8NxXV1bWcaAPfLLikPrEUYd",
+                "file_path": "QmfAz8QN6XPpvxjc5EWC8yA8NxXV1bWcaAPfLLikPrEUYd",
+                "content_type": "image/jpeg"
+              },
+              "animation": {}
+            }
+          },
+          "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6",
+          "token_id": "c4f6b737e1188aebd983f270e63837b76b69b9e9a1c35668c21e6219da379dce",
+          "cw721_contract": {
+            "smart_contract": {
+              "address": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+```  
+
+ABT metadata are saved on onchain field. Another offchain field are:  
+- url: link AWS S3 for image/animation
+- file_path: file path in S3 storage
+- content_type: content type for that image/animation 
+
 ## 2. Supported ABT Format
 
 These following media types should be supported for displaying in the wallet:

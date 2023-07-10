@@ -26,7 +26,7 @@ Why Horoscope is necessary for Aura and the Cosmos ecosystem in general:
 ## Environment
 Horoscope development is funded by Aura Network foundation, it is currently deployed at several environment:  
 
-### Horoscope v1
+### Horoscope v1 (deprecated)
 
 | Environment | URL                                        | Support Chain                       |
 | ----------- | ------------------------------------------ | ----------------------------------- |

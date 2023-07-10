@@ -1,71 +1,99 @@
 ---
 sidebar_position: 3
+title: Verify Code ID
 ---
 
-# Verify Code ID source code
-
 ## 1. State of Code ID Verification
-Code ID verification is to prove and publish the source code of the Code ID stored on-chain.
+Code ID verification is utilized to prove ownership and publish the source code of the Code ID stored on-chain for transparency and security purposes.
 
-There are 2 types of Code ID verification status on Aurascan.
+There are 2 types of Code ID verification status on Aurascan: **Verified** and **Unverified**.
 
 ### Unverified
 
-As the Code ID's owner, you can be able to "Verify and Publish" the Code ID's source code. There are two ways to start the "Verify & Publish" process from Code ID details page or Contract details page with the contracts that were instantiated from this Code ID. 
+As the Code ID's owner, you are able to **Verify and Publish** the Code ID's source code. There are two ways to start the process:
+* Code ID details page
+* Contract details page with the contracts that were instantiated from this Code ID. 
 
-![Verify Code ID Tab](/img/aurascan/Advanced_topic_verify_code_id_way_1.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_way_1.png" alt="verify-code-id-tab"/>
+</div>
 
-![Contract Tab](/img/aurascan/Advanced_topic_verify_code_id_way_2.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_way_2.png" alt="contract-tab"/>
+</div>
 
 ### Verified
 
-The verified Code ID will be marked with a green check badge beside in the Code ID list view as well as be marked inside Code ID details page. 
+The verified Code ID will be shown with a green checkmark badge in the Code ID list view as well as in the Code ID details page. 
 All the contracts that were and will be instantiated from this Code ID will also be marked as verified due to the verified Code ID.
 
-![Verified Code ID details](/img/aurascan/Advanced_topic_verified_Code_ID_details.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verified_code_id_details.png" alt="verified-code-id-details"/>
+</div>
 
-![Verified Code ID in list view](/img/aurascan/Advanced_topic_verified_Code_ID_in_list_view.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verified_code_id_in_list_view.png" alt="verified-code-id-in-list-view"/>
+</div>
 
 ## 2. How to verify contract source code
-**Step 1:** Choose "Verify and Publish" text link from Code ID details page or Contract details page for contracts that were instantiated from the Code ID. 
+**Step 1:** Click on the **Verify and Publish** text link from Code ID details page or Contract details page for contracts that were instantiated from the Code ID. 
 
-![Code ID not yet verified](/img/aurascan/Advanced_topic_verify_Code_ID_step_1_1.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_1_1.png" alt="code-id-not-yet-verified"/>
+</div>
 
-![Contract not yet verified](/img/aurascan/Advanced_topic_verify_Code_ID_step_1_2.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_1_2.png" alt="contract-not-yet-verified"/>
+</div>
 
-**Step 2:** Input link Github Source Code, Compiled wasm file name, Compiler Version of the Code ID sour code and then click "Verify & Publish" button.
+**Step 2:** Input link Github Source Code, Compiled wasm file name, Compiler Version of the Code ID source code and then click the **Verify & Publish** button.
 
-![Input data verify Code ID](/img/aurascan/Advanced_topic_verify_Code_ID_step_2.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_2.png" alt="input-data-verify-code-id"/>
+</div>
 
-**Step 3:** Code ID source code is pending at verify process. The process includes 2 stages: Precheck & Verify with small items inside. 
-You can check the status of each item check in the verify process page. 
+**Step 3:** At this step, the code ID source code is pending at verify process. The process includes 2 stages: Pre-check & Verify with small items inside. 
+You can check the status of each item check in the **Verify Process** page. 
 
-![Verify Code ID process](/img/aurascan/Advanced_topic_verify_Code_ID_step_3_1.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_3_1.png" alt="verify-code-id-process"/>
+</div>
 
-If any interruption occurs caused by connection or others reason, you can access the verify process page again by click on text link from either Code ID details page or Smart contract details page with the contracts that were instantiated from this Code ID. 
+If any interruption occurs caused by a poor connection or other reasons, you may access the **Verify Process** page again by click on text link from either Code ID details page or Smart contract details page with the contracts that were instantiated from this Code ID. 
 
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_3_2.png" alt="code-id-pending-verify"/>
+</div>
 
-![Code ID pending verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_3_2.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_3_3.png" alt="contract-pending-verify"/>
+</div>
 
+**Step 4:** Contract source code verification results. 
+If the verification process is successful, you can click the **Confirm** button to close the Verify process page. 
 
-![Contract pending verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_3_3.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_4_1.png" alt="verify-process-success"/>
+</div>
 
+After that, the tab **Verify Code ID** of Code ID details page will show the compiler output and all the smart contracts that have been instantiated from this Code ID as well as any new ones. The Code ID's status will also be updated to **Verified** and the contract source code's schema released as well.  
 
-**Step 4:** Contract source code verification result comes out. 
-If verification process successes, you can click 'Confirm' button to close the Verify process page. 
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_4_2.png" alt="code-id-success-verify"/>
+</div>
 
-![Verify process success](/img/aurascan/Advanced_topic_verify_Code_ID_step_4_1.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_4_3.png" alt="contract-success-verify"/>
+</div>
 
-After that, tab 'Verify Code ID' of Code ID details page will show compiler output and all the smart contract that were and will be instantiated from this Code ID will also be updated to Verified state with contract source code's schema released.  
+If the verification process fails, the tab **Verify Code ID** of the Code ID details page and the tab **Contract** of contract details page with all contract that were instantiated from this Code ID will revert to the default information with text link redirecting to the **Verify & Publish** process so another attempt at verification can be made. 
 
-![Code ID success verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_4_2.png)
+Furthermore, the status of the last time this Code ID was verified & published failed will be captured with the corresponding error message for reference. 
 
-![Contract success verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_4_3.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_4_4.png" alt="code-id-fail-verify"/>
+</div>
 
-If verification process fails, tab 'Verify Code ID' of Code ID details page and tab 'Contract' of contract details page with all contract that were instantiated from this Code ID will back to default infor with text link redirect to the 'Verify & Publish' process for the next time. 
-Furthermore, the status of the last time this Code ID was verified & published fail will be captured with the correcsponding error message for reference. 
-
-![Code ID fail verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_4_4.png)
-
-![Contract fail verify](/img/aurascan/Advanced_topic_verify_Code_ID_step_4_5.png)
-
+<div id="img-wrapper">
+    <img src="/img/aurascan/advanced_topic_verify_code_id_step_4_5.png" alt="contract-fail-verify"/>
+</div>

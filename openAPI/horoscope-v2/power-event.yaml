@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+  - url: https://indexer-v2.staging.aurascan.io
+tags:
+  - name: power event
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - power event
+      summary: Query power event
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/powerevent'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    powerevent:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: validatorsDetailListPower
+          description: query name
+        query:
+          type: string
+          example: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+            limit: 10
+            nextKey: null
+                  
+            
+          
+            

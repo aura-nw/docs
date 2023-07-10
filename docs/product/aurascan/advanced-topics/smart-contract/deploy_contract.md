@@ -1,14 +1,15 @@
 ---
 sidebar_position: 2
+title: Deploy a Smart Contract
 ---
-
-# Deploy a smart contract
 
 See the guideline on [how to develop and deploy a smart contract](https://github.com/aura-nw/flower-store-contract).
 
 After deploying a smart contract on Aurascan, see the contracts list and contract deployed transaction on Euphoria Testnet:
 
-![Contracts List](/img/aurascan/Advanced_topic_euphoria_contracts_list.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topic_euphoria_contracts_list.png" alt="contracts-list"/>
+</div>
 
 :::caution Note:
 * Only contracts instantiated from **verified** Code ID have green check mark icon beside in smart contract list and corresponding Code ID verified time info. 
@@ -17,5 +18,8 @@ After deploying a smart contract on Aurascan, see the contracts list and contrac
 :::
 
 See the instantiate contract transaction in contract details.
-![Instantiate contract transaction](/img/aurascan/Advanced_topics_instantiate_contract_tx.png)
+
+<div id="img-wrapper">
+    <img src="/img/aurascan/Advanced_topics_instantiate_contract_tx.png" alt="instantiate-tx"/>
+</div>
 

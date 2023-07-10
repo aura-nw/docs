@@ -1,27 +1,104 @@
 ---
-sidebar_position: 1
-title: Introduction to AuraScan
+sidebar_position: 0
+title: Introduction
 ---
 
-![AuraScan](/img/aurascan/logo.png)
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-AuraScan is a not only a blockchain explorer, but also a decentralized smart contracts and analytical platform for Aura Network.
+import {DocsCards} from '@site/src/components/Cards/Cards.js';
+import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
-Similar to Etherscan or Mintscan, you can check pretty much all on-chain information, such as: blocks, transactions, validators, proposals, smart contracts, tokens, NFTs, and more.
+<div id="img-wrapper">
+    <img src="/img/aurascan/logo.png" alt="aurascan-logo"/>
+</div>
 
-Below are all available environments of AuraScan:
 
-|Environment|Network|URL|
-|----------|----------|----------|
-|Production Environment	|Aura Mainnet (xstaxy-1) 			|https://aurascan.io/|
-|Staging environment 	|Aura Testnet (euphoria-2)			|https://euphoria.aurascan.io/|
-|Testing environment	|Aura Testnet (serenity-testnet-001)|https://serenity.aurascan.io/|
+Aurascan is a not only a blockchain explorer, it's also a decentralized smart contracts verifier and analytical platform for Aura Network.
 
-The production environment is for real, general use and will certainly be kept stable. If you are developers who want an environment to test all functionalities in managing your assets on Aura Network, as well as upcoming features, use Staging/Testing environments.
+Similar to Etherscan or Mintscan, you can view in detail all relevant on-chain information such as: accounts, blocks, transactions, validators, proposals, smart contracts, tokens, NFTs, and more.
 
-We have [an instruction](https://docs.aura.network/overview/start/aurascan) that helps you to explore many basic functionalities on AuraScan.
+## Deployments
+Aurascan exists for all Aura networks: **Serenity Testnet** (`serenity-testnet-001`), **Euphoria Staging Testnet** (`euphoria-2`) and of course **Xstaxy Mainnet** (`xstaxy-1`), ensuring both developers and users have an easy way to review anything.
 
-If you have any questions or feedback, visit our community channels ([Discord](https://discord.gg/CUDB28YJf3) and [Telegram](https://t.me/+zjYMBoLBslkwZjU1)). 
+:::info
+You can find the Github repository for Aurascan here: https://github.com/aura-nw/aurascan
+:::
 
-You can find the public code repository here:
-https://github.com/aura-nw/aurascan
+<Tabs>
+  <TabItem value="mainnet" label="Mainnet">
+
+* Environment: Production/Mainnet
+* Network ID: `xstaxy-1`
+* URL: https://aurascan.io
+
+
+  </TabItem>
+  <TabItem value="euphoria" label="Euphoria">
+
+* Environment: Staging
+* Network ID: `euphoria-2`
+* URL: https://euphoria.aurascan.io
+
+
+  </TabItem>
+  <TabItem value="serenity" label="Serenity">
+
+* Environment: Testing
+* Network ID: `serenity-testnet-001`
+* URL: https://serenity.aurascan.io
+
+
+  </TabItem>
+</Tabs>
+<br/>
+
+Aura Mainnet `xstaxy-1` handles real value and should only be used once proper testing has taken place. For this reason we recommend developers to use both Euphoria `euphoria-2` and Serenity `serenity-testnet-001` for extensive testing of all functionalities and security of your project before deploying onto mainnet. Take full advantage of Aurascan to make sure everything works as expected.
+
+If you have any questions or feedback, visit our community channels on Discord and Telegram to ask as many questions as you want. We are eager to help!
+
+
+## Recommended Topics
+Check out these recommended topics to get started exploring Aurascan in full detail.
+
+<DocsCards itemsList={
+[  [
+    {
+      title: "Connect Your Wallet", 
+      description: "Before staking or voting on proposals with Aurascan, you will have to connect your personal wallet.", 
+      link:"getting-started/connect_your_wallet", 
+    },
+    {
+      title: "Validators", 
+      description: "Review all relevant details if you're interested in becoming an Aura Validator.", 
+      link:"getting-started/validator", 
+    }
+  ],
+  [
+    {
+      title: "Transactions", 
+      description: "Learn how to interpret transactions in full detail.", 
+      link:"getting-started/transaction", 
+    },
+    {
+      title: "Staking", 
+      description: "Learn how to Stake your Aura with Aurascan and how to choose a trusted validator.", 
+      link:"getting-started/stake", 
+    }
+  ],
+  [
+    {
+      title: "Advanced Topics", 
+      description: "Already familiar with the Cosmos ecosystem? Learn how to take advantage of what Aurascan has to offer.", 
+      link:"advanced-topics", 
+    },
+    {
+      title: "FAQs", 
+      description: "View the most commonly asked questions on Aurascan.", 
+      link:"advanced-topics/FAQs", 
+    }
+  ]]
+} />
+
+
+<ContactUs/>

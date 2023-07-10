@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.staging.aurascan.io
+  - url: https://indexer-v2.dev.aurascan.io
+tags:
+  - name: cw721
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - cw721
+      summary: Query cw721 token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/cw721token'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    cw721token:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: cw721token
+          description: query name
+        query:
+          type: string
+          example: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 10
+            tokenId: '611'
+            owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+            
+                  
+            
+          
+            

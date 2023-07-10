@@ -1,19 +1,27 @@
 ---
 sidebar_position: 4
+title: Blocks
 ---
 
-# Block
-On this page, you can track details of transactions on the network.
+On this page you can view all the blocks by block height and view the specific details for any block, including the proposer, height, transactions included, etc.
 
-![Block list](/img/aurascan/block_list.png)
-To get here, click on Blocks on the navigation bar.
-Click on `Block hash` or `Height` to get into block detail.
+<div id="img-wrapper">
+    <img src="/img/aurascan/block_list.png" alt="block-list"/>
+</div>
 
-![Block detail](/img/aurascan/block_details.png)
-- `Height`: Number of blocks
-- `Bonded`: Bonded tokens
-- `Inflation`: Token inflation rate
-- `Community pool`: A pool used for community purpose
-- `Proposer`: Validator
+To get here, click on "**_Blocks_**" on the navigation bar.
+Click on "**_Block hash_**" or "**_Height_**" to get into block detail.
 
-![JSON](/img/aurascan/json.png)
+<div id="img-wrapper">
+    <img src="/img/aurascan/block_details.png" alt="block-details"/>
+</div>
+
+- Height: Specific number of the block.
+- Bonded: Bonded tokens.
+- Inflation: Token inflation rate.
+- Community Pool: A pool used for community purposes.
+- Proposer: Validator for the selected block.
+
+<div id="img-wrapper">
+    <img src="/img/aurascan/json.png" alt="block-json"/>
+</div>

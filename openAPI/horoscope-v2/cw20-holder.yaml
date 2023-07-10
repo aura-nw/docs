@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.staging.aurascan.io
+  - url: https://indexer-v2.dev.aurascan.io
+tags:
+  - name: cw20
+paths:
+  /api/v1/graphiql:
+    post:
+      tags:
+        - cw20
+      summary: Query cw20 holder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/cw20holder'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    cw20holder:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: cw20holder
+          description: query name
+        query:
+          type: string
+          example: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query
+          example:
+            limit: 10
+            contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
+            
+            
+                  
+            
+          
+            

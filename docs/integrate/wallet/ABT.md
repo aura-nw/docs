@@ -32,9 +32,9 @@ Input:
 Example:
 
 ```bash
-curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&countTotal=false&pageLimit=10&pageOffset=0)*
 
 #### Detail of one CW4973 (ABT)
 
@@ -48,9 +48,9 @@ Input:
 Example:
 
 ```bash
-curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1jle7yhpg7syy2w0n6edu8m6x8n3tmtj5d5kxt9&chainid=euphoria-2&contractType=CW4973&tokenId=b672c4182537fe927b411b3f315e85550470611db9f4cef700d532c0b48f6a3c&countTotal=false&pageLimit=10&pageOffset=0)*
 
 #### Parse output
 

@@ -34,9 +34,9 @@ Input:
 It can be retrieved from the Horoscope like shown below:
 
 ```bash
-curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
 
 #### Detail of one CW721 (NFT)
 
@@ -50,9 +50,9 @@ Input:
 Example:
 
 ```bash
-curl -X GET "https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://horoscope.dev.aura.network/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
 #### Parse output
 
 This is an output from getByOwner api:

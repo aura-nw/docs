@@ -34,7 +34,7 @@ Additional ports:
 
 ## Networks information
 
-Specify the [network details](../developer/1.getting-started/4.networks-info.md) for the network you want to participate in by selecting the corresponding genesis file and seeds. 
+Specify the [network details](../developer/1.getting-started/networks-info) for the network you want to participate in by selecting the corresponding genesis file and seeds. 
 
 ## Setup a full-node
 

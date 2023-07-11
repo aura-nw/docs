@@ -240,7 +240,9 @@ button:hover {
 .aura-card a {
     cursor: pointer;
 }
-.aura-info-card a,
+.aura-info-card a {
+    font-size: 16px;
+}
 .aura-doc-card a span,
 .aura-card a span {
     font-size: 12px;

@@ -25,21 +25,16 @@ Non-fungible tokens gained incredible traction very quick due to its ability to 
       link:"fungible-tokens/cw20-intro", 
     },
     {
-      title: "Creating a CW20 Contract", 
-      description: "Get started building your own CW20 token", 
-      link:"fungible-tokens/create-your-cw20", 
+      title: "Intro to CW721", 
+      description: "Learn more about the non-fungible CW721 token standard in AURA", 
+      link:"fungible-tokens/cw721-intro", 
     }
   ],
   [
     {
-      title: "Intro to CW721", 
-      description: "Learn more about the non-fungible CW721 token standard in AURA", 
-      link:"fungible-tokens/cw721-intro", 
+      title: "Solidity to CosmWasm", 
+      description: "Jump-start your Wasm knowledge if you come from a Solidity background.", 
+      link:"solidity-to-cosmwasm", 
     },
-    {
-      title: "Creating a CW721 Contract", 
-      description: "Get started building your own CW721 token", 
-      link:"fungible-tokens/what-will-we-build", 
-    }
   ]]
 } />

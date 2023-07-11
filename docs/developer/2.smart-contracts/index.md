@@ -2,7 +2,7 @@
 sidebar_position: 0
 title: "Smart Contracts"
 ---
-import DocCardList from '@theme/DocCardList';
+import {DocsCards} from '@site/src/components/Cards/Cards.js';
 
 Smart contracts are simple programs that live in a AURA network. As any modern application, smart contracts store data and expose methods to interact with them.
 
@@ -23,4 +23,24 @@ CosmWasm is a smart contracting platform built for the Cosmos ecosystem. CosmWas
 
 ## Overview
 
-<DocCardList />
+<DocsCards itemsList={
+[  [
+    {
+      title: "Contract Anatomy", 
+      description: "Learn about the file structure and modules within a CosmWasm smart contract.", 
+      link: "anatomy", 
+    },
+    {
+      title: "Deploy", 
+      description: "Learn to deploy your smart contract using the Aura CLI.", 
+      link:"deploy", 
+    }
+  ],
+  [
+    {
+      title: "Interact", 
+      description: "Get started with interactions directly to the contracts.", 
+      link:"interact", 
+    },
+  ]]
+} />

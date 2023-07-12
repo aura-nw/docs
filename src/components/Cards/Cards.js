@@ -10,7 +10,7 @@ export const DocCard = ({children}) => {
                     <img className='info-card-icon' src={AuraIcon}></img>
                     In this section
                 </p>
-                <p className='content'>{children}</p>             
+                <p className='content' style={{marginBottom: "0px"}}>{children}</p>             
             </div>
         </div>
     )

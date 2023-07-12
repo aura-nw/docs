@@ -58,25 +58,58 @@ Otherwise, check out these topics and happy hacking!
   ],
   [
     {
-      title: "From Solidity to CosmWasm", 
-      description: "Understand the differences and jump-start your CosmWasm knowledge.", 
-      link:"smart-contracts/solidity-to-cosmwasm", 
-    },
-    {
       title: "Deploying", 
       description: "Learn to store your contract bytecode in the blockchain and initialize it.", 
       link:"smart-contracts/deploy", 
+    },
+    {
+      title: "From Solidity to CosmWasm", 
+      description: "Understand the differences and jump-start your CosmWasm knowledge.", 
+      link:"smart-contracts/solidity-to-cosmwasm", 
     }
   ]]
-} />
+}/>
 
 ## On this page
 
-1. Getting Started
+1. [Getting Started](getting-started)
     - [Preparing Development Wallet](getting-started/wallet-creation)
     - [Environment Setup](getting-started/env-setup)
+    - [Networks Info](getting-started/networks-info)
 
-2. Concepts
+3. [Smart Contracts](smart-contracts)
+    - [Smart contract anatomy](smart-contracts/anatomy)
+    - [Deploy a contract](smart-contracts/deploy)
+    - [Interact with a contract](smart-contracts/interact)
+
+4. [Tutorials](tutorials)
+    - [Simple template](smart-contracts/examples/simple-template)
+    - [Counter](smart-contracts/examples/counter)
+    - [From Solidity to CosmWasm](smart-contracts/solidity-to-cosmwasm)
+
+    4.1 [Fungible Tokens](tutorials/fungible-tokens)
+      - [Introduction to CW20 (Fungible Tokens)](tutorials/fungible-tokens/cw20-intro)
+      - [Create your own CW20 token on Aura Network](tutorials/fungible-tokens/create-your-own-cw20)
+      - [What will we build](tutorials/fungible-tokens/what-will-we-build)
+      - [What Are All These Files](tutorials/fungible-tokens/what-are-all-these-files)
+
+    4.2 [Non-Fungible Tokens](tutorials/non-fungible-tokens)
+      - [Introduction to CW721 (NFTs)](tutorials/non-fungible-tokens/cw721-intro)
+      - [Overview the working](tutorials/non-fungible-tokens/what-will-we-build)
+      - [Create dApp repository](tutorials/non-fungible-tokens/begin)
+      - [Instantiate](tutorials/non-fungible-tokens/instantiate)
+      - [Execute](tutorials/non-fungible-tokens/execute)
+      - [Query](tutorials/non-fungible-tokens/query)
+      - [Testing](tutorials/non-fungible-tokens/testing)
+      - [Deploy our contract and play with it](tutorials/non-fungible-tokens/deploy)
+
+4. [Multisig Management](multisig-cli)
+    - [Generate a multisig key](multisig-cli/generate-multisig-key)
+    - [Create a multisig transaction](multisig-cli/create-transaction)
+    - [Signing a multisig transaction](multisig-cli/sign-tx)
+    - [Broadcast a multisig transaction](multisig-cli/broadcast-tx)
+
+5. [Concepts](concepts)
     - [Validator](concepts/validator)
     - [Delegator](concepts/delegator)
     - [Mint](concepts/mint)
@@ -86,33 +119,5 @@ Otherwise, check out these topics and happy hacking!
     - [Governance](concepts/Governance)
     - [Vesting](concepts/vesting)
 
-3. Smart Contracts 
-    - [Intro to smart contracts](smart-contracts/intro)
-    - [Smart contract anatomy](smart-contracts/anatomy)
-    - [From Solidity to CosmWasm](smart-contracts/solidity-to-cosmwasm)
-    - [Deploy a contract](smart-contracts/deploy)
-    - [Interact with a contract](smart-contracts/interact)
-    - Examples:
-      - [Simple template](smart-contracts/examples/simple-template)
-      - [Counter](smart-contracts/examples/counter)
-
-4. Tutorials
-    - [Overview](tutorials/overview)
-
-    3.1 Fungible Tokens
-      - [Introduction to CW20 (Fungible Tokens)](tutorials/fungible-tokens/cw20-intro)
-      - [Create your own CW20 token on Aura Network](tutorials/fungible-tokens/create-your-own-cw20)
-      - [What will we build](tutorials/fungible-tokens/what-will-we-build)
-      - [What Are All These Files](tutorials/fungible-tokens/what-are-all-these-files)
-
-    3.2 Non-Fungible Tokens
-      - [Introduction to CW721 (NFTs)](tutorials/non-fungible-tokens/cw721-intro)
-      - [Overview the working](tutorials/non-fungible-tokens/what-will-we-build)
-      - [Create dApp repository](tutorials/non-fungible-tokens/begin)
-      - [Instantiate](tutorials/non-fungible-tokens/instantiate)
-      - [Execute](tutorials/non-fungible-tokens/execute)
-      - [Query](tutorials/non-fungible-tokens/query)
-      - [Testing](tutorials/non-fungible-tokens/testing)
-      - [Deploy our contract and play with it](tutorials/non-fungible-tokens/deploy)
 
 <ContactUs />

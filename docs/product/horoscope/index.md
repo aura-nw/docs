@@ -21,7 +21,7 @@ Why Horoscope is necessary for Aura and the Cosmos ecosystem in general:
 - Blazing fast & efficient
 - Index everything (wallet, block, transaction, NFT, Tokens, etc.)
 - Restful / GraphQL APIs
-- Core components are fully [Open source](https://github.com/aura-nw/horoscope) under MIT license
+- Core components are fully [Open source](https://github.com/aura-nw/horoscope-v2) under MIT license
 
 ## Environment
 Horoscope development is funded by Aura Network foundation, it is currently deployed at several environment:  

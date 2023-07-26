@@ -23,6 +23,6 @@ Horoscope V2 is the next version of Horoscope. We replaced MongoDB by Postgres o
 
 ## 4. Contribution
 
-Horoscope is release under the [MIT License](https://github.com/aura-nw/horoscope-v2/blob/develop/LICENSE), it is free to use and redistributed without any limitation.
+Horoscope is release under the [MIT License](https://github.com/aura-nw/horoscope-v2/blob/main/LICENSE), it is free to use and redistributed without any limitation.
 
 Horoscope is currently being developed by [Aura Network](https://aura.network) team. If you are interested in contribution to the project or want to integrate the indexer to your favorite Cosmos chain, please contact us via [Discord](https://discord.gg/bzm3dyxJxR).

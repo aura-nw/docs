@@ -13,7 +13,7 @@ It is recommend to use Horoscope, the interchain indexer for querying NFT data o
 
 You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)
 
-> **Horoscope V1 will be deprecated soon, please use Horoscope v2**  
+> **Horoscope V1 API will be deprecated on 2023-08-01. Please use [Horoscope V2](#horoscope-v2) With GraphQL instead.**
 
 ### Horoscope v1 (deprecated)
 NFT can be retrieved over the following API:
@@ -165,13 +165,14 @@ Input:
 It can be retrieved from the Horoscope like shown below:
 
 ```bash
-curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
 --data-raw '{
   "operationName": "cw721token",
-  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { euphoria { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
   "variables": {
     "limit": 10,
+  	"offset": null,
     "tokenId": null,
     "owner": "aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr"
   }
@@ -185,7 +186,7 @@ Input:
 - tokenID (return from list all)
 
 ```bash
-curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
 --data-raw '{
   "operationName": "cw721token",

@@ -19,7 +19,7 @@ For this reason, a query engine that synchronizes with the blockchain that serve
 
 ## 3. Development Status
 
-Horoscope V2 is the next version of Horoscope. We replaced MongoDB by Postgres on v2 and fully support query by GraphQL. With GraphQL, user can create any queries they want, not depend on simple API like v1. To write query GraphQL, you must read Database schema [here](https://github.com/aura-nw/horoscope-v2/blob/main/docs/database_schema.md) to understand table schema
+Horoscope V2 is the next version of Horoscope. We replaced MongoDB by Postgres on v2 and fully support query by GraphQL. With GraphQL, user can create any queries they want, not depend on simple API like v1. To write query GraphQL, you must read Database schema [here](https://github.com/aura-nw/horoscope-v2/blob/main/docs/database_schema.md) to understand table schema. Then you can use playground in [server environment](../index.md#horoscope-v2) to query.
 
 ## 4. Contribution
 

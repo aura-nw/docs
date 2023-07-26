@@ -11,7 +11,7 @@ There are 2 way to query history tx: onchain (by LCD/RPC) or offchain (by Horosc
 
 You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)
 
-> **Horoscope V1 will be deprecated soon, please use Horoscope v2**   
+> ** Horoscope V1 API will be deprecated on 2023-08-01. Please use [Horoscope V2](#horoscope-v2) With GraphQL instead.**
 
 Transaction history can be retrieved over the following API:
 
@@ -136,7 +136,7 @@ Input:
 - toHeight
 
 ```bash
-curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
 --data-raw '{
   "operationName": "queryTransaction",

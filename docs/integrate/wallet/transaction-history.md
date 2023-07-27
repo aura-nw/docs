@@ -131,6 +131,7 @@ This is an output from transaction api:
 ### Horoscope v2
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - value: aura_xxx (address need to query)
 - fromHeight
 - toHeight

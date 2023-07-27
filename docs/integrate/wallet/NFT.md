@@ -160,6 +160,7 @@ NFT onchain information is nested in asset_info field. With each NFT, Horoscope 
 #### List all CW721 asset of one address
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - Owner address
 
 It can be retrieved from the Horoscope like shown below:
@@ -182,6 +183,7 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 #### Detail of one CW721 (NFT)
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - contractAddress (return from list all)
 - tokenID (return from list all)
 

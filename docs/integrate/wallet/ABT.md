@@ -170,6 +170,7 @@ Because ABT is one child of NFT, so in Horoscope V2, you can use query CW721 to 
 #### List all CW4973 asset of one address
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - Owner address
 
 It can be retrieved from the Horoscope like shown below:
@@ -192,6 +193,7 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 #### Detail of one CW4973 (NFT)
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - contractAddress (return from list all)
 - tokenID (return from list all)
 

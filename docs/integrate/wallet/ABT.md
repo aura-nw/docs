@@ -172,6 +172,7 @@ Input:
 
 - Selected chain: xstaxy/euphoria/serenity
 - Owner address
+- Limit, offset
 
 It can be retrieved from the Horoscope like shown below:
 

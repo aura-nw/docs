@@ -3,6 +3,9 @@ sidebar_position: 2
 sidebar_label: Non-fungible Token
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Aura NFT integration for wallet
 
 It is recommend to use Horoscope, the interchain indexer for querying NFT data on Aura Network. Other interaction with the NFT contract can be executed by sending corresponding CosmWasm transaction to the network.
@@ -166,6 +169,9 @@ Input:
 
 It can be retrieved from the Horoscope like shown below:
 
+<Tabs groupId="list-cw721">
+  <TabItem value="euphoria" label="euphoria">
+
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
@@ -180,6 +186,44 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
   }
 }'
 ```
+  </TabItem>
+  <TabItem value="xstaxy" label="xstaxy">
+  
+
+```bash
+curl -L -X POST 'https://horoscope.aura.network/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { xstaxy { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+  	"offset": null,
+    "tokenId": null,
+    "owner": "aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr"
+  }
+}'
+```
+</TabItem>
+  <TabItem value="serenity" label="serenity">
+  
+
+```bash
+curl -L -X POST 'https://indexer-v2.dev.aurascan.io/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { serenity { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+  	"offset": null,
+    "tokenId": null,
+    "owner": "aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr"
+  }
+}'
+```
+  </TabItem>
+</Tabs>
 
 #### Detail of one CW721 (NFT)
 Input:
@@ -187,6 +231,9 @@ Input:
 - Selected chain: xstaxy/euphoria/serenity
 - contractAddress (return from list all)
 - tokenID (return from list all)
+
+<Tabs groupId="detail-cw721">
+  <TabItem value="euphoria" label="euphoria">
 
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
@@ -200,6 +247,41 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
   }
 }'
 ```
+
+  </TabItem>
+  <TabItem value="xstaxy" label="xstaxy">
+
+```bash
+curl -L -X POST 'https://horoscope.aura.network/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { xstaxy { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "65a1435d2e2d092f9722813cb12d3b5aecc2487fab62a4b5398db7826bc19c93"
+  }
+}'
+```
+
+  </TabItem>
+  <TabItem value="serenity" label="serenity">
+
+```bash
+curl -L -X POST 'https://indexer-v2.dev.aurascan.io/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { serenity { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "65a1435d2e2d092f9722813cb12d3b5aecc2487fab62a4b5398db7826bc19c93"
+  }
+}'
+```
+  </TabItem>
+</Tabs>
+
 
 #### Parse output
 This is an output of get detail CW721: 

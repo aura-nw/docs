@@ -2,6 +2,8 @@
 sidebar_position: 3
 sidebar_label: Account Bound Token
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Account Bound Token (CW4973/ABT) integration for wallet
 
@@ -176,6 +178,9 @@ Input:
 
 It can be retrieved from the Horoscope like shown below:
 
+<Tabs groupId="list-cw4973">
+  <TabItem value="euphoria" label="euphoria">
+
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
@@ -190,6 +195,44 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
   }
 }'
 ```
+  </TabItem>
+  <TabItem value="xstaxy" label="xstaxy">
+
+```bash
+curl -L -X POST 'https://horoscope.aura.network/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { xstaxy { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+    "offset": null,
+    "tokenId": null,
+    "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6"
+  }
+}'
+```
+
+  </TabItem>
+  <TabItem value="serenity" label="serenity">
+
+```bash
+curl -L -X POST 'https://indexer-v2.dev.aurascan.io/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { serenity { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
+  "variables": {
+    "limit": 10,
+    "offset": null,
+    "tokenId": null,
+    "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6"
+  }
+}'
+```
+
+  </TabItem>
+</Tabs>
 
 #### Detail of one CW4973 (NFT)
 Input:
@@ -197,6 +240,10 @@ Input:
 - Selected chain: xstaxy/euphoria/serenity
 - contractAddress (return from list all)
 - tokenID (return from list all)
+
+
+<Tabs groupId="detail-cw4973">
+  <TabItem value="euphoria" label="euphoria">
 
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
@@ -210,6 +257,43 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
   }
 }'
 ```
+  </TabItem>
+  <TabItem value="xstaxy" label="xstaxy">
+
+```bash
+curl -L -X POST 'https://horoscope.aura.network/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { xstaxy { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "c4f6b737e1188aebd983f270e63837b76b69b9e9a1c35668c21e6219da379dce"
+  }
+}'
+```
+
+  </TabItem>
+  <TabItem value="serenity" label="serenity">
+
+```bash
+curl -L -X POST 'https://indexer-v2.dev.aurascan.io/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "cw721token",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $contractAddress: String = null) { serenity { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}, cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id media_info owner token_id cw721_contract{ smart_contract{ address } } } } }",
+  "variables": {
+    "contractAddress": "aura10qnjf5mcnsmputyh98nm4ytwrm94xgcppvjyhr7qjf6ds97an96sl9vl58",
+    "tokenId": "c4f6b737e1188aebd983f270e63837b76b69b9e9a1c35668c21e6219da379dce"
+  }
+}'
+```
+
+  </TabItem>
+</Tabs>
+
+
+
 
 #### Parse output
 This is an output of get detail CW4973: 

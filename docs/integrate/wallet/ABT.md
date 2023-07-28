@@ -12,7 +12,7 @@ It is recommend to use Horoscope, the interchain indexer for querying ABT data o
 ### Chose your API
 
 You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)  
-> **Horoscope V1 will be deprecated soon, please use Horoscope v2**  
+> ** Horoscope V1 API will be deprecated on 2023-08-01. Please use [Horoscope V2](#horoscope-v2) With GraphQL instead.**
 
 ### Horoscope v1 (deprecated)
 ABT can be retrieved over the following API:
@@ -170,18 +170,20 @@ Because ABT is one child of NFT, so in Horoscope V2, you can use query CW721 to 
 #### List all CW4973 asset of one address
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - Owner address
 
 It can be retrieved from the Horoscope like shown below:
 
 ```bash
-curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
 --data-raw '{
   "operationName": "cw721token",
-  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }",
+  "query": "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10, $offset: Int = null) { euphoria { cw721_token( limit: $limit offset: $offset order_by: {last_updated_height: desc} where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}} ) { id media_info owner token_id } } }",
   "variables": {
     "limit": 10,
+    "offset": null,
     "tokenId": null,
     "owner": "aura1whczpvfx2z79h84yzdlpzad5gwurynredrtcx6"
   }
@@ -191,11 +193,12 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
 #### Detail of one CW4973 (NFT)
 Input:
 
+- Selected chain: xstaxy/euphoria/serenity
 - contractAddress (return from list all)
 - tokenID (return from list all)
 
 ```bash
-curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v1/graphiql' \
+curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
 --data-raw '{
   "operationName": "cw721token",

@@ -21,24 +21,26 @@ Why Horoscope is necessary for Aura and the Cosmos ecosystem in general:
 - Blazing fast & efficient
 - Index everything (wallet, block, transaction, NFT, Tokens, etc.)
 - Restful / GraphQL APIs
-- Core components are fully [Open source](https://github.com/aura-nw/horoscope) under MIT license
+- Core components are fully [Open source](https://github.com/aura-nw/horoscope-v2) under MIT license
 
 ## Environment
 Horoscope development is funded by Aura Network foundation, it is currently deployed at several environment:  
 
 ### Horoscope v1 (deprecated)
 
-| Environment | URL                                        | Support Chain                       |
-| ----------- | ------------------------------------------ | ----------------------------------- |
-| Production  | https://horoscope.aura.network/openapi     | Aura (Xstaxy)                       |
-| Staging     | http://indexer.staging.aurascan.io/openapi | Aura (Euphoria, Serenity)           |
-| Develop     | http://indexer.dev.aurascan.io/openapi     | Aura (Testnet)                      |
+> ** Horoscope V1 API will be deprecated on 2023-08-01. Please use [Horoscope V2](#horoscope-v2) With GraphQL instead.**
+
+| Environment | URL                                        | Support Chain             | Note                                                   |
+|-------------|--------------------------------------------|---------------------------|--------------------------------------------------------|
+| Production  | https://horoscope.aura.network/api/v1      | Aura (Xstaxy)             | [swagger](https://horoscope.aura.network/openapi)      |
+| Staging     | https://indexer.staging.aurascan.io/api/v1 | Aura (Euphoria, Serenity) | [swagger](https://indexer.staging.aurascan.io/openapi) |
+| Develop     | https://indexer.dev.aurascan.io/api/v1     | Aura (Testnet)            | [swagger](https://indexer.dev.aurascan.io/openapi)     |
   
 ### Horoscope v2
 
-| Environment | URL                                              | Support Chain            |
-| ----------- | ------------------------------------------------ | ------------------------ |
-| Production  | https://horoscope-v2.aura.network/graphiql/      | Aura (Xstaxy)            |
-| Staging     | https://indexer-v2.staging.aurascan.io/graphiql/ | Aura (Euphoria)          |
-| Develop     | https://indexer-v2.dev.aurascan.io/graphiql/     | Aura (Testnet, Serenity) |
+| Environment | URL                                           | Support Chain            | Note                                                           |
+| ----------- | --------------------------------------------- | ------------------------ | -------------------------------------------------------------- |
+| Production  | https://horoscope.aura.network/api/v2         | Aura (Xstaxy)            | [playground](https://horoscope.aura.network/graphiql/)         |
+| Staging     | https://indexer-v2.staging.aurascan.io/api/v2 | Aura (Euphoria)          | [playground](https://indexer-v2.staging.aurascan.io/graphiql/) |
+| Develop     | https://indexer-v2.dev.aurascan.io/api/v2     | Aura (Testnet, Serenity) | [playground](https://indexer-v2.dev.aurascan.io/graphiql/)     |
 <ContactUs />

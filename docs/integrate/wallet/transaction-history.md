@@ -141,7 +141,7 @@ Input:
 - limit, offset
 
 
-<Tabs groupId="list-cw721">
+<Tabs groupId="list-tx">
   <TabItem value="euphoria" label="euphoria">
 
 ```bash

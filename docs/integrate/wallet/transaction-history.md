@@ -135,6 +135,7 @@ Input:
 - value: aura_xxx (address need to query)
 - fromHeight
 - toHeight
+- limit, offset
 
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \

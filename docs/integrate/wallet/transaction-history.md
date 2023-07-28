@@ -3,6 +3,9 @@ sidebar_position: 4
 sidebar_label: Transaction History
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Integration transaction history for wallet
 
 There are 2 way to query history tx: onchain (by LCD/RPC) or offchain (by Horoscope). It is recommend to use Horoscope to query all tx which involved by address (tx sended, received, smart contract, etc).
@@ -137,6 +140,10 @@ Input:
 - toHeight
 - limit, offset
 
+
+<Tabs groupId="list-cw721">
+  <TabItem value="euphoria" label="euphoria">
+
 ```bash
 curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
 -H 'Content-Type: application/json' \
@@ -154,6 +161,51 @@ curl -L -X POST 'https://indexer-v2.staging.aurascan.io/api/v2/graphql' \
   }
 }'
 ```
+  </TabItem>
+  <TabItem value="xstaxy" label="xstaxy">
+  
+
+```bash
+curl -L -X POST 'https://horoscope.aura.network/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "queryTransaction",
+  "query": "query queryTransaction( $limit: Int = 100 $order: order_by = desc $value: String = null $hash: String = null $height: Int = null $offset: Int = 0 $fromHeight: Int = null $toHeight: Int = null ) { xstaxy { transaction( limit: $limit offset: $offset where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value} block_height: {_lt: $toHeight _gt: $fromHeight} } } order_by: [{ height: $order}, {index: $order}] ) { id height hash timestamp code gas_used gas_wanted data } } }",
+  "variables": {
+    "limit": 5,
+  	"offset": 0,
+    "order": "desc",
+    "value": "aura194ytn50yhh67rdha8akhs7c6zulnz4n2jp7pw6",
+    "height": null,
+  	"fromHeight": 1900000,
+  	"toHeight": 2000000
+  }
+}'
+```
+</TabItem>
+  <TabItem value="serenity" label="serenity">
+  
+
+```bash
+curl -L -X POST 'https://indexer-v2.dev.aurascan.io/api/v2/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{
+  "operationName": "queryTransaction",
+  "query": "query queryTransaction( $limit: Int = 100 $order: order_by = desc $value: String = null $hash: String = null $height: Int = null $offset: Int = 0 $fromHeight: Int = null $toHeight: Int = null ) { serenity { transaction( limit: $limit offset: $offset where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value} block_height: {_lt: $toHeight _gt: $fromHeight} } } order_by: [{ height: $order}, {index: $order}] ) { id height hash timestamp code gas_used gas_wanted data } } }",
+  "variables": {
+    "limit": 5,
+  	"offset": 0,
+    "order": "desc",
+    "value": "aura1jlp9ge244um2v7mdm7xwamwsv9z9vhpej6wjh7",
+    "height": null,
+  	"fromHeight": 14794439,
+  	"toHeight": 14894439
+  }
+}'
+```
+  </TabItem>
+</Tabs>
+
 Output: 
 ```json
 {

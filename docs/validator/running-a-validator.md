@@ -39,6 +39,8 @@ aurad tx staking create-validator \
   --amount=<staking-amount> \
   --pubkey=$(aurad tendermint show-validator) \
   --moniker="choose a moniker"  \
+  --website="validator website" \
+  --details="validator description" \  
   --chain-id=<chain-id> \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \

@@ -39,14 +39,14 @@ If you're using Keplr wallet, proceed with the wallet connection on the Keplr wa
     <img src="/img/aurascan/Keplr_wallet_extension.png" alt="select-keplr"/>
 </div>
 
-After successfully connecting your wallet, you will see your address information by clicking `My account` button.
-
-<div id="img-wrapper">
-    <img src="/img/aurascan/account_details.png" alt="keplr-successfully-connected"/>
-</div>
-
   </TabItem>
 </Tabs>
+
+After successfully connecting your wallet, you will see your address information by clicking `My account`.
+
+<div id="img-wrapper">
+    <img src="/img/aurascan/my_account_1.png" alt="my_account_1"/>
+</div>
 
 ## On Mobile device
 Users who use Aurascan on mobile devices can access all of the available features on your mobile device browser or in the Coin98 Super App in-app browser.

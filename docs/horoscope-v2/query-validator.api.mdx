@@ -28,7 +28,7 @@ query queryValidator(
   $limit: Int = 10
   $operatorAddress: String = null
 ) {
-  xstaxy {
+  xstaxy { #This point to target chain to query
     validator(
       limit: $limit
       offset: $offset

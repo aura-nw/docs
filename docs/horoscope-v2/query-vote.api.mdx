@@ -30,7 +30,7 @@ query queryVote(
   $proposalId: Int = null
   $voteOption: String = null
 ) {
-  xstaxy {
+  xstaxy { #This point to target chain to query
     vote(
       limit: $limit
       offset: $offset

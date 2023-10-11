@@ -23,9 +23,19 @@ import TabItem from "@theme/TabItem";
 
 Query:
 ```graphql
-query codeid($limit: Int = 10, $codeId: Int = null) {
-  xstaxy {
-    code(limit: $limit, where: {code_id: {_eq: $codeId}}) {
+query codeid(
+    $limit: Int = 10,
+    $codeId: Int = null
+) {
+  xstaxy { #This point to target chain to query
+    code(
+        limit: $limit,
+        where: {
+            code_id: {
+                _eq: $codeId
+            }
+        }
+    ) {
       code_id
       created_at
       creator

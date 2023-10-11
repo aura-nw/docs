@@ -39,7 +39,7 @@ query queryTransaction(
     $hash: String = null
     $height: Int = null
 ) {
-    xstaxy {
+    xstaxy { #This point to target chain to query
     transaction(
         limit: $limit
         where: {

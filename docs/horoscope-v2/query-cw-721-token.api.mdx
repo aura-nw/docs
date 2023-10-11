@@ -28,7 +28,7 @@ query cw721token(
   $owner: String = null
   $limit: Int = 10
 ) {
-  xstaxy {
+  xstaxy { #This point to target chain to query
     cw721_token(
       limit: $limit
       order_by: { id: desc }

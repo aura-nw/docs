@@ -30,7 +30,7 @@ query queryProposal(
   $proposalId: Int = null
   $type: String = null
 ) {
-  xstaxy {
+  xstaxy { #This point to target chain to query
     proposal(
       limit: $limit
       offset: $offset

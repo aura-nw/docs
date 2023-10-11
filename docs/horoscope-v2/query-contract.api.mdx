@@ -23,8 +23,11 @@ import TabItem from "@theme/TabItem";
 
 Query: 
 ```graphql
-query contract($limit: Int = 10, $contractAddress: String = null) {
-  xstaxy {
+query contract(
+    $limit: Int = 10,
+    $contractAddress: String = null
+) {
+  xstaxy { #This point to target chain to query
     smart_contract(where: {address: {_eq: $contractAddress}}) {
       address
       code_id

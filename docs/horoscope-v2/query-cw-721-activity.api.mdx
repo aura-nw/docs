@@ -24,7 +24,7 @@ import TabItem from "@theme/TabItem";
 Query:
 ```graphql
 query cw721activity($limit: Int = 10, $contractAddress: String = null) {
-  xstaxy {
+  xstaxy { #This point to target chain to query
     cw721_activity(
       limit: $limit
       where: {

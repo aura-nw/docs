@@ -22,9 +22,19 @@ import TabItem from "@theme/TabItem";
 ## Query account
 Query:
 ```graphql
-query account($limit: Int = 10, $address: String = null) {
-  xstaxy {
-    account(limit: $limit, where: {address: {_eq: $address}}) {
+query account(
+    $limit: Int = 10,
+    $address: String = null
+) {
+  xstaxy { #This point to target chain to query
+    account(
+        limit: $limit,
+        where: {
+            address: {
+                _eq: $address
+            }
+        }
+    ) {
       account_number
       address
       balances

@@ -25,18 +25,44 @@ import TabItem from "@theme/TabItem";
 
 Query
 ```graphql
-query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) {
-    xstaxy {
-    block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) {
-        data
-        validator {
-        operator_address
-        description
+query queryBlock(
+    $limit: Int = 100,
+    $order: order_by = desc,
+    $height: Int = null,
+    $hash: String = null,
+    $operatorAddress: String = null,
+    $heightGT: Int = null,
+    $heightLT: Int = null
+) {
+    xstaxy { #This point to target chain to query
+        block(
+            limit: $limit,
+            order_by: {height: $order},
+            where: {
+                height: {
+                    _eq: $height,
+                    _gt: $heightGT,
+                    _lt: $heightLT
+                },
+                hash: {
+                    _eq: $hash
+                },
+                validator: {
+                    operator_address: {
+                        _eq: $operatorAddress
+                    }
+                }
+            }
+        ) {
+            data
+            validator {
+                operator_address
+                description
+            }
+            hash
+            height
+            time
         }
-        hash
-        height
-        time
-    }
     }
 }
 ```

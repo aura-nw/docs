@@ -4,20 +4,91 @@ info:
   version: 1.0.0
 servers:
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
   - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: block
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - block
-      summary: Query block
+      summary: Query blockk
       requestBody:
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/Block'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { xstaxy { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { auratestnet { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { serenity { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { euphoria { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { nois { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: queryBlock
+                  query: 'query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { sei { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }'
+                  variables:
+                    limit: 20
+                    order: desc
+                    hash: null
+                    height: null
+                    operatorAddress: null
       responses:
         '200':
           description: Successful operation

@@ -1,7 +1,10 @@
 # Dependencies
 /node_modules
 /sample/node_modules
-/sample/sample.mnemonic.key
+/sample/sample.mnemonic.key.
+
+# Webstorm ide indexed
+.idea
 
 # Production
 /build

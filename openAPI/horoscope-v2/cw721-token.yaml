@@ -3,12 +3,16 @@ info:
   title: Horoscope v2 graphql
   version: 1.0.0
 servers:
-  - url: https://indexer-v2.staging.aurascan.io
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: cw721
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - cw721
@@ -18,6 +22,61 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/cw721token'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { xstaxy { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { auratestnet { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { serenity { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { nois { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: cw721token
+                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { sei { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  variables:
+                    limit: 10
+                    tokenId: '611'
+                    owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
       responses:
         '200':
           description: Successful operation

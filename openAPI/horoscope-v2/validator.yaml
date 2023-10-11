@@ -4,11 +4,15 @@ info:
   version: 1.0.0
 servers:
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
   - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: validator
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - validator
@@ -18,6 +22,61 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/validator'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { xstaxy { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { auratestnet { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { serenity { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { euphoria { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { nois { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: queryValidator
+                  query: "query queryValidator($offset: Int = 0, $limit: Int = 10, $operatorAddress: String = null) { sei { validator(limit: $limit, offset: $offset, order_by: {tokens: desc}, where: {operator_address: {_eq: $operatorAddress}}) { account_address commission consensus_address consensus_hex_address created_at consensus_pubkey delegator_shares delegators_count delegators_last_height description index_offset jailed jailed_until min_self_delegation missed_blocks_counter operator_address percent_voting_power self_delegation_balance start_height status tokens tombstoned unbonding_height unbonding_time uptime missed_blocks_counter image_url vote_aggregate { aggregate { count } } } validator_aggregate { aggregate { count } } } }"
+                  variables:
+                    limit: 5
+                    offset: 0
+                    operatorAddress: null
       responses:
         '200':
           description: Successful operation

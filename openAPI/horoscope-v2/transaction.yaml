@@ -4,11 +4,15 @@ info:
   version: 1.0.0
 servers:
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
   - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: block
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - transaction
@@ -18,6 +22,79 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/transaction'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { xstaxy { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { auratestnet { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { serenity { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { euphoria { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { nois { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: queryTransaction
+                  query: "query queryTransaction( $limit: Int = 100 $order: order_by = desc $compositeKey: String = null $value: String = null $key: String = null $compositeKeyIn: [String!] = null $valueIn: [String!] = null $keyIn: [String!] = null $heightGT: Int = null $heightLT: Int = null $indexGT: Int = null $indexLT: Int = null $hash: String = null $height: Int = null ) { sei { transaction( limit: $limit where: { hash: { _eq: $hash } height: { _eq: $height } event_attribute_index: { value: { _eq: $value, _in: $valueIn } composite_key: { _eq: $compositeKey, _in: $compositeKeyIn } key: { _eq: $key, _in: $keyIn } } _and: [ { height: { _gt: $heightGT } } { index: { _gt: $indexGT } } { height: { _lt: $heightLT } } { index: { _lt: $indexLT } } ] } order_by: [{ height: $order}, {index: $order }] ) { id height hash timestamp code gas_used gas_wanted data } } }"
+                  variables:
+                    limit: 5
+                    order: desc
+                    hash: null
+                    height: null
+                    compositeKey: null
+                    value: null
       responses:
         '200':
           description: Successful operation

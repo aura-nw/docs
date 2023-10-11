@@ -3,21 +3,75 @@ info:
   title: Horoscope v2 graphql
   version: 1.0.0
 servers:
-  - url: https://indexer-v2.staging.aurascan.io
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: cw20
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - account
-      summary: Query account
+      summary: Query accountt
       requestBody:
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/account'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { xstaxy { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { auratestnet { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { serenity { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { euphoria { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { nois { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: account
+                  query: 'query account($limit: Int = 10, $address: String = null) { sei { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
+                  variables:
+                    limit: 10
+                    address: null
+
       responses:
         '200':
           description: Successful operation

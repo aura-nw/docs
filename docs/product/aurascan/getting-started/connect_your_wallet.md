@@ -9,10 +9,10 @@ import TabItem from '@theme/TabItem';
 Before performing any interactions like staking or voting on proposals with Aurascan, you will have to connect your personal wallet to the interface. 
 
 ## On Desktop browser
-All users must have a personal wallet connected. For now, Aurascan supports Coin98 and Keplr wallet. Please click the `Connect wallet` button at the top right of the screen.
+All users must have a personal wallet connected. For now, Aurascan supports Coin98 and Keplr wallet. Please click the `Connect wallet` button at the left side below the menu header bar of the screen.
 
 <div id="img-wrapper">
-    <img src="/img/aurascan/connect_wallet.png" alt="connect-wallet"/>
+    <img src="/img/aurascan/connect_wallet_1.png" alt="connect_wallet_1"/>
 </div>
 
 You can choose `Coin98` or `Keplr` wallet provider to connect with Aurascan. If you don't have a wallet yet, you can select a provider and create a new one.
@@ -39,14 +39,14 @@ If you're using Keplr wallet, proceed with the wallet connection on the Keplr wa
     <img src="/img/aurascan/Keplr_wallet_extension.png" alt="select-keplr"/>
 </div>
 
-After successfully connecting your wallet, you will see your address information by clicking `My account` button.
-
-<div id="img-wrapper">
-    <img src="/img/aurascan/account_details.png" alt="keplr-successfully-connected"/>
-</div>
-
   </TabItem>
 </Tabs>
+
+After successfully connecting your wallet, you will see your address information by clicking `My account`.
+
+<div id="img-wrapper">
+    <img src="/img/aurascan/my_account_1.png" alt="my_account_1"/>
+</div>
 
 ## On Mobile device
 Users who use Aurascan on mobile devices can access all of the available features on your mobile device browser or in the Coin98 Super App in-app browser.
@@ -66,7 +66,7 @@ First of all, download [Coin98 Super App](https://docs.coin98.com/products/coin9
 After you have properly installed and initialized your wallet, open Aurascan on your mobile browser and tap on `Connect` at the top right of the screen. There might be a confirmation prompt from your mobile wallet if you have not added the network to your wallet in advance.
 
 <div id="img-wrapper">
-    <img src="/img/aurascan/Getting_Started_Connect_your_wallet_connect_c98_mobile.png" alt="connect-mobile-wallet"/>
+    <img src="/img/aurascan/connect_wallet_c98_mobile_1.png" alt="connect_wallet_c98_mobile_1"/>
 </div>
 
   </TabItem>
@@ -81,7 +81,7 @@ After you have properly installed and initialized your wallet, open Aurascan on 
 **Step 4**: Select the Aurascan blockchain and wallet address to connect
 
 <div id="img-wrapper">
-    <img src="/img/aurascan/C98_in_app_browser.png" alt="connect-c98-browser"/>
+    <img src="/img/aurascan/connect_wallet_in_app_browser_1.png" alt="connect_wallet_in_app_browser_1"/>
 </div>
 
 When you successfully connect your wallet, you will see your account details on Aurascan, you can then stake and vote on proposals of the network.

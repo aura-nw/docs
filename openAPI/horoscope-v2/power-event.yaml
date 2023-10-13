@@ -4,11 +4,15 @@ info:
   version: 1.0.0
 servers:
   - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
   - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
 tags:
   - name: power event
 paths:
-  /api/v1/graphiql:
+  /api/v2/graphql:
     post:
       tags:
         - power event
@@ -18,6 +22,61 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/powerevent'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { xstaxy { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { auratestnet { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { euphoria { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
+              nois:
+                summary: Query on Nois chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { nois { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
+              sei:
+                summary: Query on Sei chain
+                value:
+                  operationName: validatorsDetailListPower
+                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { sei { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  variables:
+                    operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
+                    limit: 10
+                    nextKey: null
       responses:
         '200':
           description: Successful operation

@@ -3,9 +3,9 @@ sidebar_position: 2
 title: Account Details page
 ---
 
-You can view the details and activities tracking of Aura account easily in the Aurascan **Account Details** page. It shows you a breakdown of the [Account Info](#Account Info), [Account Assets](#Account Assets), [Staking Porfolio](#Staking Porfolio) and [Transactions History](#transactions history) of an Aura account.
+You can view the details and activities tracking of Aura account easily in the Aurascan **Account Details** page. It shows you a breakdown of the [Assets](#assets), [Transactions](#transactions) and your [Staking](#staking) details.
 
-## Account Info
+## Info
 
 <div id="img-wrapper">
     <img src="/img/aurascan/account_info_3.png" alt="account_info"/>
@@ -35,7 +35,7 @@ This box will show the list of all NFTs owned by this account. You can filter th
 
 ### ABTs
 
-This box will show the top 5 highlight displayed ABTs owned and picked by this account. If you are the owner of this account, you can click to "Manage my ABTs" to open your Account Bound Tokens page to manage your ABT. Otherwise, you can see the "See all" button instead to open the account's Account Bound Token page to view all Equipped ABTs belongs to this user. 
+This box will show the top 5 highlight displayed ABTs owned and picked by this account. If you are the owner of this account, you can click to `Manage my ABTs` to open your Account Bound Tokens page to manage your ABT. Otherwise, you can see the `See more` button instead to open the account's Account Bound Token page to view all Equipped ABTs belongs to this user. 
 
 <div id="img-wrapper">
     <img src="/img/aurascan/abt_3.png" alt="abt"/>
@@ -43,7 +43,7 @@ This box will show the top 5 highlight displayed ABTs owned and picked by this a
 
 ## Staking
 
-If you are an AURA holder, you can stake AURA to receive staking rewards, all records about staking (Delegations, Unbondings, Redelegations and Vestings) are stored in the `Stake` section.
+If you are an AURA holder, you can stake AURA to receive staking rewards, all records about staking (Delegations, Unbondings, Redelegations and Vestings) are stored in the **Staking** section.
 
 <div id="img-wrapper">
     <img src="/img/aurascan/Getting_Started_Manage_your_Account_Stake.png" alt="staking"/>

@@ -10,14 +10,13 @@ Receiver who will become the owner of the ABT once he decides to 'Equip' the ABT
 
 **Step 1:** Open Account Details page.
 
-![ABT receiver Account Details](/img/aurascan/Advanced_topic_ABT_receiver_0.png)
+![ABT receiver See more](/img/aurascan/ABT_Account_Details_page_3.png)
 
-**Step 2:** Navigate to unclaimed ABT list.
+**Step 2:** Navigate to Account Bound Token page by clicking to "Manage my ABTs" button
 
 See the new Unclaimed ABT that was nominated for you by the creator from tab "Unequipped" of Account Bound Token page.
 You can open the Account Bound Token page of your account by pressing button "Manage your ABTs" from Account Details page.
 
-![ABT receiver See more](/img/aurascan/ABT_account_details_page.png)
 
 ![ABT receiver Unclaim token list](/img/aurascan/ABT_unequipped_page.png)
 

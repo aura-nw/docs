@@ -11,8 +11,7 @@ You can view the details and activities tracking of Aura account easily in the A
     <img src="/img/aurascan/account_info_3.png" alt="account_info"/>
 </div>
 
-This card view show up the overview information of an address: QR code of account address, total asset value, public name (if any) set by Aura Network and private name tag of this account set by user to tag this aura address by a text view that is easier to read and distinguish.
-Kindly take note that user can use the private name tag feature only when login Aurascan by email and the private name tags set by you are only visible to you once you have logged in to your Etherscan account.
+This card view displays an overview of an address, including the QR code of the account address, total asset value, and the public name (if any) set by Aura Network. Additionally, users can set a private name tag for this address, creating a text view that is easy to read and distinguish. It's important to note that the private name tag feature is accessible only when logging into Aurascan with an email, and the tags set by the user are visible exclusively to them upon logging in to Aurascan.
 
 
 ## Assets
@@ -46,7 +45,7 @@ This box will show the top 5 highlight displayed ABTs owned and picked by this a
 If you are an AURA holder, you can stake AURA to receive staking rewards, all records about staking (Delegations, Unbondings, Redelegations and Vestings) are stored in the **Staking** section.
 
 <div id="img-wrapper">
-    <img src="/img/aurascan/Getting_Started_Manage_your_Account_Stake.png" alt="staking"/>
+    <img src="/img/aurascan/stake_3.png" alt="staking"/>
 </div>
 
 ## Transactions

@@ -19,12 +19,14 @@ You can create new a private name tag either directly from desired address's acc
 ![Create Private name tag from list view](/img/aurascan/add_private_name_3.png)
 
 **Step 3:** Input information in the 'Create Private Name Tag' pop up and then click "Create"
+
 Type in the desised private name tag and your personal note (optional) and click on `Create` button to create new private name tag.
 Kindly note that you can set private name tag for both normal account and contract account, just pay attention to select the proper type of your desired account want to tag private name.
 
 ![Popup Create Private name tag](/img/aurascan/popup_create_private_name.png)
 
 **Step 4:** You can view the private name tag you have set in Aurascan
+
 After creating private name tag successfully, you can view the private name tag in the account details page of the tagged address and from all list view pages that this address appears.
 
 :::info

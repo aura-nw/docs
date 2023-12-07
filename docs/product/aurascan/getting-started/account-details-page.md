@@ -57,7 +57,7 @@ Here users can see all of the transactions history related to this account. You 
 This tab includes all transactions initiated by this account (message sender = the account). 
 
 <div id="img-wrapper">
-    <img src="/img/aurascan/executed_txn_3.png" alt="executed_txn"/>
+    <img src="/img/aurascan/txn_executed_3.png" alt="txn_executed"/>
 </div>
 
 ### Coin Transfer

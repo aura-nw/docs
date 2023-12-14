@@ -14,3 +14,4 @@ title: Relayer Information
 | ICS-20     | xstaxy-1        | channel-7      | kava     |  kava_2222-10       | channel-124          |
 | wasm   | xstaxy-1        | channel-8      | nois     | nois-1        | channel-35          |
 | ICS-20     | xstaxy-1        | channel-9     | noble     |  noble-1       | channel-41          |
+| ICS-20     | xstaxy-1        | channel-10     | osmosis     |  osmosis-1       | channel-11304          |

@@ -150,19 +150,24 @@ const config = {
             items: [
               {
                 type: 'doc',
+                docId: 'product/aurascan/index',
+                label: 'Aurascan',
+              },
+			  {
+                type: 'doc',
                 docId: 'product/pyxis-safe/index',
                 label: 'Pyxis Safe',
               },
-              {
+			  {
                 type: 'doc',
-                docId: 'product/aurascan/index',
-                label: 'Aurascan',
+                docId: 'product/pyxis-mobile/index',
+                label: 'Pyxis Smart Wallet',
               },
               {
                 type: 'doc',
                 docId: 'product/horoscope/index',
                 label: 'Horoscope',
-              },
+              }
             ],
           },
         ],

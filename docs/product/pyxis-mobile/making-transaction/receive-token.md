@@ -6,7 +6,7 @@ title: Receiving tokens
 How to receive tokens on the Pyxis smart account? To get the smart account address, please follow below steps
 
 <div id="img-wrapper">
-    <img src="/img/pyxis-mobile/Receive.gif" alt="Receive"/>
+    <img  max-width="350px" src="/img/pyxis-mobile/Receive.gif" alt="Receive"/>
 </div>
 
 1. From the Homepage, select Receive on the account card

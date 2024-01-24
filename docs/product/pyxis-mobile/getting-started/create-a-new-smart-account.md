@@ -6,7 +6,7 @@ title: Create a new Smart Account
 If you are about to create a smart account on Pyxis mobile app, you can receive instructions by following below steps:
 
 <div id="img-wrapper">
-    <img src="/img/pyxis-mobile/CreateSmartAccount.gif" alt="CreateSmartAccount"/>
+    <img  max-width="350px" src="/img/pyxis-mobile/CreateSmartAccount.gif" alt="CreateSmartAccount"/>
 </div>
 
 1. Select the 'Create new smart account' on the first screen

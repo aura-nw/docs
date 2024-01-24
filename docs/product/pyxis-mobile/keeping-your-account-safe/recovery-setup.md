@@ -8,7 +8,7 @@ When you create a smart account successfully, it is necessary to set a recovery 
 Here, we'll guide you through the process of setting up a recovery method for a smart account
 
 <div id="img-wrapper">
-    <img src="/img/pyxis-mobile/SetRecoveryMethod.gif" alt="SetRecoveryMethod"/>
+    <img  max-width="350px" src="/img/pyxis-mobile/SetRecoveryMethod.gif" alt="SetRecoveryMethod"/>
 </div>
 
 1. From the Homepage, select Setting on the menu bar

@@ -6,7 +6,7 @@ title: Sending tokens
 This function enables users to send tokens within the Aura network. Follow these steps to initiate the process.
 
 <div id="img-wrapper">
-    <img src="/img/pyxis-mobile/Send.gif" alt="Send"/>
+    <img  max-width="350px" src="/img/pyxis-mobile/Send.gif" alt="Send"/>
 </div>
 
 1. From the Homepage, select Send on the account card.

@@ -4,8 +4,9 @@ title: Import a normal wallet
 ---
 
 <div id="img-wrapper">
-    <img src="/img/pyxis-mobile/ImportEOA.gif" alt="ImportEOA"/>
+    <img  max-width="350px" src="/img/pyxis-mobile/ImportEOA.gif" alt="ImportEOA"/>
 </div>
+
 
 1. To import a normal wallet on the Pyxis mobile app, please select the 'Import existing account' on the first screen
 2. Set a passcode for Pyxis app

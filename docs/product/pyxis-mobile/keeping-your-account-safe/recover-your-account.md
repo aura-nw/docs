@@ -11,9 +11,9 @@ This function can only be used to recover Pyxis smart accounts. Use it when you 
 
 3.1. Recover using google account
 
-<div id="gif-wrapper">
-    <img src="/img/pyxis-mobile/RecoverWeb3Auth.gif" alt="RecoverWeb3Auth"/>
-</div>
+<video controls width="250">
+  <source src="/video/pyxis-mobile/Recover_Web3Auth.webm" type="video/webm" />
+</video>
 
 Condition: The intended smart account recovery requires a pre-set recovery method via a Google account
 

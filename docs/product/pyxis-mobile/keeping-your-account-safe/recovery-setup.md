@@ -12,9 +12,9 @@ Here, we'll guide you through the process of setting up a recovery method for a 
 
 3.1 Set recovery method by Google account (power by Web3Auth)
 
-<div id="gif-wrapper">
-    <img src="/img/pyxis-mobile/SetRecoveryMethod.gif" alt="SetRecoveryMethod"/>
-</div>
+<video controls width="250">
+  <source src="/video/pyxis-mobile/Set_RecoveryMethod.webm" type="video/webm" />
+</video>
 
 - Select Connect Google account. Pyxis will redirect the screen to Google interface
 - Login to the Google account which you want to set as recovery method

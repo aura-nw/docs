@@ -5,9 +5,9 @@ title: Create a new Smart Account
 
 If you are about to create a smart account on Pyxis mobile app, you can receive instructions by following below steps:
 
-<div id="gif-wrapper">
-    <img src="/img/pyxis-mobile/CreateSmartAccount.gif" alt="CreateSmartAccount"/>
-</div>
+<video controls width="250">
+  <source src="/video/pyxis-mobile/Create_SmartAccount.webm" type="video/webm" />
+</video>
 
 1. Select the 'Create new smart account' on the first screen
 2. Before enter the process to create new smart account, you’ll need to set a passcode for Pyxis app. This passcode is used as a layer to protect your data; funds and unlock Pyxis for your daily use 

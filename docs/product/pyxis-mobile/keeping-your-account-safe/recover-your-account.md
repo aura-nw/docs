@@ -6,7 +6,7 @@ title: Recover your Smart Account
 This function can only be used to recover Pyxis smart accounts. Use it when you have lost your device or lost access to Pyxis (forgot app passcode, remove app from your mobile)…
 
 1. Select the 'Recover account' on the first screen
-2. Set a passcode for Pyxis app. 
+2. Set a passcode for Pyxis app (for initial use on the Pyxis mobile app)
 3. Choose recovery method you want to use. Pyxis provides users with 2 way to recover smart account
 
 3.1. Recover using google account

@@ -9,7 +9,7 @@ title: Import a normal wallet
   <source src="/video/pyxis-mobile/Import_EOA.webm" type="video/webm" />
 </video>
 
-2. Set a passcode for Pyxis app
+2. Set a passcode for Pyxis app (for initial use on the Pyxis mobile app)
 3. Next, please input the necessary field: 
 - Type of input
 - Passphrase or private key

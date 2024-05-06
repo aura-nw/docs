@@ -29,11 +29,11 @@
                 "https://aura-grpc.tienthuattoan.ventures:9090"
             ]
         },
-        "eth": {
+        "evm": {
             "Chain ID": ["TBD"],
             "Type": ["Mainnet"],
             "Explorer": ["TBD"],
-            "ETH RPC": ["TBD"]
+            "EVM JSON-RPC": ["TBD"]
         }
     },
     "euphoria": {
@@ -52,11 +52,11 @@
                 "http://grpc.euphoria.aura.network:9090"
             ]
         },
-        "eth": {
+        "evm": {
             "Chain ID": ["6321"],
             "Type": ["Staging Network"],
             "Explorer": ["https://euphoria.aurascan.io"],
-            "ETH RPC": ["https://jsonrpc.euphoria.aura.network"]
+            "EVM JSON-RPC": ["https://jsonrpc.euphoria.aura.network"]
         }
     },
     "serenity": {
@@ -73,16 +73,13 @@
             ], 
             "gRPC": [
                 "http://grpc.serenity.aura.network:9092"
-            ],
-            "ETH RPC": [
-                "https://jsonrpc.serenity.aura.network"
             ]
         },
-        "eth": {
+        "evm": {
             "Chain ID": ["1236"],
             "Type": ["Testnet"],
             "Explorer": ["https://serenity.aurascan.io"],
-            "ETH RPC": ["https://jsonrpc.serenity.aura.network"]
+            "EVM JSON-RPC": ["https://jsonrpc.serenity.aura.network"]
         }
     }
 }

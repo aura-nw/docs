@@ -1,67 +1,88 @@
 {
     "xstaxy": {
-        "Chain ID": ["xstaxy-1"],
-        "Type": ["Mainnet"],
-        "Genesis": ["https://raw.githubusercontent.com/aura-nw/mainnet-artifacts/main/xstaxy-1/genesis.json"],
-        "Explorer": ["https://aurascan.io"],
-        "RPC": [
-            "https://rpc.aura.network",
-            "https://aura-rpc.ramuchi.tech",
-            "https://aura-rpc.palamar.io",
-            "https://rpc.xstaxy-1.aura.aviaone.com",
-            "https://rpc.aura.nodestake.top",
-            "https://aura-rpc.tienthuattoan.ventures"
-        ], 
-        "LCD": [
-            "https://lcd.aura.network",
-            "https://aura-api.ramuchi.tech",
-            "https://aura-api.palamar.io",
-            "https://api.xstaxy-1.aura.aviaone.com",
-            "https://api.aura.nodestake.top",
-            "https://aura-api.tienthuattoan.ventures"
-        ], 
-        "gRPC": [
-            "https://grpc.aura.network",
-            "https://aura-grpc.ramuchi.tech",
-            "https://aura-grpc.palamar.io",
-            "https://grpc.aura.nodestake.top",
-            "https://aura-grpc.tienthuattoan.ventures:9090"
-        ]
+        "cosmos": {
+            "Chain ID": ["xstaxy-1"],
+            "Type": ["Mainnet"],
+            "Genesis": ["https://raw.githubusercontent.com/aura-nw/mainnet-artifacts/main/xstaxy-1/genesis.json"],
+            "Explorer": ["https://aurascan.io"],
+            "RPC": [
+                "https://rpc.aura.network",
+                "https://aura-rpc.ramuchi.tech",
+                "https://aura-rpc.palamar.io",
+                "https://rpc.xstaxy-1.aura.aviaone.com",
+                "https://rpc.aura.nodestake.top",
+                "https://aura-rpc.tienthuattoan.ventures"
+            ], 
+            "LCD": [
+                "https://lcd.aura.network",
+                "https://aura-api.ramuchi.tech",
+                "https://aura-api.palamar.io",
+                "https://api.xstaxy-1.aura.aviaone.com",
+                "https://api.aura.nodestake.top",
+                "https://aura-api.tienthuattoan.ventures"
+            ], 
+            "gRPC": [
+                "https://grpc.aura.network",
+                "https://aura-grpc.ramuchi.tech",
+                "https://aura-grpc.palamar.io",
+                "https://grpc.aura.nodestake.top",
+                "https://aura-grpc.tienthuattoan.ventures:9090"
+            ]
+        },
+        "eth": {
+            "Chain ID": ["TBD"],
+            "Type": ["Mainnet"],
+            "Explorer": ["TBD"],
+            "ETH RPC": ["TBD"]
+        }
     },
     "euphoria": {
-        "Chain ID": ["aura_6321-3"],
-        "Type": ["Staging Network"],
-        "Genesis": ["https://images.aura.network/aura_6321-3-genesis.tar.gz"],
-        "Explorer": ["https://euphoria.aurascan.io"],
-        "RPC": [
-            "https://rpc.euphoria.aura.network"
-        ], 
-        "LCD": [
-            "https://lcd.euphoria.aura.network"
-        ], 
-        "gRPC": [
-            "http://grpc.euphoria.aura.network:9090"
-        ],
-        "ETH RPC": [
-            "https://jsonrpc.euphoria.aura.network"
-        ]
+        "cosmos": {
+            "Chain ID": ["aura_6321-3"],
+            "Type": ["Staging Network"],
+            "Genesis": ["https://images.aura.network/aura_6321-3-genesis.tar.gz"],
+            "Explorer": ["https://euphoria.aurascan.io"],
+            "RPC": [
+                "https://rpc.euphoria.aura.network"
+            ], 
+            "LCD": [
+                "https://lcd.euphoria.aura.network"
+            ], 
+            "gRPC": [
+                "http://grpc.euphoria.aura.network:9090"
+            ]
+        },
+        "eth": {
+            "Chain ID": ["6321"],
+            "Type": ["Staging Network"],
+            "Explorer": ["https://euphoria.aurascan.io"],
+            "ETH RPC": ["https://jsonrpc.euphoria.aura.network"]
+        }
     },
     "serenity": {
-        "Chain ID": ["auradev_1236-2"],
-        "Type": ["Testnet"],
-        "Genesis": [""],
-        "Explorer": ["https://serenity.aurascan.io"],
-        "RPC": [
-            "https://rpc.serenity.aura.network"
-        ], 
-        "LCD": [
-            "https://lcd.serenity.aura.network"
-        ], 
-        "gRPC": [
-            "http://grpc.serenity.aura.network:9092"
-        ],
-        "ETH RPC": [
-            "https://jsonrpc.serenity.aura.network"
-        ]
+        "cosmos": {
+            "Chain ID": ["auradev_1236-2"],
+            "Type": ["Testnet"],
+            "Genesis": [""],
+            "Explorer": ["https://serenity.aurascan.io"],
+            "RPC": [
+                "https://rpc.serenity.aura.network"
+            ], 
+            "LCD": [
+                "https://lcd.serenity.aura.network"
+            ], 
+            "gRPC": [
+                "http://grpc.serenity.aura.network:9092"
+            ],
+            "ETH RPC": [
+                "https://jsonrpc.serenity.aura.network"
+            ]
+        },
+        "eth": {
+            "Chain ID": ["1236"],
+            "Type": ["Testnet"],
+            "Explorer": ["https://serenity.aurascan.io"],
+            "ETH RPC": ["https://jsonrpc.serenity.aura.network"]
+        }
     }
 }

@@ -48,13 +48,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           }
         ],
         "responses": {
@@ -418,14 +418,14 @@
             "required": true,
             "schema": {
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ],
               "type": "string"
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           }
         ],
         "responses": {
@@ -623,13 +623,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -813,13 +813,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -1198,13 +1198,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -1366,7 +1366,7 @@
                   },
                   "chainId": {
                     "type": "string",
-                    "example": "euphoria-2",
+                    "example": "aura_6321-3",
                     "description": "Chain Id of network"
                   }
                 }
@@ -1486,7 +1486,7 @@
             "required": false,
             "schema": {
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ],
@@ -2132,13 +2132,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -2464,13 +2464,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -2681,13 +2681,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -3040,7 +3040,7 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
@@ -3161,13 +3161,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -3203,7 +3203,7 @@
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -3331,13 +3331,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           }
         ],
         "responses": {
@@ -3504,13 +3504,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -3684,13 +3684,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -3981,13 +3981,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -4636,13 +4636,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -5190,13 +5190,13 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
             },
             "description": "Chain Id of network need to query",
-            "example": "euphoria-2"
+            "example": "aura_6321-3"
           },
           {
             "in": "query",
@@ -5519,7 +5519,7 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
@@ -5644,7 +5644,7 @@
                                 "properties": {
                                   "chain_id": {
                                     "type": "string",
-                                    "example": "euphoria-2"
+                                    "example": "aura_6321-3"
                                   },
                                   "chain_name": {
                                     "type": "string",
@@ -5740,7 +5740,7 @@
             "schema": {
               "type": "string",
               "enum": [
-                "euphoria-2",
+                "aura_6321-3",
                 "osmosis-1",
                 "cosmoshub-4"
               ]
@@ -5823,7 +5823,7 @@
                                 "properties": {
                                   "chain_id": {
                                     "type": "string",
-                                    "example": "euphoria-2"
+                                    "example": "aura_6321-3"
                                   },
                                   "chain_name": {
                                     "type": "string",

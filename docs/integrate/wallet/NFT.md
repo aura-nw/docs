@@ -31,21 +31,21 @@ $Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
 Input:
 
 - Owner address
-- ChainId: euphoria-2
+- ChainId: aura_6321-3
 - contractType = CW721
 
 It can be retrieved from the Horoscope like shown below:
 
 ```bash
-curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
 
 #### Detail of one CW721 (NFT)
 
 Input:
 
-- Chainid: euphoria-2
+- Chainid: aura_6321-3
 - contractType = CW721
 - contractAddress (return from list all)
 - tokenID (return from list all)
@@ -53,9 +53,9 @@ Input:
 Example:
 
 ```bash
-curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
+curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
 ```
-*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=euphoria-2&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
+*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
 #### Parse output
 
 This is an output from getByOwner api:
@@ -137,7 +137,7 @@ This is an output from getByOwner api:
                   "createdAt":"2022-11-10T07:12:08.631Z",
                   "updatedAt":"2022-11-14T04:36:17.518Z",
                   "custom_info":{
-                     "chain_id":"serenity-testnet-001",
+                     "chain_id":"auradev_1236-2",
                      "chain_name":"Aura Serenity"
                   },
                   "image":{

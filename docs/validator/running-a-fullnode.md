@@ -53,7 +53,7 @@ git clone --branch euphoria https://github.com/aura-nw/aura
 cd aura
 make
 aurad init <moniker> 
-wget https://raw.githubusercontent.com/aura-nw/testnets/main/euphoria-2/genesis.json
+wget https://raw.githubusercontent.com/aura-nw/testnets/main/aura_6321-3/genesis.json
 mv genesis.json ~/.aura/config/genesis.json
 ```
 

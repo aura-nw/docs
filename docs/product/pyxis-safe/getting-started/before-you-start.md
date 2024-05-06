@@ -21,7 +21,7 @@ Pyxis Safe currently has 2 public stable environments with the same functionalit
 |Wallet|C98 Wallet|Keplr Wallet|
 |----------|----------|----------|
 |Aura Mainnet (xstaxy-1)							|✅|✅|
-|Aura Testnet (euphoria-2, serenity-testnet-001)	|✅|✅|
+|Aura Testnet (aura_6321-3, auradev_1236-2)	|✅|✅|
 |Cosmos Hub Testnet (theta-testnet-001)				|✅|✅|
 |Evmos Testnet	(evmos_9000-4)						|❌|✅|
 |Canto Mainnet	(canto_7700-1)						|❌|✅|

@@ -19,7 +19,7 @@ Aurascan is a not only a blockchain explorer, it's also a decentralized smart co
 Similar to Etherscan or Mintscan, you can view in detail all relevant on-chain information such as: accounts, blocks, transactions, validators, proposals, smart contracts, tokens, NFTs, and more.
 
 ## Deployments
-Aurascan exists for all Aura networks: **Serenity Testnet** (`serenity-testnet-001`), **Euphoria Staging Testnet** (`euphoria-2`) and of course **Xstaxy Mainnet** (`xstaxy-1`), ensuring both developers and users have an easy way to review anything.
+Aurascan exists for all Aura networks: **Serenity Testnet** (`auradev_1236-2`), **Euphoria Staging Testnet** (`aura_6321-3`) and of course **Xstaxy Mainnet** (`xstaxy-1`), ensuring both developers and users have an easy way to review anything.
 
 :::info
 You can find the Github repository for Aurascan here: https://github.com/aura-nw/aurascan
@@ -37,7 +37,7 @@ You can find the Github repository for Aurascan here: https://github.com/aura-nw
   <TabItem value="euphoria" label="Euphoria">
 
 * Environment: Staging
-* Network ID: `euphoria-2`
+* Network ID: `aura_6321-3`
 * URL: https://euphoria.aurascan.io
 
 
@@ -45,7 +45,7 @@ You can find the Github repository for Aurascan here: https://github.com/aura-nw
   <TabItem value="serenity" label="Serenity">
 
 * Environment: Testing
-* Network ID: `serenity-testnet-001`
+* Network ID: `auradev_1236-2`
 * URL: https://serenity.aurascan.io
 
 
@@ -53,7 +53,7 @@ You can find the Github repository for Aurascan here: https://github.com/aura-nw
 </Tabs>
 <br/>
 
-Aura Mainnet `xstaxy-1` handles real value and should only be used once proper testing has taken place. For this reason we recommend developers to use both Euphoria `euphoria-2` and Serenity `serenity-testnet-001` for extensive testing of all functionalities and security of your project before deploying onto mainnet. Take full advantage of Aurascan to make sure everything works as expected.
+Aura Mainnet `xstaxy-1` handles real value and should only be used once proper testing has taken place. For this reason we recommend developers to use both Euphoria `aura_6321-3` and Serenity `auradev_1236-2` for extensive testing of all functionalities and security of your project before deploying onto mainnet. Take full advantage of Aurascan to make sure everything works as expected.
 
 If you have any questions or feedback, visit our community channels on Discord and Telegram to ask as many questions as you want. We are eager to help!
 

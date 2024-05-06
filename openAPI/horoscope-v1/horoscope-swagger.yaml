@@ -39,7 +39,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -292,7 +292,7 @@ paths:
           required: true
           schema:
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
             type: string
@@ -432,7 +432,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -563,7 +563,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -827,7 +827,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -1023,7 +1023,7 @@ paths:
           required: false
           schema:
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
             type: string
@@ -1399,7 +1399,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -1584,7 +1584,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -1733,7 +1733,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -1979,7 +1979,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network
@@ -2061,7 +2061,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -2185,7 +2185,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -2302,7 +2302,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -2426,7 +2426,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -2631,7 +2631,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -3081,7 +3081,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -3459,7 +3459,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -3689,7 +3689,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query
@@ -3842,7 +3842,7 @@ paths:
           schema:
             type: string
             enum:
-              - euphoria-2
+              - aura_6321-3
               - osmosis-1
               - cosmoshub-4
           description: Chain Id of network need to query

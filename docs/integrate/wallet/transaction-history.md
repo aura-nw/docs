@@ -25,12 +25,12 @@ $Indexer_URL$/api/v1/transaction
 
 Input:
 
-- chainid: euphoria-2
+- chainid: aura_6321-3
 - address: aura_xxx (address need to query)
 
 Example:
 
-https://indexer.staging.aurascan.io/api/v1/transaction?chainid=euphoria-2&needFullLog=false&address=aura1ja249ang2pm6df08j534w4ezwqnuqh7lj44yf8&pageOffset=0&pageLimit=10&countTotal=false&reverse=false
+https://indexer.staging.aurascan.io/api/v1/transaction?chainid=aura_6321-3&needFullLog=false&address=aura1ja249ang2pm6df08j534w4ezwqnuqh7lj44yf8&pageOffset=0&pageLimit=10&countTotal=false&reverse=false
 
 This is an output from transaction api:
 

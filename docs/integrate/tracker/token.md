@@ -5,7 +5,7 @@ sidebar_label: Tracking
 # Tracking Aura Token
 Prior to 20th Mar 2022, Aura Network launched a BEP-20 tokens on BNB chain at the following address: https://bscscan.com/token/0x23c5d1164662758b3799103effe19cc064d897d6
 
-However, the Aura Network mainnet (codename: xstaxy-1) has been launched and all token trackers must update to track only mainnet tokens rather than the BEP-20 one. All BEP-20 tokens at 0x23c5d1164662758b3799103effe19cc064d897d6 are now considered as IOU tokens that can be converted to mainnet native tokens through [BingX exchange](https://support.bingx.com/hc/en-001/articles/16547008282265).
+However, the Aura Network mainnet (codename: aura_6322-2) has been launched and all token trackers must update to track only mainnet tokens rather than the BEP-20 one. All BEP-20 tokens at 0x23c5d1164662758b3799103effe19cc064d897d6 are now considered as IOU tokens that can be converted to mainnet native tokens through [BingX exchange](https://support.bingx.com/hc/en-001/articles/16547008282265).
 
 This section shows how a token tracker like CoinGecko or CoinMarketCap can effectively provide transparent information on the Aura Network native currency. 
 

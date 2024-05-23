@@ -33,7 +33,7 @@ This part describes how to generate an (unsigned) transaction, signing it (with 
 For example, running the following command to send 1 eAura from `A` to `B`:
 
 ```bash
-aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000uaura --chain-id xstaxy-1 --keyring-backend os --node https://rpc.aura.network:443
+aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000uaura --chain-id auradev_1236-2 --keyring-backend os --node https://rpc.aura.network:443
 ```
 
 It will run the following steps:
@@ -48,14 +48,14 @@ It's possible to run the steps individually
 ### 1.1. Generating a transaction
 
 ```
-aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000uaura --chain-id xstaxy-1 --keyring-backend os --generate-only > unsigned_tx.json  
+aurad tx bank send $A_ADDRESS $B_ADDRESS 1000000uaura --chain-id auradev_1236-2 --keyring-backend os --generate-only > unsigned_tx.json  
 ```
 
 
 ### 1.2. Signing a transaction
 
 ```
-aurad tx sign unsigned_tx.json --chain-id xstaxy-1 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
+aurad tx sign unsigned_tx.json --chain-id auradev_1236-2 --keyring-backend os --from $A_ADDRESS --output-document signed_tx.json
 ```
 
 ### 1.3. Broadcasting a transaction

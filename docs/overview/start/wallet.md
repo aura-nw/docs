@@ -43,7 +43,7 @@ On March 2023, Aura Network has already launched the **_Xstaxy mainnet_**. Here 
 
 If you are creating a brand new Coin98 wallet, you can easily find Aura Network when creating a new account.
 
-However, if you already have Coin98 wallet before, please make sure you have Aura Xstaxy-1 mainnet on the Active blockchain list.
+However, if you already have Coin98 wallet before, please make sure you have Aura aura_6322-2 mainnet on the Active blockchain list.
 
 ![Add mainnet C98](/img/aurascan/c98_active_chain.png)
 

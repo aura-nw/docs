@@ -16,7 +16,9 @@ An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivK
 - The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
 
 ### Account validation
-Aura accounts have the following format: `aura<bech32encoding>`. So an address should look like this: `aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj`.
+Aura native accounts have the following formats: 
+- Cosmos address: `aura<bech32encoding>`. So an address should look like this: `aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj`.
+- EVM address: `0x address`. Example: `0xc1bb1e987b2804a5617679021e5caf344fd4831e`
 
 Validation can be performed locally with CosmJS like shown below:
 ```js

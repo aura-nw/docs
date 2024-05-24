@@ -105,7 +105,7 @@ This is an example script using [ethers.js@v5](https://docs.ethers.org/v5/) to s
 1. Initialize the Ethers.js provider with the Aura EVM RPC endpoint
 ```javascript
 const { ethers } = require('ethers');
-const provider = new ethers.providers.JsonRpcProvider('https://jsonrpc.dev.aura.network');
+const provider = new ethers.providers.JsonRpcProvider('https://jsonrpc.aura.network');
 ```
 
 2. Set up a wallet
@@ -119,7 +119,7 @@ const wallet = new ethers.Wallet(privateKey, provider);
 const generateSendTx = async (wallet, recipient, amountInAura) => {
   const nonce = await wallet.getTransactionCount();
   const tx = {
-    chainId: 1235, // Aura EVM dev chain id
+    chainId: 6322, // Aura EVM chain-id
     nonce,
     to: recipient,
     value: ethers.utils.parseEther(amountInAura), // Aura EVM uses 18 decimals
@@ -136,7 +136,7 @@ const generateSendTx = async (wallet, recipient, amountInAura) => {
 const signTransaction = async () => {
   try {
     const recipient = '0xRecipientAddress'; // The recipient's address
-    const amountInAura = '0.01'; // Amount to send in Aura
+    const amountInAura = '1'; // Send 1 Aura
     const tx = await generateSendTx(wallet, recipient, amountInAura);
 
     // Sign the transaction

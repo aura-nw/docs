@@ -97,3 +97,64 @@ const runAll = async(): Promise<void> => {
 
 runAll()
 ```
+
+## 3. Using Aura EVM with ethers.js
+
+This is an example script using [ethers.js@v5](https://docs.ethers.org/v5/) to send a transaction on the Aura network using EVM.
+
+1. Initialize the Ethers.js provider with the Aura EVM RPC endpoint
+```javascript
+const { ethers } = require('ethers');
+const provider = new ethers.providers.JsonRpcProvider('https://jsonrpc.dev.aura.network');
+```
+
+2. Set up a wallet
+```javascript
+const privateKey = 'YOUR_PRIVATE_KEY';
+const wallet = new ethers.Wallet(privateKey, provider);
+```
+
+3. Construct a transaction
+```javascript
+const generateSendTx = async (wallet, recipient, amountInAura) => {
+  const nonce = await wallet.getTransactionCount();
+  const tx = {
+    chainId: 1235, // Aura EVM dev chain id
+    nonce,
+    to: recipient,
+    value: ethers.utils.parseEther(amountInAura), // Aura EVM uses 18 decimals
+    gasLimit: 21000n,
+    gasPrice: ethers.utils.parseUnits('1', 'gwei'), // Gas price in gwei
+  };
+
+  return tx;
+}
+```
+
+4. Sign and send the transaction
+```javascript
+const signTransaction = async () => {
+  try {
+    const recipient = '0xRecipientAddress'; // The recipient's address
+    const amountInAura = '0.01'; // Amount to send in Aura
+    const tx = await generateSendTx(wallet, recipient, amountInAura);
+
+    // Sign the transaction
+    const signedTransaction = await wallet.signTransaction(tx);
+    console.log('Signed Transaction:', signedTransaction);
+
+    // Broadcast the transaction
+    const txResponse = await provider.sendTransaction(signedTransaction);
+    console.log('Transaction Response:', txResponse);
+
+    // Wait for the transaction to be mined
+    const receipt = await txResponse.wait();
+    console.log('Transaction Receipt:', receipt);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+};
+
+signTransaction();
+```
+

@@ -16,7 +16,7 @@ paths:
     post:
       tags:
         - account
-      summary: Query accountt
+      summary: Query account
       requestBody:
         content:
           application/json:
@@ -86,7 +86,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query account($limit: Int = 10, $address: String = null) { euphoria { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }"
+          example: 'query account($limit: Int = 10, $address: String = null) { euphoria { account(limit: $limit, where: {address: {_eq: $address}}) { account_number address balances pubkey sequence spendable_balances type updated_at created_at } } }'
           description: Graphql query
         variables:
           type: object
@@ -94,9 +94,3 @@ components:
           example:
             limit: 10
             address: null
-            
-            
-                  
-            
-          
-            

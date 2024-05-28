@@ -16,7 +16,7 @@ paths:
     post:
       tags:
         - block
-      summary: Query blockk
+      summary: Query block
       requestBody:
         content:
           application/json:

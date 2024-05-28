@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { xstaxy { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { xstaxy { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -35,7 +35,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { auratestnet { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { auratestnet { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -43,7 +43,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { serenity { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { serenity { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -51,7 +51,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { euphoria { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { euphoria { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -59,7 +59,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { nois { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { nois { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -67,7 +67,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: queryProposal
-                  query: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { sei { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+                  query: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { sei { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
                   variables:
                     order: desc
                     limit: 4
@@ -85,7 +85,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { serenity { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }"
+          example: 'query queryProposal($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $type: String = null) { serenity { proposal(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}, order_by: {proposal_id: $order}) { content deposit_end_time description initial_deposit proposal_id proposer_address count_vote proposer { description operator_address account_address } status submit_time tally title total_deposit turnout type updated_at voting_end_time voting_start_time } proposal_aggregate(where: {proposal_id: {_eq: $proposalId}, type: {_eq: $type}}) { aggregate { count } } } }'
           description: Graphql query
         variables:
           type: object
@@ -93,6 +93,3 @@ components:
           example:
             order: desc
             limit: 4
-            
-          
-            

@@ -16,7 +16,7 @@ paths:
     post:
       tags:
         - contract
-      summary: Query contractt
+      summary: Query contract
       requestBody:
         content:
           application/json:
@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { xstaxy { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { xstaxy { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -35,7 +35,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { auratestnet { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { auratestnet { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -43,7 +43,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { serenity { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { serenity { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -51,7 +51,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { euphoria { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { euphoria { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -59,7 +59,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { nois { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { nois { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -67,7 +67,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: contract
-                  query: "query contract($limit: Int = 10, $contractAddress: String = null) { sei { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+                  query: 'query contract($limit: Int = 10, $contractAddress: String = null) { sei { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
                   variables:
                     limit: 10
                     contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
@@ -85,7 +85,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query contract($limit: Int = 10, $contractAddress: String = null) { euphoria { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }"
+          example: 'query contract($limit: Int = 10, $contractAddress: String = null) { euphoria { smart_contract(limit: $limit, where: {address: {_eq: $contractAddress}}) { address code_id created_at creator id instantiate_hash instantiate_height name updated_at version smart_contract_events { action smart_contract_event_attributes { key value } } } } }'
           description: Graphql query
         variables:
           type: object
@@ -93,10 +93,3 @@ components:
           example:
             limit: 10
             contractAddress: aura1sgzrkpsx9sz455r4desl4ul4q56a6muwgan3ag4xrc3pyw22c5gqa3pl0z
-            
-            
-            
-                  
-            
-          
-            

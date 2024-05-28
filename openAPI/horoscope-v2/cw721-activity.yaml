@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { xstaxy { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { xstaxy { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -35,7 +35,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { auratestnet { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { auratestnet { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -43,7 +43,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { serenity { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { serenity { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -51,7 +51,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -59,7 +59,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { nois { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { nois { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -67,7 +67,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: cw721activity
-                  query: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { sei { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+                  query: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { sei { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
                   variables:
                     limit: 10
                     contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
@@ -85,7 +85,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }"
+          example: 'query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }'
           description: Graphql query
         variables:
           type: object
@@ -93,9 +93,3 @@ components:
           example:
             limit: 10
             contractAddress: aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8
-            
-            
-                  
-            
-          
-            

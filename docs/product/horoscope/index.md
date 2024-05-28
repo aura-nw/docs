@@ -6,7 +6,7 @@ title: Horoscope - indexers of the interchain
 
 import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
-Horoscope is an indexing service for Cosmos-based blockchain. It crawl data from the blockchain and index it into PostgreSQl. Based on the data, it can provide search functionality instead of querying data from LCD or RPC directly.
+Horoscope is an indexing service for Cosmos-based blockchain and EVM blockchain. It crawl data from the blockchain and index it into PostgreSQl. Based on the data, it can provide search functionality instead of querying data from LCD or RPC directly.
 
 Currently, it supports network builded by Cosmos SDK v0.45.1 or later. Supporting network:
 

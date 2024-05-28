@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
+tags:
+  - name: evm-contract
+paths:
+  /api/v2/graphql:
+    post:
+      tags:
+        - evm-contract
+      summary: Query evm smart contract
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/evmSmartContract'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract { xstaxy { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract { auratestnet { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract { serenity { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract { euphoria { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    evmSmartContract:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: evmSmartContract
+          description: query name
+        query:
+          type: string
+          example: 'query evmSmartContract { auratestnet { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query

@@ -1,0 +1,42 @@
+---
+id: query-evm-transaction
+title: "Query evm transaction"
+description: "Query evm transaction"
+sidebar_label: "Query evm transaction"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v4zYM/lc04x46IE2c32mAPdwOxXYvu93SDQO6Q0DLSqw7W3IlOU0X5H8fKSuu06R9GAYMKJogjiVR1EfyoyTuIgdrG81vI7EpLp0BZYE7qVX0pRMZcVcJ637U6UM030VcKyeUo1coy1xyIMHeV4vS2Gd5JgqgN/dQimge6eSr4C7qRKXRpTBOCkuj9O5n/gKFaIlbZ6Rao7jYQlHm1IWYFgUY9wFXNuB1pcJyI0sPcR4hPvPAFCnad+rWyxrrCU/1sh2DCkGhsUpQCwWWliSWPIhc5LKQbs768fc4LlMGaWqEtYzrVCwzsBnjRqCK9ElDyHXmGCFie/qe2PCTgTK7y1mNHs3YgJGQ5LW3nvryeO4fQZRJdZiPCpx05923b1zhdW+tg613mK0KFMTX6LN3kFbsTz/IeAZSRQQqr8SZ8NUTrjfFzfbT6j3nulIEM4Qi+PuMzMU71G/cjSzEnDl8YrMo3d/sB6aqPO+wd0KlL4yGcHxUDvv6MfZokwrzMZ0z/7JMHnCAvIVDIVZztvCM+C6ooUjWPgghb/H/4j4TBhffrYwu8G8p7uaNon2HtURxtIFIkmvE9Whdhy1z6gjm7DFALICvjeg0gHGyRPwHS/aELwUHjDAwp5lnVmCUDwgThg/iJeHYSEowYnJB/kWqtSBidwOx1rJv2HhEt2AgRi7ezkbJNIFBf9ofQj9NYComYjaYzJLJjI/gagQJ8BnEVxHZFLUS6BlGvUcJdhNy7LXz6nQ/eSPXvyeXRXcp6Z7bqxZh+NWz6uCHN0qdoVQcp5MBjMZTPluJ8XDWTydDHg8Bkn48EpNkOp6NRuNVUlNKVGWmUdMzlLoOw6+eUgc/vFHqDKVWfZhMhBilyTBZCT6B0WA4TNJ+LMazaQo8BXE1G8OEKLX3tMKppVa2VjWIY/o7vrMtKs5R/6rKWUMlf207Fvt8uKm2jUCshXCZTlGg1NZfrsFl2OpBKXubQW9d3yYjv2duhKG7/S6qTI4ymXOlnfd6UqViK8zlZtBNxaZLR5XloLpSn1wwF14JW2nDDqcZ/u61+dZli6ostQlHuWV61T70Os1e1Wko1gm3rQ5TWloGKkUhibfSpwBRWluO3vHYumHFl8AVCOER2SeVPzDbhkfownX3dLmWP1BkjQnyH/qkyS8y9wABiysqm357LLCuDyXK6QZzpgo63l3+53KmnT3EY6lW2pcuoQz5+RBNthmwR34SOWuH9rtxN6bihChdgK8mVWtzPZMFRxFpqiQntq5X5rRhozYf5F1IkFusWSWtOsDHAQSGIaMswtHdLgErfjf5fk/dwcG3Xx7NoxZqzQTg1uSz6pugGHyoy+LLG8LQnBOnJTIFvUneXz8tblA4CaV1gV7HXgP32EnPefQXfrGhvY1+N/H9uygHta5gTfK1Xvr8A3wlig8=
+sidebar_class_name: "post api-method"
+info_path: horoscope-v2/horoscope-v-2-graphql
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Query evm transaction</h1>
+
+<MethodEndpoint method={"post"} path={"/api/v2/graphql"}></MethodEndpoint>
+
+
+
+Query evm transaction
+
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"evmSmartContract","description":"query name"}}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"query evmSmartContract { auratestnet { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }","description":"Graphql query"}}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Variable in query"}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+Successful operation
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      

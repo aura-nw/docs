@@ -100,5 +100,51 @@ module.exports = [
             {"type":"doc","id":"horoscope-v2/query-cw-721-token","className":"api-method post"},
             {"type":"doc","id":"horoscope-v2/query-cw-721-activity","className":"api-method post"}
         ]
+    },
+    {
+        "type":"category",
+        "label":"EVM Transaction",
+        "link": {
+            "type":"generated-index",
+            "title":"EVM Transaction",
+        },
+        "items": [
+            {"type":"doc","id":"horoscope-v2/query-evm-transaction","className":"api-method post"}
+        ]
+    },
+    {
+        "type":"category",
+        "label":"EVM Contract",
+        "link": {
+            "type":"generated-index",
+            "title":"EVM Contract",
+        },
+        "items": [
+            {"type":"doc","id":"horoscope-v2/query-evm-smart-contract","className":"api-method post"}
+        ]
+    },
+    {
+        "type":"category",
+        "label":"EVM ERC20",
+        "link": {
+            "type":"generated-index",
+            "title":"EVM ERC20",
+        },
+        "items": [
+            {"type":"doc","id":"horoscope-v2/query-evm-erc-20-activity","className":"api-method post"},
+            {"type":"doc","id":"horoscope-v2/query-evm-erc-20-holder","className":"api-method post"}
+        ]
+    },
+    {
+        "type":"category",
+        "label":"EVM ERC721",
+        "link": {
+            "type":"generated-index",
+            "title":"EVM ERC721",
+        },
+        "items": [
+            {"type":"doc","id":"horoscope-v2/query-evm-erc-721-activity","className":"api-method post"},
+            {"type":"doc","id":"horoscope-v2/query-evm-erc-721-token","className":"api-method post"}
+        ]
     }
 ];

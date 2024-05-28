@@ -1,0 +1,72 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
+tags:
+  - name: evm-transaction
+paths:
+  /api/v2/graphql:
+    post:
+      tags:
+        - evm-transaction
+      summary: Query evm transaction
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/evmSmartContract'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: QueryEvmTxOfAccount
+                  query: 'query QueryEvmTxOfAccount($startTime: timestamptz = null, $endTime: timestamptz = null, $limit: Int = 10, $orderId: order_by = desc, $address: String! = null) { xstaxy { evm_transaction(where: {from: {_eq: $address}, transaction: {timestamp: {_gt: $startTime, _lt: $endTime}}}, limit: $limit, order_by: {id: $orderId}) { data from to hash height value erc20_activities { amount } transaction { timestamp hash } } } }'
+                  variables:
+                    address: '0x84b7ba21713a1dba7e6e8268b68c4a94abac8a09'
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: QueryEvmTxOfAccount
+                  query: 'query QueryEvmTxOfAccount($startTime: timestamptz = null, $endTime: timestamptz = null, $limit: Int = 10, $orderId: order_by = desc, $address: String! = null) { auratestnet { evm_transaction(where: {from: {_eq: $address}, transaction: {timestamp: {_gt: $startTime, _lt: $endTime}}}, limit: $limit, order_by: {id: $orderId}) { data from to hash height value erc20_activities { amount } transaction { timestamp hash } } } }'
+                  variables:
+                    address: '0x84b7ba21713a1dba7e6e8268b68c4a94abac8a09'
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: QueryEvmTxOfAccount
+                  query: 'query QueryEvmTxOfAccount($startTime: timestamptz = null, $endTime: timestamptz = null, $limit: Int = 10, $orderId: order_by = desc, $address: String! = null) { serenity { evm_transaction(where: {from: {_eq: $address}, transaction: {timestamp: {_gt: $startTime, _lt: $endTime}}}, limit: $limit, order_by: {id: $orderId}) { data from to hash height value erc20_activities { amount } transaction { timestamp hash } } } }'
+                  variables:
+                    address: '0x00d62a457c8fe5381d63c03aab104e6b758445fb'
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: QueryEvmTxOfAccount
+                  query: 'query QueryEvmTxOfAccount($startTime: timestamptz = null, $endTime: timestamptz = null, $limit: Int = 10, $orderId: order_by = desc, $address: String! = null) { euphoria { evm_transaction(where: {from: {_eq: $address}, transaction: {timestamp: {_gt: $startTime, _lt: $endTime}}}, limit: $limit, order_by: {id: $orderId}) { data from to hash height value erc20_activities { amount } transaction { timestamp hash } } } }'
+                  variables:
+                    address: '0xf1a66ee4db3bfec6a4233bd10e587dacdae985a6'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    evmSmartContract:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: evmSmartContract
+          description: query name
+        query:
+          type: string
+          example: 'query evmSmartContract { auratestnet { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Staking and Voting from the Safe
 ---
 
-Since a safe could act like any other personal wallet, Safe owners could create multi-sig transactions to do staking and voting. The staking and voting function on Pyxis follow the same flows as on our Aurascan, as well as many other commonly used explorers and wallet apps. Please refer to [this guide](../product/aurascan/) of AuraScan if you still need to become familiar with staking and voting using a personal wallet.
+Since a safe could act like any other personal wallet, Safe owners could create multi-sig transactions to do staking and voting. The staking and voting function on Pyxis follow the same flows as on our Aurascan, as well as many other commonly used explorers and wallet apps. Please refer to [this guide](/product/aurascan/) of AuraScan if you still need to become familiar with staking and voting using a personal wallet.
 
 ## Staking from the Safe
 On the left menu bar, click on the "Staking" function. The Staking interface will allow you to:

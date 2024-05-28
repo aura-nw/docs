@@ -57,7 +57,7 @@ We have a full guide to run your own node here: [Running a full node](../../vali
 wish to run your own node (recommended), but if your integration does not require much, you could use any of the publicly 
 available APIs for your queries.
 
-All the publicly available nodes are listed [here](../../developer/getting-started/networks-information). Please note that
+All the publicly available nodes are listed [here](../../developer/getting-started/networks-info/cosmos-info). Please note that
 these include nodes maintained directly by Aura Network as well as third parties.
 
 If you only need to interact with the `aurad` CLI, just compiling it from the source is enough. We have a guide for setting up 

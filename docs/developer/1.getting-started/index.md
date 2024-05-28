@@ -23,7 +23,7 @@ Begin setting up everything you need before you can start building on Aura netwo
     {
       title: "Networks Information", 
       description: "Find the details for all available networks, including public endpoints and configurations.", 
-      link:"networks-info", 
+      link:"networks-info/cosmos-info", 
     },
   ]]
 } />

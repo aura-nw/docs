@@ -14,159 +14,9 @@ It is recommend to use Horoscope, the interchain indexer for querying NFT data o
 
 ### Chose your API
 
-You can choose indexer server to integrate with the wallet [here](../../product/horoscope/index.md#environment)
-
-> **Horoscope V1 API will be deprecated on 2023-08-01. Please use [Horoscope V2](#horoscope-v2) With GraphQL instead.**
-
-### Horoscope v1 (deprecated)
-NFT can be retrieved over the following API:
-
-```
-$Indexer_URL$/api/v1/asset/get_v1_asset_getByOwner
-```
-
-
-#### List all CW721 (NFT) asset of one address
-
-Input:
-
-- Owner address
-- ChainId: aura_6321-3
-- contractType = CW721
-
-It can be retrieved from the Horoscope like shown below:
-
-```bash
-curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
-```
-*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&countTotal=false&pageLimit=10&pageOffset=0)*
-
-#### Detail of one CW721 (NFT)
-
-Input:
-
-- Chainid: aura_6321-3
-- contractType = CW721
-- contractAddress (return from list all)
-- tokenID (return from list all)
-
-Example:
-
-```bash
-curl -X GET "https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0" -H "accept: application/json"
-```
-*[View in browser](https://indexer.staging.aurascan.io/api/v1/asset/getByOwner?owner=aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e&chainid=aura_6321-3&contractType=CW721&tokenId=10-ANI-MP4&contractAddress=aura1x6q9jc0d92wmtsukfyph3j0m8g8nvhg4t4uc7wh0kswm05kyu5cq3hffy0&countTotal=false&pageLimit=10&pageOffset=0)*
-#### Parse output
-
-This is an output from getByOwner api:
-
-```js
-{
-   "code":200,
-   "message":"Successful",
-   "data":{
-      "assets":{
-         "CW721":{
-            "asset":[
-               {
-                  "asset_info":{
-                     "data":{
-                        "access":{
-                           "approvals":[
-
-                           ],
-                           "owner":"aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e"
-                        },
-                        "info":{
-                           "token_uri":null,
-                           "extension":{
-                              "image":"ipfs://cid-image",
-                              "image_data":"",
-                              "external_url":"",
-                              "description":"❤",
-                              "attributes":[
-                                 {
-                                    "display_type":null,
-                                    "trait_type":"createdate",
-                                    "value":"09/11/2022"
-                                 },
-                                 {
-                                    "display_type":null,
-                                    "trait_type":"type",
-                                    "value":"gif"
-                                 }
-                              ],
-                              "background_color":"",
-                              "animation_url":"",
-                              "youtube_url":"",
-                              "royalty_percentage":0,
-                              "royalty_payment_address":"aura1ja249ang2pm6df08j534w4ezwqnuqh7lj44yf8"
-                           }
-                        }
-                     }
-                  },
-                  "history":[],
-                  "code_id":"621",
-                  "contract_address":"aura1rxqvh92fuyap0ahkr0jnupyt8q5pp58vjghr6zuxcsqww34jwdds49r54l",
-                  "token_id":"1667960067515",
-                  "owner":"aura1trqfuz89vxe745lmn2yfedt7d4xnpcpvltc86e",
-                  "is_burned":false,
-                  "metadata":{
-                     "image":"ipfs://cid-image",
-                     "image_data":"",
-                     "external_url":"",
-                     "description":"❤️️",
-                     "attributes":[
-                        {
-                           "display_type":null,
-                           "trait_type":"createdate",
-                           "value":"09/11/2022"
-                        },
-                        {
-                           "display_type":null,
-                           "trait_type":"type",
-                           "value":"gif"
-                        }
-                     ],
-                     "background_color":"",
-                     "animation_url":"",
-                     "youtube_url":"",
-                     "royalty_percentage":0,
-                     "royalty_payment_address":"aura1ja249ang2pm6df08j534w4ezwqnuqh7lj44yf8"
-                  },
-                  "createdAt":"2022-11-10T07:12:08.631Z",
-                  "updatedAt":"2022-11-14T04:36:17.518Z",
-                  "custom_info":{
-                     "chain_id":"auradev_1236-2",
-                     "chain_name":"Aura Serenity"
-                  },
-                  "image":{
-                     "link_s3":"https://nft-ipfs-indexer.s3.ap-southeast-1.amazonaws.com/5NIE6iitLuUfEWMKnDPDOJtE4qjNbJWI.gif",
-                     "content_type":"image/gif"
-                  },
-                  "animation":{
-                     "link_s3":"https://nft-ipfs-indexer.s3.ap-southeast-1.amazonaws.com/bafybeicjilgl52q3iwo4b6r5sgsr4sjudb3zf5vxygcitvwf7ncfewyiei",
-                     "content_type":"video/webm"
-                  }
-               },
-```
-
-NFT onchain information is nested in asset_info field. With each NFT, Horoscope handle to have more information offchain:
-
-- code_id, contract_address, token_id: crawl from LCD
-- is_burned: is true if token was burned
-- metadata: NFT metadata (crawl from token uri or onchain)
-- image, animation: with AWS S3 link and content_type to display on frontend
-
-### Horoscope v2
+You can choose indexer server to integrate with the wallet [here](../../../product/horoscope/index.md#environment)
 
 #### List all CW721 asset of one address
-Input:
-
-- Selected chain: xstaxy/euphoria/serenity
-- Owner address
-- Limit, offset
-
 It can be retrieved from the Horoscope like shown below:
 
 <Tabs groupId="list-cw721">
@@ -398,13 +248,13 @@ These following media types should be supported for displaying in the wallet:
 
 | Type  | File Extension | Example                                                                                                                         |
 | ----- | -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Image | JPG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717723533) |
-| Image | PNG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717871604) |
-| Image | GIF  | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717466231) |
-| Vector | SVG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718039726) |
-| Video | MP4 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717970078) |
-| Video | WEBM | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718267079) |
-| Audio | MP3 | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717821986) |
-| Audio | WAV | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718131735) |
-| Audio | OGG | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718217586) |
-| 3D | GLB | [link](https://euphoria.aurascan.io/tokens/token-nft/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717643214) |
+| Image | JPG | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717723533) |
+| Image | PNG | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717871604) |
+| Image | GIF  | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717466231) |
+| Vector | SVG | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718039726) |
+| Video | MP4 | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717970078) |
+| Video | WEBM | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718267079) |
+| Audio | MP3 | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717821986) |
+| Audio | WAV | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718131735) |
+| Audio | OGG | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688718217586) |
+| 3D | GLB | [link](https://euphoria.aurascan.io/token/cw721/aura15xv73kvnpm6pw3rcmg4ja7t63tr8stf3279xs5taru70fjq80xsqyd5n78/1688717643214) |

@@ -47,14 +47,6 @@ const config = {
         id: 'apiDocs',
         docsPluginId: 'classic',
         config: {
-          horoscope: {
-            // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-            specPath: 'openAPI/horoscope-swagger-trimed.json', // Path to designated spec file
-            outputDir: 'docs/horoscope', // Output directory for generated .mdx docs
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
-          },
           horoscopeV2_block: {
             specPath: 'openAPI/horoscope-v2/block.yaml', // Path to designated spec file
             outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
@@ -101,6 +93,30 @@ const config = {
           },
           horoscopeV2_codeid: {
             specPath: 'openAPI/horoscope-v2/codeid.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_evm_transaction: {
+            specPath: 'openAPI/horoscope-v2/evm-transaction.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_evm_contract: {
+            specPath: 'openAPI/horoscope-v2/evm-contract.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_erc20_activity: {
+            specPath: 'openAPI/horoscope-v2/erc20-activity.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_erc20_holder: {
+            specPath: 'openAPI/horoscope-v2/erc20-holder.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_erc721_activity: {
+            specPath: 'openAPI/horoscope-v2/erc721-activity.yaml', // Path to designated spec file
+            outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
+          },
+          horoscopeV2_erc721_token: {
+            specPath: 'openAPI/horoscope-v2/erc721-token.yaml', // Path to designated spec file
             outputDir: 'docs/horoscope-v2', // Output directory for generated .mdx docs
           },
         },

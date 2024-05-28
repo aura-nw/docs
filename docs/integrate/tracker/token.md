@@ -16,7 +16,7 @@ This section shows how a token tracker like CoinGecko or CoinMarketCap can effec
 ## 2. Endpoints
 Direct on-chain query can be performed through LCD (light client daemon) API of Aura Nodes. The LCD API is more comprehensive and provides application level APIs for data query in comparison to the low level RPC API that only has basic block data.
 
-A list of public LCD API are hosted [here](../../developer/getting-started/networks-info).
+A list of public LCD API are hosted [here](../../developer/1.getting-started/3.networks-info/1.cosmos-info.md).
 
 Or you can always go to the official LCD API launched by the Aura Network foundation:
 

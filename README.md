@@ -10,7 +10,7 @@ To run the project locallt, please follow installation guide from [here](https:/
 If you already setup things correctly, then just simply:
 
 ```bash
-npm run start
+yarn start
 ```
 ## Requirement
 

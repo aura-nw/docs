@@ -2,62 +2,41 @@
 id: query-cw-721-activity
 title: "Query cw721 activity"
 description: "Query cw721 activity"
-sidebar_label: Query cw721 activity
+sidebar_label: "Query cw721 activity"
 hide_title: true
 hide_table_of_contents: true
-api: {"tags":["cw721"],"requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"operationName":{"type":"string","example":"cw721activity","description":"query name"},"query":{"type":"string","example":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","description":"Graphql query"},"variables":{"type":"object","description":"Variable in query","example":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}}},"examples":{"xstaxy":{"summary":"Query on Xstaxy chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { xstaxy { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}},"auratestnet":{"summary":"Query on Aura Testnet chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { auratestnet { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}},"serenity":{"summary":"Query on Serenity chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { serenity { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}},"euphoria":{"summary":"Query on Euphoria chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}},"nois":{"summary":"Query on Nois chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { nois { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}},"sei":{"summary":"Query on Sei chain","value":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { sei { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}}}}}},"responses":{"200":{"description":"Successful operation"}},"description":"Query cw721 activityy","method":"post","path":"/api/v2/graphql","servers":[{"url":"https://indexer-v2.dev.aurascan.io","description":"Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei"},{"url":"https://horoscope.aura.network","description":"Server for main network. Only support chain of xstaxy"},{"url":"https://indexer-v2.staging.aurascan.io","description":"Server for testnet network. Support chains of euphoria and xstaxy"}],"jsonRequestBodyExample":{"operationName":"cw721activity","query":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","variables":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}},"info":{"title":"Horoscope v2 graphql","version":"1.0.0"},"postman":{"name":"Query cw721 activityy","description":{"type":"text/plain"},"url":{"path":["api","v2","graphql"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+api: eJztWG1v2zYQ/isE0Q8boNqOlyKbgH3ohmLbl3ats2FAFhiMREuMJZImT36p4P++O+rFdhwXWNBtWWEbcSTyeHx4z8OXY81BZJ7HNzxZXY0v+G3EnVxU0sMPJt3wuOaJ0SA10KOwtlCJAGX08N4bTWU+yWUp6Ak2VvKYm7t7mQCPuHXGSgdKeqql59DyrSjlnrkHp3SG5nItSltQUUAiElBLBRusSaVPnLLUGGsRnNswTV62UfP2aXdNgwOnX70oVKkgZr9oYN+zi1HEXtA4HRq8TlMnvY/ZJLjCal0VxdesZrKyuXFK4GPwNu3dtd4arxFb5dLJmNWNVecYC3wpHOwXiK6zeioX8RGILX6oZ5Uy6stoljgpQKZTAS0GMHOpp2gwc6ZkuVRZDsxLnUrHwDBYT3Phc1bZtGu3pe9RWH9ywuaLgjUBxcguBQ71rmjYe8jtYdvfW1OmdNt+L/41D1HhMUaZPxgfthWVExdX8/H94rs0X1zOF5mD1H2E8cKPPm4uXyWrUVHab2C23nh7lazyV3o9y8aXHq50mnzLMUIRBwWPKGfbowhjWHsQ66AVX5VIBD7y90EbGNc/QiVLcqE0p8EXlXxEtkfabPX3+UTWoPxCJHagoX9eBuQEcOnSEk7Q/Bot2HVj8gzI3gN8ZvwpjHuMiSZyHqd70lY/A6o7pGeen8Jzt/We4PlNtzP/9zx/YYeEf5lnbZQ/wfFbrHoG/BLCM7dPW6vVyWVaPQNmEd+Z2L9P7DaQi/6s0b7pcjwa0b/DJGFSJQl2OqsK1lPLqemh2fsdnWyP7VJCblKst8aH5FJAjm9DYdVwOR5mTfbCw4lgKR1ltDWvXIE2OYD18XCoMHJr6V4ux4NULgc0dJ8IPVDmKKGZBCdsZjDS7fEM/1bGzQdsUllrXHt69MzM9k9xUb/PR/1OELVn+qhZO4ROSWqYnTwEiNbGJxicgG3Q9vgpcCVC2CF7p4sN8/vwCF2b9hx3txcPNMlwMnzGmPTbIA23g3Abcbo2+LC7YHizyxLPO/X/Z9JHXOmZCRcDbeb9c6ddthyz3WykqdjI52IwGowoJacJXIpwd6Qbpk9M+QP59VcQINcwtAVtFugsKLpuV4MbjqsBdTrGnw4Dai6nJQNr6/pOePmbK7ZbKm4FdXO7ix29oddcCox3WELmkjT3Y3MH9vKaMPR71PF9GCm8X6l+fTe5RuO79h6tNCm1cWKFhfQb8z/xiy8mjDHwFsqRPqGzSmRk3/ilz18CZPHg
 sidebar_class_name: "post api-method"
 info_path: horoscope-v2/horoscope-v-2-graphql
+custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
-import SchemaItem from "@theme/SchemaItem"
+import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 
-## Query cw721 activity
+<h1 className={"openapi__heading"}>Query cw721 activity</h1>
 
-Query:
-```graphql
-query cw721activity($limit: Int = 10, $contractAddress: String = null) {
-  xstaxy { #This point to target chain to query
-    cw721_activity(
-      limit: $limit
-      where: {
-        cw721_contract: {
-          smart_contract: { address: { _eq: $contractAddress } }
-        }
-      }
-    ) {
-      id
-      action
-      created_at
-      cw721_token_id
-      from
-      height
-      sender
-      to
-      tx_hash
-      updated_at
-    }
-  }
-}
+<MethodEndpoint method={"post"} path={"/api/v2/graphql"}></MethodEndpoint>
 
-```
-Variable:
-```json
-{
-    "limit": 10,
-    "contractAddress": "aura1v0cx6z3yhk4gef3mtzx6yjzd7zgy3jl93wl238ues48wvznwezkqrkccln"
-}
-```
-<MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaDescription={"query name"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaDescription={"Graphql query"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaDescription={"Variable in query"} schemaName={"object"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+
+Query cw721 activity
+
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"cw721activity","description":"query name"}}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"query cw721activity($limit: Int = 10, $contractAddress: String = null) { euphoria { cw721_activity(limit: $limit, where: {cw721_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { id action created_at cw721_token_id from height sender to tx_hash updated_at } } }","description":"Graphql query"}}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Variable in query","example":{"limit":10,"contractAddress":"aura17k2jq9dhq4kqgrtdrzt2qs0zy45cw0lmp3tfxysp7cwh5nxfg24st7ndc8"}}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
 
 Successful operation
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

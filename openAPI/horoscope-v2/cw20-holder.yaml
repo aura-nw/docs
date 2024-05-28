@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { xstaxy { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { xstaxy { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -35,7 +35,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { auratestnet { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { auratestnet { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -43,7 +43,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { serenity { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { serenity { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -51,7 +51,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -59,7 +59,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { nois { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { nois { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -67,7 +67,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: cw20holder
-                  query: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { sei { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+                  query: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { sei { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
                   variables:
                     limit: 10
                     contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
@@ -85,7 +85,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }"
+          example: 'query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }'
           description: Graphql query
         variables:
           type: object
@@ -93,9 +93,3 @@ components:
           example:
             limit: 10
             contractAddress: aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23
-            
-            
-                  
-            
-          
-            

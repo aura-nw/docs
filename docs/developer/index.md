@@ -75,25 +75,25 @@ Otherwise, check out these topics and happy hacking!
 1. [Getting Started](getting-started)
     - [Preparing Development Wallet](getting-started/wallet-creation)
     - [Environment Setup](getting-started/env-setup)
-    - [Networks Info](getting-started/networks-info)
+    - [Networks Info](getting-started/networks-info/cosmos-info)
 
-3. [Smart Contracts](smart-contracts)
+2. [Smart Contracts](smart-contracts)
     - [Smart contract anatomy](smart-contracts/anatomy)
     - [Deploy a contract](smart-contracts/deploy)
     - [Interact with a contract](smart-contracts/interact)
+  
+3. [Tutorials](tutorials)
+    - [Simple template](tutorials/simple-template)
+    - [Counter](tutorials/counter)
+    - [From Solidity to CosmWasm](tutorials/solidity-to-cosmwasm)
 
-4. [Tutorials](tutorials)
-    - [Simple template](smart-contracts/examples/simple-template)
-    - [Counter](smart-contracts/examples/counter)
-    - [From Solidity to CosmWasm](smart-contracts/solidity-to-cosmwasm)
-
-    4.1 [Fungible Tokens](tutorials/fungible-tokens)
+    3.1 [Fungible Tokens](tutorials/fungible-tokens)
       - [Introduction to CW20 (Fungible Tokens)](tutorials/fungible-tokens/cw20-intro)
-      - [Create your own CW20 token on Aura Network](tutorials/fungible-tokens/create-your-own-cw20)
+      - [Create your own CW20 token on Aura Network](tutorials/fungible-tokens/create-your-cw20)
       - [What will we build](tutorials/fungible-tokens/what-will-we-build)
       - [What Are All These Files](tutorials/fungible-tokens/what-are-all-these-files)
 
-    4.2 [Non-Fungible Tokens](tutorials/non-fungible-tokens)
+    3.2 [Non-Fungible Tokens](tutorials/non-fungible-tokens)
       - [Introduction to CW721 (NFTs)](tutorials/non-fungible-tokens/cw721-intro)
       - [Overview the working](tutorials/non-fungible-tokens/what-will-we-build)
       - [Create dApp repository](tutorials/non-fungible-tokens/begin)
@@ -116,7 +116,7 @@ Otherwise, check out these topics and happy hacking!
     - [Commission](concepts/commission)
     - [Staking](concepts/staking)
     - [Slashing](concepts/slashing)
-    - [Governance](concepts/Governance)
+    - [Governance](concepts/gov)
     - [Vesting](concepts/vesting)
 
 

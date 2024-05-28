@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { xstaxy { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { xstaxy { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -35,7 +35,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { auratestnet { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { auratestnet { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -43,7 +43,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { serenity { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { serenity { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -51,7 +51,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { euphoria { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { euphoria { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -59,7 +59,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { nois { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { nois { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -67,7 +67,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: codeid
-                  query: "query codeid($limit: Int = 10, $codeId: Int = null) { sei { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+                  query: 'query codeid($limit: Int = 10, $codeId: Int = null) { sei { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
                   variables:
                     limit: 10
                     codeId: null
@@ -85,7 +85,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query codeid($limit: Int = 10, $codeId: Int = null) { euphoria { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }"
+          example: 'query codeid($limit: Int = 10, $codeId: Int = null) { euphoria { code(limit: $limit, where: {code_id: {_eq: $codeId}}) { code_id created_at creator data_hash instantiate_permission status store_hash store_height type updated_at } } }'
           description: Graphql query
         variables:
           type: object
@@ -93,10 +93,3 @@ components:
           example:
             limit: 10
             codeId: null
-            
-            
-            
-                  
-            
-          
-            

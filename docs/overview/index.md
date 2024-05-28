@@ -9,7 +9,7 @@ import ContactUs from '@site/src/components/ContactUs/ContactUs.mdx';
 
 This is the entry point to the Aura Ecosystem. Find anything you need to know to get started and get familiarized with Aura Network and some of the tools, products and services to get a jump-start on the ecosystem.
 
-Start here on the **Basics** topic to get started on the basics, and if you are interested in more advanced topics, explore the different sections for [Developers](../developer/), [Validators](../validator/), [Integrate](../integrate/) and others on the top bar.
+Start here on the **Basics** topic to get started on the basics, and if you are interested in more advanced topics, explore the different sections for [Developers](../developer/), [Validators](../validator/), [Integrate](../integrate/exchange/integrate.md) and others on the top bar.
 
 ## Browse the most basic topics
 

@@ -2,54 +2,41 @@
 id: query-cw-20-holder
 title: "Query cw20 holder"
 description: "Query cw20 holder"
-sidebar_label: Query cw20 holder
+sidebar_label: "Query cw20 holder"
 hide_title: true
 hide_table_of_contents: true
-api: {"tags":["cw20"],"requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"operationName":{"type":"string","example":"cw20holder","description":"query name"},"query":{"type":"string","example":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","description":"Graphql query"},"variables":{"type":"object","description":"Variable in query","example":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}}},"examples":{"xstaxy":{"summary":"Query on Xstaxy chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { xstaxy { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}},"auratestnet":{"summary":"Query on Aura Testnet chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { auratestnet { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}},"serenity":{"summary":"Query on Serenity chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { serenity { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}},"euphoria":{"summary":"Query on Euphoria chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}},"nois":{"summary":"Query on Nois chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { nois { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}},"sei":{"summary":"Query on Sei chain","value":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { sei { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}}}}}},"responses":{"200":{"description":"Successful operation"}},"description":"Query cw20 holderr","method":"post","path":"/api/v2/graphql","servers":[{"url":"https://indexer-v2.dev.aurascan.io","description":"Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei"},{"url":"https://horoscope.aura.network","description":"Server for main network. Only support chain of xstaxy"},{"url":"https://indexer-v2.staging.aurascan.io","description":"Server for testnet network. Support chains of euphoria and xstaxy"}],"jsonRequestBodyExample":{"operationName":"cw20holder","query":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","variables":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}},"info":{"title":"Horoscope v2 graphql","version":"1.0.0"},"postman":{"name":"Query cw20 holderr","description":{"type":"text/plain"},"url":{"path":["api","v2","graphql"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+api: eJztWN1v0zAQ/1csiweQQpuljI1IPABCwMsGdCCkMU1e4ibeEtu1nbZb1P+dOydNP7buaVAemqqtP+7OP/t3Z/tSU8cyS+NzmkyjkF4E1PBxxa17r9JbGtc0UdJx6bDItC5EwpxQsn9tlcQ2m+S8ZFhyt5rTmKqra544GlBtlObGCW6xF8te84SVfEXcOiNkBuJ8xkpdYBMCyVWRcgPNKbeJERo1oQuQmVsi0cQ8aGqP22oUlhafP8P5GJa4d2lquLUxGXot8pbIqigC8qwQpXAx+SIdtB2EL0hNeKVzZQSDIpq6bG21ko1GQKY5NzwmtRdZDAN1WzLjVhvYYuj6ko9BfwPSHB4ctRUjrFQVgFkzeylSMsfPvSX6ZJjOxwVpFgdWacIA+VXR0LBJ0rruz1aUCNnqr6xlTf08aXwQBnQDMuiyyrCD8GYU3VXFq8G4OJod8XF6d/1mMjg8Pg6PdTZ4PWUDdvQmP4zCJGM3d3I2Gh3b/LDMogGFSQfUCbfpAvMOgp/AzDo286TbqoSFhSL95klWkvzynSTJmZAUZ15U/AHnW/ew1oueyFUafP+no6x5wt8nE4042Ekkd1v4egcS5KwR2SlrK1D31AF1FmYphdsWZ8O2e6ecLTDuCcMtsj2hthD2cXGA7ZKw//sU/ceESSXsFrJOoGunRCG2PUl+GxRbd0Cx481P7BnyDyYsVitpmyGjMMS/9XvtsEoSGHRUFaTjiKLquti3jhrS0VZyl6sUOrWyPqthLodan2nRn0T9rLltU39kTrjBTKqmlSlAJndO27jfFzLlM25eTqJeyic9nLdNmOwJde8CPvRGyEgZsriOwHeqzE2PDCutlWnvSZao0eqtJeiOw6DbZ4P2Mho0Ac1kim4DF+pNgCCtbAIr47H12hEfA1cChCWyU1ncErsKD9G1N/X7w62sB4hk4OpPuCbdIYPTXUCArBbz1e/LzPbjMqvZn4A7CN2ACjlSPiNtU77PCyckk4gswwpjqvGDg17YCzEdxEgsmX/7IBvKHgrcNSfqEl/HZ66vC9y4wZL3y7qN6XMKMY0jRvCzAACek2PgQ29dXzHLf5hiPsfm1jPOL5YLhzWwmnOGEHAjuOHoPB+aVygvzxBDd17cf52CftrtN19Ph2cgfNW+hilVijqGTaERf2P6Gz5QUX6OnjTfDtwxmVUsQ/nGLj5/ACgoO9s=
 sidebar_class_name: "post api-method"
 info_path: horoscope-v2/horoscope-v-2-graphql
+custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
-import SchemaItem from "@theme/SchemaItem"
+import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 
-## Query cw20 holder
-Query:
-```graphql
-query cw20holder($contractAddress: String = null, $limit: Int = 10) {
-  xstaxy { #This point to target chain to query
-    cw20_holder(
-      limit: $limit
-      where: {
-        cw20_contract: {
-          smart_contract: { address: { _eq: $contractAddress } }
-        }
-      }
-    ) {
-      address
-      amount
-      cw20_contract_id
-    }
-  }
-}
-```
-Variable: 
-```json
-{
-    "limit": 10,
-    "contractAddress": "aura1un7uj5snegt52qagjsy63wpqe36n4hw2jp84df9832tfsr6r07qsxlj2eh"
-}
-```
+<h1 className={"openapi__heading"}>Query cw20 holder</h1>
 
-<MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaDescription={"query name"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaDescription={"Graphql query"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaDescription={"Variable in query"} schemaName={"object"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+<MethodEndpoint method={"post"} path={"/api/v2/graphql"}></MethodEndpoint>
+
+
+
+Query cw20 holder
+
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"cw20holder","description":"query name"}}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"query cw20holder($contractAddress: String = null, $limit: Int = 10) { euphoria { cw20_holder(limit: $limit, where: {cw20_contract: {smart_contract: {address: {_eq: $contractAddress}}}}) { address amount cw20_contract_id } } }","description":"Graphql query"}}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Variable in query","example":{"limit":10,"contractAddress":"aura10kf2zul43ql7x7eqdzj9v358808pg36wa3a79h520cgakznxff8sh5mg23"}}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
 
 Successful operation
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

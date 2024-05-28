@@ -1,12 +1,14 @@
 ---
 sidebar_position: 5
-title: Register asset
+title: Asset in Horoscope
 ---
 
-## 1. Which assets are supported
-Currently, Horoscope is supporting CW20 and CW721.  
+Currently, Horoscope is supporting ERC20, ERC721, CW20 and CW721.  
+## 1. EVM with ERC20/ERC721
+Horoscope will index ERC20/ERC721 if your contract implement required [IERC20](https://docs.openzeppelin.com/contracts/3.x/api/token/erc20#IERC20)/[IERC721](https://docs.openzeppelin.com/contracts/3.x/api/token/erc721#IERC721) interface
 
-On Horoscope V1, user must register code id by [api](../../../horoscope/register-asset-cw-20-cw-721-cw-4973-with-the-code-id-and-contract-type.api.mdx). After registering, Horoscope will check its interface to make sure that is correct contract type. On Horoscope V2, register is not needed anymore. When you build your contract, you must include contract type in field name like [that](https://github.com/CosmWasm/cw-nfts/blob/177a993dfb5a1a3164be1baf274f43b1ca53da53/contracts/cw721-base/src/lib.rs#L32):  
+## 2. Cosmwasm with CW20/CW721
+When you build your Cowmwasm contract, you must include contract type in field name like [that](https://github.com/CosmWasm/cw-nfts/blob/177a993dfb5a1a3164be1baf274f43b1ca53da53/contracts/cw721-base/src/lib.rs#L32):  
 
 ```rust title="src/lib.rs"
 pub const CONTRACT_NAME: &str = "crates.io:cw721-base";
@@ -26,9 +28,8 @@ There are alot of type CW20 and CW721. Currently, we support all type CW721 from
 }
 ```
 
-## 2. Data index
-
-If an contract is CW20/CW721, their metadata is saved into database. With CW20, we save balances of all account so you can query database to get them. With CW721, we crawl metadata from IPFS and save them into AWS S3 storage for faster access instead query from ipfs.io. 
+## 3. Which data is saved?
+All metadata is saved into database. With ERC20/CW20, we save balances of all account so you can query database to get them. With ERC721/CW721, we crawl metadata from IPFS and save them into AWS S3 storage for faster access instead query from ipfs.io. 
 
 Horoscope used Metadata Standard from
 [OpenSea](https://docs.opensea.io/docs/metadata-standards). It crawl image and animation_url attribute from IPFS, and save to AWS S3 bucket for faster view.  

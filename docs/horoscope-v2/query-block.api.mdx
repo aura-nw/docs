@@ -1,85 +1,42 @@
 ---
 id: query-block
-title: "Query latest"
+title: "Query block"
 description: "Query block"
-sidebar_label: Query latest block
+sidebar_label: "Query block"
 hide_title: true
 hide_table_of_contents: true
-api: {"tags":["block"],"requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"operationName":{"type":"string","example":"queryBlock","description":"query name"},"query":{"type":"string","example":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { serenity { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","description":"Graphql query"},"variables":{"type":"object","description":"Variable in query","example":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}}},"examples":{"xstaxy":{"summary":"Query on Xstaxy chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { xstaxy { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}},"auratestnet":{"summary":"Query on Aura Testnet chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { auratestnet { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}},"serenity":{"summary":"Query on Serenity chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { serenity { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}},"ephoria":{"summary":"Query on Ephoria chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { ephoria { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}},"nois":{"summary":"Query on Nois chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { nois { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}},"sei":{"summary":"Query on Sei chain","value":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { sei { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}}}}}},"responses":{"200":{"description":"Successful operation"}},"description":"Query blockk","method":"post","path":"/api/v2/graphql","servers":[{"url":"https://indexer-v2.dev.aurascan.io","description":"Server for testnet network. Support chains of auratestnet, serenity, ephoria, xstaxy, nois and sei"},{"url":"https://horoscope.aura.network","description":"Server for main network. Only support chain of xstaxy"},{"url":"https://indexer-v2.staging.aurascan.io","description":"Server for testnet network. Support chains of ephoria and xstaxy"}],"jsonRequestBodyExample":{"operationName":"queryBlock","query":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { serenity { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","variables":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}},"info":{"title":"Horoscope v2 graphql","version":"1.0.0"},"postman":{"name":"Query blockk","description":{"type":"text/plain"},"url":{"path":["api","v2","graphql"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+api: eJztWd1v0zAQ/1csi4cheW3pYyQeGJoGEmJAC0Ia0+QmXmOW2JntdK2i/O/c2fnoB0U8TJWg3bQ2Pt+d786/O8e3ijo+tzS6obNMxw/0llEjHkth3YVOVjSqaKyVE8rhIy+KTMbcSa2GP61WSLNxKnKOT25VCBpRPfspYkcZLYwuhHFSWJzFZy/5kedijd06I9Uc2MWS50WGJFjerC68OYwmwsZGFijZThGFKmoWRn+hi/Qaz15kMpcuIu+VI6/Jq9GIkRfaJMJExH/dzVZAx1VhIhVynnbMqswyJHKbRmTi1+qpwT9t3iSJEdbuMgRdV9NtbZ78YYP8klTECiOUdCt49Dtz1tgd7GedsRGpWiuDHzUjTykIr01Ud+Ixapdi5G7uot4eGGf9+MMU5IOHrRQMgLbgmUzQQZhofb3jrbMN71YQ6rpGV0CM9/JA2JYna5tMar88CeYQJ3MBJPjdwcKV4UX6mIXNRTgsuJF8lgW8baNxU/Zbw0qkauTXQFNRH2MajUeM+piCBMoDE9pGI793NJjYjrZ8D2SIAKNOOo/FAOm6W8nbubSOLz2IbZnnHPFMP3vQQiy++0kSp1wqig5mpfhNMm1mTJMV/y70Q0hOwO+Bv4Hs5wUnL2ECyr0Sbg8I3wAHmQaWY4PiWnROeDwIHttzbw8YJ+2xeGRAPL0OHBSFoixSDdr3oPCymT42FLZhOaHwIChUWto9CPwIU8eGPgzHCXkHOoXl3gNYHhvuIBgn2B0AdrWHHpAKrWxQPx6N8Gvz8j4p4xjk7suMdMCjKLrJFiA7a1CYC5fqBMiFtr47xR2YR4e8kMPFeDgPzQTqX0AXwmBLrKKlyYAnda6w0XAoVSKWwpwvxoNELAZ4N7AxVwOpd/oLE6+E3EOg2+sD/D1p8zAgk7IotGmuUpbo+/VbBuve9Fh32rLmRsxCBeQqQUjSmm0bCNzaxhATb9ugWfFPxuVgQm/ZtcpWxK6bh9Y1HYrd5dbiASxzSLFnjEn3qoHutibcMop9xy99h/Kyb9r870XodAE4VCViVKp77buITevuXZtZZDEmfa3AQhHA/WowGoywt4flJee+Na4CDjfr0EZOdG1KJ5ZuWGR4rIIOn2ZVU6JuKJQoXGsMH+3SkAgp1jGYraoZt+KrAbuR3AD95rYPD45qdJ37sEBdexCYC29DZ/98ijZ0p/lulx/Triufn64nU2CeNf8dyHWCMoY/ARE/I/oDfinGFjX4rfF02CGu5iWfI3/Qiz+/ABDpfoc=
 sidebar_class_name: "post api-method"
 info_path: horoscope-v2/horoscope-v-2-graphql
+custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
-import SchemaItem from "@theme/SchemaItem"
+import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 
-## Query block
+<h1 className={"openapi__heading"}>Query block</h1>
+
+<MethodEndpoint method={"post"} path={"/api/v2/graphql"}></MethodEndpoint>
 
 
 
-Query
-```graphql
-query queryBlock(
-    $limit: Int = 100,
-    $order: order_by = desc,
-    $height: Int = null,
-    $hash: String = null,
-    $operatorAddress: String = null,
-    $heightGT: Int = null,
-    $heightLT: Int = null
-) {
-    xstaxy { #This point to target chain to query
-        block(
-            limit: $limit,
-            order_by: {height: $order},
-            where: {
-                height: {
-                    _eq: $height,
-                    _gt: $heightGT,
-                    _lt: $heightLT
-                },
-                hash: {
-                    _eq: $hash
-                },
-                validator: {
-                    operator_address: {
-                        _eq: $operatorAddress
-                    }
-                }
-            }
-        ) {
-            data
-            validator {
-                operator_address
-                description
-            }
-            hash
-            height
-            time
-        }
-    }
-}
-```
-Variable    
-```json
-{
-    "limit": 5,
-    "order": "desc",
-    "hash": null,
-    "height": null,
-    "operatorAddress": null
-}
-```
+Query block
 
-<MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaDescription={"query name"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaDescription={"Graphql query"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaDescription={"Variable in query"} schemaName={"object"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"operationName"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"queryBlock","description":"query name"}}></SchemaItem><SchemaItem collapsible={false} name={"query"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"query queryBlock($limit: Int = 100, $order: order_by = desc, $height: Int = null, $hash: String = null, $operatorAddress: String = null, $heightGT: Int = null, $heightLT: Int = null) { serenity { block(limit: $limit, order_by: {height: $order}, where: {height: {_eq: $height, _gt: $heightGT, _lt: $heightLT}, hash: {_eq: $hash}, validator: {operator_address: {_eq: $operatorAddress}}}) { data validator { operator_address description } hash height time } } }","description":"Graphql query"}}></SchemaItem><SchemaItem collapsible={false} name={"variables"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Variable in query","example":{"limit":20,"order":"desc","hash":null,"height":null,"operatorAddress":null}}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
 
 Successful operation
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

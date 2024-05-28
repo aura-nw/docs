@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { xstaxy { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { xstaxy { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -36,7 +36,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { auratestnet { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { auratestnet { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -45,7 +45,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -54,7 +54,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { euphoria { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { euphoria { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -63,7 +63,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { nois { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { nois { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -72,7 +72,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: validatorsDetailListPower
-                  query: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { sei { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+                  query: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { sei { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
                   variables:
                     operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
                     limit: 10
@@ -91,7 +91,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }"
+          example: 'query validatorsDetailListPower($operator_address: String, $limit: Int = 10, $nextKey: Int = null) { serenity { power_event(order_by: {height: desc}, where: {_or: [{validatorDst: {operator_address: {_eq: $operator_address}}}, {validatorSrc: {operator_address: {_eq: $operator_address}}}], id: {_lt: $nextKey}}, limit: $limit) { id time height transaction { hash } type amount validatorSrc { operator_address } validatorDst { operator_address } } } }'
           description: Graphql query
         variables:
           type: object
@@ -100,7 +100,3 @@ components:
             operator_address: auravaloper182lurpfs7xcle90hcjkmtnjf2efzx64ffen499
             limit: 10
             nextKey: null
-                  
-            
-          
-            

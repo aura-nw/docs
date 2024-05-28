@@ -80,13 +80,6 @@ const sidebars = {
   horoscope: [
     'product/horoscope/index',
     'product/horoscope/architecture/overview',
-
-    {
-      type: 'category',
-      label: 'API in Horoscope V1 (Deprecated)',
-      collapsible: true,
-      items: require('./docs/horoscope/sidebar'),
-    },
     {
       type: 'category',
       label: 'GraphQL in Horoscope V2',

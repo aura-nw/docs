@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { xstaxy { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { xstaxy { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -38,7 +38,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { auratestnet { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { auratestnet { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -49,7 +49,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { serenity { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { serenity { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -60,7 +60,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { euphoria { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { euphoria { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -71,7 +71,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { nois { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { nois { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -82,7 +82,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: queryVote
-                  query: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { sei { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+                  query: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { sei { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
                   variables:
                     limit: 5
                     order: desc
@@ -103,7 +103,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { serenity { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }"
+          example: 'query queryVote($limit: Int = 10, $offset: Int = 0, $order: order_by = desc, $proposalId: Int = null, $voteOption: String = null) { serenity { vote(limit: $limit, offset: $offset, where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}, order_by: {height: $order}) { height proposal_id txhash vote_option voter transaction { timestamp } } vote_aggregate(where: {proposal_id: {_eq: $proposalId}, vote_option: {_eq: $voteOption}}) { aggregate { count } } } }'
           description: Graphql query
         variables:
           type: object
@@ -114,7 +114,3 @@ components:
             proposalId: 245
             voteOption: null
             offset: 0
-                  
-            
-          
-            

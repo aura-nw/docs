@@ -27,7 +27,7 @@ paths:
                 summary: Query on Xstaxy chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { xstaxy { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { xstaxy { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -36,7 +36,7 @@ paths:
                 summary: Query on Aura Testnet chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { auratestnet { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { auratestnet { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -45,7 +45,7 @@ paths:
                 summary: Query on Serenity chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { serenity { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { serenity { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -54,7 +54,7 @@ paths:
                 summary: Query on Euphoria chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -63,7 +63,7 @@ paths:
                 summary: Query on Nois chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { nois { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { nois { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -72,7 +72,7 @@ paths:
                 summary: Query on Sei chain
                 value:
                   operationName: cw721token
-                  query: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { sei { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+                  query: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { sei { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
                   variables:
                     limit: 10
                     tokenId: '611'
@@ -91,7 +91,7 @@ components:
           description: query name
         query:
           type: string
-          example: "query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }"
+          example: 'query cw721token($tokenId: String = null, $owner: String = null, $limit: Int = 10) { euphoria { cw721_token(limit: $limit, order_by: {id: desc}, where: {token_id: {_eq: $tokenId}, owner: {_eq: $owner}}) { id media_info owner token_id } } }'
           description: Graphql query
         variables:
           type: object
@@ -100,8 +100,3 @@ components:
             limit: 10
             tokenId: '611'
             owner: aura1crh5z8cy0znnj8u48jlttr5h4as8n336jj0gxr
-            
-                  
-            
-          
-            

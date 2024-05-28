@@ -1,0 +1,72 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
+tags:
+  - name: evm-erc721-token
+paths:
+  /api/v2/graphql:
+    post:
+      tags:
+        - evm-erc721-token
+      summary: Query evm erc721 token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/erc721token'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: MyQuery
+                  query: 'query MyQuery($address: String = "") { xstaxy { erc721_token(where: {erc721_contract_address: {_eq: $address}}, limit: 10) { id media_info } } }'
+                  variables:
+                    address: '0x84b7ba21713a1dba7e6e8268b68c4a94abac8a09'
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: MyQuery
+                  query: 'query MyQuery($address: String = "") { auratestnet { erc721_token(where: {erc721_contract_address: {_eq: $address}}, limit: 10) { id media_info } } }'
+                  variables:
+                    address: '0x84b7ba21713a1dba7e6e8268b68c4a94abac8a09'
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: MyQuery
+                  query: 'query MyQuery($address: String = "") { serenity { erc721_token(where: {erc721_contract_address: {_eq: $address}}, limit: 10) { id media_info } } }'
+                  variables:
+                    address: '0xf7691d83f26dc6db02cd5f9aa1c145198bd62f31'
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: MyQuery
+                  query: 'query MyQuery($address: String = "") { euphoria { erc721_token(where: {erc721_contract_address: {_eq: $address}}, limit: 10) { id media_info } } }'
+                  variables:
+                    address: '0xd42edb5686f731433277f2c6a7154c8785772315'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    erc721token:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: evmSmartContract
+          description: query name
+        query:
+          type: string
+          example: 'query evmSmartContract { auratestnet { evm_smart_contract(limit: 10) { id address code_hash created_hash created_height type } } }'
+          description: Graphql query
+        variables:
+          type: object
+          description: Variable in query

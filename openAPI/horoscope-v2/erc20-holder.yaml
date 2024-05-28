@@ -1,0 +1,79 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
+tags:
+  - name: evm-erc20-holder
+paths:
+  /api/v2/graphql:
+    post:
+      tags:
+        - evm-erc20-holder
+      summary: Query evm erc20 holder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/erc20holder'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: queryHolderDenom
+                  query: 'query queryHolderDenom($denom: String = null, $limit: Int = 10, $offset: Int = 0) { xstaxy { account_balance(where: {denom: {_eq: $denom}}, limit: $limit, offset: $offset, order_by: {amount: desc}) { account { address evm_address } amount } } }'
+                  variables:
+                    limit: 10
+                    contractAddress: '0x16e5622436b839f0a78e89217c452e15a8a06566'
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: queryHolderDenom
+                  query: 'query queryHolderDenom($denom: String = null, $limit: Int = 10, $offset: Int = 0) { auratestnet { account_balance(where: {denom: {_eq: $denom}}, limit: $limit, offset: $offset, order_by: {amount: desc}) { account { address evm_address } amount } } }'
+                  variables:
+                    limit: 10
+                    contractAddress: '0x16e5622436b839f0a78e89217c452e15a8a06566'
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: queryHolderDenom
+                  query: 'query queryHolderDenom($denom: String = null, $limit: Int = 10, $offset: Int = 0) { serenity { account_balance(where: {denom: {_eq: $denom}}, limit: $limit, offset: $offset, order_by: {amount: desc}) { account { address evm_address } amount } } }'
+                  variables:
+                    limit: 10
+                    contractAddress: '0x2c7ea2bdcf71ffa9bb68e1708b9564756fa91c5f'
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: queryHolderDenom
+                  query: 'query queryHolderDenom($denom: String = null, $limit: Int = 10, $offset: Int = 0) { euphoria { account_balance(where: {denom: {_eq: $denom}}, limit: $limit, offset: $offset, order_by: {amount: desc}) { account { address evm_address } amount } } }'
+                  variables:
+                    limit: 10
+                    contractAddress: '0x220c08739c70a3e33b8b7e90f6076751415cc6c2'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    erc20holder:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: queryHolderDenom
+          description: query name
+        query:
+          type: string
+          example: 'query queryHolderDenom($denom: String = null, $limit: Int = 10, $offset: Int = 0) { serenity { account_balance(where: {denom: {_eq: $denom}}, limit: $limit, offset: $offset, order_by: {amount: desc}) { account { address evm_address } amount } } }'
+          description: Graphql query
+        variables:
+          type: object
+          example:
+            limit: 10
+            contractAddress: '0x2c7ea2bdcf71ffa9bb68e1708b9564756fa91c5f'
+          description: Variable in query

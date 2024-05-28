@@ -1,0 +1,79 @@
+openapi: 3.0.3
+info:
+  title: Horoscope v2 graphql
+  version: 1.0.0
+servers:
+  - url: https://indexer-v2.dev.aurascan.io
+    description: Server for testnet network. Support chains of auratestnet, serenity, euphoria, xstaxy, nois and sei
+  - url: https://horoscope.aura.network
+    description: Server for main network. Only support chain of xstaxy
+  - url: https://indexer-v2.staging.aurascan.io
+    description: Server for testnet network. Support chains of euphoria and xstaxy
+tags:
+  - name: evm-erc20-activity
+paths:
+  /api/v2/graphql:
+    post:
+      tags:
+        - evm-erc20-activity
+      summary: Query evm erc20 activity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/erc20activity'
+            examples:
+              xstaxy:
+                summary: Query on Xstaxy chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract($address: String = "") { xstaxy { erc20_activity(where: {erc20_contract_address: {_eq: $address}}, limit: 10) { from to tx_hash action amount } } }'
+                  variables:
+                    limit: 10
+                    address: '0x16e5622436b839f0a78e89217c452e15a8a06566'
+              auratestnet:
+                summary: Query on Aura Testnet chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract($address: String = "") { auratestnet { erc20_activity(where: {erc20_contract_address: {_eq: $address}}, limit: 10) { from to tx_hash action amount } } }'
+                  variables:
+                    limit: 10
+                    address: '0x16e5622436b839f0a78e89217c452e15a8a06566'
+              serenity:
+                summary: Query on Serenity chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract($address: String = "") { serenity { erc20_activity(where: {erc20_contract_address: {_eq: $address}}, limit: 10) { from to tx_hash action amount } } }'
+                  variables:
+                    limit: 10
+                    address: '0x2c7ea2bdcf71ffa9bb68e1708b9564756fa91c5f'
+              euphoria:
+                summary: Query on Euphoria chain
+                value:
+                  operationName: evmSmartContract
+                  query: 'query evmSmartContract($address: String = "") { euphoria { erc20_activity(where: {erc20_contract_address: {_eq: $address}}, limit: 10) { from to tx_hash action amount } } }'
+                  variables:
+                    limit: 10
+                    address: '0x220c08739c70a3e33b8b7e90f6076751415cc6c2'
+      responses:
+        '200':
+          description: Successful operation
+components:
+  schemas:
+    erc20activity:
+      type: object
+      properties:
+        operationName:
+          type: string
+          example: evmSmartContract
+          description: query name
+        query:
+          type: string
+          example: 'query evmSmartContract($address: String = "") { serenity { erc20_activity(where: {erc20_contract_address: {_eq: $address}}, limit: 10) { from to tx_hash action amount } } }'
+          description: Graphql query
+        variables:
+          type: object
+          example:
+            limit: 10
+            address: '0x2c7ea2bdcf71ffa9bb68e1708b9564756fa91c5f'
+          description: Variable in query

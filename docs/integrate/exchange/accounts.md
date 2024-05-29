@@ -110,15 +110,31 @@ pagination:
 ```
 
 ## 4. Using HTTP endpoints:
-You can directly use [LCD endpoints](http://localhost:3000/developer/endpoints) (light client daemon) provided by Aura nodes (public or your own full node) to integrate:
-
+### Cosmos endpoints
+You can directly use [LCD endpoints](../../developer/1.getting-started/3.networks-info/1.cosmos-info.md) (light client daemon) provided by Aura nodes (public or your own full node) to integrate:
 
 ```bash
 curl -X GET "https://lcd.aura.network/cosmos/auth/v1beta1/accounts/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
 ```
 
-Detailed references of each API is specified in the LCD [Swagger](https://lcd.aura.network/) document.
+Detailed references of each API is specified in the testnet LCD [Swagger](https://lcd.euphoria.aura.network) document.
 
+### EVM endpoints
+You can use [JSON RPC endpoints](../../developer/1.getting-started/3.networks-info/2.evm-info.md) to query EVM information:
+
+```bash
+curl -X POST https://jsonrpc.aura.network \
+-H "Content-Type: application/json" \
+--data \
+'
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBalance",
+  "params": ["0x0ADfCCa4B2a1132F82488546AcA086D7E24EA324", "latest"],
+  "id": 1
+}
+'           
+```
 ## 5. Using Cosmjs
 
 You can also do same procedures using [CosmJS](https://github.com/cosmos/cosmjs)

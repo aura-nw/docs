@@ -177,7 +177,7 @@ const walletAddress = 'YOUR_WALLET_ADDRESS';
 // Get balance
 provider.getBalance(walletAddress)
   .then(balance => {
-    // Convert balance to ethers
+    // Convert balance to AURA (Divide by 10**18)
     const auraBalance = ethers.utils.formatEther(balance);
     console.log('Wallet balance:', auraBalance, 'AURA');
   })

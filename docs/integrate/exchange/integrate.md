@@ -13,11 +13,12 @@ This section is dedicated for exchanges (CEX and DEX) to integrate with Aura Net
 
 ## Native $AURA currency
 
-Aura mainnet is developed using [Cosmos SDK](https://v1.cosmos.network/sdk). So if you have listed popular coins like [ATOM](https://www.coingecko.com/en/coins/cosmos-hub), the process is very similar.
+Aura mainnet is developed using [Cosmos SDK](https://v1.cosmos.network/sdk) with **EVM module**
 
 The coin:
 
 - Coin name is `Aura` and the symbol/ticker for is `AURA`.
+- Aura support both Cosmos and EVM transactions
 - Aura Network runs on Tendermint consensus, the block is finalized instantly. 
 - Currently, the expected block time is around 5 - 6 seconds.
 
@@ -32,12 +33,14 @@ There are currently 4 ways to integrate with Aura Network:
 There are various denominations widely used in Aura Network.
 
 - `AURA` or `aura` : indicates the AURA native currency on mainnet.
-- `uAURA` or `uaura` : indicates the smallest unit of native currency on mainnet. 1 `aura` = 10^6 `uaura`.
+- `uAURA` or `uaura` : indicates the base unit of native currency on mainnet. 1 `aura` = 10^6 `uaura`.
+- `aAURA` or `aaura` : indicates EVM unit, which is **ONLY USE** by EVM transactions on mainnet. 1 `aura` = 10^18 `aaura`. 
 
 To avoid confusion with testnet currency, we have different denominations for the Euphoria testnet.
 
 - `EAURA` or `eaura` : indicates the AURA native currency on Euphoria testnet.
 - `uEAURA` or `ueaura` : indicates the smallest unit of native currency on Euphoria testnet. 1 `eaura` = 10^6 `ueaura`.
+- `aEAURA` or `aeaura` : indicates EVM unit, which is **ONLY USE** by EVM transactions on Euphoria testnet. 1 `aeura` = 10^18 `aeaura`. 
 
 
 ## Block explorer

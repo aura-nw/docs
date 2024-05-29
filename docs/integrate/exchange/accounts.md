@@ -16,7 +16,7 @@ An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivK
 - The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
 
 ### Account validation
-Aura native accounts have the following formats: 
+Since Aura support both Cosmos and EVM, native accounts have the following formats: 
 - Cosmos address: `aura<bech32encoding>`. So an address should look like this: `aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj`.
 - EVM address: `0x address`. Example: `0xc1bb1e987b2804a5617679021e5caf344fd4831e`
 
@@ -47,7 +47,8 @@ curl -X GET "https://lcd.aura.network/cosmos/tx/v1beta1/txs?events=msg.sender='a
 ```
 
 However, account history is a dangerous operation and may DOS the node. If it is not critical, you can refer to our guide here to use Aura centralized indexing service:
-https://docs.aura.network/integrate/wallet/transaction-history
+- Cosmos transactions: https://docs.aura.network/integrate/wallet/cosmos/integrate
+- EVM transactions: https://docs.aura.network/integrate/wallet/evm/integrate
 
 ## 2. Key management
 
@@ -109,15 +110,31 @@ pagination:
 ```
 
 ## 4. Using HTTP endpoints:
-You can directly use [LCD endpoints](http://localhost:3000/developer/endpoints) (light client daemon) provided by Aura nodes (public or your own full node) to integrate:
-
+### Cosmos endpoints
+You can directly use [LCD endpoints](../../developer/1.getting-started/3.networks-info/1.cosmos-info.md) (light client daemon) provided by Aura nodes (public or your own full node) to integrate:
 
 ```bash
 curl -X GET "https://lcd.aura.network/cosmos/auth/v1beta1/accounts/aura1wgxdyjkul5hn0jx8y9rfpe8r4eyq5jkvsy0akl" -H  "accept: application/json"
 ```
 
-Detailed references of each API is specified in the LCD [Swagger](https://lcd.aura.network/) document.
+Detailed references of each API is specified in the testnet LCD [Swagger](https://lcd.euphoria.aura.network) document.
 
+### EVM endpoints
+You can use [JSON RPC endpoints](../../developer/1.getting-started/3.networks-info/2.evm-info.md) to query EVM information:
+
+```bash
+curl -X POST https://jsonrpc.aura.network \
+-H "Content-Type: application/json" \
+--data \
+'
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBalance",
+  "params": ["0x0ADfCCa4B2a1132F82488546AcA086D7E24EA324", "latest"],
+  "id": 1
+}
+'           
+```
 ## 5. Using Cosmjs
 
 You can also do same procedures using [CosmJS](https://github.com/cosmos/cosmjs)

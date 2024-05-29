@@ -1,7 +1,7 @@
 {
     "xstaxy": {
         "cosmos": {
-            "Chain ID": ["xstaxy-1"],
+            "Chain ID": ["aura_6322-2"],
             "Type": ["Mainnet"],
             "Genesis": ["https://raw.githubusercontent.com/aura-nw/mainnet-artifacts/main/xstaxy-1/genesis.json"],
             "Explorer": ["https://aurascan.io"],
@@ -30,10 +30,10 @@
             ]
         },
         "evm": {
-            "Chain ID": ["TBD"],
+            "Chain ID": ["6322"],
             "Type": ["Mainnet"],
-            "Explorer": ["TBD"],
-            "EVM JSON-RPC": ["TBD"]
+            "Explorer": ["https://aurascan.io"],
+            "EVM JSON-RPC": ["https://jsonrpc.aura.network"]
         }
     },
     "euphoria": {

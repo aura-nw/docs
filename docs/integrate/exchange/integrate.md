@@ -40,7 +40,7 @@ To avoid confusion with testnet currency, we have different denominations for th
 
 - `EAURA` or `eaura` : indicates the AURA native currency on Euphoria testnet.
 - `uEAURA` or `ueaura` : indicates the smallest unit of native currency on Euphoria testnet. 1 `eaura` = 10^6 `ueaura`.
-- `aEAURA` or `aeaura` : indicates EVM unit, which is **ONLY USE** by EVM transactions on Euphoria testnet. 1 `aeaura` = 10^18 `aeaura`. 
+- `aEAURA` or `aeaura` : indicates EVM unit, which is **ONLY USE** by EVM transactions on Euphoria testnet. 1 `eaura` = 10^18 `aeaura`. 
 
 
 ## Block explorer

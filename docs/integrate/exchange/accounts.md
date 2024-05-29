@@ -16,7 +16,7 @@ An _account_ designates a pair of _public key_ `PubKey` and _private key_ `PrivK
 - The `PrivKey` is used to generate `digital signatures` to prove that an `Address` associated with the `PrivKey` approved of a given `message`.
 
 ### Account validation
-Aura native accounts have the following formats: 
+Since Aura support both Cosmos and EVM, native accounts have the following formats: 
 - Cosmos address: `aura<bech32encoding>`. So an address should look like this: `aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj`.
 - EVM address: `0x address`. Example: `0xc1bb1e987b2804a5617679021e5caf344fd4831e`
 
@@ -47,7 +47,8 @@ curl -X GET "https://lcd.aura.network/cosmos/tx/v1beta1/txs?events=msg.sender='a
 ```
 
 However, account history is a dangerous operation and may DOS the node. If it is not critical, you can refer to our guide here to use Aura centralized indexing service:
-https://docs.aura.network/integrate/wallet/transaction-history
+- Cosmos transactions: https://docs.aura.network/integrate/wallet/cosmos/integrate
+- EVM transactions: https://docs.aura.network/integrate/wallet/evm/integrate
 
 ## 2. Key management
 

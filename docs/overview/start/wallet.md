@@ -33,7 +33,8 @@ If you don't know which one to choose, you can follow this comparison:
 | ------ | ------ | --- | ----------- | ---------- | ------ | ---------------- |
 | Leap   | ✅     | ✅  | ✅          | ✅         | ✅     | Mainnet, Testnet |
 | Coin98 | ✅     | ✅  | ✅          | ✅         |        | Mainnet, Testnet |
-| Keplr  |        |     | ✅          |            | ✅     | Mainnet, Testnet |
+| Keplr  |  ✅      |     | ✅          |            | ✅     | Mainnet, Testnet |
+| Metamask  |   ✅     |     | ✅          |     ✅       | ✅     | Mainnet, Testnet |
 
 ## II. Create Aura Network Wallet
 
@@ -71,6 +72,8 @@ If you choose to use Keplr, you can easily add Aura Network by connecting your K
 
 ![Keplr Extension](/img/aurascan/Keplr_wallet_extension.png)
 
+#### Important Note: From May 31st, 2024. Aura changes **chain-id** for integrating EVM. Therefore, Keplr users MUST remove old Aura Network config and add new one again.
+
 ### 4. Using Ledger
 
 Currently only Keplr supports Ledger connection to Aura. Make sure you have the [Cosmos](https://support.ledger.com/hc/en-us/articles/360013713840-Cosmos-ATOM-?support=true) Application on your ledger. Then, just connect your ledger with Keplr and you are good to go.
@@ -84,6 +87,10 @@ You can follow a detail guide from the Leap wallet team here:
 https://www.leapwallet.io/blogs/aura
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1_gBGD7Rvf8?si=6WCwkr8l0_OmWrug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### 6. Metamask
+
+If you choose to use Metamask, you can easily add Aura Network by connecting your Metamask wallet to [Aurascan](https://aurascan.io)
 
 ## III. Multisignature solution
 

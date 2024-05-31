@@ -72,7 +72,15 @@ If you choose to use Keplr, you can easily add Aura Network by connecting your K
 
 ![Keplr Extension](/img/aurascan/Keplr_wallet_extension.png)
 
-#### Important Note: From May 31st, 2024. Aura changes **chain-id** for integrating EVM. Therefore, Keplr users MUST remove old Aura Network config and add new one again.
+#### Important Note: From May 31st, 2024. Aura changes **chain-id** for integrating EVM. Therefore, Keplr extension users MUST remove old Aura Network config and add new one again by following these steps:
+
+- Remove old config from Keplr
+- Go to [**Aurascan**](https://aurascan.io) and connect wallet
+- Add Aura network config and setup chain visibility
+
+Here is an example in **testnet**
+
+![Keplr Extension migration](https://images.aura.network/docs/wallet-migrate.webp)
 
 ### 4. Using Ledger
 

@@ -80,7 +80,7 @@ If you choose to use Keplr, you can easily add Aura Network by connecting your K
 
 Here is an example in **testnet**
 
-![Keplr Extension migration](https://images.aura.network/docs/wallet-migrate.webp)
+![Keplr Extension migration](/img/aurascan/wallet-migration.webp)
 
 ### 4. Using Ledger
 

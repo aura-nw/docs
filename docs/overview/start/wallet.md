@@ -100,6 +100,8 @@ https://www.leapwallet.io/blogs/aura
 
 If you choose to use Metamask, you can easily add Aura Network by connecting your Metamask wallet to [Aurascan](https://aurascan.io)
 
+Or you can add network via [**chainlist.org**](https://chainlist.org/?chain=1&search=aura).
+
 ## III. Multisignature solution
 
 If you are familliar with Gnosis-Safe or any multisig assets management tool, pay a visit to our multisignature asset management tool: [Pyxis](https://pyxis.aura.network/).

@@ -80,7 +80,7 @@ function convertEthAddressToBech32Address(
 'aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj'
 ```
 
-**Important notes:** An account created by a EVM wallet (such as Metamask, Rabby, etc.) is **cannot** be used to sign Cosmos transactions. The same goes for Cosmos wallets, which **cannot** sign EVM transactions. Therefore, an ERC20 token should only be sent to an account created by an EVM wallet, and vice versa.
+**Important notes:** An account created by a EVM wallet (such as Metamask, Rabby, etc.) **cannot** be used to sign Cosmos transactions. The same goes for Cosmos wallets, which **cannot** sign EVM transactions. Therefore, an ERC20 token should only be sent to an account created by an EVM wallet, and vice versa.
 
 ### Account transaction history
 Account history can be accessed with the LCD. To do so, you must specify the event condition you wish to query. It's based on Tendermint 

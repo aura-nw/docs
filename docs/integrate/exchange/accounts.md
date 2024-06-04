@@ -38,6 +38,50 @@ e.fromBech32('aura15f6wn3nymdnhnh5ddlq');
 Uncaught Error: Data too short
 ```
 
+An EVM address can be converted to and from a Cosmos address with the following code:
+```js
+import { ETH } from '@evmos/address-converter';
+import { fromBech32, toBech32 } from '@cosmjs/encoding';
+
+function makeBech32Encoder(prefix: string) {
+  return (data: Buffer) => toBech32(prefix, data);
+}
+
+function makeBech32Decoder(currentPrefix: string) {
+  return (input: string) => {
+    const { prefix, data } = fromBech32(input);
+    if (prefix !== currentPrefix) {
+      throw Error('Unrecognised address format');
+    }
+    return Buffer.from(data);
+  };
+}
+
+function convertBech32AddressToEthAddress(
+  prefix: string,
+  bech32Address: string
+): string {
+  const data = makeBech32Decoder(prefix)(bech32Address);
+  return ETH.encoder(data);
+}
+
+function convertEthAddressToBech32Address(
+  prefix: string,
+  ethAddress: string
+): string {
+  const data = ETH.decoder(ethAddress);
+  return makeBech32Encoder(prefix)(data);
+}
+
+> convertBech32AddressToEthAddress('aura', 'aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj')
+'0xc1BB1E987B2804a5617679021e5caf344FD4831e'
+
+> convertEthAddressToBech32Address('aura', '0xc1BB1E987B2804a5617679021e5caf344FD4831e')
+'aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzckj'
+```
+
+**Important notes:** An account created by a EVM wallet (such as Metamask, Rabby, etc.) is **cannot** be used to sign Cosmos transactions. The same goes for Cosmos wallets, which **cannot** sign EVM transactions. Therefore, an ERC20 token should only be sent to an account created by an EVM wallet, and vice versa.
+
 ### Account transaction history
 Account history can be accessed with the LCD. To do so, you must specify the event condition you wish to query. It's based on Tendermint 
 events. For example, to search transactions by event, you can do the following:
@@ -46,7 +90,7 @@ events. For example, to search transactions by event, you can do the following:
 curl -X GET "https://lcd.aura.network/cosmos/tx/v1beta1/txs?events=msg.sender='aura1cxa3axrm9qz22ctk0yppuh90x38afqc7enzck'" -H "accept: application/json"
 ```
 
-However, account history is a dangerous operation and may DOS the node. If it is not critical, you can refer to our guide here to use Aura centralized indexing service:
+However, account history is a heavy operation and may DOS the node. If it is not critical, you can refer to our guide here to use Aura centralized indexing service:
 - Cosmos transactions: https://docs.aura.network/integrate/wallet/cosmos/integrate
 - EVM transactions: https://docs.aura.network/integrate/wallet/evm/integrate
 

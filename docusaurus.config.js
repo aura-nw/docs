@@ -132,8 +132,8 @@ const config = {
     navbar: {
       logo: {
         alt: 'My Site Logo',
-        src: 'img/aura-logo-2.png',
-        srcDark: 'img/aura-logo.png',
+        src: 'img/aura-logo-2.svg',
+        srcDark: 'img/aura-logo.svg',
       },
       items: [
         {

@@ -1,417 +1,419 @@
 @media only screen and (max-width: 920px) {
-    .spotlight,
-    .epl-cards {
-        flex-wrap: wrap;
-    }
-    .aura-card,
-    .aura-doc-card,
-    .epl-card {
-        flex: 100% !important;
-    }
-    .spotlight > .aura-doc-card,
-    .spotlight > .aura-card {
-        margin: 16px !important;
-    }
-    .aura-intro {
-        padding: 0px 12px;
-    }
-    .aura-intro > h1 {
-        font-size: 24px !important;
-        line-height: 29px !important;
-    }
-    .aura-intro > .aura {
-        font-size: 40px !important;
-        line-height: 48px !important;
-    }
-    .spotlight .aura-doc-card > div,
-    .spotlight .aura-card > div {
-        display: flex;
-        align-items: flex-start;
-    }
-    .spotlight .aura-doc-card > div > .img,
-    .spotlight .aura-card > div > .img {
-        margin-right: 16px;
-    }
-    .spotlight .aura-doc-card > div > :not(.img),
-    .spotlight .aura-card > div > :not(.img) {
-        flex: 1;
-    }
-    .category {
-        padding: 0px !important;
-    }
-    .epl-card {
-        max-width: unset !important;
-    }
+  .spotlight,
+  .epl-cards {
+    flex-wrap: wrap;
+  }
+  .aura-card,
+  .aura-doc-card,
+  .epl-card {
+    flex: 100% !important;
+  }
+  .spotlight > .aura-doc-card,
+  .spotlight > .aura-card {
+    margin: 16px !important;
+  }
+  .aura-intro {
+    padding: 0px 12px;
+  }
+  .aura-intro > h1 {
+    font-size: 24px !important;
+    line-height: 29px !important;
+  }
+  .aura-intro > .aura {
+    font-size: 40px !important;
+    line-height: 48px !important;
+  }
+  .spotlight .aura-doc-card > div,
+  .spotlight .aura-card > div {
+    display: flex;
+    align-items: flex-start;
+  }
+  .spotlight .aura-doc-card > div > .img,
+  .spotlight .aura-card > div > .img {
+    margin-right: 16px;
+  }
+  .spotlight .aura-doc-card > div > :not(.img),
+  .spotlight .aura-card > div > :not(.img) {
+    flex: 1;
+  }
+  .category {
+    padding: 0px !important;
+  }
+  .epl-card {
+    max-width: unset !important;
+  }
+}
+.home-root {
+  background-color: #0C0A09;
 }
 .aura-info-card {
-    max-width: 100% !important;
-    display: flex;
-    flex: 100%;
-    margin: 16px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    align-items: flex-start;
+  max-width: 100% !important;
+  display: flex;
+  flex: 100%;
+  margin: 16px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  align-items: flex-start;
 }
 a {
-    font-weight: 600;
+  font-weight: 600;
 }
 button:hover {
-    filter: brightness(1.08);
+  filter: brightness(1.08);
 }
 .aura-intro button {
-    min-width: 177px;
+  min-width: 177px;
 }
 .aura-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 590px;
-    background-image: url('../../static/img/home-bg-1.png');
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-image: url('../../static/img/home-bg-1.png');
+  background-size: cover;
+  background-position: center;
 }
 .aura-intro > h1 {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 0;
 }
 .aura-intro > .aura {
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 97px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    background: linear-gradient(108.46deg, #5ee6d0 12.51%, #bfc6ff 51.13%, #ffba69 87.49%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 97px;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .aura-intro > p {
-    max-width: 926px;
-    text-align: center;
-    line-height: 19px;
+  max-width: 926px;
+  text-align: center;
+  line-height: 19px;
+}
+.aura-intro > p.description {
+  color: #968c7c;
 }
 .aura-intro > button,
 .explore button {
-    padding: 14px 24px;
-    background: linear-gradient(113.1deg, #5ee6d0 13.45%, #bfc6ff 50.33%, #ffba69 85.05%);
-    border-radius: 999px;
-    color: #363843;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    margin-top: 14px;
+  padding: 16px 32px;
+  background: linear-gradient(339deg, #ffd569 23.57%, #fc8e4f 50.76%, #ff697b 76.37%);
+  box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.04) inset, 2px 2px 0px 0px rgba(255, 255, 255, 0.2) inset;
+  border-radius: 999px;
+  color: #363843;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 14px;
 }
 .spotlight {
-    display: flex;
-    width: 100%;
-    padding-bottom: 24px;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  width: 100%;
+  padding-bottom: 24px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: #1e1c1a;
 }
 .aura-info-card,
 .spotlight > .aura-doc-card,
 .spotlight > .aura-card {
-    flex: 1;
-    margin: -52px 16px 16px;
-    background: #131419;
-    border-radius: 16px;
-    background-image: linear-gradient(rgb(19, 20, 25), rgb(19, 20, 25)),
-        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
+  flex: 1;
+  margin: -66px 16px 16px;
+  background: #131419;
+  border-radius: 16px;
+  background-image: linear-gradient(rgb(19, 20, 25), rgb(19, 20, 25)),
+    linear-gradient(339deg, #A0967200 0%, #A0967233 20%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+.aura-info-card:hover,
+.spotlight > .aura-doc-card:hover,
+.spotlight > .aura-card:hover {
+  background-image: linear-gradient(rgb(19, 20, 25), rgb(19, 20, 25)),
+    linear-gradient(339deg, #ffd569 23.57%, #fc8e4f 50.76%, #ff697b 76.37%);
 }
 .aura-doc-card > div,
 .aura-info-card > div,
 .aura-card > div {
-    padding: 22px;
-    cursor: pointer;
-    border-radius: 16px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  padding: 22px;
+  cursor: pointer;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .aura-info-card > div {
-    cursor: default;
+  cursor: default;
 }
 .aura-doc-card > div > div:not(.img),
 .aura-card > div > div:not(.img) {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .aura-doc-card > div:hover:after,
-.aura-card  > div:after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    bottom: 5%;
-    left: 5%;
-    background: linear-gradient(
-        108.46deg,
-        rgb(94, 230, 208) 12.51%,
-        rgb(191, 198, 255) 51.13%,
-        rgb(255, 186, 105) 87.49%
-    );
-    filter: blur(30px);
-    border-radius: 32px;
-    opacity: 0;
-    transition: all 0.2s ease;
+.aura-card > div:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  background: linear-gradient(339deg, #ffd569 23.57%, #fc8e4f 50.76%, #ff697b 76.37%);
+  filter: blur(30px);
+  border-radius: 32px;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 .aura-doc-card > div:hover:after,
 .aura-card > div:hover:after {
-    opacity: 0.35;
+  opacity: 0.35;
 }
 .aura-doc-card .img,
 .aura-card .img {
-    background: #24262e;
-    border-radius: 8px;
-    padding: 12px;
-    width: fit-content;
-    display: flex;
-    margin-bottom: 16px;
+  background: #1E1C1A;
+  border-radius: 16px;
+  padding: 12px;
+  width: fit-content;
+  display: flex;
+  margin-bottom: 16px;
 }
 .aura-doc-card .img img,
 .aura-card .img img {
-    height: 32px;
-    width: 32px;
+  height: 32px;
+  width: 32px;
 }
 .aura-info-card .info-card-icon {
-    height: 24px;
-    width: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-    transform: translateY(-2px); 
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transform: translateY(-2px);
 }
 .aura-info-card ul li {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 .aura-info-card .title,
 .aura-doc-card .title,
 .aura-card .title {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    color: #f2f3f5;
-    margin: 0px 0px 8px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f2f3f5;
+  margin: 0px 0px 16px;
 }
 .aura-info-card .title {
-    margin-right: 6px;
-    margin-left: 6px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 .aura-info-card .content,
 .aura-doc-card .description,
 .aura-card .description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #b4b8c0;
-    margin: 0px 0px 14px;
-    flex: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #968C7C;
+  margin: 0px 0px 24px;
+  flex: 1;
 }
 .aura-info-card .content {
-    font-weight: 500;
-    font-size: 16px;
-    color: #cfd3db;
-    margin-right: 8px;
-    margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #cfd3db;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 .aura-info-card a,
 .aura-doc-card a,
 .aura-card a {
-    cursor: pointer;
+  cursor: pointer;
 }
 .aura-info-card a {
-    font-size: 16px;
+  font-size: 16px;
 }
 .aura-doc-card a span,
 .aura-card a span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .category {
-    background-image: url('../../static/img/home-bg-2.png');
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 48px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 48px;
 }
 .explore {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 .category > div,
 .explore > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1176px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1176px;
+  margin: auto;
 }
 .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 8px;
 
-    text-align: center;
+  text-align: center;
 
-    /* Text/Content/White */
+  /* Text/Content/White */
 
-    color: #f2f3f5;
+  color: #f2f3f5;
 }
 .section-description {
-    text-align: center;
+  text-align: center;
 
-    /* Text/Content/Gray 3 */
+  /* Text/Content/Gray 3 */
 
-    color: #b4b8c0;
-    margin: 0px 16px;
+  color: #b4b8c0;
+  margin: 0px 16px;
 }
 .category .aura-cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .category .aura-cards .aura-card {
-    background: #24262e;
-    border-radius: 12px;
-    padding: 25px 32px;
-    flex: calc(50% - 32px);
-    margin: 16px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  background: #1E1C1A;
+  border-radius: 12px;
+  padding: 25px 32px;
+  flex: calc(50% - 32px);
+  margin: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .epl-cards {
-    display: flex;
-    margin-bottom: 86px;
-    margin-top: 16px;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 86px;
+  margin-top: 16px;
+  justify-content: center;
 }
 .epl-card {
-    flex: 1;
-    max-width: 315px;
-    margin: 16px;
-    background: #24262e;
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  max-width: 315px;
+  margin: 16px;
+  background: #1E1C1A;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .epl-card > .product-logo {
-    background-image: url('../../static/img/explore-bg.png');
-    background-repeat: no-repeat;
-    padding: 30px 32px;
-    display: flex;
-    background-size: 100% 100%;
+  background-image: url('../../static/img/explore-bg.png');
+  background-repeat: no-repeat;
+  padding: 30px 32px;
+  display: flex;
+  background-size: 100% 100%;
 }
 .epl-card > .product-info {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .epl-card > .product-info > .product-name {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    color: #109e87;
-    margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #c57a25;
+  margin-bottom: 10px;
 }
 .epl-card > .product-info > .product-description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #b4b8c0;
-    margin-bottom: 22px;
-    flex: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b4b8c0;
+  margin-bottom: 22px;
+  flex: 1;
 }
 .aura-card,
 .epl-card {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 [data-theme='light'] .aura-intro {
-    background-image: url('../../static/img/home-bg-1-light.png');
+  background-image: url('../../static/img/home-bg-1-light.png');
 }
 [data-theme='light'] .category {
-    background-image: url('../../static/img/home-bg-2-light.png');
+  background-image: url('../../static/img/home-bg-2-light.png');
 }
 [data-theme='light'] .home-root {
-    background-color: #f2f3f5;
+  background-color: #f2f3f5;
 }
 [data-theme='light'] .spotlight > .aura-card {
-    background-image: linear-gradient(#f2f3f5, #f2f3f5),
-        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
-    border: 2px solid transparent;
+  background-image: linear-gradient(#f2f3f5, #f2f3f5),
+    linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
+  border: 2px solid transparent;
 }
 [data-theme='light'] .spotlight > .aura-doc-card {
-    background-image: linear-gradient(#f2f3f5, #f2f3f5),
-        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
-    border: 2px solid transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+  background-image: linear-gradient(#f2f3f5, #f2f3f5),
+    linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 [data-theme='light'] .aura-info-card {
-    background-image: linear-gradient(#f2f3f5, #f2f3f5),
-        linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
-    border: 2px solid transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+  background-image: linear-gradient(#f2f3f5, #f2f3f5),
+    linear-gradient(108.46deg, rgb(94, 230, 208) 12.51%, rgb(191, 198, 255) 51.13%, rgb(255, 186, 105) 87.49%) !important;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 [data-theme='light'] .spotlight {
-    background: #ccd0d5;
+  background: #ccd0d5;
 }
 [data-theme='light'] .spotlight > .aura-card .img {
-    background: #e5e7ea;
+  background: #e5e7ea;
 }
 [data-theme='light'] .aura-card .title {
-    color: rgba(54, 56, 67, 1);
+  color: rgba(54, 56, 67, 1);
 }
 [data-theme='light'] .aura-card .description {
-    color: #717582;
+  color: #675B53;
 }
 [data-theme='light'] .aura-doc-card .title {
-    color: rgba(54, 56, 67, 1);
+  color: rgba(54, 56, 67, 1);
 }
 [data-theme='light'] .aura-doc-card .description {
-    color: #717582;
+  color: #675B53;
 }
 [data-theme='light'] .aura-info-card .title {
-    color: rgba(54, 56, 67, 1);
+  color: rgba(54, 56, 67, 1);
 }
 [data-theme='light'] .aura-info-card .content {
-    color: #717582;
+  color: #675B53;
 }
 [data-theme='light'] .aura-card {
-    background-color: #fff !important;
+  background-color: #fff !important;
 }
 [data-theme='light'] .category .aura-card {
-    border: 1px solid #e5e7ea;
+  border: 1px solid #e5e7ea;
 }
 [data-theme='light'] .section-title {
-    color: #363843;
+  color: #363843;
 }
 [data-theme='light'] .epl-card {
-    background: #fff;
-    border: 1px solid #e5e7ea;
+  background: #fff;
+  border: 1px solid #e5e7ea;
 }

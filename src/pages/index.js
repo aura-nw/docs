@@ -23,9 +23,9 @@ export default function Home() {
       </Head>
       <div className='home-root'>
         <div className='aura-intro'>
-          <h1>WELCOME TO</h1>
+          <h1>Welcome to the</h1>
           <p className='aura'>AURA NETWORK</p>
-          <p>
+          <p className='description'>
             This is the starting point where you will learn about the Aura ecosystem. You can find advanced topics and
             sections for developers, validators, exchanges, and others through the navigation bar.
           </p>

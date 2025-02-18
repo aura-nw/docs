@@ -352,7 +352,7 @@ button:hover {
 }
 
 [data-theme='light'] .aura-intro {
-  background-image: url('../../static/img/home-bg-1-light.png');
+  background-image: url('../../static/img/aura-doc-banner-light.png');
 }
 [data-theme='light'] .category {
   background-image: url('../../static/img/home-bg-2-light.png');

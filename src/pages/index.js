@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import Layout from '@theme/Layout'
 import './index.css'
 import CustomFooter from '../components/CustomFooter'
-import AuraImg from '../../static/img/aura.png'
-import RocketImg from '../../static/img/rocket.png'
-import CheckImg from '../../static/img/check.png'
+import AuraImg from '../../static/img/aura-logo-4.png'
+import RocketImg from '../../static/img/rocket-2.png'
+import CheckImg from '../../static/img/check-2.png'
 import AuraScan from '../../static/img/aurascan-logo.png'
 import PyxisSafe from '../../static/img/pyxissafe-logo.png'
 import Head from '@docusaurus/Head'
@@ -41,7 +41,7 @@ export default function Home() {
                 <p className='title'>About Aura Network</p>
                 <p className='description'>Learn the basics about Aura Network, such as its features and tokenomics.</p>
                 <a href='../../overview/intro'>
-                  Learn more <span>🡪</span>
+                  Know more <span>🡪</span>
                 </a>
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function Home() {
                 <p className='title'>Getting started</p>
                 <p className='description'>Go through most basic steps to interact with Aura Network.</p>
                 <a href='../../overview/start/wallet'>
-                  Learn more <span>🡪</span>
+                  Know more
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function Home() {
                 <p className='title'>Validator Handbook</p>
                 <p className='description'>Validators are responsible for committing new blocks in the blockchain.</p>
                 <a href='../../validator/'>
-                  Learn more <span>🡪</span>
+                  Know more
                 </a>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='explore'>
+        {/* <div className='explore'>
           <div>
             <p className='section-title'>Explore Aura-built products</p>
             <p className='section-description'>Here are some of the products built by the Aura Network core team.</p>
@@ -150,7 +150,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

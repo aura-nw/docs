@@ -127,6 +127,10 @@
   --ifm-footer-background-color: #fff;
   --ifm-navbar-link-hover-color: #3189e2;
   --ifm-link-color: #3189E2;
+  --ifm-menu-color-active: #3189E2;
+  --ifm-breadcrumb-color-active: #3189E2;
+  --ifm-color-primary: #3189E2 !important;
+  --ifm-menu-color-background-active: #0C0A09;
 }
 
 html {

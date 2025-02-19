@@ -130,7 +130,7 @@
   --ifm-menu-color-active: #3189E2;
   --ifm-breadcrumb-color-active: #3189E2;
   --ifm-color-primary: #3189E2 !important;
-  --ifm-menu-color-background-active: #0C0A09;
+  --ifm-menu-color-background-active: #E9E5E4;
 }
 
 html {
@@ -178,6 +178,7 @@ html[data-theme="dark"] {
   --ifm-font-color-base: #fcfcfd;
   --ifm-code-background: linear-gradient(108.46deg, #5ee6d0 12.51%, #bfc6ff 51.13%, #ffba69 87.49%);
   --openapi-input-background: black;
+  --ifm-menu-color-background-active: #0C0A09;
 }
 
 .player-wrapper {

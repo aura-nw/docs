@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Aura-logo-6.png',
+  favicon: 'img/aura-doc-favicon.svg',
   organizationName: 'aura-nw', // Usually your GitHub org/user name.
   projectName: 'Documentations', // Usually your repo name.
   staticDirectories: ['public', 'static'],

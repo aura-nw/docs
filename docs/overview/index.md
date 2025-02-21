@@ -15,7 +15,7 @@ Start here on the **Basics** topic to get started on the basics, and if you are 
 
 <FeatureList>
   <Column title="Basics" size="3">
-    <Feature url="./intro" title="About Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo.png"/>
+    <Feature url="./intro" title="About Aura Network" subtitle="Learn the Basics about Aura Network, features and tokenomics" image="aura-logo-4.png"/>
     <Feature url="./start/wallet" title="Getting started" subtitle="Go through most basic steps to interact with Aura network" image="start.png"/>
     <Feature url="../developer/concept/validator" title="Concepts" subtitle="Learn about common components in the Aura chain" image="concept.png"/>
   </Column>

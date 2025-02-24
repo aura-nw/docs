@@ -129,6 +129,7 @@ const config = {
   themes: ['docusaurus-theme-openapi-docs', '@docusaurus/theme-mermaid'],
   themeConfig:
   {
+    image: 'img/Thumb_web_Aura_Network_doc.webp',
     navbar: {
       logo: {
         alt: 'My Site Logo',
